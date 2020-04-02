@@ -1,0 +1,3 @@
+VAR
+	hmiPageVar : USINT := 10;
+END_VAR

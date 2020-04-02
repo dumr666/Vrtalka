@@ -1,0 +1,510 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<?AutomationStudio Version="4.2.10.53 SP"?>
+<Objects>
+  <Object
+    Path="F:\1_Automation_projects\Vrtalka\Logical\Package.pkg"
+    LogicalPath=""
+    Type="Package"
+    LastWriteTime="132302337771509050" />
+  <Object
+    Path="F:\1_Automation_projects\Vrtalka\Logical\Global.typ"
+    LogicalPath="Global.typ"
+    Type="File"
+    LastWriteTime="132279697095254229"
+    Private="false" />
+  <Object
+    Path="F:\1_Automation_projects\Vrtalka\Logical\Global.var"
+    LogicalPath="Global.var"
+    Type="File"
+    LastWriteTime="132302169420585410"
+    Private="false" />
+  <Object
+    Path="F:\1_Automation_projects\Vrtalka\Logical\Libraries\Package.pkg"
+    LogicalPath="Libraries"
+    Type="Package"
+    LastWriteTime="132284027329160608" />
+  <Object
+    Path="F:\1_Automation_projects\Vrtalka\Logical\Libraries\operator\Binary.lby"
+    LogicalPath="Libraries.operator"
+    Type="Library"
+    LastWriteTime="131425858900000000" />
+  <Object
+    Path="F:\1_Automation_projects\Vrtalka\Logical\Libraries\operator\operator.fun"
+    LogicalPath="Libraries.operator.operator.fun"
+    Type="File"
+    LastWriteTime="131425858500000000"
+    Private="false" />
+  <Object
+    Path="F:\1_Automation_projects\Vrtalka\Logical\Libraries\operator\operator.typ"
+    LogicalPath="Libraries.operator.operator.typ"
+    Type="File"
+    LastWriteTime="131425858640000000"
+    Private="false" />
+  <Object
+    Path="F:\1_Automation_projects\Vrtalka\Logical\Libraries\operator\operator.var"
+    LogicalPath="Libraries.operator.operator.var"
+    Type="File"
+    LastWriteTime="131425858780000000"
+    Private="false" />
+  <Object
+    Path="F:\1_Automation_projects\Vrtalka\Logical\Libraries\runtime\Binary.lby"
+    LogicalPath="Libraries.runtime"
+    Type="Library"
+    LastWriteTime="131425858900000000" />
+  <Object
+    Path="F:\1_Automation_projects\Vrtalka\Logical\Libraries\runtime\runtime.fun"
+    LogicalPath="Libraries.runtime.runtime.fun"
+    Type="File"
+    LastWriteTime="131425858500000000"
+    Private="false" />
+  <Object
+    Path="F:\1_Automation_projects\Vrtalka\Logical\Libraries\runtime\runtime.typ"
+    LogicalPath="Libraries.runtime.runtime.typ"
+    Type="File"
+    LastWriteTime="131425858640000000"
+    Private="false" />
+  <Object
+    Path="F:\1_Automation_projects\Vrtalka\Logical\Libraries\runtime\runtime.var"
+    LogicalPath="Libraries.runtime.runtime.var"
+    Type="File"
+    LastWriteTime="131425858780000000"
+    Private="false" />
+  <Object
+    Path="F:\1_Automation_projects\Vrtalka\Logical\Libraries\astime\Binary.lby"
+    LogicalPath="Libraries.astime"
+    Type="Library"
+    LastWriteTime="131425858880000000" />
+  <Object
+    Path="F:\1_Automation_projects\Vrtalka\Logical\Libraries\astime\astime.fun"
+    LogicalPath="Libraries.astime.astime.fun"
+    Type="File"
+    LastWriteTime="131425858460000000"
+    Private="false" />
+  <Object
+    Path="F:\1_Automation_projects\Vrtalka\Logical\Libraries\astime\astime.typ"
+    LogicalPath="Libraries.astime.astime.typ"
+    Type="File"
+    LastWriteTime="131425858600000000"
+    Private="false" />
+  <Object
+    Path="F:\1_Automation_projects\Vrtalka\Logical\Libraries\astime\astime.var"
+    LogicalPath="Libraries.astime.astime.var"
+    Type="File"
+    LastWriteTime="131425858740000000"
+    Private="false" />
+  <Object
+    Path="F:\1_Automation_projects\Vrtalka\Logical\Libraries\AsIecCon\Binary.lby"
+    LogicalPath="Libraries.AsIecCon"
+    Type="Library"
+    LastWriteTime="131425858820000000" />
+  <Object
+    Path="F:\1_Automation_projects\Vrtalka\Logical\Libraries\AsIecCon\AsIecCon.fun"
+    LogicalPath="Libraries.AsIecCon.AsIecCon.fun"
+    Type="File"
+    LastWriteTime="131425858420000000"
+    Private="false" />
+  <Object
+    Path="F:\1_Automation_projects\Vrtalka\Logical\Libraries\AsIecCon\AsIecCon.typ"
+    LogicalPath="Libraries.AsIecCon.AsIecCon.typ"
+    Type="File"
+    LastWriteTime="131425858540000000"
+    Private="false" />
+  <Object
+    Path="F:\1_Automation_projects\Vrtalka\Logical\Libraries\AsIecCon\AsIecCon.var"
+    LogicalPath="Libraries.AsIecCon.AsIecCon.var"
+    Type="File"
+    LastWriteTime="131425858680000000"
+    Private="false" />
+  <Object
+    Path="F:\1_Automation_projects\Vrtalka\Logical\Libraries\MTBasics\Binary.lby"
+    LogicalPath="Libraries.MTBasics"
+    Type="Library"
+    LastWriteTime="132284027322988608" />
+  <Object
+    Path="F:\1_Automation_projects\Vrtalka\Logical\Libraries\MTBasics\MTBasics.fun"
+    LogicalPath="Libraries.MTBasics.MTBasics.fun"
+    Type="File"
+    LastWriteTime="132284027322778743"
+    Private="false" />
+  <Object
+    Path="F:\1_Automation_projects\Vrtalka\Logical\Libraries\MTBasics\MTBasics.typ"
+    LogicalPath="Libraries.MTBasics.MTBasics.typ"
+    Type="File"
+    LastWriteTime="132284027322878672"
+    Private="false" />
+  <Object
+    Path="F:\1_Automation_projects\Vrtalka\Logical\Libraries\MTBasics\MTBasics.var"
+    LogicalPath="Libraries.MTBasics.MTBasics.var"
+    Type="File"
+    LastWriteTime="132284027322898652"
+    Private="false" />
+  <Object
+    Path="F:\1_Automation_projects\Vrtalka\Logical\Libraries\brsystem\Binary.lby"
+    LogicalPath="Libraries.brsystem"
+    Type="Library"
+    LastWriteTime="132284027326772082" />
+  <Object
+    Path="F:\1_Automation_projects\Vrtalka\Logical\Libraries\brsystem\brsystem.fun"
+    LogicalPath="Libraries.brsystem.brsystem.fun"
+    Type="File"
+    LastWriteTime="132284027326536397"
+    Private="false" />
+  <Object
+    Path="F:\1_Automation_projects\Vrtalka\Logical\Libraries\brsystem\brsystem.typ"
+    LogicalPath="Libraries.brsystem.brsystem.typ"
+    Type="File"
+    LastWriteTime="132284027326596378"
+    Private="false" />
+  <Object
+    Path="F:\1_Automation_projects\Vrtalka\Logical\Libraries\brsystem\brsystem.var"
+    LogicalPath="Libraries.brsystem.brsystem.var"
+    Type="File"
+    LastWriteTime="132284027326692138"
+    Private="false" />
+  <Object
+    Path="F:\1_Automation_projects\Vrtalka\Logical\Libraries\MTTypes\Binary.lby"
+    LogicalPath="Libraries.MTTypes"
+    Type="Library"
+    LastWriteTime="132284027327421686" />
+  <Object
+    Path="F:\1_Automation_projects\Vrtalka\Logical\Libraries\MTTypes\MTTypes.fun"
+    LogicalPath="Libraries.MTTypes.MTTypes.fun"
+    Type="File"
+    LastWriteTime="132284027327241795"
+    Private="false" />
+  <Object
+    Path="F:\1_Automation_projects\Vrtalka\Logical\Libraries\MTTypes\MTTypes.typ"
+    LogicalPath="Libraries.MTTypes.MTTypes.typ"
+    Type="File"
+    LastWriteTime="132284027327321754"
+    Private="false" />
+  <Object
+    Path="F:\1_Automation_projects\Vrtalka\Logical\Libraries\MTTypes\MTTypes.var"
+    LogicalPath="Libraries.MTTypes.MTTypes.var"
+    Type="File"
+    LastWriteTime="132284027327341736"
+    Private="false" />
+  <Object
+    Path="F:\1_Automation_projects\Vrtalka\Logical\Libraries\sys_lib\Binary.lby"
+    LogicalPath="Libraries.sys_lib"
+    Type="Library"
+    LastWriteTime="132284027328600955" />
+  <Object
+    Path="F:\1_Automation_projects\Vrtalka\Logical\Libraries\sys_lib\sys_lib.fun"
+    LogicalPath="Libraries.sys_lib.sys_lib.fun"
+    Type="File"
+    LastWriteTime="132284027328381107"
+    Private="false" />
+  <Object
+    Path="F:\1_Automation_projects\Vrtalka\Logical\Libraries\sys_lib\sys_lib.typ"
+    LogicalPath="Libraries.sys_lib.sys_lib.typ"
+    Type="File"
+    LastWriteTime="132284027328451064"
+    Private="false" />
+  <Object
+    Path="F:\1_Automation_projects\Vrtalka\Logical\Libraries\sys_lib\sys_lib.var"
+    LogicalPath="Libraries.sys_lib.sys_lib.var"
+    Type="File"
+    LastWriteTime="132284027328521019"
+    Private="false" />
+  <Object
+    Path="F:\1_Automation_projects\Vrtalka\Logical\Program\IEC.prg"
+    LogicalPath="Program"
+    Type="Program"
+    LastWriteTime="132297110341577469" />
+  <Object
+    Path="F:\1_Automation_projects\Vrtalka\Logical\Program\Variables.var"
+    LogicalPath="Program.Variables.var"
+    Type="File"
+    LastWriteTime="132302222472135222"
+    Private="true" />
+  <Object
+    Path="F:\1_Automation_projects\Vrtalka\Logical\Program\Types.typ"
+    LogicalPath="Program.Types.typ"
+    Type="File"
+    LastWriteTime="132297033587964245"
+    Private="true" />
+  <Object
+    Path="F:\1_Automation_projects\Vrtalka\Logical\Program\Vrtalka_actions\Package.pkg"
+    LogicalPath="Program.Vrtalka_actions"
+    Type="Package"
+    LastWriteTime="132297044204904264" />
+  <Object
+    Path="F:\1_Automation_projects\Vrtalka\Logical\Program\Vrtalka_actions\AGR_Actions.st"
+    LogicalPath="Program.Vrtalka_actions.AGR_Actions.st"
+    Type="File"
+    LastWriteTime="132302305395234366"
+    Private="false" />
+  <Object
+    Path="F:\1_Automation_projects\Vrtalka\Logical\Program\Vrtalka_actions\SRV_Actions.st"
+    LogicalPath="Program.Vrtalka_actions.SRV_Actions.st"
+    Type="File"
+    LastWriteTime="132302213649551339"
+    Private="false" />
+  <Object
+    Path="F:\1_Automation_projects\Vrtalka\Logical\Program\ST_src\Package.pkg"
+    LogicalPath="Program.ST_src"
+    Type="Package"
+    LastWriteTime="132297045172132660" />
+  <Object
+    Path="F:\1_Automation_projects\Vrtalka\Logical\Program\ST_src\Cyclic.st"
+    LogicalPath="Program.ST_src.Cyclic.st"
+    Type="File"
+    LastWriteTime="132297045171603063"
+    Private="false" />
+  <Object
+    Path="F:\1_Automation_projects\Vrtalka\Logical\Program\ST_src\Init.st"
+    LogicalPath="Program.ST_src.Init.st"
+    Type="File"
+    LastWriteTime="132302239222321901"
+    Private="false" />
+  <Object
+    Path="F:\1_Automation_projects\Vrtalka\Logical\Program\ST_src\Exit.st"
+    LogicalPath="Program.ST_src.Exit.st"
+    Type="File"
+    LastWriteTime="132297045172102674"
+    Private="false" />
+  <Object
+    Path="F:\1_Automation_projects\Vrtalka\Logical\Program\Vrtalka_functions\Package.pkg"
+    LogicalPath="Program.Vrtalka_functions"
+    Type="Package"
+    LastWriteTime="132297110340724168" />
+  <Object
+    Path="F:\1_Automation_projects\Vrtalka\Logical\Program\VrtalkaFunctions.st"
+    LogicalPath="Program.VrtalkaFunctions.st"
+    Type="File"
+    LastWriteTime="132297110341268378"
+    Private="false" />
+  <Object
+    Path="F:\1_Automation_projects\Vrtalka\Logical\Program\VrtalkaFunctions.fun"
+    LogicalPath="Program.VrtalkaFunctions.fun"
+    Type="File"
+    LastWriteTime="132297110341557467"
+    Private="true" />
+  <Object
+    Path="F:\1_Automation_projects\Vrtalka\Logical\VrtalkaHMI\Vc.dob"
+    LogicalPath="VrtalkaHMI"
+    Type="DataObject"
+    LastWriteTime="132282632380669280" />
+  <Object
+    Path="F:\1_Automation_projects\Vrtalka\Logical\VrtalkaHMI\Package\Package.pkg"
+    LogicalPath="VrtalkaHMI.Package"
+    Type="Package"
+    LastWriteTime="132282632380649298" />
+  <Object
+    Path="F:\1_Automation_projects\Vrtalka\Logical\VrtalkaHMI\VCObject.vc"
+    LogicalPath="VrtalkaHMI.VCObject.vc"
+    Type="File"
+    LastWriteTime="132279700533177450"
+    Private="false" />
+  <Object
+    Path="F:\1_Automation_projects\Vrtalka\Logical\hmiVariables.var"
+    LogicalPath="hmiVariables.var"
+    Type="File"
+    LastWriteTime="132302337557739051"
+    Private="false" />
+  <Object
+    Path="F:\1_Automation_projects\Vrtalka\Physical\SimulationConfig\Config.pkg"
+    LogicalPath="SimulationConfig"
+    Type="Configuration"
+    LastWriteTime="132280888776534913" />
+  <Object
+    Path="F:\1_Automation_projects\Vrtalka\Physical\SimulationConfig\Hardware.hw"
+    LogicalPath="SimulationConfig.Hardware.hw"
+    Type="File"
+    LastWriteTime="132302413855223398"
+    Private="false" />
+  <Object
+    Path="F:\1_Automation_projects\Vrtalka\Physical\SimulationConfig\Hardware.hwl"
+    LogicalPath="SimulationConfig.Hardware.hwl"
+    Type="File"
+    LastWriteTime="131091691340000000"
+    Private="false" />
+  <Object
+    Path="F:\1_Automation_projects\Vrtalka\Physical\SimulationConfig\4PPC70_101G_20B\Cpu.pkg"
+    LogicalPath="SimulationConfig.4PPC70_101G_20B"
+    Type="Cpu"
+    LastWriteTime="132280900738821162" />
+  <Object
+    Path="F:\1_Automation_projects\Vrtalka\Physical\SimulationConfig\4PPC70_101G_20B\Cpu.sw"
+    LogicalPath="SimulationConfig.4PPC70_101G_20B.Cpu.sw"
+    Type="File"
+    LastWriteTime="132302209396741665"
+    Private="false" />
+  <Object
+    Path="F:\1_Automation_projects\Vrtalka\Physical\SimulationConfig\4PPC70_101G_20B\Cpu.per"
+    LogicalPath="SimulationConfig.4PPC70_101G_20B.Cpu.per"
+    Type="File"
+    LastWriteTime="132280888763439850"
+    Private="false" />
+  <Object
+    Path="F:\1_Automation_projects\Vrtalka\Physical\SimulationConfig\4PPC70_101G_20B\IoMap.iom"
+    LogicalPath="SimulationConfig.4PPC70_101G_20B.IoMap.iom"
+    Type="File"
+    LastWriteTime="132280888763525298"
+    Private="false" />
+  <Object
+    Path="F:\1_Automation_projects\Vrtalka\Physical\SimulationConfig\4PPC70_101G_20B\PvMap.vvm"
+    LogicalPath="SimulationConfig.4PPC70_101G_20B.PvMap.vvm"
+    Type="File"
+    LastWriteTime="132280888763639035"
+    Private="false" />
+  <Object
+    Path="F:\1_Automation_projects\Vrtalka\Physical\SimulationConfig\4PPC70_101G_20B\mapp\Package.pkg"
+    LogicalPath="SimulationConfig.4PPC70_101G_20B.mapp"
+    Type="Package"
+    LastWriteTime="132280888764537502" />
+  <Object
+    Path="F:\1_Automation_projects\Vrtalka\Physical\SimulationConfig\4PPC70_101G_20B\Connectivity\Package.pkg"
+    LogicalPath="SimulationConfig.4PPC70_101G_20B.Connectivity"
+    Type="Package"
+    LastWriteTime="132280888764919421" />
+  <Object
+    Path="F:\1_Automation_projects\Vrtalka\Physical\SimulationConfig\4PPC70_101G_20B\Connectivity\OpcUA\Package.pkg"
+    LogicalPath="SimulationConfig.4PPC70_101G_20B.Connectivity.OpcUA"
+    Type="Package"
+    LastWriteTime="132280888764829077" />
+  <Object
+    Path="F:\1_Automation_projects\Vrtalka\Physical\SimulationConfig\4PPC70_101G_20B\TextSystem\Package.pkg"
+    LogicalPath="SimulationConfig.4PPC70_101G_20B.TextSystem"
+    Type="Package"
+    LastWriteTime="132280888765036473" />
+  <Object
+    Path="F:\1_Automation_projects\Vrtalka\Physical\SimulationConfig\4PPC70_101G_20B\AccessAndSecurity\Package.pkg"
+    LogicalPath="SimulationConfig.4PPC70_101G_20B.AccessAndSecurity"
+    Type="Package"
+    LastWriteTime="132280888766337342" />
+  <Object
+    Path="F:\1_Automation_projects\Vrtalka\Physical\SimulationConfig\4PPC70_101G_20B\AccessAndSecurity\UserRoleSystem\Package.pkg"
+    LogicalPath="SimulationConfig.4PPC70_101G_20B.AccessAndSecurity.UserRoleSystem"
+    Type="Package"
+    LastWriteTime="132280888765429423" />
+  <Object
+    Path="F:\1_Automation_projects\Vrtalka\Physical\SimulationConfig\4PPC70_101G_20B\AccessAndSecurity\UserRoleSystem\Role.role"
+    LogicalPath="SimulationConfig.4PPC70_101G_20B.AccessAndSecurity.UserRoleSystem.Role.role"
+    Type="File"
+    LastWriteTime="132280888765318789"
+    Private="false" />
+  <Object
+    Path="F:\1_Automation_projects\Vrtalka\Physical\SimulationConfig\4PPC70_101G_20B\AccessAndSecurity\UserRoleSystem\User.user"
+    LogicalPath="SimulationConfig.4PPC70_101G_20B.AccessAndSecurity.UserRoleSystem.User.user"
+    Type="File"
+    LastWriteTime="132280888765338659"
+    Private="false" />
+  <Object
+    Path="F:\1_Automation_projects\Vrtalka\Physical\SimulationConfig\4PPC70_101G_20B\AccessAndSecurity\CertificateStore\Package.pkg"
+    LogicalPath="SimulationConfig.4PPC70_101G_20B.AccessAndSecurity.CertificateStore"
+    Type="Package"
+    LastWriteTime="132280888766237345" />
+  <Object
+    Path="F:\1_Automation_projects\Vrtalka\Physical\SimulationConfig\4PPC70_101G_20B\AccessAndSecurity\CertificateStore\OwnCertificates\Package.pkg"
+    LogicalPath="SimulationConfig.4PPC70_101G_20B.AccessAndSecurity.CertificateStore.OwnCertificates"
+    Type="Package"
+    LastWriteTime="132280888765840208" />
+  <Object
+    Path="F:\1_Automation_projects\Vrtalka\Physical\SimulationConfig\4PPC70_101G_20B\AccessAndSecurity\CertificateStore\OwnCertificates\Certificates\Package.pkg"
+    LogicalPath="SimulationConfig.4PPC70_101G_20B.AccessAndSecurity.CertificateStore.OwnCertificates.Certificates"
+    Type="Package"
+    LastWriteTime="132280888765639231" />
+  <Object
+    Path="F:\1_Automation_projects\Vrtalka\Physical\SimulationConfig\4PPC70_101G_20B\AccessAndSecurity\CertificateStore\OwnCertificates\PrivateKeys\Package.pkg"
+    LogicalPath="SimulationConfig.4PPC70_101G_20B.AccessAndSecurity.CertificateStore.OwnCertificates.PrivateKeys"
+    Type="Package"
+    LastWriteTime="132280888765769547" />
+  <Object
+    Path="F:\1_Automation_projects\Vrtalka\Physical\SimulationConfig\4PPC70_101G_20B\AccessAndSecurity\CertificateStore\ThirdPartyCertificates\Package.pkg"
+    LogicalPath="SimulationConfig.4PPC70_101G_20B.AccessAndSecurity.CertificateStore.ThirdPartyCertificates"
+    Type="Package"
+    LastWriteTime="132280888765934905" />
+  <Object
+    Path="F:\1_Automation_projects\Vrtalka\Physical\SimulationConfig\4PPC70_101G_20B\AccessAndSecurity\CertificateStore\ThirdPartyCertificates\SoftwareCertificates\Package.pkg"
+    LogicalPath="SimulationConfig.4PPC70_101G_20B.AccessAndSecurity.CertificateStore.ThirdPartyCertificates.SoftwareCertificates"
+    Type="Package"
+    LastWriteTime="132280888765925640" />
+  <Object
+    Path="F:\1_Automation_projects\Vrtalka\Physical\SimulationConfig\4PPC70_101G_20B\AccessAndSecurity\CertificateStore\CertificateRevocationLists\Package.pkg"
+    LogicalPath="SimulationConfig.4PPC70_101G_20B.AccessAndSecurity.CertificateStore.CertificateRevocationLists"
+    Type="Package"
+    LastWriteTime="132280888766125380" />
+  <Object
+    Path="F:\1_Automation_projects\Vrtalka\Physical\SimulationConfig\4PPC70_101G_20B\AccessAndSecurity\CertificateStore\CertificateSigningRequests\Package.pkg"
+    LogicalPath="SimulationConfig.4PPC70_101G_20B.AccessAndSecurity.CertificateStore.CertificateSigningRequests"
+    Type="Package"
+    LastWriteTime="132280888766226951" />
+  <Object
+    Path="F:\1_Automation_projects\Vrtalka\Physical\SimulationConfig\4PPC70_101G_20B\AccessAndSecurity\TransportLayerSecurity\Package.pkg"
+    LogicalPath="SimulationConfig.4PPC70_101G_20B.AccessAndSecurity.TransportLayerSecurity"
+    Type="Package"
+    LastWriteTime="132280888766237345" />
+  <Object
+    Path="F:\1_Automation_projects\Vrtalka\Physical\SimulationConfig\4PPC70_101G_20B\VC\Package.pkg"
+    LogicalPath="SimulationConfig.4PPC70_101G_20B.VC"
+    Type="Package"
+    LastWriteTime="132280917532780078" />
+  <Object
+    Path="F:\1_Automation_projects\Vrtalka\Physical\SimulationConfig\4PPC70_101G_20B\VC\4PPC70_101G_20B.dis"
+    LogicalPath="SimulationConfig.4PPC70_101G_20B.VC.4PPC70_101G_20B.dis"
+    Type="File"
+    LastWriteTime="132280888897129188"
+    Private="false" />
+  <Object
+    Path="F:\1_Automation_projects\Vrtalka\Physical\SimulationConfig\4PPC70_101G_20B\VC\PS2-Keyboard.dis"
+    LogicalPath="SimulationConfig.4PPC70_101G_20B.VC.PS2-Keyboard.dis"
+    Type="File"
+    LastWriteTime="132280917533039915"
+    Private="false" />
+  <Object
+    Path="F:\1_Automation_projects\Vrtalka\Physical\SimulationConfig\Hardware.jpg"
+    LogicalPath="SimulationConfig.Hardware.jpg"
+    Type="File"
+    LastWriteTime="132280901572184141"
+    Private="false" />
+  <Object
+    Path="F:\1_Automation_projects\Vrtalka\Logical\Libraries\AsIecCon\SG4\AsIecCon.h"
+    LogicalPath="AsIecCon.h"
+    Type="File"
+    LastWriteTime="131425858960000000"
+    Private="false" />
+  <Object
+    Path="F:\1_Automation_projects\Vrtalka\Logical\Libraries\astime\SG4\astime.h"
+    LogicalPath="astime.h"
+    Type="File"
+    LastWriteTime="131425859000000000"
+    Private="false" />
+  <Object
+    Path="F:\1_Automation_projects\Vrtalka\Logical\Libraries\brsystem\SG4\brsystem.h"
+    LogicalPath="brsystem.h"
+    Type="File"
+    LastWriteTime="131425859020000000"
+    Private="false" />
+  <Object
+    Path="F:\1_Automation_projects\Vrtalka\Logical\Libraries\MTBasics\SG4\MTBasics.h"
+    LogicalPath="MTBasics.h"
+    Type="File"
+    LastWriteTime="131412290380000000"
+    Private="false" />
+  <Object
+    Path="F:\1_Automation_projects\Vrtalka\Logical\Libraries\MTTypes\SG4\MTTypes.h"
+    LogicalPath="MTTypes.h"
+    Type="File"
+    LastWriteTime="131321452940000000"
+    Private="false" />
+  <Object
+    Path="F:\1_Automation_projects\Vrtalka\Logical\Libraries\operator\SG4\operator.h"
+    LogicalPath="operator.h"
+    Type="File"
+    LastWriteTime="131425859040000000"
+    Private="false" />
+  <Object
+    Path="F:\1_Automation_projects\Vrtalka\Logical\Libraries\runtime\SG4\runtime.h"
+    LogicalPath="runtime.h"
+    Type="File"
+    LastWriteTime="131425859040000000"
+    Private="false" />
+  <Object
+    Path="F:\1_Automation_projects\Vrtalka\Logical\Libraries\sys_lib\SG4\sys_lib.h"
+    LogicalPath="sys_lib.h"
+    Type="File"
+    LastWriteTime="131425859040000000"
+    Private="false" />
+</Objects>

@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<?AutomationStudio Version="4.2.10.53 SP"?>
+<ProjectOptions
+  IecNamingConventions="true"
+  IecKeywordsAsStructureMembers="false"
+  IecExtendedConstants="true"
+  LogicalDirectory="F:\1_Automation_projects\Vrtalka\Logical\"
+  TempDirectory="F:\1_Automation_projects\Vrtalka\Temp\"
+  AutomationStudioVersion="4.2.10.53 SP"
+  AutomationStudioEdition="Standard"
+  CrossReference="false"
+  ActiveConfiguration="SimulationConfig"
+  CreateAnsiCDeclarations="false" />

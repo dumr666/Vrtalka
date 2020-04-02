@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<Parameters>
+  <Connection>
+    <DeviceParameters>/IF=COM1 /BD=57600 /PA=2 /IT=20 /RS=0</DeviceParameters>
+    <ConnectionParameters>/RT=1000 /AM=*</ConnectionParameters>
+  </Connection>
+  <AsProject>
+    <ApjFullFileName>F:\1_Automation_projects\Vrtalka\Vrtalka.apj</ApjFullFileName>
+    <ProjectName>Vrtalka</ProjectName>
+    <ActiveConfigurationName>HW_config</ActiveConfigurationName>
+    <LicenseDataFolder>F:\1_Automation_projects\Vrtalka\Temp\Objects\HW_config\4PPC70_101G_20B</LicenseDataFolder>
+  </AsProject>
+  <General>
+    <DeleteParameterFile>false</DeleteParameterFile>
+  </General>
+</Parameters>

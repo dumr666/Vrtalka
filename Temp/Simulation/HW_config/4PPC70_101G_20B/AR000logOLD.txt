@@ -1,0 +1,48 @@
+
+
+Sat Mar 07 19:17:12 2020
+No ARsim registration found!
+  Bernecker & Rainer 
+
+
+
+Sat Mar 07 19:17:12 2020
+COMMAND_COLDSTART
+InstanceName : 01d5f4ac9f70cde0
+
+WorkingPath :
+F:\1_Automation_projects\Vrtalka\Temp\Simulation\HW_config\4PPC70_101G_20B\
+
+
+
+Sat Mar 07 19:17:12 2020
+COMMAND_COLDSTART
+Version : D4.26
+
+
+
+Sat Mar 07 21:41:30 2020
+COMMAND_TERMINATE
+
+
+Sat Mar 07 21:41:31 2020
+
+
+Sat Mar 07 21:55:41 2020
+COMMAND_COLDSTART
+Version : D4.26
+
+
+
+Sat Mar 07 22:04:23 2020
+COMMAND_TERMINATE
+
+
+Sat Mar 07 22:04:24 2020
+
+
+Sat Mar 07 22:04:24 2020
+COMMAND_TERMINATE
+
+
+Sat Mar 07 22:04:24 2020
