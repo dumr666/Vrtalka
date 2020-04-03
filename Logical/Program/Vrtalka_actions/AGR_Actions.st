@@ -105,3 +105,62 @@ ACTION SetHomePosAgr: (* Vse agregate peljemo na minimalne pozicije *)
 	agr6.agr_pos_ok := TRUE;
 	
 END_ACTION
+
+ACTION SetIzbraniAgrVal: (* Nastavljanje spremenljivke izbrani_agr iz boolov aktivnih agr *)
+	
+	
+	//izbrani_agr := 666;
+	IF (agr1.agr_active = TRUE) AND ((izbrani_agr AND 2#0000_0000_0000_0001) = FALSE) THEN
+		izbrani_agr := izbrani_agr OR 2#0000_0000_0000_0001;
+	END_IF
+	IF (agr1.agr_active = FALSE) AND ((izbrani_agr AND 2#0000_0000_0000_0001) = TRUE) THEN
+		izbrani_agr := izbrani_agr XOR 2#0000_0000_0000_0001;
+	END_IF
+	
+	IF (agr2.agr_active = TRUE) AND ((izbrani_agr AND 2#0000_0000_0000_0010) = FALSE) THEN
+		izbrani_agr := izbrani_agr OR 2#0000_0000_0000_0010;
+	END_IF
+	IF (agr2.agr_active = FALSE) AND ((izbrani_agr AND 2#0000_0000_0000_0010) = TRUE) THEN
+		izbrani_agr := izbrani_agr XOR 2#0000_0000_0000_0010;
+	END_IF
+		(*
+	IF agr1.agr_active = TRUE THEN
+		izbrani_agr := izbrani_agr OR 2#0000_0000_0000_0001;
+	END_IF;
+	IF agr1.agr_active = FALSE THEN
+		izbrani_agr := izbrani_agr XOR 2#0000_0000_0000_0001;
+	END_IF;
+	
+	IF agr2.agr_active = TRUE THEN
+		izbrani_agr := izbrani_agr OR 2#0000_0000_0000_0010;
+	END_IF;
+	IF agr1.agr_active = FALSE THEN
+		izbrani_agr := izbrani_agr XOR 2#0000_0000_0000_0010;
+	END_IF;
+	
+
+	IF agr3.agr_active = TRUE THEN
+		izbrani_agr := izbrani_agr OR 2#0000_0000_0000_0100;
+	ELSE 
+		izbrani_agr := izbrani_agr XOR 2#0000_0000_0000_0100;
+	END_IF;
+	
+	IF agr4.agr_active = TRUE THEN
+		izbrani_agr := izbrani_agr OR 2#0000_0000_0000_1000;
+	ELSE 
+		izbrani_agr := izbrani_agr XOR 2#0000_0000_0000_1000;
+	END_IF;
+	
+	IF agr5.agr_active = TRUE THEN
+		izbrani_agr := izbrani_agr OR 2#0000_0000_0001_0000;
+	ELSE 
+		izbrani_agr := izbrani_agr XOR 2#0000_0000_0001_0000;
+	END_IF;
+	
+	IF agr6.agr_active = TRUE THEN
+		izbrani_agr := izbrani_agr OR 2#0000_0000_0010_0000;
+	ELSE 
+		izbrani_agr := izbrani_agr XOR 2#0000_0000_0010_0000;
+	END_IF;
+	*)
+END_ACTION

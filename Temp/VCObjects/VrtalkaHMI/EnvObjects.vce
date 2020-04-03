@@ -9,33 +9,6 @@
       <Property Name="ActiveView" Value="0"/>
       <Property Name="FrameMinPtX" Value="-1"/>
       <Property Name="FrameMinPtY" Value="-1"/>
-      <Property Name="ParentObjectName" Value="BackgroundLayer"/>
-      <Property Name="ParentObjectType" Value="Layer"/>
-      <Property Name="ShowCmd" Value="1"/>
-      <Property Name="WndPosBottom" Value="605"/>
-      <Property Name="WndPosLeft" Value="104"/>
-      <Property Name="WndPosRight" Value="892"/>
-      <Property Name="WndPosTop" Value="104"/>
-      <Views>
-        <View>
-          <Property Name="ID" Value="268435456"/>
-          <Property Name="Scalecx" Value="100"/>
-          <Property Name="Scalecy" Value="100"/>
-          <Property Name="ScrollPositionX" Value="0"/>
-          <Property Name="ScrollPositionY" Value="0"/>
-        </View>
-        <View>
-          <Property Name="ID" Value="-2147483648"/>
-        </View>
-        <View>
-          <Property Name="ID" Value="0"/>
-        </View>
-      </Views>
-    </Frame>
-    <Frame>
-      <Property Name="ActiveView" Value="0"/>
-      <Property Name="FrameMinPtX" Value="-1"/>
-      <Property Name="FrameMinPtY" Value="-1"/>
       <Property Name="ParentObjectName" Value="Color"/>
       <Property Name="ParentObjectType" Value="StyleSheet"/>
       <Property Name="ShowCmd" Value="1"/>
@@ -100,6 +73,36 @@
           <Property Name="Scalecy" Value="10"/>
           <Property Name="ScrollPositionX" Value="0"/>
           <Property Name="ScrollPositionY" Value="0"/>
+        </View>
+      </Views>
+    </Frame>
+    <Frame>
+      <Property Name="ActiveView" Value="0"/>
+      <Property Name="FrameMinPtX" Value="-1"/>
+      <Property Name="FrameMinPtY" Value="-1"/>
+      <Property Name="ParentObjectName" Value="Service"/>
+      <Property Name="ParentObjectType" Value="Page"/>
+      <Property Name="ShowCmd" Value="3"/>
+      <Property Name="WndPosBottom" Value="605"/>
+      <Property Name="WndPosLeft" Value="104"/>
+      <Property Name="WndPosRight" Value="892"/>
+      <Property Name="WndPosTop" Value="104"/>
+      <Views>
+        <View>
+          <Property Name="ID" Value="32"/>
+          <Property Name="Scalecx" Value="4"/>
+          <Property Name="Scalecy" Value="4"/>
+          <Property Name="ScrollPositionX" Value="0"/>
+          <Property Name="ScrollPositionY" Value="0"/>
+        </View>
+        <View>
+          <Property Name="ID" Value="536870912"/>
+        </View>
+        <View>
+          <Property Name="ID" Value="16384"/>
+        </View>
+        <View>
+          <Property Name="ID" Value="262144"/>
         </View>
       </Views>
     </Frame>

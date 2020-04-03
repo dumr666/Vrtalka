@@ -9,6 +9,7 @@ TYPE
 		o_agr_zav : BOOL := FALSE; (*Zavora agregata*)
 		agr_width : REAL := 30; (*Sirina agregata*)
 		agr_active : BOOL := FALSE; (*Ali je agregat aktiven*)
+		izbrani_agr_mask : UINT; (*Maska za spremenljivko izbrani agregat*)
 	END_STRUCT;
 	servo_typ : 	STRUCT 
 		servo_set : REAL := 0; (*Nastavljena pozicija servo motorja*)

@@ -7,6 +7,5 @@
     <Object Type="Package" Description="Global libraries">Libraries</Object>
     <Object Type="Program" Language="IEC">Program</Object>
     <Object Type="DataObject" Language="Vc" Description="1024x600 (WSVGA)">VrtalkaHMI</Object>
-    <Object Type="File">hmiVariables.var</Object>
   </Objects>
 </Package>

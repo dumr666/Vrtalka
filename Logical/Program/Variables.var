@@ -1,12 +1,12 @@
 (*Delovne variable*)
 (*Agregati*)
 VAR
-	agr1 : agr_typ := (0); (*agregat 1*)
-	agr2 : agr_typ := (0); (*agregat 2*)
-	agr3 : agr_typ := (0); (*agregat 3*)
-	agr4 : agr_typ := (0); (*agregat 4*)
-	agr5 : agr_typ := (0); (*agregat 5*)
-	agr6 : agr_typ := (0); (*agregat 6*)
+	agr1 : agr_typ := (izbrani_agr_mask:=1); (*agregat 1*)
+	agr2 : agr_typ := (izbrani_agr_mask:=2); (*agregat 2*)
+	agr3 : agr_typ := (izbrani_agr_mask:=4); (*agregat 3*)
+	agr4 : agr_typ := (izbrani_agr_mask:=8); (*agregat 4*)
+	agr5 : agr_typ := (izbrani_agr_mask:=16); (*agregat 5*)
+	agr6 : agr_typ := (izbrani_agr_mask:=32); (*agregat 6*)
 	diHMIin1 : BOOL := FALSE;
 	diHMIin2 : BOOL := FALSE;
 END_VAR
@@ -22,7 +22,7 @@ VAR
 	doFunSuccess : BOOL := FALSE; (*Mock HMI prikaz *)
 	doHMIout1 : BOOL := FALSE;
 	doStrojPripravljen : BOOL := FALSE; (*stroj je pripravljen za delo*)
-	izbrani_agr : UINT; (*int izbranih agregatov*)
+	izbrani_agr : UINT := 0; (*int izbranih agregatov*)
 END_VAR
 (*Nastavljene pozicije agregatov [REAL/D]*)
 VAR

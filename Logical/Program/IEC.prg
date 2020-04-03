@@ -6,7 +6,6 @@
     <Object Type="File" Private="true">Types.typ</Object>
     <Object Type="Package">Vrtalka_actions</Object>
     <Object Type="Package">ST_src</Object>
-    <Object Type="Package">Vrtalka_functions</Object>
     <Object Type="File">VrtalkaFunctions.st</Object>
     <Object Type="File" Private="true">VrtalkaFunctions.fun</Object>
   </Objects>

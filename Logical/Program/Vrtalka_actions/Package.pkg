@@ -4,5 +4,6 @@
   <Objects>
     <Object Type="File">AGR_Actions.st</Object>
     <Object Type="File">SRV_Actions.st</Object>
+    <Object Type="File">General_actions.st</Object>
   </Objects>
 </Package>
