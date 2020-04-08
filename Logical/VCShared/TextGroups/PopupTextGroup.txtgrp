@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?AutomationStudio Version="4.2.10.53 SP"?>
+<TextGroup xmlns="http://br-automation.co.at/AS/VC/Project" Name="PopupTextGroup">
+  <Property Name="Description" Value=""/>
+  <Property Name="Index" Value="2"/>
+  <TextSnippets/>
+  <TextLayer LanguageId="en">
+    <Text ID="95469" Value="DA"/>
+    <Text ID="95470" Value="NE"/>
+  </TextLayer>
+  <TextLayer LanguageId="de">
+    <Text ID="95469" Value=""/>
+    <Text ID="95470" Value=""/>
+  </TextLayer>
+  <IndexMap>
+    <Index ID="95469" Value="0"/>
+    <Index ID="95470" Value="1"/>
+  </IndexMap>
+</TextGroup>

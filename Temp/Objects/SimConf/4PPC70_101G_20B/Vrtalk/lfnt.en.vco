@@ -8,15 +8,42 @@
         <Byte Name="BidiMode">0</Byte>
         <Byte Name="InputMethod">0</Byte>
         <UInt16 Name="Reserved">0</UInt16>
-        <UInt32 Name="LogFontTableEntries">7</UInt32>
+        <UInt32 Name="LogFontTableEntries">11</UInt32>
         <Group Name="LogFontTable">
-          <Symbol Name="Font_1" ID="0">
-            <String Name="PhysicalFontName" Encoding="ASCII">reemkz6g</String>
+          <Symbol Name="DSfon_26" ID="0">
+            <String Name="PhysicalFontName" Encoding="ASCII">seguisb</String>
+            <Binary Name="FillData" Encoding="Base64">AAAAAAAAAAAAAAAAAAAAAA==</Binary>
+            <UInt32 Name="DefaultWidth">0</UInt32>
+            <UInt32 Name="DefaultHeight">26</UInt32>
+            <UInt32 Name="FontSize">47</UInt32>
+            <UInt32 Name="Index">10</UInt32>
+            <UInt32 Name="AntiAliasing">0</UInt32>
+          </Symbol>
+          <Symbol Name="DSfon_20" ID="0">
+            <String Name="PhysicalFontName" Encoding="ASCII">seguisb</String>
+            <Binary Name="FillData" Encoding="Base64">AAAAAAAAAAAAAAAAAAAAAA==</Binary>
+            <UInt32 Name="DefaultWidth">0</UInt32>
+            <UInt32 Name="DefaultHeight">20</UInt32>
+            <UInt32 Name="FontSize">37</UInt32>
+            <UInt32 Name="Index">9</UInt32>
+            <UInt32 Name="AntiAliasing">0</UInt32>
+          </Symbol>
+          <Symbol Name="DSfon_14" ID="0">
+            <String Name="PhysicalFontName" Encoding="ASCII">segoeuib</String>
             <Binary Name="FillData" Encoding="Base64">AAAAAAAAAAAAAAAAAAAA</Binary>
             <UInt32 Name="DefaultWidth">0</UInt32>
-            <UInt32 Name="DefaultHeight">12</UInt32>
-            <UInt32 Name="FontSize">30</UInt32>
-            <UInt32 Name="Index">6</UInt32>
+            <UInt32 Name="DefaultHeight">14</UInt32>
+            <UInt32 Name="FontSize">25</UInt32>
+            <UInt32 Name="Index">8</UInt32>
+            <UInt32 Name="AntiAliasing">0</UInt32>
+          </Symbol>
+          <Symbol Name="DSfon_15" ID="0">
+            <String Name="PhysicalFontName" Encoding="ASCII">seguisb</String>
+            <Binary Name="FillData" Encoding="Base64">AAAAAAAAAAAAAAAAAAAAAA==</Binary>
+            <UInt32 Name="DefaultWidth">0</UInt32>
+            <UInt32 Name="DefaultHeight">15</UInt32>
+            <UInt32 Name="FontSize">28</UInt32>
+            <UInt32 Name="Index">7</UInt32>
             <UInt32 Name="AntiAliasing">0</UInt32>
           </Symbol>
           <Symbol Name="Arial9px" ID="0">
@@ -25,7 +52,7 @@
             <UInt32 Name="DefaultWidth">0</UInt32>
             <UInt32 Name="DefaultHeight">9</UInt32>
             <UInt32 Name="FontSize">15</UInt32>
-            <UInt32 Name="Index">5</UInt32>
+            <UInt32 Name="Index">6</UInt32>
             <UInt32 Name="AntiAliasing">0</UInt32>
           </Symbol>
           <Symbol Name="Arial9pxValue" ID="0">
@@ -34,7 +61,7 @@
             <UInt32 Name="DefaultWidth">0</UInt32>
             <UInt32 Name="DefaultHeight">9</UInt32>
             <UInt32 Name="FontSize">15</UInt32>
-            <UInt32 Name="Index">4</UInt32>
+            <UInt32 Name="Index">5</UInt32>
             <UInt32 Name="AntiAliasing">0</UInt32>
           </Symbol>
           <Symbol Name="Arial12px" ID="0">
@@ -43,7 +70,7 @@
             <UInt32 Name="DefaultWidth">0</UInt32>
             <UInt32 Name="DefaultHeight">12</UInt32>
             <UInt32 Name="FontSize">18</UInt32>
-            <UInt32 Name="Index">3</UInt32>
+            <UInt32 Name="Index">4</UInt32>
             <UInt32 Name="AntiAliasing">0</UInt32>
           </Symbol>
           <Symbol Name="Arial10pxBold" ID="0">
@@ -52,7 +79,7 @@
             <UInt32 Name="DefaultWidth">0</UInt32>
             <UInt32 Name="DefaultHeight">10</UInt32>
             <UInt32 Name="FontSize">16</UInt32>
-            <UInt32 Name="Index">2</UInt32>
+            <UInt32 Name="Index">3</UInt32>
             <UInt32 Name="AntiAliasing">0</UInt32>
           </Symbol>
           <Symbol Name="Arial9pxBold" ID="0">
@@ -61,7 +88,7 @@
             <UInt32 Name="DefaultWidth">0</UInt32>
             <UInt32 Name="DefaultHeight">9</UInt32>
             <UInt32 Name="FontSize">15</UInt32>
-            <UInt32 Name="Index">1</UInt32>
+            <UInt32 Name="Index">2</UInt32>
             <UInt32 Name="AntiAliasing">0</UInt32>
           </Symbol>
           <Symbol Name="DefaultFont" ID="0">
@@ -70,6 +97,15 @@
             <UInt32 Name="DefaultWidth">0</UInt32>
             <UInt32 Name="DefaultHeight">9</UInt32>
             <UInt32 Name="FontSize">15</UInt32>
+            <UInt32 Name="Index">1</UInt32>
+            <UInt32 Name="AntiAliasing">0</UInt32>
+          </Symbol>
+          <Symbol Name="DSfon_12" ID="0">
+            <String Name="PhysicalFontName" Encoding="ASCII">segoeui</String>
+            <Binary Name="FillData" Encoding="Base64">AAAAAAAAAAAAAAAAAAAAAA==</Binary>
+            <UInt32 Name="DefaultWidth">0</UInt32>
+            <UInt32 Name="DefaultHeight">12</UInt32>
+            <UInt32 Name="FontSize">21</UInt32>
             <UInt32 Name="Index">0</UInt32>
             <UInt32 Name="AntiAliasing">0</UInt32>
           </Symbol>
@@ -78,12 +114,16 @@
     </Folder>
   </Folder>
   <Folder Name="LogFonts">
-    <Object Name="Font_1" ClsId="0x0" Version="0" TargetIndex="6" Type="FNT" RefString="Source[local].Font[Font_1]" />
-    <Object Name="Arial9px" ClsId="0x0" Version="0" TargetIndex="5" Type="FNT" RefString="Source[local].Font[Arial9px]" />
-    <Object Name="Arial9pxValue" ClsId="0x0" Version="0" TargetIndex="4" Type="FNT" RefString="Source[local].Font[Arial9pxValue]" />
-    <Object Name="Arial12px" ClsId="0x0" Version="0" TargetIndex="3" Type="FNT" RefString="Source[local].Font[Arial12px]" />
-    <Object Name="Arial10pxBold" ClsId="0x0" Version="0" TargetIndex="2" Type="FNT" RefString="Source[local].Font[Arial10pxBold]" />
-    <Object Name="Arial9pxBold" ClsId="0x0" Version="0" TargetIndex="1" Type="FNT" RefString="Source[local].Font[Arial9pxBold]" />
-    <Object Name="DefaultFont" ClsId="0x0" Version="0" TargetIndex="0" Type="FNT" RefString="Source[local].Font[DefaultFont]" />
+    <Object Name="DSfon_26" ClsId="0x0" Version="0" TargetIndex="10" Type="FNT" RefString="Source[local].Font[DSfon_26]" />
+    <Object Name="DSfon_20" ClsId="0x0" Version="0" TargetIndex="9" Type="FNT" RefString="Source[local].Font[DSfon_20]" />
+    <Object Name="DSfon_14" ClsId="0x0" Version="0" TargetIndex="8" Type="FNT" RefString="Source[local].Font[DSfon_14]" />
+    <Object Name="DSfon_15" ClsId="0x0" Version="0" TargetIndex="7" Type="FNT" RefString="Source[local].Font[DSfon_15]" />
+    <Object Name="Arial9px" ClsId="0x0" Version="0" TargetIndex="6" Type="FNT" RefString="Source[local].Font[Arial9px]" />
+    <Object Name="Arial9pxValue" ClsId="0x0" Version="0" TargetIndex="5" Type="FNT" RefString="Source[local].Font[Arial9pxValue]" />
+    <Object Name="Arial12px" ClsId="0x0" Version="0" TargetIndex="4" Type="FNT" RefString="Source[local].Font[Arial12px]" />
+    <Object Name="Arial10pxBold" ClsId="0x0" Version="0" TargetIndex="3" Type="FNT" RefString="Source[local].Font[Arial10pxBold]" />
+    <Object Name="Arial9pxBold" ClsId="0x0" Version="0" TargetIndex="2" Type="FNT" RefString="Source[local].Font[Arial9pxBold]" />
+    <Object Name="DefaultFont" ClsId="0x0" Version="0" TargetIndex="1" Type="FNT" RefString="Source[local].Font[DefaultFont]" />
+    <Object Name="DSfon_12" ClsId="0x0" Version="0" TargetIndex="0" Type="FNT" RefString="Source[local].Font[DSfon_12]" />
   </Folder>
 </Intermediate>

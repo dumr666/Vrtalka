@@ -1,7 +1,7 @@
 SHELL = cmd.exe
 CYGWIN=nontsec
 export PATH := C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Program Files\PuTTY\;C:\Program Files\Git\cmd;C:\Program Files (x86)\GitExtensions\;C:\Program Files\Microsoft SQL Server\Client SDK\ODBC\110\Tools\Binn\;C:\Program Files (x86)\Microsoft SQL Server\120\Tools\Binn\;C:\Program Files\Microsoft SQL Server\120\Tools\Binn\;C:\Program Files\Microsoft SQL Server\120\DTS\Binn\;C:\Program Files (x86)\Windows Kits\8.1\Windows Performance Toolkit\;C:\Program Files\Calibre2\;C:\Program Files (x86)\WinSCP\;C:\Users\lesko\.cargo\bin;C:\python37\Scripts\;C:\python37\;C:\Users\lesko\AppData\Local\Microsoft\WindowsApps;C:\Users\lesko\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\lesko\AppData\Local\GitHubDesktop\bin;C:\Users\lesko\AppData\Local\Microsoft\WindowsApps;C:\Program Files (x86)\Common Files\Hilscher GmbH\TLRDecode;C:\Users\lesko\.cargo\bin;C:\python37\Scripts\;C:\python37\;C:\Users\lesko\AppData\Local\Microsoft\WindowsApps;C:\Users\lesko\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\lesko\AppData\Local\GitHubDesktop\bin;C:\Users\lesko\AppData\Local\Microsoft\WindowsApps;C:\Program Files (x86)\Common Files\Hilscher GmbH\TLRDecode
-export AS_BUILD_MODE := BuildAndTransfer
+export AS_BUILD_MODE := Rebuild
 export AS_VERSION := 4.2.10.53 SP
 export AS_COMPANY_NAME :=  
 export AS_USER_NAME := lesko
@@ -34,7 +34,7 @@ export WIN32_AS_INSTALL_PATH := "C:\BrAutomation\AS42"
 
 ProjectMakeFile:
 
-	@"$(AS_BIN_PATH)/BR.AS.AnalyseProject.exe" "$(AS_PROJECT_PATH)/Vrtalka.apj" -t "$(AS_TEMP_PATH)" -c "$(AS_CONFIGURATION)" -o "$(AS_BINARIES_PATH)"   -sfas -buildMode "BuildAndTransfer"  
+	@"$(AS_BIN_PATH)/BR.AS.AnalyseProject.exe" "$(AS_PROJECT_PATH)/Vrtalka.apj" -t "$(AS_TEMP_PATH)" -c "$(AS_CONFIGURATION)" -o "$(AS_BINARIES_PATH)"   -sfas -buildMode "Rebuild"  
 
 	@$(AS_GNU_BIN_PATH)/mingw32-make.exe -r -f 'F:/1_Automation_projects/Vrtalka/Temp/Objects/$(AS_CONFIGURATION)/4PPC70_101G_20B/#cpu.mak' -k 
 

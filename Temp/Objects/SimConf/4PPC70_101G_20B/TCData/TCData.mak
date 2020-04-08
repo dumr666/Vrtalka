@@ -1,4 +1,5 @@
 $(AS_CPU_PATH)/TCData/TCData.imx: \
+	FORCE \
 	$(AS_INSTALL_PATH)/AS/TechnologyPackages/TextSystem/n.d/ObjectCatalog/Elements/TextConfig/Template/TC.textconfig 
 	@"$(AS_BIN_PATH)/BR.AS.Textsystem.Builder.exe" "" -o "$(AS_CPU_PATH)/TCData/TCData.imx" -c "$(AS_INSTALL_PATH)/AS/TechnologyPackages/TextSystem/n.d/ObjectCatalog/Elements/TextConfig/Template/TC.textconfig" -I "$(AS_PROJECT_PATH)/AS/System/D0426 $(AS_INSTALL_PATH)/AS/TechnologyPackages/TextSystem/n.d"  -P "$(AS_PROJECT_PATH)"
 

@@ -7,30 +7,100 @@
   <Property Name="IsIntern" Value="False"/>
   <Property Name="TextGroup" Value="None"/>
   <DataPoints>
-    <Folder Name="Program">
+    <DataPoint Name="doFunSuccess">
+      <Property Name="ConnectedBySharedResource" Value="False"/>
+      <Property Name="ConnectingVisus" Value="HMI\VrtalkaHMI"/>
       <Property Name="Description" Value=""/>
-      <Property Name="FolderType" Value="Program"/>
-      <DataPoint Name="doDelovanje">
+      <Property Name="PLCType" Value="BOOL"/>
+      <Property Name="UpdateTime" Value="Default"/>
+      <Property Name="UserID" Value="None"/>
+      <Property Name="VCType" Value="BOOL"/>
+    </DataPoint>
+    <Folder Name="agr2">
+      <Property Name="Description" Value=""/>
+      <Property Name="FolderType" Value="Struct"/>
+      <DataPoint Name="poz_agr_min">
         <Property Name="ConnectedBySharedResource" Value="False"/>
-        <Property Name="ConnectingVisus" Value="VrtalkaHMI"/>
+        <Property Name="ConnectingVisus" Value="HMI\VrtalkaHMI"/>
+        <Property Name="DPLimit" Value="None"/>
+        <Property Name="Description" Value=""/>
+        <Property Name="PLCType" Value="REAL"/>
+        <Property Name="PLCUnit" Value="None"/>
+        <Property Name="UnitGroup" Value="None"/>
+        <Property Name="UpdateTime" Value="Default"/>
+        <Property Name="UserID" Value="None"/>
+        <Property Name="VCType" Value="SCALED"/>
+      </DataPoint>
+      <DataPoint Name="poz_agr_s">
+        <Property Name="ConnectedBySharedResource" Value="False"/>
+        <Property Name="ConnectingVisus" Value="HMI\VrtalkaHMI"/>
+        <Property Name="DPLimit" Value="None"/>
+        <Property Name="Description" Value=""/>
+        <Property Name="PLCType" Value="REAL"/>
+        <Property Name="PLCUnit" Value="None"/>
+        <Property Name="UnitGroup" Value="None"/>
+        <Property Name="UpdateTime" Value="Default"/>
+        <Property Name="UserID" Value="None"/>
+        <Property Name="VCType" Value="SCALED"/>
+      </DataPoint>
+      <DataPoint Name="agr_pos_ok">
+        <Property Name="ConnectedBySharedResource" Value="False"/>
+        <Property Name="ConnectingVisus" Value="HMI\VrtalkaHMI"/>
         <Property Name="Description" Value=""/>
         <Property Name="PLCType" Value="BOOL"/>
         <Property Name="UpdateTime" Value="Default"/>
         <Property Name="UserID" Value="None"/>
         <Property Name="VCType" Value="BOOL"/>
       </DataPoint>
-      <DataPoint Name="diStartStroja">
+      <DataPoint Name="agr_active">
         <Property Name="ConnectedBySharedResource" Value="False"/>
-        <Property Name="ConnectingVisus" Value="VrtalkaHMI"/>
+        <Property Name="ConnectingVisus" Value="HMI\VrtalkaHMI"/>
         <Property Name="Description" Value=""/>
         <Property Name="PLCType" Value="BOOL"/>
         <Property Name="UpdateTime" Value="Default"/>
         <Property Name="UserID" Value="None"/>
         <Property Name="VCType" Value="BOOL"/>
       </DataPoint>
-      <DataPoint Name="doStrojPripravljen">
+      <DataPoint Name="poz_agr_a">
         <Property Name="ConnectedBySharedResource" Value="False"/>
-        <Property Name="ConnectingVisus" Value="VrtalkaHMI"/>
+        <Property Name="ConnectingVisus" Value="HMI\VrtalkaHMI"/>
+        <Property Name="DPLimit" Value="None"/>
+        <Property Name="Description" Value=""/>
+        <Property Name="PLCType" Value="REAL"/>
+        <Property Name="PLCUnit" Value="None"/>
+        <Property Name="UnitGroup" Value="None"/>
+        <Property Name="UpdateTime" Value="Default"/>
+        <Property Name="UserID" Value="None"/>
+        <Property Name="VCType" Value="SCALED"/>
+      </DataPoint>
+    </Folder>
+    <DataPoint Name="diHMIin1">
+      <Property Name="ConnectedBySharedResource" Value="False"/>
+      <Property Name="ConnectingVisus" Value="HMI\VrtalkaHMI"/>
+      <Property Name="Description" Value=""/>
+      <Property Name="PLCType" Value="BOOL"/>
+      <Property Name="UpdateTime" Value="Default"/>
+      <Property Name="UserID" Value="None"/>
+      <Property Name="VCType" Value="BOOL"/>
+    </DataPoint>
+    <Folder Name="agr3">
+      <Property Name="Description" Value=""/>
+      <Property Name="FolderType" Value="Struct"/>
+      <DataPoint Name="poz_agr_s">
+        <Property Name="ConnectedBySharedResource" Value="False"/>
+        <Property Name="ConnectingVisus" Value="HMI\VrtalkaHMI"/>
+        <Property Name="DPLimit" Value="None"/>
+        <Property Name="Description" Value=""/>
+        <Property Name="PLCType" Value="REAL"/>
+        <Property Name="PLCUnit" Value="None"/>
+        <Property Name="UnitGroup" Value="None"/>
+        <Property Name="UpdateTime" Value="Default"/>
+        <Property Name="UserID" Value="None"/>
+        <Property Name="VCType" Value="SCALED"/>
+      </DataPoint>
+      <DataPoint Name="agr_pos_ok">
+        <Property Name="ConnectedBySharedResource" Value="False"/>
+        <Property Name="ConnectingVisus" Value="HMI\VrtalkaHMI"/>
         <Property Name="Description" Value=""/>
         <Property Name="PLCType" Value="BOOL"/>
         <Property Name="UpdateTime" Value="Default"/>
@@ -39,7 +109,197 @@
       </DataPoint>
       <DataPoint Name="poz_agr_min">
         <Property Name="ConnectedBySharedResource" Value="False"/>
-        <Property Name="ConnectingVisus" Value="VrtalkaHMI"/>
+        <Property Name="ConnectingVisus" Value="HMI\VrtalkaHMI"/>
+        <Property Name="DPLimit" Value="None"/>
+        <Property Name="Description" Value=""/>
+        <Property Name="PLCType" Value="REAL"/>
+        <Property Name="PLCUnit" Value="None"/>
+        <Property Name="UnitGroup" Value="None"/>
+        <Property Name="UpdateTime" Value="Default"/>
+        <Property Name="UserID" Value="None"/>
+        <Property Name="VCType" Value="SCALED"/>
+      </DataPoint>
+      <DataPoint Name="poz_agr_a">
+        <Property Name="ConnectedBySharedResource" Value="False"/>
+        <Property Name="ConnectingVisus" Value="HMI\VrtalkaHMI"/>
+        <Property Name="DPLimit" Value="None"/>
+        <Property Name="Description" Value=""/>
+        <Property Name="PLCType" Value="REAL"/>
+        <Property Name="PLCUnit" Value="None"/>
+        <Property Name="UnitGroup" Value="None"/>
+        <Property Name="UpdateTime" Value="Default"/>
+        <Property Name="UserID" Value="None"/>
+        <Property Name="VCType" Value="SCALED"/>
+      </DataPoint>
+      <DataPoint Name="agr_active">
+        <Property Name="ConnectedBySharedResource" Value="False"/>
+        <Property Name="ConnectingVisus" Value="HMI\VrtalkaHMI"/>
+        <Property Name="Description" Value=""/>
+        <Property Name="PLCType" Value="BOOL"/>
+        <Property Name="UpdateTime" Value="Default"/>
+        <Property Name="UserID" Value="None"/>
+        <Property Name="VCType" Value="BOOL"/>
+      </DataPoint>
+    </Folder>
+    <DataPoint Name="diSoftStop">
+      <Property Name="ConnectedBySharedResource" Value="False"/>
+      <Property Name="ConnectingVisus" Value="HMI\VrtalkaHMI"/>
+      <Property Name="Description" Value=""/>
+      <Property Name="PLCType" Value="BOOL"/>
+      <Property Name="UpdateTime" Value="Default"/>
+      <Property Name="UserID" Value="None"/>
+      <Property Name="VCType" Value="BOOL"/>
+    </DataPoint>
+    <DataPoint Name="diHMIin2">
+      <Property Name="ConnectedBySharedResource" Value="False"/>
+      <Property Name="ConnectingVisus" Value="HMI\VrtalkaHMI"/>
+      <Property Name="Description" Value=""/>
+      <Property Name="PLCType" Value="BOOL"/>
+      <Property Name="UpdateTime" Value="Default"/>
+      <Property Name="UserID" Value="None"/>
+      <Property Name="VCType" Value="BOOL"/>
+    </DataPoint>
+    <DataPoint Name="izbrani_agr">
+      <Property Name="ConnectedBySharedResource" Value="False"/>
+      <Property Name="ConnectingVisus" Value="HMI\VrtalkaHMI"/>
+      <Property Name="Description" Value=""/>
+      <Property Name="PLCType" Value="UINT"/>
+      <Property Name="UpdateTime" Value="Default"/>
+      <Property Name="UserID" Value="None"/>
+      <Property Name="VCType" Value="INTEGER"/>
+    </DataPoint>
+    <Folder Name="agr5">
+      <Property Name="Description" Value=""/>
+      <Property Name="FolderType" Value="Struct"/>
+      <DataPoint Name="poz_agr_s">
+        <Property Name="ConnectedBySharedResource" Value="False"/>
+        <Property Name="ConnectingVisus" Value="HMI\VrtalkaHMI"/>
+        <Property Name="DPLimit" Value="None"/>
+        <Property Name="Description" Value=""/>
+        <Property Name="PLCType" Value="REAL"/>
+        <Property Name="PLCUnit" Value="None"/>
+        <Property Name="UnitGroup" Value="None"/>
+        <Property Name="UpdateTime" Value="Default"/>
+        <Property Name="UserID" Value="None"/>
+        <Property Name="VCType" Value="SCALED"/>
+      </DataPoint>
+      <DataPoint Name="poz_agr_a">
+        <Property Name="ConnectedBySharedResource" Value="False"/>
+        <Property Name="ConnectingVisus" Value="HMI\VrtalkaHMI"/>
+        <Property Name="DPLimit" Value="None"/>
+        <Property Name="Description" Value=""/>
+        <Property Name="PLCType" Value="REAL"/>
+        <Property Name="PLCUnit" Value="None"/>
+        <Property Name="UnitGroup" Value="None"/>
+        <Property Name="UpdateTime" Value="Default"/>
+        <Property Name="UserID" Value="None"/>
+        <Property Name="VCType" Value="SCALED"/>
+      </DataPoint>
+      <DataPoint Name="poz_agr_min">
+        <Property Name="ConnectedBySharedResource" Value="False"/>
+        <Property Name="ConnectingVisus" Value="HMI\VrtalkaHMI"/>
+        <Property Name="DPLimit" Value="None"/>
+        <Property Name="Description" Value=""/>
+        <Property Name="PLCType" Value="REAL"/>
+        <Property Name="PLCUnit" Value="None"/>
+        <Property Name="UnitGroup" Value="None"/>
+        <Property Name="UpdateTime" Value="Default"/>
+        <Property Name="UserID" Value="None"/>
+        <Property Name="VCType" Value="SCALED"/>
+      </DataPoint>
+      <DataPoint Name="agr_pos_ok">
+        <Property Name="ConnectedBySharedResource" Value="False"/>
+        <Property Name="ConnectingVisus" Value="HMI\VrtalkaHMI"/>
+        <Property Name="Description" Value=""/>
+        <Property Name="PLCType" Value="BOOL"/>
+        <Property Name="UpdateTime" Value="Default"/>
+        <Property Name="UserID" Value="None"/>
+        <Property Name="VCType" Value="BOOL"/>
+      </DataPoint>
+      <DataPoint Name="agr_active">
+        <Property Name="ConnectedBySharedResource" Value="False"/>
+        <Property Name="ConnectingVisus" Value="HMI\VrtalkaHMI"/>
+        <Property Name="Description" Value=""/>
+        <Property Name="PLCType" Value="BOOL"/>
+        <Property Name="UpdateTime" Value="Default"/>
+        <Property Name="UserID" Value="None"/>
+        <Property Name="VCType" Value="BOOL"/>
+      </DataPoint>
+    </Folder>
+    <Folder Name="agr1">
+      <Property Name="Description" Value=""/>
+      <Property Name="FolderType" Value="Struct"/>
+      <DataPoint Name="poz_agr_min">
+        <Property Name="ConnectedBySharedResource" Value="False"/>
+        <Property Name="ConnectingVisus" Value="HMI\VrtalkaHMI"/>
+        <Property Name="DPLimit" Value="None"/>
+        <Property Name="Description" Value=""/>
+        <Property Name="PLCType" Value="REAL"/>
+        <Property Name="PLCUnit" Value="None"/>
+        <Property Name="UnitGroup" Value="None"/>
+        <Property Name="UpdateTime" Value="Default"/>
+        <Property Name="UserID" Value="None"/>
+        <Property Name="VCType" Value="SCALED"/>
+      </DataPoint>
+      <DataPoint Name="poz_agr_a">
+        <Property Name="ConnectedBySharedResource" Value="False"/>
+        <Property Name="ConnectingVisus" Value="HMI\VrtalkaHMI"/>
+        <Property Name="DPLimit" Value="None"/>
+        <Property Name="Description" Value=""/>
+        <Property Name="PLCType" Value="REAL"/>
+        <Property Name="PLCUnit" Value="None"/>
+        <Property Name="UnitGroup" Value="None"/>
+        <Property Name="UpdateTime" Value="Default"/>
+        <Property Name="UserID" Value="None"/>
+        <Property Name="VCType" Value="SCALED"/>
+      </DataPoint>
+      <DataPoint Name="poz_agr_s">
+        <Property Name="ConnectedBySharedResource" Value="False"/>
+        <Property Name="ConnectingVisus" Value="HMI\VrtalkaHMI"/>
+        <Property Name="DPLimit" Value="None"/>
+        <Property Name="Description" Value=""/>
+        <Property Name="PLCType" Value="REAL"/>
+        <Property Name="PLCUnit" Value="None"/>
+        <Property Name="UnitGroup" Value="None"/>
+        <Property Name="UpdateTime" Value="Default"/>
+        <Property Name="UserID" Value="None"/>
+        <Property Name="VCType" Value="SCALED"/>
+      </DataPoint>
+      <DataPoint Name="agr_active">
+        <Property Name="ConnectedBySharedResource" Value="False"/>
+        <Property Name="ConnectingVisus" Value="HMI\VrtalkaHMI"/>
+        <Property Name="Description" Value=""/>
+        <Property Name="PLCType" Value="BOOL"/>
+        <Property Name="UpdateTime" Value="Default"/>
+        <Property Name="UserID" Value="None"/>
+        <Property Name="VCType" Value="BOOL"/>
+      </DataPoint>
+      <DataPoint Name="agr_pos_ok">
+        <Property Name="ConnectedBySharedResource" Value="False"/>
+        <Property Name="ConnectingVisus" Value="HMI\VrtalkaHMI"/>
+        <Property Name="Description" Value=""/>
+        <Property Name="PLCType" Value="BOOL"/>
+        <Property Name="UpdateTime" Value="Default"/>
+        <Property Name="UserID" Value="None"/>
+        <Property Name="VCType" Value="BOOL"/>
+      </DataPoint>
+    </Folder>
+    <DataPoint Name="sistemskoObvestilo">
+      <Property Name="ConnectedBySharedResource" Value="False"/>
+      <Property Name="ConnectingVisus" Value="HMI\VrtalkaHMI"/>
+      <Property Name="Description" Value=""/>
+      <Property Name="PLCType" Value="STRING"/>
+      <Property Name="StringLength" Value="80"/>
+      <Property Name="UpdateTime" Value="Default"/>
+      <Property Name="UserID" Value="None"/>
+      <Property Name="VCType" Value="STRING"/>
+    </DataPoint>
+    <Folder Name="Vrtalka">
+      <Property Name="Description" Value=""/>
+      <Property Name="FolderType" Value="Program"/>
+      <DataPoint Name="poz_agr_min">
+        <Property Name="ConnectedBySharedResource" Value="False"/>
+        <Property Name="ConnectingVisus" Value="HMI\VrtalkaHMI"/>
         <Property Name="DPLimit" Value="None"/>
         <Property Name="Description" Value=""/>
         <Property Name="PLCType" Value="REAL"/>
@@ -51,7 +311,7 @@
       </DataPoint>
       <DataPoint Name="poz_agr_max">
         <Property Name="ConnectedBySharedResource" Value="False"/>
-        <Property Name="ConnectingVisus" Value="VrtalkaHMI"/>
+        <Property Name="ConnectingVisus" Value="HMI\VrtalkaHMI"/>
         <Property Name="DPLimit" Value="None"/>
         <Property Name="Description" Value=""/>
         <Property Name="PLCType" Value="REAL"/>
@@ -61,487 +321,281 @@
         <Property Name="UserID" Value="None"/>
         <Property Name="VCType" Value="SCALED"/>
       </DataPoint>
-      <DataPoint Name="diSoftStop">
+    </Folder>
+    <DataPoint Name="currentPage">
+      <Property Name="ConnectedBySharedResource" Value="False"/>
+      <Property Name="ConnectingVisus" Value="HMI\VrtalkaHMI"/>
+      <Property Name="Description" Value=""/>
+      <Property Name="PLCType" Value="UINT"/>
+      <Property Name="UpdateTime" Value="Default"/>
+      <Property Name="UserID" Value="None"/>
+      <Property Name="VCType" Value="INTEGER"/>
+    </DataPoint>
+    <Folder Name="agr6">
+      <Property Name="Description" Value=""/>
+      <Property Name="FolderType" Value="Struct"/>
+      <DataPoint Name="agr_active">
         <Property Name="ConnectedBySharedResource" Value="False"/>
-        <Property Name="ConnectingVisus" Value="VrtalkaHMI"/>
+        <Property Name="ConnectingVisus" Value="HMI\VrtalkaHMI"/>
         <Property Name="Description" Value=""/>
         <Property Name="PLCType" Value="BOOL"/>
         <Property Name="UpdateTime" Value="Default"/>
         <Property Name="UserID" Value="None"/>
         <Property Name="VCType" Value="BOOL"/>
       </DataPoint>
-      <DataPoint Name="diHMIin1">
+      <DataPoint Name="agr_pos_ok">
         <Property Name="ConnectedBySharedResource" Value="False"/>
-        <Property Name="ConnectingVisus" Value="VrtalkaHMI"/>
+        <Property Name="ConnectingVisus" Value="HMI\VrtalkaHMI"/>
         <Property Name="Description" Value=""/>
         <Property Name="PLCType" Value="BOOL"/>
         <Property Name="UpdateTime" Value="Default"/>
         <Property Name="UserID" Value="None"/>
         <Property Name="VCType" Value="BOOL"/>
       </DataPoint>
-      <DataPoint Name="diHMIin2">
+      <DataPoint Name="poz_agr_min">
         <Property Name="ConnectedBySharedResource" Value="False"/>
-        <Property Name="ConnectingVisus" Value="VrtalkaHMI"/>
+        <Property Name="ConnectingVisus" Value="HMI\VrtalkaHMI"/>
+        <Property Name="DPLimit" Value="None"/>
+        <Property Name="Description" Value=""/>
+        <Property Name="PLCType" Value="REAL"/>
+        <Property Name="PLCUnit" Value="None"/>
+        <Property Name="UnitGroup" Value="None"/>
+        <Property Name="UpdateTime" Value="Default"/>
+        <Property Name="UserID" Value="None"/>
+        <Property Name="VCType" Value="SCALED"/>
+      </DataPoint>
+      <DataPoint Name="poz_agr_a">
+        <Property Name="ConnectedBySharedResource" Value="False"/>
+        <Property Name="ConnectingVisus" Value="HMI\VrtalkaHMI"/>
+        <Property Name="DPLimit" Value="None"/>
+        <Property Name="Description" Value=""/>
+        <Property Name="PLCType" Value="REAL"/>
+        <Property Name="PLCUnit" Value="None"/>
+        <Property Name="UnitGroup" Value="None"/>
+        <Property Name="UpdateTime" Value="Default"/>
+        <Property Name="UserID" Value="None"/>
+        <Property Name="VCType" Value="SCALED"/>
+      </DataPoint>
+      <DataPoint Name="poz_agr_s">
+        <Property Name="ConnectedBySharedResource" Value="False"/>
+        <Property Name="ConnectingVisus" Value="HMI\VrtalkaHMI"/>
+        <Property Name="DPLimit" Value="None"/>
+        <Property Name="Description" Value=""/>
+        <Property Name="PLCType" Value="REAL"/>
+        <Property Name="PLCUnit" Value="None"/>
+        <Property Name="UnitGroup" Value="None"/>
+        <Property Name="UpdateTime" Value="Default"/>
+        <Property Name="UserID" Value="None"/>
+        <Property Name="VCType" Value="SCALED"/>
+      </DataPoint>
+    </Folder>
+    <DataPoint Name="doDelovanje">
+      <Property Name="ConnectedBySharedResource" Value="False"/>
+      <Property Name="ConnectingVisus" Value="HMI\VrtalkaHMI"/>
+      <Property Name="Description" Value=""/>
+      <Property Name="PLCType" Value="BOOL"/>
+      <Property Name="UpdateTime" Value="Default"/>
+      <Property Name="UserID" Value="None"/>
+      <Property Name="VCType" Value="BOOL"/>
+    </DataPoint>
+    <DataPoint Name="popupWarning">
+      <Property Name="ConnectedBySharedResource" Value="False"/>
+      <Property Name="ConnectingVisus" Value="HMI\VrtalkaHMI"/>
+      <Property Name="Description" Value=""/>
+      <Property Name="PLCType" Value="UINT"/>
+      <Property Name="UpdateTime" Value="Default"/>
+      <Property Name="UserID" Value="None"/>
+      <Property Name="VCType" Value="INTEGER"/>
+    </DataPoint>
+    <DataPoint Name="diGoHome">
+      <Property Name="ConnectedBySharedResource" Value="False"/>
+      <Property Name="ConnectingVisus" Value="HMI\VrtalkaHMI"/>
+      <Property Name="Description" Value=""/>
+      <Property Name="PLCType" Value="BOOL"/>
+      <Property Name="UpdateTime" Value="Default"/>
+      <Property Name="UserID" Value="None"/>
+      <Property Name="VCType" Value="BOOL"/>
+    </DataPoint>
+    <Folder Name="vozicek">
+      <Property Name="Description" Value=""/>
+      <Property Name="FolderType" Value="Struct"/>
+      <DataPoint Name="poz_srv_max">
+        <Property Name="ConnectedBySharedResource" Value="False"/>
+        <Property Name="ConnectingVisus" Value="HMI\VrtalkaHMI"/>
+        <Property Name="DPLimit" Value="None"/>
+        <Property Name="Description" Value=""/>
+        <Property Name="PLCType" Value="REAL"/>
+        <Property Name="PLCUnit" Value="None"/>
+        <Property Name="UnitGroup" Value="None"/>
+        <Property Name="UpdateTime" Value="Default"/>
+        <Property Name="UserID" Value="None"/>
+        <Property Name="VCType" Value="SCALED"/>
+      </DataPoint>
+      <DataPoint Name="poz_srv_min">
+        <Property Name="ConnectedBySharedResource" Value="False"/>
+        <Property Name="ConnectingVisus" Value="HMI\VrtalkaHMI"/>
+        <Property Name="DPLimit" Value="None"/>
+        <Property Name="Description" Value=""/>
+        <Property Name="PLCType" Value="REAL"/>
+        <Property Name="PLCUnit" Value="None"/>
+        <Property Name="UnitGroup" Value="None"/>
+        <Property Name="UpdateTime" Value="Default"/>
+        <Property Name="UserID" Value="None"/>
+        <Property Name="VCType" Value="SCALED"/>
+      </DataPoint>
+      <DataPoint Name="servo_act">
+        <Property Name="ConnectedBySharedResource" Value="False"/>
+        <Property Name="ConnectingVisus" Value="HMI\VrtalkaHMI"/>
+        <Property Name="DPLimit" Value="None"/>
+        <Property Name="Description" Value=""/>
+        <Property Name="PLCType" Value="REAL"/>
+        <Property Name="PLCUnit" Value="None"/>
+        <Property Name="UnitGroup" Value="None"/>
+        <Property Name="UpdateTime" Value="Default"/>
+        <Property Name="UserID" Value="None"/>
+        <Property Name="VCType" Value="SCALED"/>
+      </DataPoint>
+      <DataPoint Name="servo_in_pos">
+        <Property Name="ConnectedBySharedResource" Value="False"/>
+        <Property Name="ConnectingVisus" Value="HMI\VrtalkaHMI"/>
         <Property Name="Description" Value=""/>
         <Property Name="PLCType" Value="BOOL"/>
         <Property Name="UpdateTime" Value="Default"/>
         <Property Name="UserID" Value="None"/>
         <Property Name="VCType" Value="BOOL"/>
       </DataPoint>
-      <Folder Name="agr1">
-        <Property Name="Description" Value=""/>
-        <Property Name="FolderType" Value="Struct"/>
-        <DataPoint Name="poz_agr_s">
-          <Property Name="ConnectedBySharedResource" Value="False"/>
-          <Property Name="ConnectingVisus" Value="VrtalkaHMI"/>
-          <Property Name="DPLimit" Value="None"/>
-          <Property Name="Description" Value=""/>
-          <Property Name="PLCType" Value="REAL"/>
-          <Property Name="PLCUnit" Value="None"/>
-          <Property Name="UnitGroup" Value="None"/>
-          <Property Name="UpdateTime" Value="Default"/>
-          <Property Name="UserID" Value="None"/>
-          <Property Name="VCType" Value="SCALED"/>
-        </DataPoint>
-        <DataPoint Name="poz_agr_a">
-          <Property Name="ConnectedBySharedResource" Value="False"/>
-          <Property Name="ConnectingVisus" Value="VrtalkaHMI"/>
-          <Property Name="DPLimit" Value="None"/>
-          <Property Name="Description" Value=""/>
-          <Property Name="PLCType" Value="REAL"/>
-          <Property Name="PLCUnit" Value="None"/>
-          <Property Name="UnitGroup" Value="None"/>
-          <Property Name="UpdateTime" Value="Default"/>
-          <Property Name="UserID" Value="None"/>
-          <Property Name="VCType" Value="SCALED"/>
-        </DataPoint>
-        <DataPoint Name="poz_agr_min">
-          <Property Name="ConnectedBySharedResource" Value="False"/>
-          <Property Name="ConnectingVisus" Value="VrtalkaHMI"/>
-          <Property Name="DPLimit" Value="None"/>
-          <Property Name="Description" Value=""/>
-          <Property Name="PLCType" Value="REAL"/>
-          <Property Name="PLCUnit" Value="None"/>
-          <Property Name="UnitGroup" Value="None"/>
-          <Property Name="UpdateTime" Value="Default"/>
-          <Property Name="UserID" Value="None"/>
-          <Property Name="VCType" Value="SCALED"/>
-        </DataPoint>
-        <DataPoint Name="agr_pos_ok">
-          <Property Name="ConnectedBySharedResource" Value="False"/>
-          <Property Name="ConnectingVisus" Value="VrtalkaHMI"/>
-          <Property Name="Description" Value=""/>
-          <Property Name="PLCType" Value="BOOL"/>
-          <Property Name="UpdateTime" Value="Default"/>
-          <Property Name="UserID" Value="None"/>
-          <Property Name="VCType" Value="BOOL"/>
-        </DataPoint>
-        <DataPoint Name="agr_active">
-          <Property Name="ConnectedBySharedResource" Value="False"/>
-          <Property Name="ConnectingVisus" Value="VrtalkaHMI"/>
-          <Property Name="Description" Value=""/>
-          <Property Name="PLCType" Value="BOOL"/>
-          <Property Name="UpdateTime" Value="Default"/>
-          <Property Name="UserID" Value="None"/>
-          <Property Name="VCType" Value="BOOL"/>
-        </DataPoint>
-      </Folder>
-      <Folder Name="agr6">
-        <Property Name="Description" Value=""/>
-        <Property Name="FolderType" Value="Struct"/>
-        <DataPoint Name="poz_agr_s">
-          <Property Name="ConnectedBySharedResource" Value="False"/>
-          <Property Name="ConnectingVisus" Value="VrtalkaHMI"/>
-          <Property Name="DPLimit" Value="None"/>
-          <Property Name="Description" Value=""/>
-          <Property Name="PLCType" Value="REAL"/>
-          <Property Name="PLCUnit" Value="None"/>
-          <Property Name="UnitGroup" Value="None"/>
-          <Property Name="UpdateTime" Value="Default"/>
-          <Property Name="UserID" Value="None"/>
-          <Property Name="VCType" Value="SCALED"/>
-        </DataPoint>
-        <DataPoint Name="poz_agr_a">
-          <Property Name="ConnectedBySharedResource" Value="False"/>
-          <Property Name="ConnectingVisus" Value="VrtalkaHMI"/>
-          <Property Name="DPLimit" Value="None"/>
-          <Property Name="Description" Value=""/>
-          <Property Name="PLCType" Value="REAL"/>
-          <Property Name="PLCUnit" Value="None"/>
-          <Property Name="UnitGroup" Value="None"/>
-          <Property Name="UpdateTime" Value="Default"/>
-          <Property Name="UserID" Value="None"/>
-          <Property Name="VCType" Value="SCALED"/>
-        </DataPoint>
-        <DataPoint Name="poz_agr_min">
-          <Property Name="ConnectedBySharedResource" Value="False"/>
-          <Property Name="ConnectingVisus" Value="VrtalkaHMI"/>
-          <Property Name="DPLimit" Value="None"/>
-          <Property Name="Description" Value=""/>
-          <Property Name="PLCType" Value="REAL"/>
-          <Property Name="PLCUnit" Value="None"/>
-          <Property Name="UnitGroup" Value="None"/>
-          <Property Name="UpdateTime" Value="Default"/>
-          <Property Name="UserID" Value="None"/>
-          <Property Name="VCType" Value="SCALED"/>
-        </DataPoint>
-        <DataPoint Name="agr_pos_ok">
-          <Property Name="ConnectedBySharedResource" Value="False"/>
-          <Property Name="ConnectingVisus" Value="VrtalkaHMI"/>
-          <Property Name="Description" Value=""/>
-          <Property Name="PLCType" Value="BOOL"/>
-          <Property Name="UpdateTime" Value="Default"/>
-          <Property Name="UserID" Value="None"/>
-          <Property Name="VCType" Value="BOOL"/>
-        </DataPoint>
-        <DataPoint Name="agr_active">
-          <Property Name="ConnectedBySharedResource" Value="False"/>
-          <Property Name="ConnectingVisus" Value="VrtalkaHMI"/>
-          <Property Name="Description" Value=""/>
-          <Property Name="PLCType" Value="BOOL"/>
-          <Property Name="UpdateTime" Value="Default"/>
-          <Property Name="UserID" Value="None"/>
-          <Property Name="VCType" Value="BOOL"/>
-        </DataPoint>
-      </Folder>
-      <Folder Name="agr5">
-        <Property Name="Description" Value=""/>
-        <Property Name="FolderType" Value="Struct"/>
-        <DataPoint Name="poz_agr_s">
-          <Property Name="ConnectedBySharedResource" Value="False"/>
-          <Property Name="ConnectingVisus" Value="VrtalkaHMI"/>
-          <Property Name="DPLimit" Value="None"/>
-          <Property Name="Description" Value=""/>
-          <Property Name="PLCType" Value="REAL"/>
-          <Property Name="PLCUnit" Value="None"/>
-          <Property Name="UnitGroup" Value="None"/>
-          <Property Name="UpdateTime" Value="Default"/>
-          <Property Name="UserID" Value="None"/>
-          <Property Name="VCType" Value="SCALED"/>
-        </DataPoint>
-        <DataPoint Name="poz_agr_a">
-          <Property Name="ConnectedBySharedResource" Value="False"/>
-          <Property Name="ConnectingVisus" Value="VrtalkaHMI"/>
-          <Property Name="DPLimit" Value="None"/>
-          <Property Name="Description" Value=""/>
-          <Property Name="PLCType" Value="REAL"/>
-          <Property Name="PLCUnit" Value="None"/>
-          <Property Name="UnitGroup" Value="None"/>
-          <Property Name="UpdateTime" Value="Default"/>
-          <Property Name="UserID" Value="None"/>
-          <Property Name="VCType" Value="SCALED"/>
-        </DataPoint>
-        <DataPoint Name="poz_agr_min">
-          <Property Name="ConnectedBySharedResource" Value="False"/>
-          <Property Name="ConnectingVisus" Value="VrtalkaHMI"/>
-          <Property Name="DPLimit" Value="None"/>
-          <Property Name="Description" Value=""/>
-          <Property Name="PLCType" Value="REAL"/>
-          <Property Name="PLCUnit" Value="None"/>
-          <Property Name="UnitGroup" Value="None"/>
-          <Property Name="UpdateTime" Value="Default"/>
-          <Property Name="UserID" Value="None"/>
-          <Property Name="VCType" Value="SCALED"/>
-        </DataPoint>
-        <DataPoint Name="agr_pos_ok">
-          <Property Name="ConnectedBySharedResource" Value="False"/>
-          <Property Name="ConnectingVisus" Value="VrtalkaHMI"/>
-          <Property Name="Description" Value=""/>
-          <Property Name="PLCType" Value="BOOL"/>
-          <Property Name="UpdateTime" Value="Default"/>
-          <Property Name="UserID" Value="None"/>
-          <Property Name="VCType" Value="BOOL"/>
-        </DataPoint>
-        <DataPoint Name="agr_active">
-          <Property Name="ConnectedBySharedResource" Value="False"/>
-          <Property Name="ConnectingVisus" Value="VrtalkaHMI"/>
-          <Property Name="Description" Value=""/>
-          <Property Name="PLCType" Value="BOOL"/>
-          <Property Name="UpdateTime" Value="Default"/>
-          <Property Name="UserID" Value="None"/>
-          <Property Name="VCType" Value="BOOL"/>
-        </DataPoint>
-      </Folder>
-      <Folder Name="agr4">
-        <Property Name="Description" Value=""/>
-        <Property Name="FolderType" Value="Struct"/>
-        <DataPoint Name="poz_agr_s">
-          <Property Name="ConnectedBySharedResource" Value="False"/>
-          <Property Name="ConnectingVisus" Value="VrtalkaHMI"/>
-          <Property Name="DPLimit" Value="None"/>
-          <Property Name="Description" Value=""/>
-          <Property Name="PLCType" Value="REAL"/>
-          <Property Name="PLCUnit" Value="None"/>
-          <Property Name="UnitGroup" Value="None"/>
-          <Property Name="UpdateTime" Value="Default"/>
-          <Property Name="UserID" Value="None"/>
-          <Property Name="VCType" Value="SCALED"/>
-        </DataPoint>
-        <DataPoint Name="poz_agr_a">
-          <Property Name="ConnectedBySharedResource" Value="False"/>
-          <Property Name="ConnectingVisus" Value="VrtalkaHMI"/>
-          <Property Name="DPLimit" Value="None"/>
-          <Property Name="Description" Value=""/>
-          <Property Name="PLCType" Value="REAL"/>
-          <Property Name="PLCUnit" Value="None"/>
-          <Property Name="UnitGroup" Value="None"/>
-          <Property Name="UpdateTime" Value="Default"/>
-          <Property Name="UserID" Value="None"/>
-          <Property Name="VCType" Value="SCALED"/>
-        </DataPoint>
-        <DataPoint Name="poz_agr_min">
-          <Property Name="ConnectedBySharedResource" Value="False"/>
-          <Property Name="ConnectingVisus" Value="VrtalkaHMI"/>
-          <Property Name="DPLimit" Value="None"/>
-          <Property Name="Description" Value=""/>
-          <Property Name="PLCType" Value="REAL"/>
-          <Property Name="PLCUnit" Value="None"/>
-          <Property Name="UnitGroup" Value="None"/>
-          <Property Name="UpdateTime" Value="Default"/>
-          <Property Name="UserID" Value="None"/>
-          <Property Name="VCType" Value="SCALED"/>
-        </DataPoint>
-        <DataPoint Name="agr_pos_ok">
-          <Property Name="ConnectedBySharedResource" Value="False"/>
-          <Property Name="ConnectingVisus" Value="VrtalkaHMI"/>
-          <Property Name="Description" Value=""/>
-          <Property Name="PLCType" Value="BOOL"/>
-          <Property Name="UpdateTime" Value="Default"/>
-          <Property Name="UserID" Value="None"/>
-          <Property Name="VCType" Value="BOOL"/>
-        </DataPoint>
-        <DataPoint Name="agr_active">
-          <Property Name="ConnectedBySharedResource" Value="False"/>
-          <Property Name="ConnectingVisus" Value="VrtalkaHMI"/>
-          <Property Name="Description" Value=""/>
-          <Property Name="PLCType" Value="BOOL"/>
-          <Property Name="UpdateTime" Value="Default"/>
-          <Property Name="UserID" Value="None"/>
-          <Property Name="VCType" Value="BOOL"/>
-        </DataPoint>
-      </Folder>
-      <Folder Name="agr3">
-        <Property Name="Description" Value=""/>
-        <Property Name="FolderType" Value="Struct"/>
-        <DataPoint Name="poz_agr_s">
-          <Property Name="ConnectedBySharedResource" Value="False"/>
-          <Property Name="ConnectingVisus" Value="VrtalkaHMI"/>
-          <Property Name="DPLimit" Value="None"/>
-          <Property Name="Description" Value=""/>
-          <Property Name="PLCType" Value="REAL"/>
-          <Property Name="PLCUnit" Value="None"/>
-          <Property Name="UnitGroup" Value="None"/>
-          <Property Name="UpdateTime" Value="Default"/>
-          <Property Name="UserID" Value="None"/>
-          <Property Name="VCType" Value="SCALED"/>
-        </DataPoint>
-        <DataPoint Name="poz_agr_a">
-          <Property Name="ConnectedBySharedResource" Value="False"/>
-          <Property Name="ConnectingVisus" Value="VrtalkaHMI"/>
-          <Property Name="DPLimit" Value="None"/>
-          <Property Name="Description" Value=""/>
-          <Property Name="PLCType" Value="REAL"/>
-          <Property Name="PLCUnit" Value="None"/>
-          <Property Name="UnitGroup" Value="None"/>
-          <Property Name="UpdateTime" Value="Default"/>
-          <Property Name="UserID" Value="None"/>
-          <Property Name="VCType" Value="SCALED"/>
-        </DataPoint>
-        <DataPoint Name="poz_agr_min">
-          <Property Name="ConnectedBySharedResource" Value="False"/>
-          <Property Name="ConnectingVisus" Value="VrtalkaHMI"/>
-          <Property Name="DPLimit" Value="None"/>
-          <Property Name="Description" Value=""/>
-          <Property Name="PLCType" Value="REAL"/>
-          <Property Name="PLCUnit" Value="None"/>
-          <Property Name="UnitGroup" Value="None"/>
-          <Property Name="UpdateTime" Value="Default"/>
-          <Property Name="UserID" Value="None"/>
-          <Property Name="VCType" Value="SCALED"/>
-        </DataPoint>
-        <DataPoint Name="agr_pos_ok">
-          <Property Name="ConnectedBySharedResource" Value="False"/>
-          <Property Name="ConnectingVisus" Value="VrtalkaHMI"/>
-          <Property Name="Description" Value=""/>
-          <Property Name="PLCType" Value="BOOL"/>
-          <Property Name="UpdateTime" Value="Default"/>
-          <Property Name="UserID" Value="None"/>
-          <Property Name="VCType" Value="BOOL"/>
-        </DataPoint>
-        <DataPoint Name="agr_active">
-          <Property Name="ConnectedBySharedResource" Value="False"/>
-          <Property Name="ConnectingVisus" Value="VrtalkaHMI"/>
-          <Property Name="Description" Value=""/>
-          <Property Name="PLCType" Value="BOOL"/>
-          <Property Name="UpdateTime" Value="Default"/>
-          <Property Name="UserID" Value="None"/>
-          <Property Name="VCType" Value="BOOL"/>
-        </DataPoint>
-      </Folder>
-      <Folder Name="agr2">
-        <Property Name="Description" Value=""/>
-        <Property Name="FolderType" Value="Struct"/>
-        <DataPoint Name="poz_agr_s">
-          <Property Name="ConnectedBySharedResource" Value="False"/>
-          <Property Name="ConnectingVisus" Value="VrtalkaHMI"/>
-          <Property Name="DPLimit" Value="None"/>
-          <Property Name="Description" Value=""/>
-          <Property Name="PLCType" Value="REAL"/>
-          <Property Name="PLCUnit" Value="None"/>
-          <Property Name="UnitGroup" Value="None"/>
-          <Property Name="UpdateTime" Value="Default"/>
-          <Property Name="UserID" Value="None"/>
-          <Property Name="VCType" Value="SCALED"/>
-        </DataPoint>
-        <DataPoint Name="poz_agr_a">
-          <Property Name="ConnectedBySharedResource" Value="False"/>
-          <Property Name="ConnectingVisus" Value="VrtalkaHMI"/>
-          <Property Name="DPLimit" Value="None"/>
-          <Property Name="Description" Value=""/>
-          <Property Name="PLCType" Value="REAL"/>
-          <Property Name="PLCUnit" Value="None"/>
-          <Property Name="UnitGroup" Value="None"/>
-          <Property Name="UpdateTime" Value="Default"/>
-          <Property Name="UserID" Value="None"/>
-          <Property Name="VCType" Value="SCALED"/>
-        </DataPoint>
-        <DataPoint Name="poz_agr_min">
-          <Property Name="ConnectedBySharedResource" Value="False"/>
-          <Property Name="ConnectingVisus" Value="VrtalkaHMI"/>
-          <Property Name="DPLimit" Value="None"/>
-          <Property Name="Description" Value=""/>
-          <Property Name="PLCType" Value="REAL"/>
-          <Property Name="PLCUnit" Value="None"/>
-          <Property Name="UnitGroup" Value="None"/>
-          <Property Name="UpdateTime" Value="Default"/>
-          <Property Name="UserID" Value="None"/>
-          <Property Name="VCType" Value="SCALED"/>
-        </DataPoint>
-        <DataPoint Name="agr_pos_ok">
-          <Property Name="ConnectedBySharedResource" Value="False"/>
-          <Property Name="ConnectingVisus" Value="VrtalkaHMI"/>
-          <Property Name="Description" Value=""/>
-          <Property Name="PLCType" Value="BOOL"/>
-          <Property Name="UpdateTime" Value="Default"/>
-          <Property Name="UserID" Value="None"/>
-          <Property Name="VCType" Value="BOOL"/>
-        </DataPoint>
-        <DataPoint Name="agr_active">
-          <Property Name="ConnectedBySharedResource" Value="False"/>
-          <Property Name="ConnectingVisus" Value="VrtalkaHMI"/>
-          <Property Name="Description" Value=""/>
-          <Property Name="PLCType" Value="BOOL"/>
-          <Property Name="UpdateTime" Value="Default"/>
-          <Property Name="UserID" Value="None"/>
-          <Property Name="VCType" Value="BOOL"/>
-        </DataPoint>
-      </Folder>
-      <Folder Name="vozicek">
-        <Property Name="Description" Value=""/>
-        <Property Name="FolderType" Value="Struct"/>
-        <DataPoint Name="servo_set">
-          <Property Name="ConnectedBySharedResource" Value="False"/>
-          <Property Name="ConnectingVisus" Value="VrtalkaHMI"/>
-          <Property Name="DPLimit" Value="None"/>
-          <Property Name="Description" Value=""/>
-          <Property Name="PLCType" Value="REAL"/>
-          <Property Name="PLCUnit" Value="None"/>
-          <Property Name="UnitGroup" Value="None"/>
-          <Property Name="UpdateTime" Value="Default"/>
-          <Property Name="UserID" Value="None"/>
-          <Property Name="VCType" Value="SCALED"/>
-        </DataPoint>
-        <DataPoint Name="servo_act">
-          <Property Name="ConnectedBySharedResource" Value="False"/>
-          <Property Name="ConnectingVisus" Value="VrtalkaHMI"/>
-          <Property Name="DPLimit" Value="None"/>
-          <Property Name="Description" Value=""/>
-          <Property Name="PLCType" Value="REAL"/>
-          <Property Name="PLCUnit" Value="None"/>
-          <Property Name="UnitGroup" Value="None"/>
-          <Property Name="UpdateTime" Value="Default"/>
-          <Property Name="UserID" Value="None"/>
-          <Property Name="VCType" Value="SCALED"/>
-        </DataPoint>
-        <DataPoint Name="servo_in_pos">
-          <Property Name="ConnectedBySharedResource" Value="False"/>
-          <Property Name="ConnectingVisus" Value="VrtalkaHMI"/>
-          <Property Name="Description" Value=""/>
-          <Property Name="PLCType" Value="BOOL"/>
-          <Property Name="UpdateTime" Value="Default"/>
-          <Property Name="UserID" Value="None"/>
-          <Property Name="VCType" Value="BOOL"/>
-        </DataPoint>
-        <DataPoint Name="servo_moving">
-          <Property Name="ConnectedBySharedResource" Value="False"/>
-          <Property Name="ConnectingVisus" Value="VrtalkaHMI"/>
-          <Property Name="Description" Value=""/>
-          <Property Name="PLCType" Value="BOOL"/>
-          <Property Name="UpdateTime" Value="Default"/>
-          <Property Name="UserID" Value="None"/>
-          <Property Name="VCType" Value="BOOL"/>
-        </DataPoint>
-        <DataPoint Name="agr_zak">
-          <Property Name="ConnectedBySharedResource" Value="False"/>
-          <Property Name="ConnectingVisus" Value="VrtalkaHMI"/>
-          <Property Name="Description" Value=""/>
-          <Property Name="PLCType" Value="BOOL"/>
-          <Property Name="UpdateTime" Value="Default"/>
-          <Property Name="UserID" Value="None"/>
-          <Property Name="VCType" Value="BOOL"/>
-        </DataPoint>
-        <DataPoint Name="poz_srv_max">
-          <Property Name="ConnectedBySharedResource" Value="False"/>
-          <Property Name="ConnectingVisus" Value="VrtalkaHMI"/>
-          <Property Name="DPLimit" Value="None"/>
-          <Property Name="Description" Value=""/>
-          <Property Name="PLCType" Value="REAL"/>
-          <Property Name="PLCUnit" Value="None"/>
-          <Property Name="UnitGroup" Value="None"/>
-          <Property Name="UpdateTime" Value="Default"/>
-          <Property Name="UserID" Value="None"/>
-          <Property Name="VCType" Value="SCALED"/>
-        </DataPoint>
-        <DataPoint Name="poz_srv_min">
-          <Property Name="ConnectedBySharedResource" Value="False"/>
-          <Property Name="ConnectingVisus" Value="VrtalkaHMI"/>
-          <Property Name="DPLimit" Value="None"/>
-          <Property Name="Description" Value=""/>
-          <Property Name="PLCType" Value="REAL"/>
-          <Property Name="PLCUnit" Value="None"/>
-          <Property Name="UnitGroup" Value="None"/>
-          <Property Name="UpdateTime" Value="Default"/>
-          <Property Name="UserID" Value="None"/>
-          <Property Name="VCType" Value="SCALED"/>
-        </DataPoint>
-      </Folder>
-      <DataPoint Name="doFunSuccess">
+      <DataPoint Name="agr_zak">
         <Property Name="ConnectedBySharedResource" Value="False"/>
-        <Property Name="ConnectingVisus" Value="VrtalkaHMI"/>
+        <Property Name="ConnectingVisus" Value="HMI\VrtalkaHMI"/>
         <Property Name="Description" Value=""/>
         <Property Name="PLCType" Value="BOOL"/>
         <Property Name="UpdateTime" Value="Default"/>
         <Property Name="UserID" Value="None"/>
         <Property Name="VCType" Value="BOOL"/>
       </DataPoint>
-      <DataPoint Name="diGoHome">
+      <DataPoint Name="servo_moving">
         <Property Name="ConnectedBySharedResource" Value="False"/>
-        <Property Name="ConnectingVisus" Value="VrtalkaHMI"/>
+        <Property Name="ConnectingVisus" Value="HMI\VrtalkaHMI"/>
         <Property Name="Description" Value=""/>
         <Property Name="PLCType" Value="BOOL"/>
         <Property Name="UpdateTime" Value="Default"/>
         <Property Name="UserID" Value="None"/>
         <Property Name="VCType" Value="BOOL"/>
       </DataPoint>
-      <DataPoint Name="izbrani_agr">
+      <DataPoint Name="servo_set">
         <Property Name="ConnectedBySharedResource" Value="False"/>
-        <Property Name="ConnectingVisus" Value="VrtalkaHMI"/>
+        <Property Name="ConnectingVisus" Value="HMI\VrtalkaHMI"/>
+        <Property Name="DPLimit" Value="None"/>
         <Property Name="Description" Value=""/>
-        <Property Name="PLCType" Value="UINT"/>
+        <Property Name="PLCType" Value="REAL"/>
+        <Property Name="PLCUnit" Value="None"/>
+        <Property Name="UnitGroup" Value="None"/>
         <Property Name="UpdateTime" Value="Default"/>
         <Property Name="UserID" Value="None"/>
-        <Property Name="VCType" Value="INTEGER"/>
+        <Property Name="VCType" Value="SCALED"/>
       </DataPoint>
+    </Folder>
+    <DataPoint Name="doStrojPripravljen">
+      <Property Name="ConnectedBySharedResource" Value="False"/>
+      <Property Name="ConnectingVisus" Value="HMI\VrtalkaHMI"/>
+      <Property Name="Description" Value=""/>
+      <Property Name="PLCType" Value="BOOL"/>
+      <Property Name="UpdateTime" Value="Default"/>
+      <Property Name="UserID" Value="None"/>
+      <Property Name="VCType" Value="BOOL"/>
+    </DataPoint>
+    <DataPoint Name="changePage">
+      <Property Name="ConnectedBySharedResource" Value="False"/>
+      <Property Name="ConnectingVisus" Value="HMI\VrtalkaHMI"/>
+      <Property Name="Description" Value=""/>
+      <Property Name="PLCType" Value="UINT"/>
+      <Property Name="UpdateTime" Value="Default"/>
+      <Property Name="UserID" Value="None"/>
+      <Property Name="VCType" Value="INTEGER"/>
+    </DataPoint>
+    <DataPoint Name="diStartStroja">
+      <Property Name="ConnectedBySharedResource" Value="False"/>
+      <Property Name="ConnectingVisus" Value="HMI\VrtalkaHMI"/>
+      <Property Name="Description" Value=""/>
+      <Property Name="PLCType" Value="BOOL"/>
+      <Property Name="UpdateTime" Value="Default"/>
+      <Property Name="UserID" Value="None"/>
+      <Property Name="VCType" Value="BOOL"/>
+    </DataPoint>
+    <Folder Name="agr4">
+      <Property Name="Description" Value=""/>
+      <Property Name="FolderType" Value="Struct"/>
+      <DataPoint Name="poz_agr_s">
+        <Property Name="ConnectedBySharedResource" Value="False"/>
+        <Property Name="ConnectingVisus" Value="HMI\VrtalkaHMI"/>
+        <Property Name="DPLimit" Value="None"/>
+        <Property Name="Description" Value=""/>
+        <Property Name="PLCType" Value="REAL"/>
+        <Property Name="PLCUnit" Value="None"/>
+        <Property Name="UnitGroup" Value="None"/>
+        <Property Name="UpdateTime" Value="Default"/>
+        <Property Name="UserID" Value="None"/>
+        <Property Name="VCType" Value="SCALED"/>
+      </DataPoint>
+      <DataPoint Name="poz_agr_a">
+        <Property Name="ConnectedBySharedResource" Value="False"/>
+        <Property Name="ConnectingVisus" Value="HMI\VrtalkaHMI"/>
+        <Property Name="DPLimit" Value="None"/>
+        <Property Name="Description" Value=""/>
+        <Property Name="PLCType" Value="REAL"/>
+        <Property Name="PLCUnit" Value="None"/>
+        <Property Name="UnitGroup" Value="None"/>
+        <Property Name="UpdateTime" Value="Default"/>
+        <Property Name="UserID" Value="None"/>
+        <Property Name="VCType" Value="SCALED"/>
+      </DataPoint>
+      <DataPoint Name="agr_pos_ok">
+        <Property Name="ConnectedBySharedResource" Value="False"/>
+        <Property Name="ConnectingVisus" Value="HMI\VrtalkaHMI"/>
+        <Property Name="Description" Value=""/>
+        <Property Name="PLCType" Value="BOOL"/>
+        <Property Name="UpdateTime" Value="Default"/>
+        <Property Name="UserID" Value="None"/>
+        <Property Name="VCType" Value="BOOL"/>
+      </DataPoint>
+      <DataPoint Name="poz_agr_min">
+        <Property Name="ConnectedBySharedResource" Value="False"/>
+        <Property Name="ConnectingVisus" Value="HMI\VrtalkaHMI"/>
+        <Property Name="DPLimit" Value="None"/>
+        <Property Name="Description" Value=""/>
+        <Property Name="PLCType" Value="REAL"/>
+        <Property Name="PLCUnit" Value="None"/>
+        <Property Name="UnitGroup" Value="None"/>
+        <Property Name="UpdateTime" Value="Default"/>
+        <Property Name="UserID" Value="None"/>
+        <Property Name="VCType" Value="SCALED"/>
+      </DataPoint>
+      <DataPoint Name="agr_active">
+        <Property Name="ConnectedBySharedResource" Value="False"/>
+        <Property Name="ConnectingVisus" Value="HMI\VrtalkaHMI"/>
+        <Property Name="Description" Value=""/>
+        <Property Name="PLCType" Value="BOOL"/>
+        <Property Name="UpdateTime" Value="Default"/>
+        <Property Name="UserID" Value="None"/>
+        <Property Name="VCType" Value="BOOL"/>
+      </DataPoint>
+    </Folder>
+    <Folder Name="HMI">
+      <Property Name="Description" Value=""/>
+      <Property Name="FolderType" Value="Package"/>
+      <Folder Name="programHMI">
+        <Property Name="Description" Value=""/>
+        <Property Name="FolderType" Value="Program"/>
+        <DataPoint Name="stevec">
+          <Property Name="ConnectedBySharedResource" Value="False"/>
+          <Property Name="ConnectingVisus" Value="HMI\VrtalkaHMI"/>
+          <Property Name="Description" Value=""/>
+          <Property Name="PLCType" Value="UINT"/>
+          <Property Name="UpdateTime" Value="Default"/>
+          <Property Name="UserID" Value="None"/>
+          <Property Name="VCType" Value="INTEGER"/>
+        </DataPoint>
+      </Folder>
     </Folder>
   </DataPoints>
 </DataSource>

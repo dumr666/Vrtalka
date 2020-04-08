@@ -1,0 +1,4 @@
+VAR
+	obvestiloHMI : STRING[80] := 'prazno';
+	stevec : UINT := 0;
+END_VAR

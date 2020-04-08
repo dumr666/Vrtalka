@@ -35,14 +35,381 @@
               <UInt16 Name="Size">0</UInt16>
             </Group>
           </Object>
+          <Object Name="String_1" ClsId="0x100B" Version="1" Type="CTRL" RefString="Source[local].Layer[BackgroundLayer].Control[String_1]">
+            <UInt32 Name="Left">200</UInt32>
+            <UInt32 Name="Top">530</UInt32>
+            <UInt32 Name="Right">859</UInt32>
+            <UInt32 Name="Bottom">559</UInt32>
+            <Reference Name="ValueDatapoint" Type="DP">Source[global].Variable[DataSource.sistemskoObvestilo]</Reference>
+            <UInt32 Name="ControlID">0</UInt32>
+            <Reference Name="StyleClass" Type="SC">Source[local].StyleGroup[0x0000100B].StyleClass[obvestilo]</Reference>
+            <UInt16 Name="StyleTableSize">4</UInt16>
+            <UInt16 Name="Reserved">0</UInt16>
+            <Group Name="End Marker">
+              <UInt16 Name="Offset">65535</UInt16>
+              <UInt16 Name="Size">0</UInt16>
+            </Group>
+          </Object>
+          <Object Name="Bitmap_2" ClsId="0x1005" Version="1" Type="CTRL" RefString="Source[local].Layer[BackgroundLayer].Control[Bitmap_2]">
+            <UInt32 Name="Left">70</UInt32>
+            <UInt32 Name="Top">460</UInt32>
+            <UInt32 Name="Right">969</UInt32>
+            <UInt32 Name="Bottom">501</UInt32>
+            <UInt32 Name="IndexDatapoint">4294967295</UInt32>
+            <UInt32 Name="ControlID">0</UInt32>
+            <Reference Name="StyleClass" Type="SC">Source[local].StyleGroup[0x00001005].StyleClass[Bitmap]</Reference>
+            <UInt16 Name="StyleTableSize">17</UInt16>
+            <UInt16 Name="Reserved">0</UInt16>
+            <Group Name="BitmapSource">
+              <UInt16 Name="Offset">24</UInt16>
+              <UInt16 Name="Size">1</UInt16>
+              <Byte Name="Data">0</Byte>
+            </Group>
+            <Group Name="Bitmap">
+              <UInt16 Name="Offset">36</UInt16>
+              <UInt16 Name="Size">4</UInt16>
+              <Reference Name="Data" Type="GFX">Source[local].Bitmap[Rail_vozicka]</Reference>
+            </Group>
+            <Group Name="End Marker">
+              <UInt16 Name="Offset">65535</UInt16>
+              <UInt16 Name="Size">0</UInt16>
+            </Group>
+          </Object>
+          <Object Name="Slider_2" ClsId="0x101F" Version="1" Type="CTRL" RefString="Source[local].Layer[BackgroundLayer].Control[Slider_2]">
+            <UInt32 Name="Left">70</UInt32>
+            <UInt32 Name="Top">450</UInt32>
+            <UInt32 Name="Right">969</UInt32>
+            <UInt32 Name="Bottom">479</UInt32>
+            <UInt32 Name="ControlID">0</UInt32>
+            <Reference Name="ValueDatapoint" Type="DP">Source[global].Variable[DataSource.vozicek.servo_act]</Reference>
+            <UInt32 Name="CurrentDatapoint">4294967295</UInt32>
+            <Double Name="MinValue">0</Double>
+            <UInt32 Name="MinDatapoint">4294967295</UInt32>
+            <Double Name="MaxValue">1025</Double>
+            <UInt32 Name="MaxDatapoint">4294967295</UInt32>
+            <UInt32 Name="SimulationValue">1000</UInt32>
+            <Reference Name="StyleClass" Type="SC">Source[local].StyleGroup[0x0000101F].StyleClass[Vozicek]</Reference>
+            <UInt16 Name="StyleTableSize">9</UInt16>
+            <UInt16 Name="Reserved">0</UInt16>
+            <Group Name="ThumbSnapToPitchLines">
+              <UInt16 Name="Offset">27</UInt16>
+              <UInt16 Name="Size">1</UInt16>
+              <Byte Name="Data">0</Byte>
+            </Group>
+            <Group Name="End Marker">
+              <UInt16 Name="Offset">65535</UInt16>
+              <UInt16 Name="Size">0</UInt16>
+            </Group>
+          </Object>
+          <Object Name="Slider_1" ClsId="0x101F" Version="1" Type="CTRL" RefString="Source[local].Layer[BackgroundLayer].Control[Slider_1]">
+            <UInt32 Name="Left">70</UInt32>
+            <UInt32 Name="Top">400</UInt32>
+            <UInt32 Name="Right">979</UInt32>
+            <UInt32 Name="Bottom">449</UInt32>
+            <UInt32 Name="ControlID">0</UInt32>
+            <Reference Name="ValueDatapoint" Type="DP">Source[global].Variable[DataSource.agr1.poz_agr_a]</Reference>
+            <UInt32 Name="CurrentDatapoint">4294967295</UInt32>
+            <Double Name="MinValue">0</Double>
+            <UInt32 Name="MinDatapoint">4294967295</UInt32>
+            <Double Name="MaxValue">1000</Double>
+            <UInt32 Name="MaxDatapoint">4294967295</UInt32>
+            <UInt32 Name="SimulationValue">30</UInt32>
+            <Reference Name="StyleClass" Type="SC">Source[local].StyleGroup[0x0000101F].StyleClass[Agregat]</Reference>
+            <UInt16 Name="StyleTableSize">9</UInt16>
+            <UInt16 Name="Reserved">0</UInt16>
+            <Group Name="ThumbSnapToPitchLines">
+              <UInt16 Name="Offset">27</UInt16>
+              <UInt16 Name="Size">1</UInt16>
+              <Byte Name="Data">0</Byte>
+            </Group>
+            <Group Name="End Marker">
+              <UInt16 Name="Offset">65535</UInt16>
+              <UInt16 Name="Size">0</UInt16>
+            </Group>
+          </Object>
+          <Object Name="Slider_3" ClsId="0x101F" Version="1" Type="CTRL" RefString="Source[local].Layer[BackgroundLayer].Control[Slider_3]">
+            <UInt32 Name="Left">70</UInt32>
+            <UInt32 Name="Top">400</UInt32>
+            <UInt32 Name="Right">979</UInt32>
+            <UInt32 Name="Bottom">449</UInt32>
+            <UInt32 Name="ControlID">0</UInt32>
+            <Reference Name="ValueDatapoint" Type="DP">Source[global].Variable[DataSource.agr2.poz_agr_a]</Reference>
+            <UInt32 Name="CurrentDatapoint">4294967295</UInt32>
+            <Double Name="MinValue">0</Double>
+            <UInt32 Name="MinDatapoint">4294967295</UInt32>
+            <Double Name="MaxValue">1000</Double>
+            <UInt32 Name="MaxDatapoint">4294967295</UInt32>
+            <UInt32 Name="SimulationValue">30</UInt32>
+            <Reference Name="StyleClass" Type="SC">Source[local].StyleGroup[0x0000101F].StyleClass[Agregat]</Reference>
+            <UInt16 Name="StyleTableSize">9</UInt16>
+            <UInt16 Name="Reserved">0</UInt16>
+            <Group Name="ThumbSnapToPitchLines">
+              <UInt16 Name="Offset">27</UInt16>
+              <UInt16 Name="Size">1</UInt16>
+              <Byte Name="Data">0</Byte>
+            </Group>
+            <Group Name="End Marker">
+              <UInt16 Name="Offset">65535</UInt16>
+              <UInt16 Name="Size">0</UInt16>
+            </Group>
+          </Object>
+          <Object Name="Slider_4" ClsId="0x101F" Version="1" Type="CTRL" RefString="Source[local].Layer[BackgroundLayer].Control[Slider_4]">
+            <UInt32 Name="Left">70</UInt32>
+            <UInt32 Name="Top">400</UInt32>
+            <UInt32 Name="Right">979</UInt32>
+            <UInt32 Name="Bottom">449</UInt32>
+            <UInt32 Name="ControlID">0</UInt32>
+            <Reference Name="ValueDatapoint" Type="DP">Source[global].Variable[DataSource.agr3.poz_agr_a]</Reference>
+            <UInt32 Name="CurrentDatapoint">4294967295</UInt32>
+            <Double Name="MinValue">0</Double>
+            <UInt32 Name="MinDatapoint">4294967295</UInt32>
+            <Double Name="MaxValue">1000</Double>
+            <UInt32 Name="MaxDatapoint">4294967295</UInt32>
+            <UInt32 Name="SimulationValue">30</UInt32>
+            <Reference Name="StyleClass" Type="SC">Source[local].StyleGroup[0x0000101F].StyleClass[Agregat]</Reference>
+            <UInt16 Name="StyleTableSize">9</UInt16>
+            <UInt16 Name="Reserved">0</UInt16>
+            <Group Name="ThumbSnapToPitchLines">
+              <UInt16 Name="Offset">27</UInt16>
+              <UInt16 Name="Size">1</UInt16>
+              <Byte Name="Data">0</Byte>
+            </Group>
+            <Group Name="End Marker">
+              <UInt16 Name="Offset">65535</UInt16>
+              <UInt16 Name="Size">0</UInt16>
+            </Group>
+          </Object>
+          <Object Name="Slider_5" ClsId="0x101F" Version="1" Type="CTRL" RefString="Source[local].Layer[BackgroundLayer].Control[Slider_5]">
+            <UInt32 Name="Left">70</UInt32>
+            <UInt32 Name="Top">400</UInt32>
+            <UInt32 Name="Right">979</UInt32>
+            <UInt32 Name="Bottom">449</UInt32>
+            <UInt32 Name="ControlID">0</UInt32>
+            <Reference Name="ValueDatapoint" Type="DP">Source[global].Variable[DataSource.agr4.poz_agr_a]</Reference>
+            <UInt32 Name="CurrentDatapoint">4294967295</UInt32>
+            <Double Name="MinValue">0</Double>
+            <UInt32 Name="MinDatapoint">4294967295</UInt32>
+            <Double Name="MaxValue">1000</Double>
+            <UInt32 Name="MaxDatapoint">4294967295</UInt32>
+            <UInt32 Name="SimulationValue">30</UInt32>
+            <Reference Name="StyleClass" Type="SC">Source[local].StyleGroup[0x0000101F].StyleClass[Agregat]</Reference>
+            <UInt16 Name="StyleTableSize">9</UInt16>
+            <UInt16 Name="Reserved">0</UInt16>
+            <Group Name="ThumbSnapToPitchLines">
+              <UInt16 Name="Offset">27</UInt16>
+              <UInt16 Name="Size">1</UInt16>
+              <Byte Name="Data">0</Byte>
+            </Group>
+            <Group Name="End Marker">
+              <UInt16 Name="Offset">65535</UInt16>
+              <UInt16 Name="Size">0</UInt16>
+            </Group>
+          </Object>
+          <Object Name="Slider_6" ClsId="0x101F" Version="1" Type="CTRL" RefString="Source[local].Layer[BackgroundLayer].Control[Slider_6]">
+            <UInt32 Name="Left">70</UInt32>
+            <UInt32 Name="Top">400</UInt32>
+            <UInt32 Name="Right">979</UInt32>
+            <UInt32 Name="Bottom">449</UInt32>
+            <UInt32 Name="ControlID">0</UInt32>
+            <Reference Name="ValueDatapoint" Type="DP">Source[global].Variable[DataSource.agr5.poz_agr_a]</Reference>
+            <UInt32 Name="CurrentDatapoint">4294967295</UInt32>
+            <Double Name="MinValue">0</Double>
+            <UInt32 Name="MinDatapoint">4294967295</UInt32>
+            <Double Name="MaxValue">1000</Double>
+            <UInt32 Name="MaxDatapoint">4294967295</UInt32>
+            <UInt32 Name="SimulationValue">30</UInt32>
+            <Reference Name="StyleClass" Type="SC">Source[local].StyleGroup[0x0000101F].StyleClass[Agregat]</Reference>
+            <UInt16 Name="StyleTableSize">9</UInt16>
+            <UInt16 Name="Reserved">0</UInt16>
+            <Group Name="ThumbSnapToPitchLines">
+              <UInt16 Name="Offset">27</UInt16>
+              <UInt16 Name="Size">1</UInt16>
+              <Byte Name="Data">0</Byte>
+            </Group>
+            <Group Name="End Marker">
+              <UInt16 Name="Offset">65535</UInt16>
+              <UInt16 Name="Size">0</UInt16>
+            </Group>
+          </Object>
+          <Object Name="Slider_7" ClsId="0x101F" Version="1" Type="CTRL" RefString="Source[local].Layer[BackgroundLayer].Control[Slider_7]">
+            <UInt32 Name="Left">70</UInt32>
+            <UInt32 Name="Top">400</UInt32>
+            <UInt32 Name="Right">979</UInt32>
+            <UInt32 Name="Bottom">449</UInt32>
+            <UInt32 Name="ControlID">0</UInt32>
+            <Reference Name="ValueDatapoint" Type="DP">Source[global].Variable[DataSource.agr6.poz_agr_a]</Reference>
+            <UInt32 Name="CurrentDatapoint">4294967295</UInt32>
+            <Double Name="MinValue">0</Double>
+            <UInt32 Name="MinDatapoint">4294967295</UInt32>
+            <Double Name="MaxValue">1024</Double>
+            <UInt32 Name="MaxDatapoint">4294967295</UInt32>
+            <UInt32 Name="SimulationValue">30</UInt32>
+            <Reference Name="StyleClass" Type="SC">Source[local].StyleGroup[0x0000101F].StyleClass[Agregat]</Reference>
+            <UInt16 Name="StyleTableSize">9</UInt16>
+            <UInt16 Name="Reserved">0</UInt16>
+            <Group Name="ThumbSnapToPitchLines">
+              <UInt16 Name="Offset">27</UInt16>
+              <UInt16 Name="Size">1</UInt16>
+              <Byte Name="Data">0</Byte>
+            </Group>
+            <Group Name="End Marker">
+              <UInt16 Name="Offset">65535</UInt16>
+              <UInt16 Name="Size">0</UInt16>
+            </Group>
+          </Object>
+          <Object Name="Text_1" ClsId="0x1004" Version="1" Type="CTRL" RefString="Source[local].Layer[BackgroundLayer].Control[Text_1]">
+            <UInt32 Name="Left">630</UInt32>
+            <UInt32 Name="Top">0</UInt32>
+            <UInt32 Name="Right">1019</UInt32>
+            <UInt32 Name="Bottom">29</UInt32>
+            <UInt32 Name="IndexDatapoint">4294967295</UInt32>
+            <UInt32 Name="ControlID">0</UInt32>
+            <Reference Name="StyleClass" Type="SC">Source[local].StyleGroup[0x00001004].StyleClass[Header3_text]</Reference>
+            <UInt16 Name="StyleTableSize">30</UInt16>
+            <UInt16 Name="Reserved">0</UInt16>
+            <Group Name="Multiline">
+              <UInt16 Name="Offset">23</UInt16>
+              <UInt16 Name="Size">1</UInt16>
+              <Byte Name="Data">0</Byte>
+            </Group>
+            <Group Name="TextSource">
+              <UInt16 Name="Offset">40</UInt16>
+              <UInt16 Name="Size">1</UInt16>
+              <Byte Name="Data">2</Byte>
+            </Group>
+            <Group Name="TextIndexOffset">
+              <UInt16 Name="Offset">44</UInt16>
+              <UInt16 Name="Size">4</UInt16>
+              <Int32 Name="Data">0</Int32>
+            </Group>
+            <Group Name="TextGroup">
+              <UInt16 Name="Offset">48</UInt16>
+              <UInt16 Name="Size">4</UInt16>
+              <Reference Name="Data" Type="TG">Source[local].Layer[BackgroundLayer].TextGroup[Embedded]</Reference>
+            </Group>
+            <Group Name="End Marker">
+              <UInt16 Name="Offset">65535</UInt16>
+              <UInt16 Name="Size">0</UInt16>
+            </Group>
+          </Object>
+          <Object Name="Numeric_1" ClsId="0x1007" Version="1" Type="CTRL" RefString="Source[local].Layer[BackgroundLayer].Control[Numeric_1]">
+            <UInt32 Name="Left">390</UInt32>
+            <UInt32 Name="Top">33</UInt32>
+            <UInt32 Name="Right">665</UInt32>
+            <UInt32 Name="Bottom">66</UInt32>
+            <UInt32 Name="ValueMode">0</UInt32>
+            <Reference Name="ValueDatapoint" Type="DP">Source[global].Variable[DataSource.HMI.programHMI.stevec]</Reference>
+            <UInt32 Name="MinDatapoint">4294967295</UInt32>
+            <UInt32 Name="MaxDatapoint">4294967295</UInt32>
+            <UInt32 Name="TeachDatapoint">4294967295</UInt32>
+            <UInt32 Name="ControlID">0</UInt32>
+            <Double Name="MinValue">-1.7976931348623157E+308</Double>
+            <Double Name="MaxValue">1.7976931348623157E+308</Double>
+            <Reference Name="StyleClass" Type="SC">Source[local].StyleGroup[0x00001007].StyleClass[Output]</Reference>
+            <UInt16 Name="StyleTableSize">4</UInt16>
+            <UInt16 Name="Reserved">0</UInt16>
+            <Group Name="End Marker">
+              <UInt16 Name="Offset">65535</UInt16>
+              <UInt16 Name="Size">0</UInt16>
+            </Group>
+          </Object>
         </Folder>
       </Folder>
       <Folder Name="POBJ">
         <Object Name="BackgroundLayer" ClsId="0x401" Version="1" Type="LAY" RefString="Source[local].Layer[BackgroundLayer]">
           <Reference Name="StatusDP" Type="DP">None</Reference>
-          <UInt32 Name="CtrlCount">1</UInt32>
+          <UInt32 Name="CtrlCount">12</UInt32>
           <Reference Name="Bitmap_1" Type="CTRL">Source[local].Layer[BackgroundLayer].Control[Bitmap_1]</Reference>
+          <Reference Name="String_1" Type="CTRL">Source[local].Layer[BackgroundLayer].Control[String_1]</Reference>
+          <Reference Name="Bitmap_2" Type="CTRL">Source[local].Layer[BackgroundLayer].Control[Bitmap_2]</Reference>
+          <Reference Name="Slider_2" Type="CTRL">Source[local].Layer[BackgroundLayer].Control[Slider_2]</Reference>
+          <Reference Name="Slider_1" Type="CTRL">Source[local].Layer[BackgroundLayer].Control[Slider_1]</Reference>
+          <Reference Name="Slider_3" Type="CTRL">Source[local].Layer[BackgroundLayer].Control[Slider_3]</Reference>
+          <Reference Name="Slider_4" Type="CTRL">Source[local].Layer[BackgroundLayer].Control[Slider_4]</Reference>
+          <Reference Name="Slider_5" Type="CTRL">Source[local].Layer[BackgroundLayer].Control[Slider_5]</Reference>
+          <Reference Name="Slider_6" Type="CTRL">Source[local].Layer[BackgroundLayer].Control[Slider_6]</Reference>
+          <Reference Name="Slider_7" Type="CTRL">Source[local].Layer[BackgroundLayer].Control[Slider_7]</Reference>
+          <Reference Name="Text_1" Type="CTRL">Source[local].Layer[BackgroundLayer].Control[Text_1]</Reference>
+          <Reference Name="Numeric_1" Type="CTRL">Source[local].Layer[BackgroundLayer].Control[Numeric_1]</Reference>
         </Object>
+      </Folder>
+    </Folder>
+  </Folder>
+  <Folder Name="TextGroupBase">
+    <Folder Name="LBackgroundLayer" TargetIndex="Source[local].Layer[BackgroundLayer].TextGroup[Embedded]">
+      <Object Name="Embedded" ClsId="0x304" Version="1" Type="TG" RefString="Source[local].Layer[BackgroundLayer].TextGroup[Embedded]">
+        <UInt32 Name="NumberOfTags">0</UInt32>
+        <UInt32 Name="NumberOfTexts">1</UInt32>
+        <Table Name="TextMap" Cols="2">
+          <TableHeader>
+            <Column Name="UserIndex" />
+            <Column Name="TextIndex" />
+          </TableHeader>
+          <TableRow>
+            <UInt32 Name="UserIndex">0</UInt32>
+            <UInt32 Name="TextIndex">95658</UInt32>
+          </TableRow>
+        </Table>
+      </Object>
+    </Folder>
+  </Folder>
+  <Folder Name="Language">
+    <Folder Name="en" TargetIndex="0">
+      <Folder Name="TextGroups">
+        <Folder Name="POBJ">
+          <Object Name="TextGroupData" ClsId="0x303" Version="1" TargetIndex="Source[local].Layer[BackgroundLayer].TextGroup[Embedded]" Type="TG" RefString="Source[local].Layer[BackgroundLayer].TextGroup[Embedded].Language[en]">
+            <UInt32 Name="NumberOfTexts">1</UInt32>
+            <Table Name="TextOffsets" Cols="5">
+              <TableHeader>
+                <Column Name="TextIndex" />
+                <Column Name="TextOffset" />
+                <Column Name="SnippetCount" />
+                <Column Name="Reserved" />
+                <Column Name="Reserved" />
+              </TableHeader>
+              <TableRow>
+                <UInt32 Name="TextIndex">95658</UInt32>
+                <UInt32 Name="TextOffset">16</UInt32>
+                <Byte Name="SnippetCount">0</Byte>
+                <Byte Name="Reserved">0</Byte>
+                <UInt16 Name="Reserved">0</UInt16>
+              </TableRow>
+            </Table>
+            <Group Name="Texts">
+              <String Name="Text" Encoding="Unicode">"VRTALKA - DENIS LESKOVAR - APRIL 2020"</String>
+            </Group>
+          </Object>
+        </Folder>
+      </Folder>
+    </Folder>
+  </Folder>
+  <Folder Name="Language">
+    <Folder Name="de" TargetIndex="1">
+      <Folder Name="TextGroups">
+        <Folder Name="POBJ">
+          <Object Name="TextGroupData" ClsId="0x303" Version="1" TargetIndex="Source[local].Layer[BackgroundLayer].TextGroup[Embedded]" Type="TG" RefString="Source[local].Layer[BackgroundLayer].TextGroup[Embedded].Language[de]">
+            <UInt32 Name="NumberOfTexts">1</UInt32>
+            <Table Name="TextOffsets" Cols="5">
+              <TableHeader>
+                <Column Name="TextIndex" />
+                <Column Name="TextOffset" />
+                <Column Name="SnippetCount" />
+                <Column Name="Reserved" />
+                <Column Name="Reserved" />
+              </TableHeader>
+              <TableRow>
+                <UInt32 Name="TextIndex">95658</UInt32>
+                <UInt32 Name="TextOffset">16</UInt32>
+                <Byte Name="SnippetCount">0</Byte>
+                <Byte Name="Reserved">0</Byte>
+                <UInt16 Name="Reserved">0</UInt16>
+              </TableRow>
+            </Table>
+            <Group Name="Texts">
+              <String Name="Text" Encoding="Unicode">""</String>
+            </Group>
+          </Object>
+        </Folder>
       </Folder>
     </Folder>
   </Folder>

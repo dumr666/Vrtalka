@@ -1,0 +1,3 @@
+VAR
+	setupScreen : BOOL := FALSE; (*Ali je setup screen aktiven*)
+END_VAR

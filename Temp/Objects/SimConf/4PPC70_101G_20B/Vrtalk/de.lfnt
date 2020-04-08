@@ -1,17 +1,41 @@
 <Language Name="de" ID="1">
-  <LogicalFont Name="Font_1">
-    <Property Name="PhysicalFont" Value="arial" />
+  <LogicalFont Name="DSfon_26">
+    <Property Name="PhysicalFont" Value="seguisb" />
+    <Property Name="Width" Value="0" />
+    <Property Name="Height" Value="26" />
+    <Property Name="Index" Value="10" />
+    <Property Name="FontSize" Value="47" />
+    <Property Name="AntiAliasing" Value="False" />
+  </LogicalFont>
+  <LogicalFont Name="DSfon_20">
+    <Property Name="PhysicalFont" Value="seguisb" />
+    <Property Name="Width" Value="0" />
+    <Property Name="Height" Value="20" />
+    <Property Name="Index" Value="9" />
+    <Property Name="FontSize" Value="37" />
+    <Property Name="AntiAliasing" Value="False" />
+  </LogicalFont>
+  <LogicalFont Name="DSfon_14">
+    <Property Name="PhysicalFont" Value="solid4n6" />
     <Property Name="Width" Value="0" />
     <Property Name="Height" Value="12" />
-    <Property Name="Index" Value="6" />
-    <Property Name="FontSize" Value="18" />
+    <Property Name="Index" Value="8" />
+    <Property Name="FontSize" Value="19" />
+    <Property Name="AntiAliasing" Value="False" />
+  </LogicalFont>
+  <LogicalFont Name="DSfon_15">
+    <Property Name="PhysicalFont" Value="seguisb" />
+    <Property Name="Width" Value="0" />
+    <Property Name="Height" Value="15" />
+    <Property Name="Index" Value="7" />
+    <Property Name="FontSize" Value="28" />
     <Property Name="AntiAliasing" Value="False" />
   </LogicalFont>
   <LogicalFont Name="Arial9px">
     <Property Name="PhysicalFont" Value="arial" />
     <Property Name="Width" Value="0" />
     <Property Name="Height" Value="9" />
-    <Property Name="Index" Value="5" />
+    <Property Name="Index" Value="6" />
     <Property Name="FontSize" Value="15" />
     <Property Name="AntiAliasing" Value="False" />
   </LogicalFont>
@@ -19,7 +43,7 @@
     <Property Name="PhysicalFont" Value="arial" />
     <Property Name="Width" Value="0" />
     <Property Name="Height" Value="9" />
-    <Property Name="Index" Value="4" />
+    <Property Name="Index" Value="5" />
     <Property Name="FontSize" Value="15" />
     <Property Name="AntiAliasing" Value="False" />
   </LogicalFont>
@@ -27,7 +51,7 @@
     <Property Name="PhysicalFont" Value="arial" />
     <Property Name="Width" Value="0" />
     <Property Name="Height" Value="12" />
-    <Property Name="Index" Value="3" />
+    <Property Name="Index" Value="4" />
     <Property Name="FontSize" Value="18" />
     <Property Name="AntiAliasing" Value="False" />
   </LogicalFont>
@@ -35,7 +59,7 @@
     <Property Name="PhysicalFont" Value="arialbd" />
     <Property Name="Width" Value="0" />
     <Property Name="Height" Value="10" />
-    <Property Name="Index" Value="2" />
+    <Property Name="Index" Value="3" />
     <Property Name="FontSize" Value="16" />
     <Property Name="AntiAliasing" Value="False" />
   </LogicalFont>
@@ -43,7 +67,7 @@
     <Property Name="PhysicalFont" Value="arialbd" />
     <Property Name="Width" Value="0" />
     <Property Name="Height" Value="9" />
-    <Property Name="Index" Value="1" />
+    <Property Name="Index" Value="2" />
     <Property Name="FontSize" Value="15" />
     <Property Name="AntiAliasing" Value="False" />
   </LogicalFont>
@@ -51,8 +75,16 @@
     <Property Name="PhysicalFont" Value="arial" />
     <Property Name="Width" Value="0" />
     <Property Name="Height" Value="9" />
-    <Property Name="Index" Value="0" />
+    <Property Name="Index" Value="1" />
     <Property Name="FontSize" Value="15" />
+    <Property Name="AntiAliasing" Value="False" />
+  </LogicalFont>
+  <LogicalFont Name="DSfon_12">
+    <Property Name="PhysicalFont" Value="solid4n6" />
+    <Property Name="Width" Value="0" />
+    <Property Name="Height" Value="12" />
+    <Property Name="Index" Value="0" />
+    <Property Name="FontSize" Value="19" />
     <Property Name="AntiAliasing" Value="False" />
   </LogicalFont>
 </Language>

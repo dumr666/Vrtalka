@@ -11,6 +11,7 @@
     <Source File="TextGroups\AlarmState.txtgrp"/>
     <Source File="TextGroups\DateTimeFormats.txtgrp"/>
     <Source File="TextGroups\httpURL_SDM.txtgrp"/>
+    <Source File="TextGroups\PopupTextGroup.txtgrp"/>
     <Source File="UnitGroups\Length.vcug"/>
     <Source File="UnitGroups\Mass.vcug"/>
     <Source File="UnitGroups\Volume.vcug"/>
@@ -22,7 +23,6 @@
     <Source File="AlarmGroups\SystemAlarms.algrp"/>
     <Source File="DataSources\Internal.dso"/>
     <Source File="DataSources\DataSource.dso"/>
-    <Source File="DataSources\hmiVariables.dso"/>
     <Source File="ControlVersion.cvinfo"/>
   </SourceFiles>
 </Project>

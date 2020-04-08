@@ -5,9 +5,9 @@
   <TaskClass Name="Cyclic#2" />
   <TaskClass Name="Cyclic#3" />
   <TaskClass Name="Cyclic#4">
-    <Task Name="Program" Source="Program.prg" Memory="UserROM" Language="IEC" Debugging="true" />
+    <Task Name="Vrtalka" Source="Vrtalka.prg" Memory="UserROM" Language="IEC" Debugging="true" />
   </TaskClass>
   <VcDataObjects>
-    <VcDataObject Name="Vrtalk" Source="VrtalkaHMI.dob" Memory="UserROM" Language="Vc" WarningLevel="2" Compress="false" />
+    <VcDataObject Name="Vrtalk" Source="HMI.VrtalkaHMI.dob" Memory="UserROM" Language="Vc" WarningLevel="2" Compress="false" />
   </VcDataObjects>
 </SwConfiguration>

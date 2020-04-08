@@ -22,7 +22,17 @@
       <Property Name="Platform" Value="Platform.x86.Generic" />
     </Module>
     <Module>
+      <Property Name="Name" Value="vccovl.br" />
+      <Property Name="Version" Value="01.00" />
+      <Property Name="Platform" Value="Platform.x86.Generic" />
+    </Module>
+    <Module>
       <Property Name="Name" Value="vccbmp.br" />
+      <Property Name="Version" Value="01.00" />
+      <Property Name="Platform" Value="Platform.x86.Generic" />
+    </Module>
+    <Module>
+      <Property Name="Name" Value="vccstr.br" />
       <Property Name="Version" Value="01.00" />
       <Property Name="Platform" Value="Platform.x86.Generic" />
     </Module>
@@ -32,12 +42,22 @@
       <Property Name="Platform" Value="Platform.x86.Generic" />
     </Module>
     <Module>
-      <Property Name="Name" Value="vccovl.br" />
+      <Property Name="Name" Value="vccshape.br" />
       <Property Name="Version" Value="01.00" />
       <Property Name="Platform" Value="Platform.x86.Generic" />
     </Module>
   </Controls>
   <Core>
+    <Module>
+      <Property Name="Name" Value="vcrt.br" />
+      <Property Name="Version" Value="Core" />
+      <Property Name="Platform" Value="Platform.x86.Generic" />
+    </Module>
+    <Module>
+      <Property Name="Name" Value="vcbclass.br" />
+      <Property Name="Version" Value="Core" />
+      <Property Name="Platform" Value="Platform.x86.Generic" />
+    </Module>
     <Module>
       <Property Name="Name" Value="vcgclass.br" />
       <Property Name="Version" Value="Core" />
@@ -60,16 +80,6 @@
     </Module>
     <Module>
       <Property Name="Name" Value="vcmgr.br" />
-      <Property Name="Version" Value="Core" />
-      <Property Name="Platform" Value="Platform.x86.Generic" />
-    </Module>
-    <Module>
-      <Property Name="Name" Value="vcbclass.br" />
-      <Property Name="Version" Value="Core" />
-      <Property Name="Platform" Value="Platform.x86.Generic" />
-    </Module>
-    <Module>
-      <Property Name="Name" Value="vcrt.br" />
       <Property Name="Version" Value="Core" />
       <Property Name="Platform" Value="Platform.x86.Generic" />
     </Module>

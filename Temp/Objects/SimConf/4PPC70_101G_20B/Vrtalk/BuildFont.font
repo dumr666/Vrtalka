@@ -1,7 +1,10 @@
 <FontFiles>
   <LastBuildFont>
-    <Property Name="File" Value="ReemKufi-Regular.TTF" ModuleName="reemkz6g" />
+    <Property Name="File" Value="seguisb.TTF" ModuleName="seguisb" />
+    <Property Name="File" Value="segoeuib.TTF" ModuleName="segoeuib" />
     <Property Name="File" Value="arial.TTF" ModuleName="arial" />
     <Property Name="File" Value="arialbd.TTF" ModuleName="arialbd" />
+    <Property Name="File" Value="segoeui.TTF" ModuleName="segoeui" />
+    <Property Name="File" Value="solidworks gdt.TTF" ModuleName="solid4n6" />
   </LastBuildFont>
 </FontFiles>

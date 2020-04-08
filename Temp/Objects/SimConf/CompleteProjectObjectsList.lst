@@ -5,19 +5,7 @@
     Path="F:\1_Automation_projects\Vrtalka\Logical\Package.pkg"
     LogicalPath=""
     Type="Package"
-    LastWriteTime="132303022119243569" />
-  <Object
-    Path="F:\1_Automation_projects\Vrtalka\Logical\Global.typ"
-    LogicalPath="Global.typ"
-    Type="File"
-    LastWriteTime="132279697095254229"
-    Private="false" />
-  <Object
-    Path="F:\1_Automation_projects\Vrtalka\Logical\Global.var"
-    LogicalPath="Global.var"
-    Type="File"
-    LastWriteTime="132302169420585410"
-    Private="false" />
+    LastWriteTime="132308261717795654" />
   <Object
     Path="F:\1_Automation_projects\Vrtalka\Logical\Libraries\Package.pkg"
     LogicalPath="Libraries"
@@ -208,95 +196,141 @@
     LastWriteTime="132284027328521019"
     Private="false" />
   <Object
-    Path="F:\1_Automation_projects\Vrtalka\Logical\Program\IEC.prg"
-    LogicalPath="Program"
+    Path="F:\1_Automation_projects\Vrtalka\Logical\Vrtalka\IEC.prg"
+    LogicalPath="Vrtalka"
     Type="Program"
-    LastWriteTime="132303022119798256" />
+    LastWriteTime="132307317431310778" />
   <Object
-    Path="F:\1_Automation_projects\Vrtalka\Logical\Program\Variables.var"
-    LogicalPath="Program.Variables.var"
-    Type="File"
-    LastWriteTime="132303206048688428"
-    Private="true" />
-  <Object
-    Path="F:\1_Automation_projects\Vrtalka\Logical\Program\Types.typ"
-    LogicalPath="Program.Types.typ"
-    Type="File"
-    LastWriteTime="132303204774628050"
-    Private="true" />
-  <Object
-    Path="F:\1_Automation_projects\Vrtalka\Logical\Program\Vrtalka_actions\Package.pkg"
-    LogicalPath="Program.Vrtalka_actions"
+    Path="F:\1_Automation_projects\Vrtalka\Logical\Vrtalka\Vrtalka_actions\Package.pkg"
+    LogicalPath="Vrtalka.Vrtalka_actions"
     Type="Package"
-    LastWriteTime="132303223340317014" />
+    LastWriteTime="132306543779529287" />
   <Object
-    Path="F:\1_Automation_projects\Vrtalka\Logical\Program\Vrtalka_actions\AGR_Actions.st"
-    LogicalPath="Program.Vrtalka_actions.AGR_Actions.st"
+    Path="F:\1_Automation_projects\Vrtalka\Logical\Vrtalka\Vrtalka_actions\AGR_Actions.st"
+    LogicalPath="Vrtalka.Vrtalka_actions.AGR_Actions.st"
     Type="File"
-    LastWriteTime="132303303315066220"
+    LastWriteTime="132303974275906654"
     Private="false" />
   <Object
-    Path="F:\1_Automation_projects\Vrtalka\Logical\Program\Vrtalka_actions\SRV_Actions.st"
-    LogicalPath="Program.Vrtalka_actions.SRV_Actions.st"
+    Path="F:\1_Automation_projects\Vrtalka\Logical\Vrtalka\Vrtalka_actions\SRV_Actions.st"
+    LogicalPath="Vrtalka.Vrtalka_actions.SRV_Actions.st"
     Type="File"
     LastWriteTime="132302213649551339"
     Private="false" />
   <Object
-    Path="F:\1_Automation_projects\Vrtalka\Logical\Program\Vrtalka_actions\General_actions.st"
-    LogicalPath="Program.Vrtalka_actions.General_actions.st"
+    Path="F:\1_Automation_projects\Vrtalka\Logical\Vrtalka\Vrtalka_actions\General_actions.st"
+    LogicalPath="Vrtalka.Vrtalka_actions.General_actions.st"
     Type="File"
-    LastWriteTime="132303291182173872"
+    LastWriteTime="132306392183191402"
     Private="false" />
   <Object
-    Path="F:\1_Automation_projects\Vrtalka\Logical\Program\ST_src\Package.pkg"
-    LogicalPath="Program.ST_src"
+    Path="F:\1_Automation_projects\Vrtalka\Logical\Vrtalka\Vrtalka_actions\PROC_actions.st"
+    LogicalPath="Vrtalka.Vrtalka_actions.PROC_actions.st"
+    Type="File"
+    LastWriteTime="132308266766304464"
+    Private="false" />
+  <Object
+    Path="F:\1_Automation_projects\Vrtalka\Logical\Vrtalka\ST_src\Package.pkg"
+    LogicalPath="Vrtalka.ST_src"
     Type="Package"
     LastWriteTime="132297045172132660" />
   <Object
-    Path="F:\1_Automation_projects\Vrtalka\Logical\Program\ST_src\Cyclic.st"
-    LogicalPath="Program.ST_src.Cyclic.st"
+    Path="F:\1_Automation_projects\Vrtalka\Logical\Vrtalka\ST_src\Cyclic.st"
+    LogicalPath="Vrtalka.ST_src.Cyclic.st"
     Type="File"
-    LastWriteTime="132303251592393479"
+    LastWriteTime="132308322611864268"
     Private="false" />
   <Object
-    Path="F:\1_Automation_projects\Vrtalka\Logical\Program\ST_src\Init.st"
-    LogicalPath="Program.ST_src.Init.st"
+    Path="F:\1_Automation_projects\Vrtalka\Logical\Vrtalka\ST_src\Init.st"
+    LogicalPath="Vrtalka.ST_src.Init.st"
     Type="File"
-    LastWriteTime="132302239222321901"
+    LastWriteTime="132308268229775502"
     Private="false" />
   <Object
-    Path="F:\1_Automation_projects\Vrtalka\Logical\Program\ST_src\Exit.st"
-    LogicalPath="Program.ST_src.Exit.st"
+    Path="F:\1_Automation_projects\Vrtalka\Logical\Vrtalka\ST_src\Exit.st"
+    LogicalPath="Vrtalka.ST_src.Exit.st"
     Type="File"
     LastWriteTime="132297045172102674"
     Private="false" />
   <Object
-    Path="F:\1_Automation_projects\Vrtalka\Logical\Program\VrtalkaFunctions.st"
-    LogicalPath="Program.VrtalkaFunctions.st"
+    Path="F:\1_Automation_projects\Vrtalka\Logical\Vrtalka\VrtalkaFunctions.st"
+    LogicalPath="Vrtalka.VrtalkaFunctions.st"
     Type="File"
-    LastWriteTime="132303022119603753"
+    LastWriteTime="132308132416269348"
     Private="false" />
   <Object
-    Path="F:\1_Automation_projects\Vrtalka\Logical\Program\VrtalkaFunctions.fun"
-    LogicalPath="Program.VrtalkaFunctions.fun"
+    Path="F:\1_Automation_projects\Vrtalka\Logical\Vrtalka\VrtalkaFunctions.fun"
+    LogicalPath="Vrtalka.VrtalkaFunctions.fun"
     Type="File"
-    LastWriteTime="132303022119788265"
+    LastWriteTime="132306597199291457"
     Private="true" />
   <Object
-    Path="F:\1_Automation_projects\Vrtalka\Logical\VrtalkaHMI\Vc.dob"
-    LogicalPath="VrtalkaHMI"
-    Type="DataObject"
-    LastWriteTime="132282632380669280" />
-  <Object
-    Path="F:\1_Automation_projects\Vrtalka\Logical\VrtalkaHMI\Package\Package.pkg"
-    LogicalPath="VrtalkaHMI.Package"
-    Type="Package"
-    LastWriteTime="132282632380649298" />
-  <Object
-    Path="F:\1_Automation_projects\Vrtalka\Logical\VrtalkaHMI\VCObject.vc"
-    LogicalPath="VrtalkaHMI.VCObject.vc"
+    Path="F:\1_Automation_projects\Vrtalka\Logical\Vrtalka\HMIVars.var"
+    LogicalPath="Vrtalka.HMIVars.var"
     Type="File"
-    LastWriteTime="132279700533177450"
+    LastWriteTime="132303979922678515"
+    Private="true" />
+  <Object
+    Path="F:\1_Automation_projects\Vrtalka\Logical\VrtalkaVars.var"
+    LogicalPath="VrtalkaVars.var"
+    Type="File"
+    LastWriteTime="132307317432080305"
+    Private="false" />
+  <Object
+    Path="F:\1_Automation_projects\Vrtalka\Logical\Types.typ"
+    LogicalPath="Types.typ"
+    Type="File"
+    LastWriteTime="132307317432559981"
+    Private="false" />
+  <Object
+    Path="F:\1_Automation_projects\Vrtalka\Logical\HMI\Package.pkg"
+    LogicalPath="HMI"
+    Type="Package"
+    LastWriteTime="132307519007582366" />
+  <Object
+    Path="F:\1_Automation_projects\Vrtalka\Logical\HMI\VrtalkaHMI\Vc.dob"
+    LogicalPath="HMI.VrtalkaHMI"
+    Type="DataObject"
+    LastWriteTime="132307518999981580" />
+  <Object
+    Path="F:\1_Automation_projects\Vrtalka\Logical\HMI\VrtalkaHMI\Package\Package.pkg"
+    LogicalPath="HMI.VrtalkaHMI.Package"
+    Type="Package"
+    LastWriteTime="132307518999946972" />
+  <Object
+    Path="F:\1_Automation_projects\Vrtalka\Logical\HMI\VrtalkaHMI\VCObject.vc"
+    LogicalPath="HMI.VrtalkaHMI.VCObject.vc"
+    Type="File"
+    LastWriteTime="132307519007272508"
+    Private="false" />
+  <Object
+    Path="F:\1_Automation_projects\Vrtalka\Logical\HMI\programHMI\IEC.prg"
+    LogicalPath="HMI.programHMI"
+    Type="Program"
+    LastWriteTime="132307579414354527" />
+  <Object
+    Path="F:\1_Automation_projects\Vrtalka\Logical\HMI\programHMI\Main.st"
+    LogicalPath="HMI.programHMI.Main.st"
+    Type="File"
+    LastWriteTime="132308281335379965"
+    Private="false" />
+  <Object
+    Path="F:\1_Automation_projects\Vrtalka\Logical\HMI\programHMI\Types.typ"
+    LogicalPath="HMI.programHMI.Types.typ"
+    Type="File"
+    LastWriteTime="132307519007392441"
+    Private="true" />
+  <Object
+    Path="F:\1_Automation_projects\Vrtalka\Logical\HMI\programHMI\Variables.var"
+    LogicalPath="HMI.programHMI.Variables.var"
+    Type="File"
+    LastWriteTime="132308232127220753"
+    Private="true" />
+  <Object
+    Path="F:\1_Automation_projects\Vrtalka\Logical\HMI\programHMI\HMI_actions.st"
+    LogicalPath="HMI.programHMI.HMI_actions.st"
+    Type="File"
+    LastWriteTime="132308231574032360"
     Private="false" />
   <Object
     Path="F:\1_Automation_projects\Vrtalka\Physical\SimConf\Config.pkg"
@@ -307,7 +341,7 @@
     Path="F:\1_Automation_projects\Vrtalka\Physical\HW_config\Hardware.hw"
     LogicalPath="SimConf.Hardware.hw"
     Type="File"
-    LastWriteTime="132303275591088548"
+    LastWriteTime="132308275469865884"
     Private="false" />
   <Object
     Path="F:\1_Automation_projects\Vrtalka\Physical\HW_config\Hardware.hwl"
@@ -324,7 +358,7 @@
     Path="F:\1_Automation_projects\Vrtalka\Physical\SimConf\4PPC70_101G_20B\Cpu.sw"
     LogicalPath="SimConf.4PPC70_101G_20B.Cpu.sw"
     Type="File"
-    LastWriteTime="132303138179161822"
+    LastWriteTime="132308322857857340"
     Private="false" />
   <Object
     Path="F:\1_Automation_projects\Vrtalka\Physical\SimConf\4PPC70_101G_20B\Cpu.per"

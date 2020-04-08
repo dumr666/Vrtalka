@@ -2633,16 +2633,12 @@
           <UInt16 Name="UnicodeValue">57638</UInt16>
         </Group>
       </Object>
-      <Object Name="Source[local].VirtualKey[%embVirtualKey_1]" ClsId="0x0" Version="1" TargetIndex="4294967295" Type="VKEY" RefString="Source[local].VirtualKey[%embVirtualKey_1]" />
       <Object Name="Source[local].VirtualKey[%embVirtualKey_3]" ClsId="0x0" Version="1" TargetIndex="4294967295" Type="VKEY" RefString="Source[local].VirtualKey[%embVirtualKey_3]" />
       <Object Name="Source[local].VirtualKey[%embVirtualKey_4]" ClsId="0x0" Version="1" TargetIndex="4294967295" Type="VKEY" RefString="Source[local].VirtualKey[%embVirtualKey_4]" />
       <Object Name="Source[local].VirtualKey[%embVirtualKey_5]" ClsId="0x0" Version="1" TargetIndex="4294967295" Type="VKEY" RefString="Source[local].VirtualKey[%embVirtualKey_5]" />
       <Object Name="Source[local].VirtualKey[%embVirtualKey_6]" ClsId="0x0" Version="1" TargetIndex="4294967295" Type="VKEY" RefString="Source[local].VirtualKey[%embVirtualKey_6]" />
       <Object Name="Source[local].VirtualKey[%embVirtualKey_7]" ClsId="0x0" Version="1" TargetIndex="4294967295" Type="VKEY" RefString="Source[local].VirtualKey[%embVirtualKey_7]" />
       <Object Name="Source[local].VirtualKey[%embVirtualKey_8]" ClsId="0x0" Version="1" TargetIndex="4294967295" Type="VKEY" RefString="Source[local].VirtualKey[%embVirtualKey_8]" />
-      <Object Name="Source[local].VirtualKey[%embVirtualKey_2]" ClsId="0x0" Version="1" TargetIndex="4294967295" Type="VKEY" RefString="Source[local].VirtualKey[%embVirtualKey_2]" />
-      <Object Name="Source[local].VirtualKey[%embVirtualKey_9]" ClsId="0x0" Version="1" TargetIndex="4294967295" Type="VKEY" RefString="Source[local].VirtualKey[%embVirtualKey_9]" />
-      <Object Name="Source[local].VirtualKey[%embVirtualKey_10]" ClsId="0x0" Version="1" TargetIndex="4294967295" Type="VKEY" RefString="Source[local].VirtualKey[%embVirtualKey_10]" />
       <Object Name="Source[local].VirtualKey[%embVirtualKey_11]" ClsId="0x0" Version="1" TargetIndex="4294967295" Type="VKEY" RefString="Source[local].VirtualKey[%embVirtualKey_11]" />
       <Object Name="Source[local].VirtualKey[%embVirtualKey_18]" ClsId="0x0" Version="1" TargetIndex="4294967295" Type="VKEY" RefString="Source[local].VirtualKey[%embVirtualKey_18]" />
       <Object Name="Source[local].VirtualKey[%embVirtualKey_19]" ClsId="0x0" Version="1" TargetIndex="4294967295" Type="VKEY" RefString="Source[local].VirtualKey[%embVirtualKey_19]" />
@@ -2669,7 +2665,7 @@
           <Double Name="SetValue">20</Double>
           <Double Name="ResetValue">0</Double>
           <Double Name="CompletionValue">0</Double>
-          <Reference Name="ValueDatapoint" Type="DP">Source[global].Variable[hmiVariables.hmiPageVar]</Reference>
+          <UInt32 Name="ValueDatapoint">4294967295</UInt32>
           <UInt32 Name="CompletionDatapoint">4294967295</UInt32>
           <Byte Name="Mode">0</Byte>
           <Byte Name="Reserved">0</Byte>
@@ -2684,7 +2680,19 @@
       <Object Name="Source[local].VirtualKey[%embVirtualKey_29]" ClsId="0x0" Version="1" TargetIndex="4294967295" Type="VKEY" RefString="Source[local].VirtualKey[%embVirtualKey_29]" />
       <Object Name="Source[local].VirtualKey[%embVirtualKey_30]" ClsId="0x0" Version="1" TargetIndex="4294967295" Type="VKEY" RefString="Source[local].VirtualKey[%embVirtualKey_30]" />
       <Object Name="Source[local].VirtualKey[%embVirtualKey_31]" ClsId="0x0" Version="1" TargetIndex="4294967295" Type="VKEY" RefString="Source[local].VirtualKey[%embVirtualKey_31]" />
+      <Object Name="Source[local].VirtualKey[%embVirtualKey_2]" ClsId="0x0" Version="1" TargetIndex="4294967295" Type="VKEY" RefString="Source[local].VirtualKey[%embVirtualKey_2]" />
+      <Object Name="Source[local].VirtualKey[%embVirtualKey_9]" ClsId="0x0" Version="1" TargetIndex="4294967295" Type="VKEY" RefString="Source[local].VirtualKey[%embVirtualKey_9]" />
+      <Object Name="Source[local].VirtualKey[%embVirtualKey_10]" ClsId="0x0" Version="1" TargetIndex="4294967295" Type="VKEY" RefString="Source[local].VirtualKey[%embVirtualKey_10]" />
+      <Object Name="Source[local].VirtualKey[%embVirtualKey_13]" ClsId="0x0" Version="1" TargetIndex="4294967295" Type="VKEY" RefString="Source[local].VirtualKey[%embVirtualKey_13]" />
+      <Object Name="Source[local].VirtualKey[%embVirtualKey_1]" ClsId="0x0" Version="1" TargetIndex="4294967295" Type="VKEY" RefString="Source[local].VirtualKey[%embVirtualKey_1]" />
+      <Object Name="Source[local].VirtualKey[%embVirtualKey_14]" ClsId="0x0" Version="1" TargetIndex="4294967295" Type="VKEY" RefString="Source[local].VirtualKey[%embVirtualKey_14]" />
+      <Object Name="Source[local].VirtualKey[%embVirtualKey_15]" ClsId="0x0" Version="1" TargetIndex="4294967295" Type="VKEY" RefString="Source[local].VirtualKey[%embVirtualKey_15]" />
+      <Object Name="Source[local].VirtualKey[%embVirtualKey_16]" ClsId="0x0" Version="1" TargetIndex="4294967295" Type="VKEY" RefString="Source[local].VirtualKey[%embVirtualKey_16]" />
       <Object Name="Source[local].VirtualKey[%embVirtualKey_12]" ClsId="0x0" Version="1" TargetIndex="4294967295" Type="VKEY" RefString="Source[local].VirtualKey[%embVirtualKey_12]" />
+      <Object Name="Source[local].VirtualKey[%embVirtualKey_17]" ClsId="0x0" Version="1" TargetIndex="4294967295" Type="VKEY" RefString="Source[local].VirtualKey[%embVirtualKey_17]" />
+      <Object Name="Source[local].VirtualKey[%embVirtualKey_32]" ClsId="0x0" Version="1" TargetIndex="4294967295" Type="VKEY" RefString="Source[local].VirtualKey[%embVirtualKey_32]" />
+      <Object Name="Source[local].VirtualKey[%embVirtualKey_33]" ClsId="0x0" Version="1" TargetIndex="4294967295" Type="VKEY" RefString="Source[local].VirtualKey[%embVirtualKey_33]" />
+      <Object Name="Source[local].VirtualKey[%embVirtualKey_34]" ClsId="0x0" Version="1" TargetIndex="4294967295" Type="VKEY" RefString="Source[local].VirtualKey[%embVirtualKey_34]" />
     </Folder>
   </Folder>
 </Intermediate>

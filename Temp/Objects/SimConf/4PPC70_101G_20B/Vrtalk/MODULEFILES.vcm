@@ -6,16 +6,18 @@
   <File Name="vcctext.br" />
   <File Name="vccbtn.br" />
   <File Name="vccline.br" />
-  <File Name="vccbmp.br" />
-  <File Name="vccslider.br" />
   <File Name="vccovl.br" />
+  <File Name="vccbmp.br" />
+  <File Name="vccstr.br" />
+  <File Name="vccslider.br" />
+  <File Name="vccshape.br" />
+  <File Name="vcrt.br" />
+  <File Name="vcbclass.br" />
   <File Name="vcgclass.br" />
   <File Name="vcpdsw.br" />
   <File Name="vctcal.br" />
   <File Name="vcnet.br" />
   <File Name="vcmgr.br" />
-  <File Name="vcbclass.br" />
-  <File Name="vcrt.br" />
   <File Name="vcpdvnc.br" />
   <File Name="vcpfar00.br" />
   <File Name="vcalarm.br" />
@@ -27,7 +29,10 @@
   <File Name="Vrtalk02.br" />
   <File Name="Vrtalk01.br" />
   <File Name="vcshared.br" />
-  <File Name="reemkz6g.br" />
+  <File Name="seguisb.br" />
+  <File Name="segoeuib.br" />
   <File Name="arial.br" />
   <File Name="arialbd.br" />
+  <File Name="segoeui.br" />
+  <File Name="solid4n6.br" />
 </VCFirmware>

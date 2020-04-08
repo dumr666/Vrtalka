@@ -853,6 +853,122 @@
           <UInt32 Name="ColorMap">4294967295</UInt32>
           <UInt32 Name="ColorMapIndexOffset">0</UInt32>
         </Object>
+        <Object Name="Gray.Normal_text" ClsId="0x411" Version="1" TargetIndex="Source[local].StyleGroup[0x00001004].StyleClass[Normal_text]" Type="SC" RefString="Source[local].StyleGroup[0x00001004].StyleClass[Gray.Normal_text]">
+          <UInt16 Name="Size">72</UInt16>
+          <UInt16 Name="ControlVersion">1</UInt16>
+          <UInt32 Name="Border">4294967295</UInt32>
+          <UInt32 Name="StatusDatapoint">4294967295</UInt32>
+          <UInt32 Name="ForeColor">0</UInt32>
+          <UInt32 Name="BackColor">8</UInt32>
+          <UInt32 Name="ColorDatapoint">4294967295</UInt32>
+          <Byte Name="FillStyle">0</Byte>
+          <Byte Name="AlignmentHorizontal">0</Byte>
+          <Byte Name="AlignmentVertical">4</Byte>
+          <Byte Name="Multiline">1</Byte>
+          <Reference Name="Font" Type="FNT">Source[local].Font[DefaultFont]</Reference>
+          <UInt32 Name="HighlightingBorder">4294967295</UInt32>
+          <UInt32 Name="HighlightingForeColor">0</UInt32>
+          <UInt32 Name="HighlightingBackColor">8</UInt32>
+          <Byte Name="TextSource">2</Byte>
+          <Byte Name="Reserved">0</Byte>
+          <UInt16 Name="Reserved">0</UInt16>
+          <Int32 Name="TextIndexOffset">0</Int32>
+          <UInt32 Name="TextGroup">4294967295</UInt32>
+          <UInt32 Name="TextDatapoint">4294967295</UInt32>
+          <UInt32 Name="HighlightingDatapoint">4294967295</UInt32>
+          <Byte Name="RightToLeftLayout">0</Byte>
+          <Byte Name="Reserved">0</Byte>
+          <UInt16 Name="Reserved">0</UInt16>
+          <UInt32 Name="ColorMap">4294967295</UInt32>
+          <UInt32 Name="ColorMapIndexOffset">0</UInt32>
+        </Object>
+        <Object Name="Gray.Header3_text" ClsId="0x411" Version="1" TargetIndex="Source[local].StyleGroup[0x00001004].StyleClass[Header3_text]" Type="SC" RefString="Source[local].StyleGroup[0x00001004].StyleClass[Gray.Header3_text]">
+          <UInt16 Name="Size">72</UInt16>
+          <UInt16 Name="ControlVersion">1</UInt16>
+          <UInt32 Name="Border">4294967295</UInt32>
+          <UInt32 Name="StatusDatapoint">4294967295</UInt32>
+          <UInt32 Name="ForeColor">0</UInt32>
+          <UInt32 Name="BackColor">8</UInt32>
+          <UInt32 Name="ColorDatapoint">4294967295</UInt32>
+          <Byte Name="FillStyle">0</Byte>
+          <Byte Name="AlignmentHorizontal">1</Byte>
+          <Byte Name="AlignmentVertical">1</Byte>
+          <Byte Name="Multiline">1</Byte>
+          <Reference Name="Font" Type="FNT">Source[local].Font[DSfon_12]</Reference>
+          <UInt32 Name="HighlightingBorder">4294967295</UInt32>
+          <UInt32 Name="HighlightingForeColor">0</UInt32>
+          <UInt32 Name="HighlightingBackColor">8</UInt32>
+          <Byte Name="TextSource">2</Byte>
+          <Byte Name="Reserved">0</Byte>
+          <UInt16 Name="Reserved">0</UInt16>
+          <Int32 Name="TextIndexOffset">0</Int32>
+          <UInt32 Name="TextGroup">4294967295</UInt32>
+          <UInt32 Name="TextDatapoint">4294967295</UInt32>
+          <UInt32 Name="HighlightingDatapoint">4294967295</UInt32>
+          <Byte Name="RightToLeftLayout">0</Byte>
+          <Byte Name="Reserved">0</Byte>
+          <UInt16 Name="Reserved">0</UInt16>
+          <UInt32 Name="ColorMap">4294967295</UInt32>
+          <UInt32 Name="ColorMapIndexOffset">0</UInt32>
+        </Object>
+        <Object Name="Gray.Header2_text" ClsId="0x411" Version="1" TargetIndex="Source[local].StyleGroup[0x00001004].StyleClass[Header2_text]" Type="SC" RefString="Source[local].StyleGroup[0x00001004].StyleClass[Gray.Header2_text]">
+          <UInt16 Name="Size">72</UInt16>
+          <UInt16 Name="ControlVersion">1</UInt16>
+          <UInt32 Name="Border">4294967295</UInt32>
+          <UInt32 Name="StatusDatapoint">4294967295</UInt32>
+          <UInt32 Name="ForeColor">0</UInt32>
+          <UInt32 Name="BackColor">0</UInt32>
+          <UInt32 Name="ColorDatapoint">4294967295</UInt32>
+          <Byte Name="FillStyle">1</Byte>
+          <Byte Name="AlignmentHorizontal">1</Byte>
+          <Byte Name="AlignmentVertical">4</Byte>
+          <Byte Name="Multiline">1</Byte>
+          <Reference Name="Font" Type="FNT">Source[local].Font[DSfon_15]</Reference>
+          <UInt32 Name="HighlightingBorder">4294967295</UInt32>
+          <UInt32 Name="HighlightingForeColor">0</UInt32>
+          <UInt32 Name="HighlightingBackColor">8</UInt32>
+          <Byte Name="TextSource">2</Byte>
+          <Byte Name="Reserved">0</Byte>
+          <UInt16 Name="Reserved">0</UInt16>
+          <Int32 Name="TextIndexOffset">0</Int32>
+          <UInt32 Name="TextGroup">4294967295</UInt32>
+          <UInt32 Name="TextDatapoint">4294967295</UInt32>
+          <UInt32 Name="HighlightingDatapoint">4294967295</UInt32>
+          <Byte Name="RightToLeftLayout">0</Byte>
+          <Byte Name="Reserved">0</Byte>
+          <UInt16 Name="Reserved">0</UInt16>
+          <UInt32 Name="ColorMap">4294967295</UInt32>
+          <UInt32 Name="ColorMapIndexOffset">0</UInt32>
+        </Object>
+        <Object Name="Gray.Header1_text" ClsId="0x411" Version="1" TargetIndex="Source[local].StyleGroup[0x00001004].StyleClass[Header1_text]" Type="SC" RefString="Source[local].StyleGroup[0x00001004].StyleClass[Gray.Header1_text]">
+          <UInt16 Name="Size">72</UInt16>
+          <UInt16 Name="ControlVersion">1</UInt16>
+          <UInt32 Name="Border">4294967295</UInt32>
+          <UInt32 Name="StatusDatapoint">4294967295</UInt32>
+          <UInt32 Name="ForeColor">0</UInt32>
+          <UInt32 Name="BackColor">0</UInt32>
+          <UInt32 Name="ColorDatapoint">4294967295</UInt32>
+          <Byte Name="FillStyle">1</Byte>
+          <Byte Name="AlignmentHorizontal">1</Byte>
+          <Byte Name="AlignmentVertical">4</Byte>
+          <Byte Name="Multiline">1</Byte>
+          <Reference Name="Font" Type="FNT">Source[local].Font[DSfon_20]</Reference>
+          <UInt32 Name="HighlightingBorder">4294967295</UInt32>
+          <UInt32 Name="HighlightingForeColor">0</UInt32>
+          <UInt32 Name="HighlightingBackColor">8</UInt32>
+          <Byte Name="TextSource">2</Byte>
+          <Byte Name="Reserved">0</Byte>
+          <UInt16 Name="Reserved">0</UInt16>
+          <Int32 Name="TextIndexOffset">0</Int32>
+          <UInt32 Name="TextGroup">4294967295</UInt32>
+          <UInt32 Name="TextDatapoint">4294967295</UInt32>
+          <UInt32 Name="HighlightingDatapoint">4294967295</UInt32>
+          <Byte Name="RightToLeftLayout">0</Byte>
+          <Byte Name="Reserved">0</Byte>
+          <UInt16 Name="Reserved">0</UInt16>
+          <UInt32 Name="ColorMap">4294967295</UInt32>
+          <UInt32 Name="ColorMapIndexOffset">0</UInt32>
+        </Object>
       </Folder>
       <Folder Name="0x00001005" TargetIndex="4101">
         <Object Name="Gray.Bitmap" ClsId="0x411" Version="1" TargetIndex="Source[local].StyleGroup[0x00001005].StyleClass[Bitmap]" Type="SC" RefString="Source[local].StyleGroup[0x00001005].StyleClass[Gray.Bitmap]">
@@ -990,6 +1106,84 @@
           <UInt16 Name="Reserved">0</UInt16>
         </Object>
         <Object Name="Gray.OutputFrameless" ClsId="0x411" Version="1" TargetIndex="Source[local].StyleGroup[0x00001007].StyleClass[OutputFrameless]" Type="SC" RefString="Source[local].StyleGroup[0x00001007].StyleClass[Gray.OutputFrameless]">
+          <UInt16 Name="Size">84</UInt16>
+          <UInt16 Name="ControlVersion">1</UInt16>
+          <Reference Name="Border" Type="BRD">Source[local].Border[Flat_grey]</Reference>
+          <UInt32 Name="StatusDatapoint">4294967295</UInt32>
+          <UInt32 Name="ForeColor">255</UInt32>
+          <UInt32 Name="BackColor">15</UInt32>
+          <UInt32 Name="ColorDatapoint">4294967295</UInt32>
+          <Byte Name="InputStart">1</Byte>
+          <Byte Name="InputComma">0</Byte>
+          <Byte Name="InputUpDown">0</Byte>
+          <Byte Name="InputMinus">0</Byte>
+          <Byte Name="InputConfirm">0</Byte>
+          <Byte Name="InputCancel">2</Byte>
+          <Byte Name="AlignmentHorizontal">2</Byte>
+          <Byte Name="AlignmentVertical">1</Byte>
+          <Byte Name="MinIntegerDigits">1</Byte>
+          <SByte Name="AddFractionDigits">0</SByte>
+          <Byte Name="Input">0</Byte>
+          <Byte Name="InputNext">1</Byte>
+          <Reference Name="Font" Type="FNT">Source[local].Font[Arial9pxValue]</Reference>
+          <UInt32 Name="CompletionDatapoint">4294967295</UInt32>
+          <UInt32 Name="CompletionValue">0</UInt32>
+          <UInt32 Name="LockingLevel">0</UInt32>
+          <UInt32 Name="LockingDatapoint">4294967295</UInt32>
+          <UInt32 Name="InputTouchpad">4294967295</UInt32>
+          <Byte Name="Locking">0</Byte>
+          <Byte Name="UnitText">0</Byte>
+          <Byte Name="UnitTextPosition">2</Byte>
+          <Byte Name="UnitTextAlignment">0</Byte>
+          <UInt32 Name="UnitTextWidth">0</UInt32>
+          <UInt32 Name="AlignmentFixedWidth">0</UInt32>
+          <UInt32 Name="AddFractionDigitsDatapoint">4294967295</UInt32>
+          <UInt32 Name="ColorMap">4294967295</UInt32>
+          <UInt32 Name="ColorMapIndexOffset">0</UInt32>
+          <Byte Name="MinMaxViolation">0</Byte>
+          <Byte Name="Reserved">0</Byte>
+          <UInt16 Name="Reserved">0</UInt16>
+        </Object>
+        <Object Name="Gray.Cust_input" ClsId="0x411" Version="1" TargetIndex="Source[local].StyleGroup[0x00001007].StyleClass[Cust_input]" Type="SC" RefString="Source[local].StyleGroup[0x00001007].StyleClass[Gray.Cust_input]">
+          <UInt16 Name="Size">84</UInt16>
+          <UInt16 Name="ControlVersion">1</UInt16>
+          <Reference Name="Border" Type="BRD">Source[local].Border[Flat_black]</Reference>
+          <UInt32 Name="StatusDatapoint">4294967295</UInt32>
+          <UInt32 Name="ForeColor">0</UInt32>
+          <UInt32 Name="BackColor">15</UInt32>
+          <UInt32 Name="ColorDatapoint">4294967295</UInt32>
+          <Byte Name="InputStart">1</Byte>
+          <Byte Name="InputComma">0</Byte>
+          <Byte Name="InputUpDown">0</Byte>
+          <Byte Name="InputMinus">1</Byte>
+          <Byte Name="InputConfirm">1</Byte>
+          <Byte Name="InputCancel">2</Byte>
+          <Byte Name="AlignmentHorizontal">2</Byte>
+          <Byte Name="AlignmentVertical">1</Byte>
+          <Byte Name="MinIntegerDigits">1</Byte>
+          <SByte Name="AddFractionDigits">0</SByte>
+          <Byte Name="Input">1</Byte>
+          <Byte Name="InputNext">0</Byte>
+          <Reference Name="Font" Type="FNT">Source[local].Font[Arial9pxValue]</Reference>
+          <UInt32 Name="CompletionDatapoint">4294967295</UInt32>
+          <UInt32 Name="CompletionValue">0</UInt32>
+          <UInt32 Name="LockingLevel">0</UInt32>
+          <UInt32 Name="LockingDatapoint">4294967295</UInt32>
+          <Reference Name="InputTouchpad" Type="OVL">Source[local].TouchPad[NumPad]</Reference>
+          <Byte Name="Locking">0</Byte>
+          <Byte Name="UnitText">0</Byte>
+          <Byte Name="UnitTextPosition">2</Byte>
+          <Byte Name="UnitTextAlignment">0</Byte>
+          <UInt32 Name="UnitTextWidth">0</UInt32>
+          <UInt32 Name="AlignmentFixedWidth">0</UInt32>
+          <UInt32 Name="AddFractionDigitsDatapoint">4294967295</UInt32>
+          <UInt32 Name="ColorMap">4294967295</UInt32>
+          <UInt32 Name="ColorMapIndexOffset">0</UInt32>
+          <Byte Name="MinMaxViolation">0</Byte>
+          <Byte Name="Reserved">0</Byte>
+          <UInt16 Name="Reserved">0</UInt16>
+        </Object>
+        <Object Name="Gray.Cust_output" ClsId="0x411" Version="1" TargetIndex="Source[local].StyleGroup[0x00001007].StyleClass[Cust_output]" Type="SC" RefString="Source[local].StyleGroup[0x00001007].StyleClass[Gray.Cust_output]">
           <UInt16 Name="Size">84</UInt16>
           <UInt16 Name="ControlVersion">1</UInt16>
           <Reference Name="Border" Type="BRD">Source[local].Border[Flat_grey]</Reference>
@@ -1239,6 +1433,37 @@
           <UInt32 Name="ColorMap">4294967295</UInt32>
           <UInt32 Name="ColorMapIndexOffset">0</UInt32>
         </Object>
+        <Object Name="Gray.obvestilo" ClsId="0x411" Version="1" TargetIndex="Source[local].StyleGroup[0x0000100B].StyleClass[obvestilo]" Type="SC" RefString="Source[local].StyleGroup[0x0000100B].StyleClass[Gray.obvestilo]">
+          <UInt16 Name="Size">72</UInt16>
+          <UInt16 Name="ControlVersion">1</UInt16>
+          <Reference Name="Border" Type="BRD">Source[local].Border[Flat_black]</Reference>
+          <UInt32 Name="StatusDatapoint">4294967295</UInt32>
+          <UInt32 Name="ForeColor">0</UInt32>
+          <UInt32 Name="BackColor">15</UInt32>
+          <UInt32 Name="ColorDatapoint">4294967295</UInt32>
+          <Reference Name="Font" Type="FNT">Source[local].Font[Arial9px]</Reference>
+          <Byte Name="InputStart">1</Byte>
+          <Byte Name="InputMode">0</Byte>
+          <Byte Name="InputConfirm">0</Byte>
+          <Byte Name="InputCancel">2</Byte>
+          <Byte Name="AlignmentHorizontal">2</Byte>
+          <Byte Name="AlignmentVertical">1</Byte>
+          <Byte Name="Locking">0</Byte>
+          <Byte Name="Input">0</Byte>
+          <String Name="InputPasswordChar" Encoding="ASCII">*</String>
+          <UInt16 Name="InputTabSize">0</UInt16>
+          <UInt32 Name="CompletionDatapoint">4294967295</UInt32>
+          <UInt32 Name="CompletionValue">0</UInt32>
+          <UInt32 Name="LockingLevel">0</UInt32>
+          <UInt32 Name="LockingDatapoint">4294967295</UInt32>
+          <UInt32 Name="InputTouchpad">4294967295</UInt32>
+          <UInt32 Name="MaxChars">0</UInt32>
+          <Byte Name="InputNext">1</Byte>
+          <Byte Name="Reserved">0</Byte>
+          <UInt16 Name="Reserved1">0</UInt16>
+          <UInt32 Name="ColorMap">4294967295</UInt32>
+          <UInt32 Name="ColorMapIndexOffset">0</UInt32>
+        </Object>
       </Folder>
       <Folder Name="0x0000100C" TargetIndex="4108">
         <Object Name="Gray.Password" ClsId="0x411" Version="1" TargetIndex="Source[local].StyleGroup[0x0000100C].StyleClass[Password]" Type="SC" RefString="Source[local].StyleGroup[0x0000100C].StyleClass[Gray.Password]">
@@ -1278,6 +1503,18 @@
       </Folder>
       <Folder Name="0x0000100D" TargetIndex="4109">
         <Object Name="Gray.Line" ClsId="0x411" Version="1" TargetIndex="Source[local].StyleGroup[0x0000100D].StyleClass[Line]" Type="SC" RefString="Source[local].StyleGroup[0x0000100D].StyleClass[Gray.Line]">
+          <UInt16 Name="Size">24</UInt16>
+          <UInt16 Name="ControlVersion">1</UInt16>
+          <Byte Name="LineStyle">1</Byte>
+          <Byte Name="LineWidth">1</Byte>
+          <UInt16 Name="Reserved">0</UInt16>
+          <UInt32 Name="ForeColor">0</UInt32>
+          <UInt32 Name="ColorDatapoint">4294967295</UInt32>
+          <UInt32 Name="StatusDatapoint">4294967295</UInt32>
+          <UInt32 Name="ColorMap">4294967295</UInt32>
+          <UInt32 Name="ColorMapIndexOffset">0</UInt32>
+        </Object>
+        <Object Name="Gray.Thick_line" ClsId="0x411" Version="1" TargetIndex="Source[local].StyleGroup[0x0000100D].StyleClass[Thick_line]" Type="SC" RefString="Source[local].StyleGroup[0x0000100D].StyleClass[Gray.Thick_line]">
           <UInt16 Name="Size">24</UInt16>
           <UInt16 Name="ControlVersion">1</UInt16>
           <Byte Name="LineStyle">1</Byte>

@@ -20,8 +20,8 @@
       <Reference Name="LanguageCurrentDP" Type="DP">None</Reference>
       <Reference Name="KeyMatrixDP" Type="DP">None</Reference>
       <Reference Name="LEDMatrixDP" Type="DP">None</Reference>
-      <Reference Name="PageChangeDP" Type="DP">None</Reference>
-      <Reference Name="PageCurrentDP" Type="DP">None</Reference>
+      <Reference Name="PageChangeDP" Type="DP">Source[global].Variable[DataSource.changePage]</Reference>
+      <Reference Name="PageCurrentDP" Type="DP">Source[global].Variable[DataSource.currentPage]</Reference>
       <Reference Name="ScreensaverPage" Type="PAGE">None</Reference>
       <UInt32 Name="ScreensaverTimeout">0</UInt32>
       <Reference Name="ScreensaverDP" Type="DP">None</Reference>

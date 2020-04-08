@@ -4,5 +4,10 @@
   <Font FamilyName="Arial" BrName="arialbd" FilePath="C:\WINDOWS\fonts\arialbd.TTF" Bold="True" Italic="False" Size="9" RenderSize="15" />
   <Font FamilyName="Arial" BrName="arialbd" FilePath="C:\WINDOWS\fonts\arialbd.TTF" Bold="True" Italic="False" Size="10" RenderSize="16" />
   <Font FamilyName="Arial" BrName="arial" FilePath="C:\WINDOWS\fonts\arial.TTF" Bold="False" Italic="False" Size="12" RenderSize="18" />
-  <Font FamilyName="Reem Kufi" BrName="reemkz6g" FilePath="C:\WINDOWS\fonts\ReemKufi-Regular.TTF" Bold="False" Italic="False" Size="12" RenderSize="30" />
+  <Font FamilyName="Segoe UI" BrName="segoeui" FilePath="C:\WINDOWS\fonts\segoeui.TTF" Bold="False" Italic="False" Size="12" RenderSize="21" />
+  <Font FamilyName="SolidWorks GDT" BrName="solid4n6" FilePath="C:\WINDOWS\fonts\solidworks gdt.TTF" Bold="False" Italic="False" Size="12" RenderSize="19" />
+  <Font FamilyName="Segoe UI Semibold" BrName="seguisb" FilePath="C:\WINDOWS\fonts\seguisb.TTF" Bold="False" Italic="False" Size="15" RenderSize="28" />
+  <Font FamilyName="Segoe UI" BrName="segoeuib" FilePath="C:\WINDOWS\fonts\segoeuib.TTF" Bold="True" Italic="False" Size="14" RenderSize="25" />
+  <Font FamilyName="Segoe UI Semibold" BrName="seguisb" FilePath="C:\WINDOWS\fonts\seguisb.TTF" Bold="False" Italic="False" Size="20" RenderSize="37" />
+  <Font FamilyName="Segoe UI Semibold" BrName="seguisb" FilePath="C:\WINDOWS\fonts\seguisb.TTF" Bold="False" Italic="False" Size="26" RenderSize="47" />
 </Fonts>

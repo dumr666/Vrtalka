@@ -7,8 +7,8 @@
         <Object Name="DataSource" ClsId="0x200" Version="1" Type="DS" RefString="Source[global].DataSource[DataSource]">
           <Reference Name="DriverID" Type="DS">Source[global].DataSource[DataSource]</Reference>
           <Reference Name="TextGroup" Type="TG">None</Reference>
-          <UInt32 Name="PVCount">48</UInt32>
-          <UInt32 Name="ImageSize">121</UInt32>
+          <UInt32 Name="PVCount">53</UInt32>
+          <UInt32 Name="ImageSize">210</UInt32>
           <Table Name="Variables" Cols="5">
             <TableHeader>
               <Column Name="PVID" />
@@ -17,7 +17,7 @@
               <Column Name="PVDim" />
               <Column Name="PVName" />
             </TableHeader>
-            <Group Name="Program:agr1.poz_agr_s">
+            <Group Name="agr2.poz_agr_min">
               <UInt16 Name="ID">0</UInt16>
               <UInt16 Name="PVType">6</UInt16>
               <UInt32 Name="PVOffset">0</UInt32>
@@ -26,431 +26,476 @@
               <Double Name="PVMaxVal">2147483647</Double>
               <Int32 Name="Offset">0</Int32>
             </Group>
-            <Group Name="Program:agr1.poz_agr_a">
+            <Group Name="agr2.poz_agr_s">
               <UInt16 Name="ID">1</UInt16>
               <UInt16 Name="PVType">6</UInt16>
               <UInt32 Name="PVOffset">4</UInt32>
               <UInt32 Name="PVDim">1</UInt32>
               <Double Name="PVMinVal">-2147483648</Double>
               <Double Name="PVMaxVal">2147483647</Double>
-              <Int32 Name="Offset">23</Int32>
+              <Int32 Name="Offset">17</Int32>
             </Group>
-            <Group Name="Program:agr1.poz_agr_min">
+            <Group Name="agr2.agr_pos_ok">
               <UInt16 Name="ID">2</UInt16>
-              <UInt16 Name="PVType">6</UInt16>
+              <UInt16 Name="PVType">1</UInt16>
               <UInt32 Name="PVOffset">8</UInt32>
+              <UInt32 Name="PVDim">1</UInt32>
+              <Double Name="PVMinVal">0</Double>
+              <Double Name="PVMaxVal">1</Double>
+              <Int32 Name="Offset">32</Int32>
+            </Group>
+            <Group Name="agr2.agr_active">
+              <UInt16 Name="ID">3</UInt16>
+              <UInt16 Name="PVType">1</UInt16>
+              <UInt32 Name="PVOffset">9</UInt32>
+              <UInt32 Name="PVDim">1</UInt32>
+              <Double Name="PVMinVal">0</Double>
+              <Double Name="PVMaxVal">1</Double>
+              <Int32 Name="Offset">48</Int32>
+            </Group>
+            <Group Name="agr2.poz_agr_a">
+              <UInt16 Name="ID">4</UInt16>
+              <UInt16 Name="PVType">6</UInt16>
+              <UInt32 Name="PVOffset">10</UInt32>
               <UInt32 Name="PVDim">1</UInt32>
               <Double Name="PVMinVal">-2147483648</Double>
               <Double Name="PVMaxVal">2147483647</Double>
-              <Int32 Name="Offset">46</Int32>
+              <Int32 Name="Offset">64</Int32>
             </Group>
-            <Group Name="Program:agr1.agr_pos_ok">
-              <UInt16 Name="ID">3</UInt16>
-              <UInt16 Name="PVType">1</UInt16>
-              <UInt32 Name="PVOffset">12</UInt32>
-              <UInt32 Name="PVDim">1</UInt32>
-              <Double Name="PVMinVal">0</Double>
-              <Double Name="PVMaxVal">1</Double>
-              <Int32 Name="Offset">71</Int32>
-            </Group>
-            <Group Name="Program:agr1.agr_active">
-              <UInt16 Name="ID">4</UInt16>
-              <UInt16 Name="PVType">1</UInt16>
-              <UInt32 Name="PVOffset">13</UInt32>
-              <UInt32 Name="PVDim">1</UInt32>
-              <Double Name="PVMinVal">0</Double>
-              <Double Name="PVMaxVal">1</Double>
-              <Int32 Name="Offset">95</Int32>
-            </Group>
-            <Group Name="Program:agr6.poz_agr_s">
+            <Group Name="agr3.poz_agr_s">
               <UInt16 Name="ID">5</UInt16>
               <UInt16 Name="PVType">6</UInt16>
               <UInt32 Name="PVOffset">14</UInt32>
               <UInt32 Name="PVDim">1</UInt32>
               <Double Name="PVMinVal">-2147483648</Double>
               <Double Name="PVMaxVal">2147483647</Double>
-              <Int32 Name="Offset">119</Int32>
+              <Int32 Name="Offset">79</Int32>
             </Group>
-            <Group Name="Program:agr6.poz_agr_a">
+            <Group Name="agr3.agr_pos_ok">
               <UInt16 Name="ID">6</UInt16>
-              <UInt16 Name="PVType">6</UInt16>
-              <UInt32 Name="PVOffset">18</UInt32>
-              <UInt32 Name="PVDim">1</UInt32>
-              <Double Name="PVMinVal">-2147483648</Double>
-              <Double Name="PVMaxVal">2147483647</Double>
-              <Int32 Name="Offset">142</Int32>
-            </Group>
-            <Group Name="Program:agr6.poz_agr_min">
-              <UInt16 Name="ID">7</UInt16>
-              <UInt16 Name="PVType">6</UInt16>
-              <UInt32 Name="PVOffset">22</UInt32>
-              <UInt32 Name="PVDim">1</UInt32>
-              <Double Name="PVMinVal">-2147483648</Double>
-              <Double Name="PVMaxVal">2147483647</Double>
-              <Int32 Name="Offset">165</Int32>
-            </Group>
-            <Group Name="Program:agr6.agr_pos_ok">
-              <UInt16 Name="ID">8</UInt16>
               <UInt16 Name="PVType">1</UInt16>
-              <UInt32 Name="PVOffset">26</UInt32>
+              <UInt32 Name="PVOffset">18</UInt32>
               <UInt32 Name="PVDim">1</UInt32>
               <Double Name="PVMinVal">0</Double>
               <Double Name="PVMaxVal">1</Double>
-              <Int32 Name="Offset">190</Int32>
+              <Int32 Name="Offset">94</Int32>
             </Group>
-            <Group Name="Program:agr6.agr_active">
+            <Group Name="agr3.poz_agr_min">
+              <UInt16 Name="ID">7</UInt16>
+              <UInt16 Name="PVType">6</UInt16>
+              <UInt32 Name="PVOffset">19</UInt32>
+              <UInt32 Name="PVDim">1</UInt32>
+              <Double Name="PVMinVal">-2147483648</Double>
+              <Double Name="PVMaxVal">2147483647</Double>
+              <Int32 Name="Offset">110</Int32>
+            </Group>
+            <Group Name="agr3.poz_agr_a">
+              <UInt16 Name="ID">8</UInt16>
+              <UInt16 Name="PVType">6</UInt16>
+              <UInt32 Name="PVOffset">23</UInt32>
+              <UInt32 Name="PVDim">1</UInt32>
+              <Double Name="PVMinVal">-2147483648</Double>
+              <Double Name="PVMaxVal">2147483647</Double>
+              <Int32 Name="Offset">127</Int32>
+            </Group>
+            <Group Name="agr3.agr_active">
               <UInt16 Name="ID">9</UInt16>
               <UInt16 Name="PVType">1</UInt16>
               <UInt32 Name="PVOffset">27</UInt32>
               <UInt32 Name="PVDim">1</UInt32>
               <Double Name="PVMinVal">0</Double>
               <Double Name="PVMaxVal">1</Double>
-              <Int32 Name="Offset">214</Int32>
+              <Int32 Name="Offset">142</Int32>
             </Group>
-            <Group Name="Program:agr5.poz_agr_s">
+            <Group Name="agr5.poz_agr_s">
               <UInt16 Name="ID">10</UInt16>
               <UInt16 Name="PVType">6</UInt16>
               <UInt32 Name="PVOffset">28</UInt32>
               <UInt32 Name="PVDim">1</UInt32>
               <Double Name="PVMinVal">-2147483648</Double>
               <Double Name="PVMaxVal">2147483647</Double>
-              <Int32 Name="Offset">238</Int32>
+              <Int32 Name="Offset">158</Int32>
             </Group>
-            <Group Name="Program:agr5.poz_agr_a">
+            <Group Name="agr5.poz_agr_a">
               <UInt16 Name="ID">11</UInt16>
               <UInt16 Name="PVType">6</UInt16>
               <UInt32 Name="PVOffset">32</UInt32>
               <UInt32 Name="PVDim">1</UInt32>
               <Double Name="PVMinVal">-2147483648</Double>
               <Double Name="PVMaxVal">2147483647</Double>
-              <Int32 Name="Offset">261</Int32>
+              <Int32 Name="Offset">173</Int32>
             </Group>
-            <Group Name="Program:agr5.poz_agr_min">
+            <Group Name="agr5.poz_agr_min">
               <UInt16 Name="ID">12</UInt16>
               <UInt16 Name="PVType">6</UInt16>
               <UInt32 Name="PVOffset">36</UInt32>
               <UInt32 Name="PVDim">1</UInt32>
               <Double Name="PVMinVal">-2147483648</Double>
               <Double Name="PVMaxVal">2147483647</Double>
-              <Int32 Name="Offset">284</Int32>
+              <Int32 Name="Offset">188</Int32>
             </Group>
-            <Group Name="Program:agr5.agr_pos_ok">
+            <Group Name="agr5.agr_pos_ok">
               <UInt16 Name="ID">13</UInt16>
               <UInt16 Name="PVType">1</UInt16>
               <UInt32 Name="PVOffset">40</UInt32>
               <UInt32 Name="PVDim">1</UInt32>
               <Double Name="PVMinVal">0</Double>
               <Double Name="PVMaxVal">1</Double>
-              <Int32 Name="Offset">309</Int32>
+              <Int32 Name="Offset">205</Int32>
             </Group>
-            <Group Name="Program:agr5.agr_active">
+            <Group Name="agr5.agr_active">
               <UInt16 Name="ID">14</UInt16>
               <UInt16 Name="PVType">1</UInt16>
               <UInt32 Name="PVOffset">41</UInt32>
               <UInt32 Name="PVDim">1</UInt32>
               <Double Name="PVMinVal">0</Double>
               <Double Name="PVMaxVal">1</Double>
-              <Int32 Name="Offset">333</Int32>
+              <Int32 Name="Offset">221</Int32>
             </Group>
-            <Group Name="Program:agr4.poz_agr_s">
+            <Group Name="agr1.poz_agr_min">
               <UInt16 Name="ID">15</UInt16>
               <UInt16 Name="PVType">6</UInt16>
               <UInt32 Name="PVOffset">42</UInt32>
               <UInt32 Name="PVDim">1</UInt32>
               <Double Name="PVMinVal">-2147483648</Double>
               <Double Name="PVMaxVal">2147483647</Double>
-              <Int32 Name="Offset">357</Int32>
+              <Int32 Name="Offset">237</Int32>
             </Group>
-            <Group Name="Program:agr4.poz_agr_a">
+            <Group Name="agr1.poz_agr_a">
               <UInt16 Name="ID">16</UInt16>
               <UInt16 Name="PVType">6</UInt16>
               <UInt32 Name="PVOffset">46</UInt32>
               <UInt32 Name="PVDim">1</UInt32>
               <Double Name="PVMinVal">-2147483648</Double>
               <Double Name="PVMaxVal">2147483647</Double>
-              <Int32 Name="Offset">380</Int32>
+              <Int32 Name="Offset">254</Int32>
             </Group>
-            <Group Name="Program:agr4.poz_agr_min">
+            <Group Name="agr1.poz_agr_s">
               <UInt16 Name="ID">17</UInt16>
               <UInt16 Name="PVType">6</UInt16>
               <UInt32 Name="PVOffset">50</UInt32>
               <UInt32 Name="PVDim">1</UInt32>
               <Double Name="PVMinVal">-2147483648</Double>
               <Double Name="PVMaxVal">2147483647</Double>
-              <Int32 Name="Offset">403</Int32>
+              <Int32 Name="Offset">269</Int32>
             </Group>
-            <Group Name="Program:agr4.agr_pos_ok">
+            <Group Name="agr1.agr_active">
               <UInt16 Name="ID">18</UInt16>
               <UInt16 Name="PVType">1</UInt16>
               <UInt32 Name="PVOffset">54</UInt32>
               <UInt32 Name="PVDim">1</UInt32>
               <Double Name="PVMinVal">0</Double>
               <Double Name="PVMaxVal">1</Double>
-              <Int32 Name="Offset">428</Int32>
+              <Int32 Name="Offset">284</Int32>
             </Group>
-            <Group Name="Program:agr4.agr_active">
+            <Group Name="agr1.agr_pos_ok">
               <UInt16 Name="ID">19</UInt16>
               <UInt16 Name="PVType">1</UInt16>
               <UInt32 Name="PVOffset">55</UInt32>
               <UInt32 Name="PVDim">1</UInt32>
               <Double Name="PVMinVal">0</Double>
               <Double Name="PVMaxVal">1</Double>
-              <Int32 Name="Offset">452</Int32>
+              <Int32 Name="Offset">300</Int32>
             </Group>
-            <Group Name="Program:agr3.poz_agr_s">
+            <Group Name="Vrtalka:poz_agr_min">
               <UInt16 Name="ID">20</UInt16>
               <UInt16 Name="PVType">6</UInt16>
               <UInt32 Name="PVOffset">56</UInt32>
               <UInt32 Name="PVDim">1</UInt32>
               <Double Name="PVMinVal">-2147483648</Double>
               <Double Name="PVMaxVal">2147483647</Double>
-              <Int32 Name="Offset">476</Int32>
+              <Int32 Name="Offset">316</Int32>
             </Group>
-            <Group Name="Program:agr3.poz_agr_a">
+            <Group Name="Vrtalka:poz_agr_max">
               <UInt16 Name="ID">21</UInt16>
               <UInt16 Name="PVType">6</UInt16>
               <UInt32 Name="PVOffset">60</UInt32>
               <UInt32 Name="PVDim">1</UInt32>
               <Double Name="PVMinVal">-2147483648</Double>
               <Double Name="PVMaxVal">2147483647</Double>
-              <Int32 Name="Offset">499</Int32>
+              <Int32 Name="Offset">336</Int32>
             </Group>
-            <Group Name="Program:agr3.poz_agr_min">
+            <Group Name="agr6.agr_active">
               <UInt16 Name="ID">22</UInt16>
-              <UInt16 Name="PVType">6</UInt16>
+              <UInt16 Name="PVType">1</UInt16>
               <UInt32 Name="PVOffset">64</UInt32>
+              <UInt32 Name="PVDim">1</UInt32>
+              <Double Name="PVMinVal">0</Double>
+              <Double Name="PVMaxVal">1</Double>
+              <Int32 Name="Offset">356</Int32>
+            </Group>
+            <Group Name="agr6.agr_pos_ok">
+              <UInt16 Name="ID">23</UInt16>
+              <UInt16 Name="PVType">1</UInt16>
+              <UInt32 Name="PVOffset">65</UInt32>
+              <UInt32 Name="PVDim">1</UInt32>
+              <Double Name="PVMinVal">0</Double>
+              <Double Name="PVMaxVal">1</Double>
+              <Int32 Name="Offset">372</Int32>
+            </Group>
+            <Group Name="agr6.poz_agr_min">
+              <UInt16 Name="ID">24</UInt16>
+              <UInt16 Name="PVType">6</UInt16>
+              <UInt32 Name="PVOffset">66</UInt32>
               <UInt32 Name="PVDim">1</UInt32>
               <Double Name="PVMinVal">-2147483648</Double>
               <Double Name="PVMaxVal">2147483647</Double>
-              <Int32 Name="Offset">522</Int32>
+              <Int32 Name="Offset">388</Int32>
             </Group>
-            <Group Name="Program:agr3.agr_pos_ok">
-              <UInt16 Name="ID">23</UInt16>
-              <UInt16 Name="PVType">1</UInt16>
-              <UInt32 Name="PVOffset">68</UInt32>
-              <UInt32 Name="PVDim">1</UInt32>
-              <Double Name="PVMinVal">0</Double>
-              <Double Name="PVMaxVal">1</Double>
-              <Int32 Name="Offset">547</Int32>
-            </Group>
-            <Group Name="Program:agr3.agr_active">
-              <UInt16 Name="ID">24</UInt16>
-              <UInt16 Name="PVType">1</UInt16>
-              <UInt32 Name="PVOffset">69</UInt32>
-              <UInt32 Name="PVDim">1</UInt32>
-              <Double Name="PVMinVal">0</Double>
-              <Double Name="PVMaxVal">1</Double>
-              <Int32 Name="Offset">571</Int32>
-            </Group>
-            <Group Name="Program:agr2.poz_agr_s">
+            <Group Name="agr6.poz_agr_a">
               <UInt16 Name="ID">25</UInt16>
               <UInt16 Name="PVType">6</UInt16>
               <UInt32 Name="PVOffset">70</UInt32>
               <UInt32 Name="PVDim">1</UInt32>
               <Double Name="PVMinVal">-2147483648</Double>
               <Double Name="PVMaxVal">2147483647</Double>
-              <Int32 Name="Offset">595</Int32>
+              <Int32 Name="Offset">405</Int32>
             </Group>
-            <Group Name="Program:agr2.poz_agr_a">
+            <Group Name="agr6.poz_agr_s">
               <UInt16 Name="ID">26</UInt16>
               <UInt16 Name="PVType">6</UInt16>
               <UInt32 Name="PVOffset">74</UInt32>
               <UInt32 Name="PVDim">1</UInt32>
               <Double Name="PVMinVal">-2147483648</Double>
               <Double Name="PVMaxVal">2147483647</Double>
-              <Int32 Name="Offset">618</Int32>
+              <Int32 Name="Offset">420</Int32>
             </Group>
-            <Group Name="Program:agr2.poz_agr_min">
+            <Group Name="vozicek.poz_srv_max">
               <UInt16 Name="ID">27</UInt16>
               <UInt16 Name="PVType">6</UInt16>
               <UInt32 Name="PVOffset">78</UInt32>
               <UInt32 Name="PVDim">1</UInt32>
               <Double Name="PVMinVal">-2147483648</Double>
               <Double Name="PVMaxVal">2147483647</Double>
-              <Int32 Name="Offset">641</Int32>
+              <Int32 Name="Offset">435</Int32>
             </Group>
-            <Group Name="Program:agr2.agr_pos_ok">
+            <Group Name="vozicek.poz_srv_min">
               <UInt16 Name="ID">28</UInt16>
-              <UInt16 Name="PVType">1</UInt16>
+              <UInt16 Name="PVType">6</UInt16>
               <UInt32 Name="PVOffset">82</UInt32>
               <UInt32 Name="PVDim">1</UInt32>
-              <Double Name="PVMinVal">0</Double>
-              <Double Name="PVMaxVal">1</Double>
-              <Int32 Name="Offset">666</Int32>
+              <Double Name="PVMinVal">-2147483648</Double>
+              <Double Name="PVMaxVal">2147483647</Double>
+              <Int32 Name="Offset">455</Int32>
             </Group>
-            <Group Name="Program:agr2.agr_active">
+            <Group Name="vozicek.servo_act">
               <UInt16 Name="ID">29</UInt16>
+              <UInt16 Name="PVType">6</UInt16>
+              <UInt32 Name="PVOffset">86</UInt32>
+              <UInt32 Name="PVDim">1</UInt32>
+              <Double Name="PVMinVal">-2147483648</Double>
+              <Double Name="PVMaxVal">2147483647</Double>
+              <Int32 Name="Offset">475</Int32>
+            </Group>
+            <Group Name="vozicek.servo_in_pos">
+              <UInt16 Name="ID">30</UInt16>
               <UInt16 Name="PVType">1</UInt16>
-              <UInt32 Name="PVOffset">83</UInt32>
+              <UInt32 Name="PVOffset">90</UInt32>
               <UInt32 Name="PVDim">1</UInt32>
               <Double Name="PVMinVal">0</Double>
               <Double Name="PVMaxVal">1</Double>
-              <Int32 Name="Offset">690</Int32>
+              <Int32 Name="Offset">493</Int32>
             </Group>
-            <Group Name="Program:vozicek.servo_set">
-              <UInt16 Name="ID">30</UInt16>
-              <UInt16 Name="PVType">6</UInt16>
-              <UInt32 Name="PVOffset">84</UInt32>
-              <UInt32 Name="PVDim">1</UInt32>
-              <Double Name="PVMinVal">-2147483648</Double>
-              <Double Name="PVMaxVal">2147483647</Double>
-              <Int32 Name="Offset">714</Int32>
-            </Group>
-            <Group Name="Program:vozicek.servo_act">
+            <Group Name="vozicek.agr_zak">
               <UInt16 Name="ID">31</UInt16>
-              <UInt16 Name="PVType">6</UInt16>
-              <UInt32 Name="PVOffset">88</UInt32>
+              <UInt16 Name="PVType">1</UInt16>
+              <UInt32 Name="PVOffset">91</UInt32>
               <UInt32 Name="PVDim">1</UInt32>
-              <Double Name="PVMinVal">-2147483648</Double>
-              <Double Name="PVMaxVal">2147483647</Double>
-              <Int32 Name="Offset">740</Int32>
+              <Double Name="PVMinVal">0</Double>
+              <Double Name="PVMaxVal">1</Double>
+              <Int32 Name="Offset">514</Int32>
             </Group>
-            <Group Name="Program:vozicek.servo_in_pos">
+            <Group Name="vozicek.servo_moving">
               <UInt16 Name="ID">32</UInt16>
               <UInt16 Name="PVType">1</UInt16>
               <UInt32 Name="PVOffset">92</UInt32>
               <UInt32 Name="PVDim">1</UInt32>
               <Double Name="PVMinVal">0</Double>
               <Double Name="PVMaxVal">1</Double>
-              <Int32 Name="Offset">766</Int32>
+              <Int32 Name="Offset">530</Int32>
             </Group>
-            <Group Name="Program:vozicek.servo_moving">
+            <Group Name="vozicek.servo_set">
               <UInt16 Name="ID">33</UInt16>
-              <UInt16 Name="PVType">1</UInt16>
+              <UInt16 Name="PVType">6</UInt16>
               <UInt32 Name="PVOffset">93</UInt32>
               <UInt32 Name="PVDim">1</UInt32>
-              <Double Name="PVMinVal">0</Double>
-              <Double Name="PVMaxVal">1</Double>
-              <Int32 Name="Offset">795</Int32>
+              <Double Name="PVMinVal">-2147483648</Double>
+              <Double Name="PVMaxVal">2147483647</Double>
+              <Int32 Name="Offset">551</Int32>
             </Group>
-            <Group Name="Program:vozicek.agr_zak">
+            <Group Name="agr4.poz_agr_s">
               <UInt16 Name="ID">34</UInt16>
-              <UInt16 Name="PVType">1</UInt16>
-              <UInt32 Name="PVOffset">94</UInt32>
+              <UInt16 Name="PVType">6</UInt16>
+              <UInt32 Name="PVOffset">97</UInt32>
               <UInt32 Name="PVDim">1</UInt32>
-              <Double Name="PVMinVal">0</Double>
-              <Double Name="PVMaxVal">1</Double>
-              <Int32 Name="Offset">824</Int32>
+              <Double Name="PVMinVal">-2147483648</Double>
+              <Double Name="PVMaxVal">2147483647</Double>
+              <Int32 Name="Offset">569</Int32>
             </Group>
-            <Group Name="Program:vozicek.poz_srv_max">
+            <Group Name="agr4.poz_agr_a">
               <UInt16 Name="ID">35</UInt16>
               <UInt16 Name="PVType">6</UInt16>
-              <UInt32 Name="PVOffset">95</UInt32>
+              <UInt32 Name="PVOffset">101</UInt32>
               <UInt32 Name="PVDim">1</UInt32>
               <Double Name="PVMinVal">-2147483648</Double>
               <Double Name="PVMaxVal">2147483647</Double>
-              <Int32 Name="Offset">848</Int32>
+              <Int32 Name="Offset">584</Int32>
             </Group>
-            <Group Name="Program:vozicek.poz_srv_min">
+            <Group Name="agr4.agr_pos_ok">
               <UInt16 Name="ID">36</UInt16>
-              <UInt16 Name="PVType">6</UInt16>
-              <UInt32 Name="PVOffset">99</UInt32>
-              <UInt32 Name="PVDim">1</UInt32>
-              <Double Name="PVMinVal">-2147483648</Double>
-              <Double Name="PVMaxVal">2147483647</Double>
-              <Int32 Name="Offset">876</Int32>
-            </Group>
-            <Group Name="Program:doDelovanje">
-              <UInt16 Name="ID">37</UInt16>
-              <UInt16 Name="PVType">1</UInt16>
-              <UInt32 Name="PVOffset">103</UInt32>
-              <UInt32 Name="PVDim">1</UInt32>
-              <Double Name="PVMinVal">0</Double>
-              <Double Name="PVMaxVal">1</Double>
-              <Int32 Name="Offset">904</Int32>
-            </Group>
-            <Group Name="Program:diStartStroja">
-              <UInt16 Name="ID">38</UInt16>
-              <UInt16 Name="PVType">1</UInt16>
-              <UInt32 Name="PVOffset">104</UInt32>
-              <UInt32 Name="PVDim">1</UInt32>
-              <Double Name="PVMinVal">0</Double>
-              <Double Name="PVMaxVal">1</Double>
-              <Int32 Name="Offset">924</Int32>
-            </Group>
-            <Group Name="Program:doStrojPripravljen">
-              <UInt16 Name="ID">39</UInt16>
               <UInt16 Name="PVType">1</UInt16>
               <UInt32 Name="PVOffset">105</UInt32>
               <UInt32 Name="PVDim">1</UInt32>
               <Double Name="PVMinVal">0</Double>
               <Double Name="PVMaxVal">1</Double>
-              <Int32 Name="Offset">946</Int32>
+              <Int32 Name="Offset">599</Int32>
             </Group>
-            <Group Name="Program:poz_agr_min">
-              <UInt16 Name="ID">40</UInt16>
+            <Group Name="agr4.poz_agr_min">
+              <UInt16 Name="ID">37</UInt16>
               <UInt16 Name="PVType">6</UInt16>
               <UInt32 Name="PVOffset">106</UInt32>
               <UInt32 Name="PVDim">1</UInt32>
               <Double Name="PVMinVal">-2147483648</Double>
               <Double Name="PVMaxVal">2147483647</Double>
-              <Int32 Name="Offset">973</Int32>
+              <Int32 Name="Offset">615</Int32>
             </Group>
-            <Group Name="Program:poz_agr_max">
-              <UInt16 Name="ID">41</UInt16>
-              <UInt16 Name="PVType">6</UInt16>
+            <Group Name="agr4.agr_active">
+              <UInt16 Name="ID">38</UInt16>
+              <UInt16 Name="PVType">1</UInt16>
               <UInt32 Name="PVOffset">110</UInt32>
               <UInt32 Name="PVDim">1</UInt32>
-              <Double Name="PVMinVal">-2147483648</Double>
-              <Double Name="PVMaxVal">2147483647</Double>
-              <Int32 Name="Offset">993</Int32>
+              <Double Name="PVMinVal">0</Double>
+              <Double Name="PVMaxVal">1</Double>
+              <Int32 Name="Offset">632</Int32>
             </Group>
-            <Group Name="Program:diSoftStop">
-              <UInt16 Name="ID">42</UInt16>
+            <Group Name="programHMI:stevec">
+              <UInt16 Name="ID">39</UInt16>
+              <UInt16 Name="PVType">3</UInt16>
+              <UInt32 Name="PVOffset">111</UInt32>
+              <UInt32 Name="PVDim">1</UInt32>
+              <Double Name="PVMinVal">0</Double>
+              <Double Name="PVMaxVal">65535</Double>
+              <Int32 Name="Offset">648</Int32>
+            </Group>
+            <Group Name="doFunSuccess">
+              <UInt16 Name="ID">40</UInt16>
+              <UInt16 Name="PVType">1</UInt16>
+              <UInt32 Name="PVOffset">113</UInt32>
+              <UInt32 Name="PVDim">1</UInt32>
+              <Double Name="PVMinVal">0</Double>
+              <Double Name="PVMaxVal">1</Double>
+              <Int32 Name="Offset">666</Int32>
+            </Group>
+            <Group Name="diHMIin1">
+              <UInt16 Name="ID">41</UInt16>
               <UInt16 Name="PVType">1</UInt16>
               <UInt32 Name="PVOffset">114</UInt32>
               <UInt32 Name="PVDim">1</UInt32>
               <Double Name="PVMinVal">0</Double>
               <Double Name="PVMaxVal">1</Double>
-              <Int32 Name="Offset">1013</Int32>
+              <Int32 Name="Offset">679</Int32>
             </Group>
-            <Group Name="Program:diHMIin1">
-              <UInt16 Name="ID">43</UInt16>
+            <Group Name="diSoftStop">
+              <UInt16 Name="ID">42</UInt16>
               <UInt16 Name="PVType">1</UInt16>
               <UInt32 Name="PVOffset">115</UInt32>
               <UInt32 Name="PVDim">1</UInt32>
               <Double Name="PVMinVal">0</Double>
               <Double Name="PVMaxVal">1</Double>
-              <Int32 Name="Offset">1032</Int32>
+              <Int32 Name="Offset">688</Int32>
             </Group>
-            <Group Name="Program:diHMIin2">
-              <UInt16 Name="ID">44</UInt16>
+            <Group Name="diHMIin2">
+              <UInt16 Name="ID">43</UInt16>
               <UInt16 Name="PVType">1</UInt16>
               <UInt32 Name="PVOffset">116</UInt32>
               <UInt32 Name="PVDim">1</UInt32>
               <Double Name="PVMinVal">0</Double>
               <Double Name="PVMaxVal">1</Double>
-              <Int32 Name="Offset">1049</Int32>
+              <Int32 Name="Offset">699</Int32>
             </Group>
-            <Group Name="Program:doFunSuccess">
-              <UInt16 Name="ID">45</UInt16>
-              <UInt16 Name="PVType">1</UInt16>
+            <Group Name="izbrani_agr">
+              <UInt16 Name="ID">44</UInt16>
+              <UInt16 Name="PVType">3</UInt16>
               <UInt32 Name="PVOffset">117</UInt32>
               <UInt32 Name="PVDim">1</UInt32>
               <Double Name="PVMinVal">0</Double>
-              <Double Name="PVMaxVal">1</Double>
-              <Int32 Name="Offset">1066</Int32>
+              <Double Name="PVMaxVal">65535</Double>
+              <Int32 Name="Offset">708</Int32>
             </Group>
-            <Group Name="Program:diGoHome">
-              <UInt16 Name="ID">46</UInt16>
-              <UInt16 Name="PVType">1</UInt16>
-              <UInt32 Name="PVOffset">118</UInt32>
-              <UInt32 Name="PVDim">1</UInt32>
-              <Double Name="PVMinVal">0</Double>
-              <Double Name="PVMaxVal">1</Double>
-              <Int32 Name="Offset">1087</Int32>
-            </Group>
-            <Group Name="Program:izbrani_agr">
-              <UInt16 Name="ID">47</UInt16>
-              <UInt16 Name="PVType">3</UInt16>
+            <Group Name="sistemskoObvestilo">
+              <UInt16 Name="ID">45</UInt16>
+              <UInt16 Name="PVType">8</UInt16>
               <UInt32 Name="PVOffset">119</UInt32>
               <UInt32 Name="PVDim">1</UInt32>
               <Double Name="PVMinVal">0</Double>
+              <Double Name="PVMaxVal">0</Double>
+              <Int32 Name="Offset">720</Int32>
+            </Group>
+            <Group Name="currentPage">
+              <UInt16 Name="ID">46</UInt16>
+              <UInt16 Name="PVType">3</UInt16>
+              <UInt32 Name="PVOffset">200</UInt32>
+              <UInt32 Name="PVDim">1</UInt32>
+              <Double Name="PVMinVal">0</Double>
               <Double Name="PVMaxVal">65535</Double>
-              <Int32 Name="Offset">1104</Int32>
+              <Int32 Name="Offset">739</Int32>
+            </Group>
+            <Group Name="doDelovanje">
+              <UInt16 Name="ID">47</UInt16>
+              <UInt16 Name="PVType">1</UInt16>
+              <UInt32 Name="PVOffset">202</UInt32>
+              <UInt32 Name="PVDim">1</UInt32>
+              <Double Name="PVMinVal">0</Double>
+              <Double Name="PVMaxVal">1</Double>
+              <Int32 Name="Offset">751</Int32>
+            </Group>
+            <Group Name="popupWarning">
+              <UInt16 Name="ID">48</UInt16>
+              <UInt16 Name="PVType">3</UInt16>
+              <UInt32 Name="PVOffset">203</UInt32>
+              <UInt32 Name="PVDim">1</UInt32>
+              <Double Name="PVMinVal">0</Double>
+              <Double Name="PVMaxVal">65535</Double>
+              <Int32 Name="Offset">763</Int32>
+            </Group>
+            <Group Name="diGoHome">
+              <UInt16 Name="ID">49</UInt16>
+              <UInt16 Name="PVType">1</UInt16>
+              <UInt32 Name="PVOffset">205</UInt32>
+              <UInt32 Name="PVDim">1</UInt32>
+              <Double Name="PVMinVal">0</Double>
+              <Double Name="PVMaxVal">1</Double>
+              <Int32 Name="Offset">776</Int32>
+            </Group>
+            <Group Name="doStrojPripravljen">
+              <UInt16 Name="ID">50</UInt16>
+              <UInt16 Name="PVType">1</UInt16>
+              <UInt32 Name="PVOffset">206</UInt32>
+              <UInt32 Name="PVDim">1</UInt32>
+              <Double Name="PVMinVal">0</Double>
+              <Double Name="PVMaxVal">1</Double>
+              <Int32 Name="Offset">785</Int32>
+            </Group>
+            <Group Name="changePage">
+              <UInt16 Name="ID">51</UInt16>
+              <UInt16 Name="PVType">3</UInt16>
+              <UInt32 Name="PVOffset">207</UInt32>
+              <UInt32 Name="PVDim">1</UInt32>
+              <Double Name="PVMinVal">0</Double>
+              <Double Name="PVMaxVal">65535</Double>
+              <Int32 Name="Offset">804</Int32>
+            </Group>
+            <Group Name="diStartStroja">
+              <UInt16 Name="ID">52</UInt16>
+              <UInt16 Name="PVType">1</UInt16>
+              <UInt32 Name="PVOffset">209</UInt32>
+              <UInt32 Name="PVDim">1</UInt32>
+              <Double Name="PVMinVal">0</Double>
+              <Double Name="PVMaxVal">1</Double>
+              <Int32 Name="Offset">815</Int32>
             </Group>
           </Table>
-          <Binary Name="Name" Encoding="Base64">UHJvZ3JhbTphZ3IxLnBvel9hZ3JfcwBQcm9ncmFtOmFncjEucG96X2Fncl9hAFByb2dyYW06YWdyMS5wb3pfYWdyX21pbgBQcm9ncmFtOmFncjEuYWdyX3Bvc19vawBQcm9ncmFtOmFncjEuYWdyX2FjdGl2ZQBQcm9ncmFtOmFncjYucG96X2Fncl9zAFByb2dyYW06YWdyNi5wb3pfYWdyX2EAUHJvZ3JhbTphZ3I2LnBvel9hZ3JfbWluAFByb2dyYW06YWdyNi5hZ3JfcG9zX29rAFByb2dyYW06YWdyNi5hZ3JfYWN0aXZlAFByb2dyYW06YWdyNS5wb3pfYWdyX3MAUHJvZ3JhbTphZ3I1LnBvel9hZ3JfYQBQcm9ncmFtOmFncjUucG96X2Fncl9taW4AUHJvZ3JhbTphZ3I1LmFncl9wb3Nfb2sAUHJvZ3JhbTphZ3I1LmFncl9hY3RpdmUAUHJvZ3JhbTphZ3I0LnBvel9hZ3JfcwBQcm9ncmFtOmFncjQucG96X2Fncl9hAFByb2dyYW06YWdyNC5wb3pfYWdyX21pbgBQcm9ncmFtOmFncjQuYWdyX3Bvc19vawBQcm9ncmFtOmFncjQuYWdyX2FjdGl2ZQBQcm9ncmFtOmFncjMucG96X2Fncl9zAFByb2dyYW06YWdyMy5wb3pfYWdyX2EAUHJvZ3JhbTphZ3IzLnBvel9hZ3JfbWluAFByb2dyYW06YWdyMy5hZ3JfcG9zX29rAFByb2dyYW06YWdyMy5hZ3JfYWN0aXZlAFByb2dyYW06YWdyMi5wb3pfYWdyX3MAUHJvZ3JhbTphZ3IyLnBvel9hZ3JfYQBQcm9ncmFtOmFncjIucG96X2Fncl9taW4AUHJvZ3JhbTphZ3IyLmFncl9wb3Nfb2sAUHJvZ3JhbTphZ3IyLmFncl9hY3RpdmUAUHJvZ3JhbTp2b3ppY2VrLnNlcnZvX3NldABQcm9ncmFtOnZvemljZWsuc2Vydm9fYWN0AFByb2dyYW06dm96aWNlay5zZXJ2b19pbl9wb3MAUHJvZ3JhbTp2b3ppY2VrLnNlcnZvX21vdmluZwBQcm9ncmFtOnZvemljZWsuYWdyX3phawBQcm9ncmFtOnZvemljZWsucG96X3Nydl9tYXgAUHJvZ3JhbTp2b3ppY2VrLnBvel9zcnZfbWluAFByb2dyYW06ZG9EZWxvdmFuamUAUHJvZ3JhbTpkaVN0YXJ0U3Ryb2phAFByb2dyYW06ZG9TdHJvalByaXByYXZsamVuAFByb2dyYW06cG96X2Fncl9taW4AUHJvZ3JhbTpwb3pfYWdyX21heABQcm9ncmFtOmRpU29mdFN0b3AAUHJvZ3JhbTpkaUhNSWluMQBQcm9ncmFtOmRpSE1JaW4yAFByb2dyYW06ZG9GdW5TdWNjZXNzAFByb2dyYW06ZGlHb0hvbWUAUHJvZ3JhbTppemJyYW5pX2FncgA=</Binary>
+          <Binary Name="Name" Encoding="Base64">YWdyMi5wb3pfYWdyX21pbgBhZ3IyLnBvel9hZ3JfcwBhZ3IyLmFncl9wb3Nfb2sAYWdyMi5hZ3JfYWN0aXZlAGFncjIucG96X2Fncl9hAGFncjMucG96X2Fncl9zAGFncjMuYWdyX3Bvc19vawBhZ3IzLnBvel9hZ3JfbWluAGFncjMucG96X2Fncl9hAGFncjMuYWdyX2FjdGl2ZQBhZ3I1LnBvel9hZ3JfcwBhZ3I1LnBvel9hZ3JfYQBhZ3I1LnBvel9hZ3JfbWluAGFncjUuYWdyX3Bvc19vawBhZ3I1LmFncl9hY3RpdmUAYWdyMS5wb3pfYWdyX21pbgBhZ3IxLnBvel9hZ3JfYQBhZ3IxLnBvel9hZ3JfcwBhZ3IxLmFncl9hY3RpdmUAYWdyMS5hZ3JfcG9zX29rAFZydGFsa2E6cG96X2Fncl9taW4AVnJ0YWxrYTpwb3pfYWdyX21heABhZ3I2LmFncl9hY3RpdmUAYWdyNi5hZ3JfcG9zX29rAGFncjYucG96X2Fncl9taW4AYWdyNi5wb3pfYWdyX2EAYWdyNi5wb3pfYWdyX3MAdm96aWNlay5wb3pfc3J2X21heAB2b3ppY2VrLnBvel9zcnZfbWluAHZvemljZWsuc2Vydm9fYWN0AHZvemljZWsuc2Vydm9faW5fcG9zAHZvemljZWsuYWdyX3phawB2b3ppY2VrLnNlcnZvX21vdmluZwB2b3ppY2VrLnNlcnZvX3NldABhZ3I0LnBvel9hZ3JfcwBhZ3I0LnBvel9hZ3JfYQBhZ3I0LmFncl9wb3Nfb2sAYWdyNC5wb3pfYWdyX21pbgBhZ3I0LmFncl9hY3RpdmUAcHJvZ3JhbUhNSTpzdGV2ZWMAZG9GdW5TdWNjZXNzAGRpSE1JaW4xAGRpU29mdFN0b3AAZGlITUlpbjIAaXpicmFuaV9hZ3IAc2lzdGVtc2tvT2J2ZXN0aWxvAGN1cnJlbnRQYWdlAGRvRGVsb3ZhbmplAHBvcHVwV2FybmluZwBkaUdvSG9tZQBkb1N0cm9qUHJpcHJhdmxqZW4AY2hhbmdlUGFnZQBkaVN0YXJ0U3Ryb2phAA==</Binary>
         </Object>
       </Folder>
     </Folder>

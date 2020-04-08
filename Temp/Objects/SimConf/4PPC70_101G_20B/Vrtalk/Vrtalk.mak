@@ -16,16 +16,16 @@ VCFLGEN:=@"$(AS_BIN_PATH)/BR.VC.lfgen.exe"
 VCREFHANDLER:=@"$(AS_BIN_PATH)/BR.VC.CrossReferenceHandler.exe"
 VCXREFEXTENDER:=@"$(AS_BIN_PATH)/BR.AS.CrossRefVCExtender.exe"
 RM=CMD /C DEL
-PALFILE_Vrtalk=$(AS_PROJECT_PATH)/Logical/VrtalkaHMI/Palette.vcr
-VCCFLAGS_Vrtalk=-server -proj Vrtalk -vc "$(AS_PROJECT_PATH)/Logical/VrtalkaHMI/VCObject.vc" -prj_path "$(AS_PROJECT_PATH)" -temp_path "$(AS_TEMP_PATH)" -cfg $(AS_CONFIGURATION) -plc $(AS_PLC) -plctemp $(AS_TEMP_PLC) -cpu_path "$(AS_CPU_PATH)"
+PALFILE_Vrtalk=$(AS_PROJECT_PATH)/Logical/HMI/VrtalkaHMI/Palette.vcr
+VCCFLAGS_Vrtalk=-server -proj Vrtalk -vc "$(AS_PROJECT_PATH)/Logical/HMI/VrtalkaHMI/VCObject.vc" -prj_path "$(AS_PROJECT_PATH)" -temp_path "$(AS_TEMP_PATH)" -cfg $(AS_CONFIGURATION) -plc $(AS_PLC) -plctemp $(AS_TEMP_PLC) -cpu_path "$(AS_CPU_PATH)"
 VCFIRMWARE=4.26.5
 VCFIRMWAREPATH=$(AS_VC_PATH)/Firmware/V4.26.5/SG4
-VCOBJECT_Vrtalk=$(AS_PROJECT_PATH)/Logical/VrtalkaHMI/VCObject.vc
+VCOBJECT_Vrtalk=$(AS_PROJECT_PATH)/Logical/HMI/VrtalkaHMI/VCObject.vc
 VCSTARTUP="vcstart.br"
 VCLOD="vclod.br"
 VCSTPOST="vcstpost.br"
 TARGET_FILE_Vrtalk=$(AS_CPU_PATH)/Vrtalk.br
-OBJ_SCOPE_Vrtalk=
+OBJ_SCOPE_Vrtalk=HMI
 PRJ_PATH_Vrtalk=$(AS_PROJECT_PATH)
 SRC_PATH_Vrtalk=$(AS_PROJECT_PATH)/Logical/$(OBJ_SCOPE_Vrtalk)/VrtalkaHMI
 TEMP_PATH_Vrtalk=$(AS_TEMP_PATH)/Objects/$(AS_CONFIGURATION)/$(AS_TEMP_PLC)/Vrtalk
@@ -65,159 +65,172 @@ KEYMAP_SOURCES_Vrtalk=$(AS_PROJECT_PATH)/Physical/SimConf/4PPC70_101G_20B/VC/4PP
 KEYMAP_OBJECTS_Vrtalk=
 
 # All Source Objects
-FNINFO_SOURCES_Vrtalk=$(AS_PROJECT_PATH)/Logical/VrtalkaHMI/Fonts/DefaultFont.fninfo \
-	$(AS_PROJECT_PATH)/Logical/VrtalkaHMI/Fonts/Arial9px.fninfo \
-	$(AS_PROJECT_PATH)/Logical/VrtalkaHMI/Fonts/Arial9pxBold.fninfo \
-	$(AS_PROJECT_PATH)/Logical/VrtalkaHMI/Fonts/Arial10pxBold.fninfo \
-	$(AS_PROJECT_PATH)/Logical/VrtalkaHMI/Fonts/Arial12px.fninfo \
-	$(AS_PROJECT_PATH)/Logical/VrtalkaHMI/Fonts/Arial9pxValue.fninfo \
-	$(AS_PROJECT_PATH)/Logical/VrtalkaHMI/Fonts/Font_1.fninfo 
+TXTGRP_SOURCES_Vrtalk=$(AS_PROJECT_PATH)/Logical/HMI/VrtalkaHMI/TextGroups/PopupTextGroup.txtgrp 
 
-BMINFO_SOURCES_Vrtalk=$(AS_PROJECT_PATH)/Logical/VrtalkaHMI/Bitmaps/AlphaPadQVGA1.bminfo \
-	$(AS_PROJECT_PATH)/Logical/VrtalkaHMI/Bitmaps/AlphaPadQVGA2.bminfo \
-	$(AS_PROJECT_PATH)/Logical/VrtalkaHMI/Bitmaps/AlphaPadQVGA3.bminfo \
-	$(AS_PROJECT_PATH)/Logical/VrtalkaHMI/Bitmaps/AlphaPadVGA_pressed.bminfo \
-	$(AS_PROJECT_PATH)/Logical/VrtalkaHMI/Bitmaps/AlphaPadQVGA2_pressed.bminfo \
-	$(AS_PROJECT_PATH)/Logical/VrtalkaHMI/Bitmaps/AlphaPadQVGA3_pressed.bminfo \
-	$(AS_PROJECT_PATH)/Logical/VrtalkaHMI/Bitmaps/AlphaPadQVGA1_pressed.bminfo \
-	$(AS_PROJECT_PATH)/Logical/VrtalkaHMI/Bitmaps/AlphaPadVGA.bminfo \
-	$(AS_PROJECT_PATH)/Logical/VrtalkaHMI/Bitmaps/NumPad_pressed.bminfo \
-	$(AS_PROJECT_PATH)/Logical/VrtalkaHMI/Bitmaps/NumPad.bminfo \
-	$(AS_PROJECT_PATH)/Logical/VrtalkaHMI/Bitmaps/AcknowledgeReset.bminfo \
-	$(AS_PROJECT_PATH)/Logical/VrtalkaHMI/Bitmaps/AlarmActive.bminfo \
-	$(AS_PROJECT_PATH)/Logical/VrtalkaHMI/Bitmaps/AlarmBypassOFF.bminfo \
-	$(AS_PROJECT_PATH)/Logical/VrtalkaHMI/Bitmaps/AlarmBypassON.bminfo \
-	$(AS_PROJECT_PATH)/Logical/VrtalkaHMI/Bitmaps/AlarmInactive.bminfo \
-	$(AS_PROJECT_PATH)/Logical/VrtalkaHMI/Bitmaps/AlarmLatched.bminfo \
-	$(AS_PROJECT_PATH)/Logical/VrtalkaHMI/Bitmaps/AlarmNotQuit.bminfo \
-	$(AS_PROJECT_PATH)/Logical/VrtalkaHMI/Bitmaps/AlarmQuit.bminfo \
-	$(AS_PROJECT_PATH)/Logical/VrtalkaHMI/Bitmaps/Reset.bminfo \
-	$(AS_PROJECT_PATH)/Logical/VrtalkaHMI/Bitmaps/ResetAcknowledge.bminfo \
-	$(AS_PROJECT_PATH)/Logical/VrtalkaHMI/Bitmaps/Triggered.bminfo \
-	$(AS_PROJECT_PATH)/Logical/VrtalkaHMI/Bitmaps/ListPadHor.bminfo \
-	$(AS_PROJECT_PATH)/Logical/VrtalkaHMI/Bitmaps/ListPadHor_pressed.bminfo \
-	$(AS_PROJECT_PATH)/Logical/VrtalkaHMI/Bitmaps/ListPadVer.bminfo \
-	$(AS_PROJECT_PATH)/Logical/VrtalkaHMI/Bitmaps/ListPadVer_pressed.bminfo \
-	$(AS_PROJECT_PATH)/Logical/VrtalkaHMI/Bitmaps/backward_active.bminfo \
-	$(AS_PROJECT_PATH)/Logical/VrtalkaHMI/Bitmaps/backward_pressed.bminfo \
-	$(AS_PROJECT_PATH)/Logical/VrtalkaHMI/Bitmaps/global_area_active.bminfo \
-	$(AS_PROJECT_PATH)/Logical/VrtalkaHMI/Bitmaps/global_area_pressed.bminfo \
-	$(AS_PROJECT_PATH)/Logical/VrtalkaHMI/Bitmaps/forward_active.bminfo \
-	$(AS_PROJECT_PATH)/Logical/VrtalkaHMI/Bitmaps/forward_pressed.bminfo \
-	$(AS_PROJECT_PATH)/Logical/VrtalkaHMI/Bitmaps/control_button_active.bminfo \
-	$(AS_PROJECT_PATH)/Logical/VrtalkaHMI/Bitmaps/control_button_pressed.bminfo \
-	$(AS_PROJECT_PATH)/Logical/VrtalkaHMI/Bitmaps/right_active.bminfo \
-	$(AS_PROJECT_PATH)/Logical/VrtalkaHMI/Bitmaps/right_pressed.bminfo \
-	$(AS_PROJECT_PATH)/Logical/VrtalkaHMI/Bitmaps/left_active.bminfo \
-	$(AS_PROJECT_PATH)/Logical/VrtalkaHMI/Bitmaps/left_pressed.bminfo \
-	$(AS_PROJECT_PATH)/Logical/VrtalkaHMI/Bitmaps/up_active.bminfo \
-	$(AS_PROJECT_PATH)/Logical/VrtalkaHMI/Bitmaps/up_pressed.bminfo \
-	$(AS_PROJECT_PATH)/Logical/VrtalkaHMI/Bitmaps/down_active.bminfo \
-	$(AS_PROJECT_PATH)/Logical/VrtalkaHMI/Bitmaps/down_pressed.bminfo \
-	$(AS_PROJECT_PATH)/Logical/VrtalkaHMI/Bitmaps/multi_up_active.bminfo \
-	$(AS_PROJECT_PATH)/Logical/VrtalkaHMI/Bitmaps/multi_up_pressed.bminfo \
-	$(AS_PROJECT_PATH)/Logical/VrtalkaHMI/Bitmaps/multi_down_active.bminfo \
-	$(AS_PROJECT_PATH)/Logical/VrtalkaHMI/Bitmaps/multi_down_pressed.bminfo \
-	$(AS_PROJECT_PATH)/Logical/VrtalkaHMI/Bitmaps/ProgressBorder.bminfo \
-	$(AS_PROJECT_PATH)/Logical/VrtalkaHMI/Bitmaps/down_active_control.bminfo \
-	$(AS_PROJECT_PATH)/Logical/VrtalkaHMI/Bitmaps/down_pressed_control.bminfo \
-	$(AS_PROJECT_PATH)/Logical/VrtalkaHMI/Bitmaps/up_active_control.bminfo \
-	$(AS_PROJECT_PATH)/Logical/VrtalkaHMI/Bitmaps/global_area_gradient_upside.bminfo \
-	$(AS_PROJECT_PATH)/Logical/VrtalkaHMI/Bitmaps/global_area_gradient_downside.bminfo \
-	$(AS_PROJECT_PATH)/Logical/VrtalkaHMI/Bitmaps/frame_header.bminfo \
-	$(AS_PROJECT_PATH)/Logical/VrtalkaHMI/Bitmaps/up_pressed_control.bminfo \
-	$(AS_PROJECT_PATH)/Logical/VrtalkaHMI/Bitmaps/EditPadVGA.bminfo \
-	$(AS_PROJECT_PATH)/Logical/VrtalkaHMI/Bitmaps/EditPadVGA_pressed.bminfo \
-	$(AS_PROJECT_PATH)/Logical/VrtalkaHMI/Bitmaps/zuneNumPad_released.bminfo \
-	$(AS_PROJECT_PATH)/Logical/VrtalkaHMI/Bitmaps/zuneListPadVer_released.bminfo \
-	$(AS_PROJECT_PATH)/Logical/VrtalkaHMI/Bitmaps/zuneAlphaPad_pressed.bminfo \
-	$(AS_PROJECT_PATH)/Logical/VrtalkaHMI/Bitmaps/zuneAlphaPad_released.bminfo \
-	$(AS_PROJECT_PATH)/Logical/VrtalkaHMI/Bitmaps/zuneAlphaPadQVGA1_pressed.bminfo \
-	$(AS_PROJECT_PATH)/Logical/VrtalkaHMI/Bitmaps/zuneAlphaPadQVGA1_released.bminfo \
-	$(AS_PROJECT_PATH)/Logical/VrtalkaHMI/Bitmaps/zuneAlphaPadQVGA2_pressed.bminfo \
-	$(AS_PROJECT_PATH)/Logical/VrtalkaHMI/Bitmaps/zuneAlphaPadQVGA3_pressed.bminfo \
-	$(AS_PROJECT_PATH)/Logical/VrtalkaHMI/Bitmaps/zuneEditpadQVGA2_released.bminfo \
-	$(AS_PROJECT_PATH)/Logical/VrtalkaHMI/Bitmaps/zuneEditPadQVGA3_released.bminfo \
-	$(AS_PROJECT_PATH)/Logical/VrtalkaHMI/Bitmaps/zuneEditPadVga_pressed.bminfo \
-	$(AS_PROJECT_PATH)/Logical/VrtalkaHMI/Bitmaps/zuneEditPadVga_released.bminfo \
-	$(AS_PROJECT_PATH)/Logical/VrtalkaHMI/Bitmaps/zuneListPadHor_pressed.bminfo \
-	$(AS_PROJECT_PATH)/Logical/VrtalkaHMI/Bitmaps/zuneListPadHor_released.bminfo \
-	$(AS_PROJECT_PATH)/Logical/VrtalkaHMI/Bitmaps/zuneListPadVer_pressed.bminfo \
-	$(AS_PROJECT_PATH)/Logical/VrtalkaHMI/Bitmaps/zuneNumPad_pressed.bminfo \
-	$(AS_PROJECT_PATH)/Logical/VrtalkaHMI/Bitmaps/Vozicek.bminfo \
-	$(AS_PROJECT_PATH)/Logical/VrtalkaHMI/Bitmaps/Rail_vozicka.bminfo \
-	$(AS_PROJECT_PATH)/Logical/VrtalkaHMI/Bitmaps/Agregat.bminfo \
-	$(AS_PROJECT_PATH)/Logical/VrtalkaHMI/Bitmaps/Header_PS.bminfo \
-	$(AS_PROJECT_PATH)/Logical/VrtalkaHMI/Bitmaps/Home_screen.bminfo \
-	$(AS_PROJECT_PATH)/Logical/VrtalkaHMI/Bitmaps/settings_page.bminfo 
+FNINFO_SOURCES_Vrtalk=$(AS_PROJECT_PATH)/Logical/HMI/VrtalkaHMI/Fonts/DefaultFont.fninfo \
+	$(AS_PROJECT_PATH)/Logical/HMI/VrtalkaHMI/Fonts/Arial9px.fninfo \
+	$(AS_PROJECT_PATH)/Logical/HMI/VrtalkaHMI/Fonts/Arial9pxBold.fninfo \
+	$(AS_PROJECT_PATH)/Logical/HMI/VrtalkaHMI/Fonts/Arial10pxBold.fninfo \
+	$(AS_PROJECT_PATH)/Logical/HMI/VrtalkaHMI/Fonts/Arial12px.fninfo \
+	$(AS_PROJECT_PATH)/Logical/HMI/VrtalkaHMI/Fonts/Arial9pxValue.fninfo \
+	$(AS_PROJECT_PATH)/Logical/HMI/VrtalkaHMI/Fonts/DSfon_12.fninfo \
+	$(AS_PROJECT_PATH)/Logical/HMI/VrtalkaHMI/Fonts/DSfon_15.fninfo \
+	$(AS_PROJECT_PATH)/Logical/HMI/VrtalkaHMI/Fonts/DSfon_14.fninfo \
+	$(AS_PROJECT_PATH)/Logical/HMI/VrtalkaHMI/Fonts/DSfon_20.fninfo \
+	$(AS_PROJECT_PATH)/Logical/HMI/VrtalkaHMI/Fonts/DSfon_26.fninfo 
 
-BMGRP_SOURCES_Vrtalk=$(AS_PROJECT_PATH)/Logical/VrtalkaHMI/BitmapGroups/AlphaPadQVGA.bmgrp \
-	$(AS_PROJECT_PATH)/Logical/VrtalkaHMI/BitmapGroups/NumPad.bmgrp \
-	$(AS_PROJECT_PATH)/Logical/VrtalkaHMI/BitmapGroups/AlphaPad.bmgrp \
-	$(AS_PROJECT_PATH)/Logical/VrtalkaHMI/BitmapGroups/AlarmEvent.bmgrp \
-	$(AS_PROJECT_PATH)/Logical/VrtalkaHMI/BitmapGroups/AlarmState.bmgrp \
-	$(AS_PROJECT_PATH)/Logical/VrtalkaHMI/BitmapGroups/BypassState.bmgrp \
-	$(AS_PROJECT_PATH)/Logical/VrtalkaHMI/BitmapGroups/AcknowledgeState.bmgrp \
-	$(AS_PROJECT_PATH)/Logical/VrtalkaHMI/BitmapGroups/NavigationPad.bmgrp \
-	$(AS_PROJECT_PATH)/Logical/VrtalkaHMI/BitmapGroups/Borders.bmgrp 
+BMINFO_SOURCES_Vrtalk=$(AS_PROJECT_PATH)/Logical/HMI/VrtalkaHMI/Bitmaps/AlphaPadQVGA1.bminfo \
+	$(AS_PROJECT_PATH)/Logical/HMI/VrtalkaHMI/Bitmaps/AlphaPadQVGA2.bminfo \
+	$(AS_PROJECT_PATH)/Logical/HMI/VrtalkaHMI/Bitmaps/AlphaPadQVGA3.bminfo \
+	$(AS_PROJECT_PATH)/Logical/HMI/VrtalkaHMI/Bitmaps/AlphaPadVGA_pressed.bminfo \
+	$(AS_PROJECT_PATH)/Logical/HMI/VrtalkaHMI/Bitmaps/AlphaPadQVGA2_pressed.bminfo \
+	$(AS_PROJECT_PATH)/Logical/HMI/VrtalkaHMI/Bitmaps/AlphaPadQVGA3_pressed.bminfo \
+	$(AS_PROJECT_PATH)/Logical/HMI/VrtalkaHMI/Bitmaps/AlphaPadQVGA1_pressed.bminfo \
+	$(AS_PROJECT_PATH)/Logical/HMI/VrtalkaHMI/Bitmaps/AlphaPadVGA.bminfo \
+	$(AS_PROJECT_PATH)/Logical/HMI/VrtalkaHMI/Bitmaps/NumPad_pressed.bminfo \
+	$(AS_PROJECT_PATH)/Logical/HMI/VrtalkaHMI/Bitmaps/NumPad.bminfo \
+	$(AS_PROJECT_PATH)/Logical/HMI/VrtalkaHMI/Bitmaps/AcknowledgeReset.bminfo \
+	$(AS_PROJECT_PATH)/Logical/HMI/VrtalkaHMI/Bitmaps/AlarmActive.bminfo \
+	$(AS_PROJECT_PATH)/Logical/HMI/VrtalkaHMI/Bitmaps/AlarmBypassOFF.bminfo \
+	$(AS_PROJECT_PATH)/Logical/HMI/VrtalkaHMI/Bitmaps/AlarmBypassON.bminfo \
+	$(AS_PROJECT_PATH)/Logical/HMI/VrtalkaHMI/Bitmaps/AlarmInactive.bminfo \
+	$(AS_PROJECT_PATH)/Logical/HMI/VrtalkaHMI/Bitmaps/AlarmLatched.bminfo \
+	$(AS_PROJECT_PATH)/Logical/HMI/VrtalkaHMI/Bitmaps/AlarmNotQuit.bminfo \
+	$(AS_PROJECT_PATH)/Logical/HMI/VrtalkaHMI/Bitmaps/AlarmQuit.bminfo \
+	$(AS_PROJECT_PATH)/Logical/HMI/VrtalkaHMI/Bitmaps/Reset.bminfo \
+	$(AS_PROJECT_PATH)/Logical/HMI/VrtalkaHMI/Bitmaps/ResetAcknowledge.bminfo \
+	$(AS_PROJECT_PATH)/Logical/HMI/VrtalkaHMI/Bitmaps/Triggered.bminfo \
+	$(AS_PROJECT_PATH)/Logical/HMI/VrtalkaHMI/Bitmaps/ListPadHor.bminfo \
+	$(AS_PROJECT_PATH)/Logical/HMI/VrtalkaHMI/Bitmaps/ListPadHor_pressed.bminfo \
+	$(AS_PROJECT_PATH)/Logical/HMI/VrtalkaHMI/Bitmaps/ListPadVer.bminfo \
+	$(AS_PROJECT_PATH)/Logical/HMI/VrtalkaHMI/Bitmaps/ListPadVer_pressed.bminfo \
+	$(AS_PROJECT_PATH)/Logical/HMI/VrtalkaHMI/Bitmaps/backward_active.bminfo \
+	$(AS_PROJECT_PATH)/Logical/HMI/VrtalkaHMI/Bitmaps/backward_pressed.bminfo \
+	$(AS_PROJECT_PATH)/Logical/HMI/VrtalkaHMI/Bitmaps/global_area_active.bminfo \
+	$(AS_PROJECT_PATH)/Logical/HMI/VrtalkaHMI/Bitmaps/global_area_pressed.bminfo \
+	$(AS_PROJECT_PATH)/Logical/HMI/VrtalkaHMI/Bitmaps/forward_active.bminfo \
+	$(AS_PROJECT_PATH)/Logical/HMI/VrtalkaHMI/Bitmaps/forward_pressed.bminfo \
+	$(AS_PROJECT_PATH)/Logical/HMI/VrtalkaHMI/Bitmaps/control_button_active.bminfo \
+	$(AS_PROJECT_PATH)/Logical/HMI/VrtalkaHMI/Bitmaps/control_button_pressed.bminfo \
+	$(AS_PROJECT_PATH)/Logical/HMI/VrtalkaHMI/Bitmaps/right_active.bminfo \
+	$(AS_PROJECT_PATH)/Logical/HMI/VrtalkaHMI/Bitmaps/right_pressed.bminfo \
+	$(AS_PROJECT_PATH)/Logical/HMI/VrtalkaHMI/Bitmaps/left_active.bminfo \
+	$(AS_PROJECT_PATH)/Logical/HMI/VrtalkaHMI/Bitmaps/left_pressed.bminfo \
+	$(AS_PROJECT_PATH)/Logical/HMI/VrtalkaHMI/Bitmaps/up_active.bminfo \
+	$(AS_PROJECT_PATH)/Logical/HMI/VrtalkaHMI/Bitmaps/up_pressed.bminfo \
+	$(AS_PROJECT_PATH)/Logical/HMI/VrtalkaHMI/Bitmaps/down_active.bminfo \
+	$(AS_PROJECT_PATH)/Logical/HMI/VrtalkaHMI/Bitmaps/down_pressed.bminfo \
+	$(AS_PROJECT_PATH)/Logical/HMI/VrtalkaHMI/Bitmaps/multi_up_active.bminfo \
+	$(AS_PROJECT_PATH)/Logical/HMI/VrtalkaHMI/Bitmaps/multi_up_pressed.bminfo \
+	$(AS_PROJECT_PATH)/Logical/HMI/VrtalkaHMI/Bitmaps/multi_down_active.bminfo \
+	$(AS_PROJECT_PATH)/Logical/HMI/VrtalkaHMI/Bitmaps/multi_down_pressed.bminfo \
+	$(AS_PROJECT_PATH)/Logical/HMI/VrtalkaHMI/Bitmaps/ProgressBorder.bminfo \
+	$(AS_PROJECT_PATH)/Logical/HMI/VrtalkaHMI/Bitmaps/down_active_control.bminfo \
+	$(AS_PROJECT_PATH)/Logical/HMI/VrtalkaHMI/Bitmaps/down_pressed_control.bminfo \
+	$(AS_PROJECT_PATH)/Logical/HMI/VrtalkaHMI/Bitmaps/up_active_control.bminfo \
+	$(AS_PROJECT_PATH)/Logical/HMI/VrtalkaHMI/Bitmaps/global_area_gradient_upside.bminfo \
+	$(AS_PROJECT_PATH)/Logical/HMI/VrtalkaHMI/Bitmaps/global_area_gradient_downside.bminfo \
+	$(AS_PROJECT_PATH)/Logical/HMI/VrtalkaHMI/Bitmaps/frame_header.bminfo \
+	$(AS_PROJECT_PATH)/Logical/HMI/VrtalkaHMI/Bitmaps/up_pressed_control.bminfo \
+	$(AS_PROJECT_PATH)/Logical/HMI/VrtalkaHMI/Bitmaps/EditPadVGA.bminfo \
+	$(AS_PROJECT_PATH)/Logical/HMI/VrtalkaHMI/Bitmaps/EditPadVGA_pressed.bminfo \
+	$(AS_PROJECT_PATH)/Logical/HMI/VrtalkaHMI/Bitmaps/zuneNumPad_released.bminfo \
+	$(AS_PROJECT_PATH)/Logical/HMI/VrtalkaHMI/Bitmaps/zuneListPadVer_released.bminfo \
+	$(AS_PROJECT_PATH)/Logical/HMI/VrtalkaHMI/Bitmaps/zuneAlphaPad_pressed.bminfo \
+	$(AS_PROJECT_PATH)/Logical/HMI/VrtalkaHMI/Bitmaps/zuneAlphaPad_released.bminfo \
+	$(AS_PROJECT_PATH)/Logical/HMI/VrtalkaHMI/Bitmaps/zuneAlphaPadQVGA1_pressed.bminfo \
+	$(AS_PROJECT_PATH)/Logical/HMI/VrtalkaHMI/Bitmaps/zuneAlphaPadQVGA1_released.bminfo \
+	$(AS_PROJECT_PATH)/Logical/HMI/VrtalkaHMI/Bitmaps/zuneAlphaPadQVGA2_pressed.bminfo \
+	$(AS_PROJECT_PATH)/Logical/HMI/VrtalkaHMI/Bitmaps/zuneAlphaPadQVGA3_pressed.bminfo \
+	$(AS_PROJECT_PATH)/Logical/HMI/VrtalkaHMI/Bitmaps/zuneEditpadQVGA2_released.bminfo \
+	$(AS_PROJECT_PATH)/Logical/HMI/VrtalkaHMI/Bitmaps/zuneEditPadQVGA3_released.bminfo \
+	$(AS_PROJECT_PATH)/Logical/HMI/VrtalkaHMI/Bitmaps/zuneEditPadVga_pressed.bminfo \
+	$(AS_PROJECT_PATH)/Logical/HMI/VrtalkaHMI/Bitmaps/zuneEditPadVga_released.bminfo \
+	$(AS_PROJECT_PATH)/Logical/HMI/VrtalkaHMI/Bitmaps/zuneListPadHor_pressed.bminfo \
+	$(AS_PROJECT_PATH)/Logical/HMI/VrtalkaHMI/Bitmaps/zuneListPadHor_released.bminfo \
+	$(AS_PROJECT_PATH)/Logical/HMI/VrtalkaHMI/Bitmaps/zuneListPadVer_pressed.bminfo \
+	$(AS_PROJECT_PATH)/Logical/HMI/VrtalkaHMI/Bitmaps/zuneNumPad_pressed.bminfo \
+	$(AS_PROJECT_PATH)/Logical/HMI/VrtalkaHMI/Bitmaps/Vozicek.bminfo \
+	$(AS_PROJECT_PATH)/Logical/HMI/VrtalkaHMI/Bitmaps/Rail_vozicka.bminfo \
+	$(AS_PROJECT_PATH)/Logical/HMI/VrtalkaHMI/Bitmaps/Agregat.bminfo \
+	$(AS_PROJECT_PATH)/Logical/HMI/VrtalkaHMI/Bitmaps/Header_PS.bminfo \
+	$(AS_PROJECT_PATH)/Logical/HMI/VrtalkaHMI/Bitmaps/Home_screen.bminfo \
+	$(AS_PROJECT_PATH)/Logical/HMI/VrtalkaHMI/Bitmaps/settings_page.bminfo \
+	$(AS_PROJECT_PATH)/Logical/HMI/VrtalkaHMI/Bitmaps/warning_sign.bminfo \
+	$(AS_PROJECT_PATH)/Logical/HMI/VrtalkaHMI/Bitmaps/Da.bminfo \
+	$(AS_PROJECT_PATH)/Logical/HMI/VrtalkaHMI/Bitmaps/Ne.bminfo \
+	$(AS_PROJECT_PATH)/Logical/HMI/VrtalkaHMI/Bitmaps/Start.bminfo 
 
-PAGE_SOURCES_Vrtalk=$(AS_PROJECT_PATH)/Logical/VrtalkaHMI/Pages/Default.page \
-	$(AS_PROJECT_PATH)/Logical/VrtalkaHMI/Pages/Service.page 
+BMGRP_SOURCES_Vrtalk=$(AS_PROJECT_PATH)/Logical/HMI/VrtalkaHMI/BitmapGroups/AlphaPadQVGA.bmgrp \
+	$(AS_PROJECT_PATH)/Logical/HMI/VrtalkaHMI/BitmapGroups/NumPad.bmgrp \
+	$(AS_PROJECT_PATH)/Logical/HMI/VrtalkaHMI/BitmapGroups/AlphaPad.bmgrp \
+	$(AS_PROJECT_PATH)/Logical/HMI/VrtalkaHMI/BitmapGroups/AlarmEvent.bmgrp \
+	$(AS_PROJECT_PATH)/Logical/HMI/VrtalkaHMI/BitmapGroups/AlarmState.bmgrp \
+	$(AS_PROJECT_PATH)/Logical/HMI/VrtalkaHMI/BitmapGroups/BypassState.bmgrp \
+	$(AS_PROJECT_PATH)/Logical/HMI/VrtalkaHMI/BitmapGroups/AcknowledgeState.bmgrp \
+	$(AS_PROJECT_PATH)/Logical/HMI/VrtalkaHMI/BitmapGroups/NavigationPad.bmgrp \
+	$(AS_PROJECT_PATH)/Logical/HMI/VrtalkaHMI/BitmapGroups/Borders.bmgrp 
 
-LAYER_SOURCES_Vrtalk=$(AS_PROJECT_PATH)/Logical/VrtalkaHMI/Layers/BackgroundLayer.layer 
+PAGE_SOURCES_Vrtalk=$(AS_PROJECT_PATH)/Logical/HMI/VrtalkaHMI/Pages/Default.page \
+	$(AS_PROJECT_PATH)/Logical/HMI/VrtalkaHMI/Pages/Service.page \
+	$(AS_PROJECT_PATH)/Logical/HMI/VrtalkaHMI/Pages/Startup.page 
 
-VCS_SOURCES_Vrtalk=$(AS_PROJECT_PATH)/Logical/VrtalkaHMI/StyleSheets/Gray.vcs \
-	$(AS_PROJECT_PATH)/Logical/VrtalkaHMI/StyleSheets/Color.vcs 
+LAYER_SOURCES_Vrtalk=$(AS_PROJECT_PATH)/Logical/HMI/VrtalkaHMI/Layers/BackgroundLayer.layer \
+	$(AS_PROJECT_PATH)/Logical/HMI/VrtalkaHMI/Layers/warningPopup.layer \
+	$(AS_PROJECT_PATH)/Logical/HMI/VrtalkaHMI/Layers/potrdiPopup.layer 
 
-BDR_SOURCES_Vrtalk=$(AS_PROJECT_PATH)/Logical/VrtalkaHMI/Borders/Raised.bdr \
-	$(AS_PROJECT_PATH)/Logical/VrtalkaHMI/Borders/Sunken.bdr \
-	$(AS_PROJECT_PATH)/Logical/VrtalkaHMI/Borders/Etched.bdr \
-	$(AS_PROJECT_PATH)/Logical/VrtalkaHMI/Borders/Bump.bdr \
-	$(AS_PROJECT_PATH)/Logical/VrtalkaHMI/Borders/SunkenOuter.bdr \
-	$(AS_PROJECT_PATH)/Logical/VrtalkaHMI/Borders/RaisedInner.bdr \
-	$(AS_PROJECT_PATH)/Logical/VrtalkaHMI/Borders/Flat_black.bdr \
-	$(AS_PROJECT_PATH)/Logical/VrtalkaHMI/Borders/Flat_grey.bdr \
-	$(AS_PROJECT_PATH)/Logical/VrtalkaHMI/Borders/BackwardActive.bdr \
-	$(AS_PROJECT_PATH)/Logical/VrtalkaHMI/Borders/BackwardPressed.bdr \
-	$(AS_PROJECT_PATH)/Logical/VrtalkaHMI/Borders/ControlActive.bdr \
-	$(AS_PROJECT_PATH)/Logical/VrtalkaHMI/Borders/ControlPressed.bdr \
-	$(AS_PROJECT_PATH)/Logical/VrtalkaHMI/Borders/DownActiveControl.bdr \
-	$(AS_PROJECT_PATH)/Logical/VrtalkaHMI/Borders/DownPressedControl.bdr \
-	$(AS_PROJECT_PATH)/Logical/VrtalkaHMI/Borders/ForwardActive.bdr \
-	$(AS_PROJECT_PATH)/Logical/VrtalkaHMI/Borders/ForwardPressed.bdr \
-	$(AS_PROJECT_PATH)/Logical/VrtalkaHMI/Borders/GlobalAreaActive.bdr \
-	$(AS_PROJECT_PATH)/Logical/VrtalkaHMI/Borders/GlobalAreaPressed.bdr \
-	$(AS_PROJECT_PATH)/Logical/VrtalkaHMI/Borders/MultiScrollDownActive.bdr \
-	$(AS_PROJECT_PATH)/Logical/VrtalkaHMI/Borders/MultiScrollDownPressed.bdr \
-	$(AS_PROJECT_PATH)/Logical/VrtalkaHMI/Borders/MultiScrollUpActive.bdr \
-	$(AS_PROJECT_PATH)/Logical/VrtalkaHMI/Borders/MultiScrollUpPressed.bdr \
-	$(AS_PROJECT_PATH)/Logical/VrtalkaHMI/Borders/ProgressBarBorder.bdr \
-	$(AS_PROJECT_PATH)/Logical/VrtalkaHMI/Borders/ScrollDownActive.bdr \
-	$(AS_PROJECT_PATH)/Logical/VrtalkaHMI/Borders/ScrollDownPressed.bdr \
-	$(AS_PROJECT_PATH)/Logical/VrtalkaHMI/Borders/ScrollUpActive.bdr \
-	$(AS_PROJECT_PATH)/Logical/VrtalkaHMI/Borders/ScrollUpPressed.bdr \
-	$(AS_PROJECT_PATH)/Logical/VrtalkaHMI/Borders/ScrollLeftActive.bdr \
-	$(AS_PROJECT_PATH)/Logical/VrtalkaHMI/Borders/ScrollLeftPressed.bdr \
-	$(AS_PROJECT_PATH)/Logical/VrtalkaHMI/Borders/ScrollRightActive.bdr \
-	$(AS_PROJECT_PATH)/Logical/VrtalkaHMI/Borders/ScrollRightPressed.bdr \
-	$(AS_PROJECT_PATH)/Logical/VrtalkaHMI/Borders/UpActiveControl.bdr \
-	$(AS_PROJECT_PATH)/Logical/VrtalkaHMI/Borders/UpPressedControl.bdr \
-	$(AS_PROJECT_PATH)/Logical/VrtalkaHMI/Borders/FrameHeader.bdr 
+VCS_SOURCES_Vrtalk=$(AS_PROJECT_PATH)/Logical/HMI/VrtalkaHMI/StyleSheets/Gray.vcs \
+	$(AS_PROJECT_PATH)/Logical/HMI/VrtalkaHMI/StyleSheets/Color.vcs 
 
-TPR_SOURCES_Vrtalk=$(AS_PROJECT_PATH)/Logical/VrtalkaHMI/TouchPads/NumPad.tpr \
-	$(AS_PROJECT_PATH)/Logical/VrtalkaHMI/TouchPads/AlphaPadQVGA.tpr \
-	$(AS_PROJECT_PATH)/Logical/VrtalkaHMI/TouchPads/AlphaPad.tpr \
-	$(AS_PROJECT_PATH)/Logical/VrtalkaHMI/TouchPads/NavigationPad_ver.tpr \
-	$(AS_PROJECT_PATH)/Logical/VrtalkaHMI/TouchPads/NavigationPad_hor.tpr \
-	$(AS_PROJECT_PATH)/Logical/VrtalkaHMI/TouchPads/EditPad.tpr 
+BDR_SOURCES_Vrtalk=$(AS_PROJECT_PATH)/Logical/HMI/VrtalkaHMI/Borders/Raised.bdr \
+	$(AS_PROJECT_PATH)/Logical/HMI/VrtalkaHMI/Borders/Sunken.bdr \
+	$(AS_PROJECT_PATH)/Logical/HMI/VrtalkaHMI/Borders/Etched.bdr \
+	$(AS_PROJECT_PATH)/Logical/HMI/VrtalkaHMI/Borders/Bump.bdr \
+	$(AS_PROJECT_PATH)/Logical/HMI/VrtalkaHMI/Borders/SunkenOuter.bdr \
+	$(AS_PROJECT_PATH)/Logical/HMI/VrtalkaHMI/Borders/RaisedInner.bdr \
+	$(AS_PROJECT_PATH)/Logical/HMI/VrtalkaHMI/Borders/Flat_black.bdr \
+	$(AS_PROJECT_PATH)/Logical/HMI/VrtalkaHMI/Borders/Flat_grey.bdr \
+	$(AS_PROJECT_PATH)/Logical/HMI/VrtalkaHMI/Borders/BackwardActive.bdr \
+	$(AS_PROJECT_PATH)/Logical/HMI/VrtalkaHMI/Borders/BackwardPressed.bdr \
+	$(AS_PROJECT_PATH)/Logical/HMI/VrtalkaHMI/Borders/ControlActive.bdr \
+	$(AS_PROJECT_PATH)/Logical/HMI/VrtalkaHMI/Borders/ControlPressed.bdr \
+	$(AS_PROJECT_PATH)/Logical/HMI/VrtalkaHMI/Borders/DownActiveControl.bdr \
+	$(AS_PROJECT_PATH)/Logical/HMI/VrtalkaHMI/Borders/DownPressedControl.bdr \
+	$(AS_PROJECT_PATH)/Logical/HMI/VrtalkaHMI/Borders/ForwardActive.bdr \
+	$(AS_PROJECT_PATH)/Logical/HMI/VrtalkaHMI/Borders/ForwardPressed.bdr \
+	$(AS_PROJECT_PATH)/Logical/HMI/VrtalkaHMI/Borders/GlobalAreaActive.bdr \
+	$(AS_PROJECT_PATH)/Logical/HMI/VrtalkaHMI/Borders/GlobalAreaPressed.bdr \
+	$(AS_PROJECT_PATH)/Logical/HMI/VrtalkaHMI/Borders/MultiScrollDownActive.bdr \
+	$(AS_PROJECT_PATH)/Logical/HMI/VrtalkaHMI/Borders/MultiScrollDownPressed.bdr \
+	$(AS_PROJECT_PATH)/Logical/HMI/VrtalkaHMI/Borders/MultiScrollUpActive.bdr \
+	$(AS_PROJECT_PATH)/Logical/HMI/VrtalkaHMI/Borders/MultiScrollUpPressed.bdr \
+	$(AS_PROJECT_PATH)/Logical/HMI/VrtalkaHMI/Borders/ProgressBarBorder.bdr \
+	$(AS_PROJECT_PATH)/Logical/HMI/VrtalkaHMI/Borders/ScrollDownActive.bdr \
+	$(AS_PROJECT_PATH)/Logical/HMI/VrtalkaHMI/Borders/ScrollDownPressed.bdr \
+	$(AS_PROJECT_PATH)/Logical/HMI/VrtalkaHMI/Borders/ScrollUpActive.bdr \
+	$(AS_PROJECT_PATH)/Logical/HMI/VrtalkaHMI/Borders/ScrollUpPressed.bdr \
+	$(AS_PROJECT_PATH)/Logical/HMI/VrtalkaHMI/Borders/ScrollLeftActive.bdr \
+	$(AS_PROJECT_PATH)/Logical/HMI/VrtalkaHMI/Borders/ScrollLeftPressed.bdr \
+	$(AS_PROJECT_PATH)/Logical/HMI/VrtalkaHMI/Borders/ScrollRightActive.bdr \
+	$(AS_PROJECT_PATH)/Logical/HMI/VrtalkaHMI/Borders/ScrollRightPressed.bdr \
+	$(AS_PROJECT_PATH)/Logical/HMI/VrtalkaHMI/Borders/UpActiveControl.bdr \
+	$(AS_PROJECT_PATH)/Logical/HMI/VrtalkaHMI/Borders/UpPressedControl.bdr \
+	$(AS_PROJECT_PATH)/Logical/HMI/VrtalkaHMI/Borders/FrameHeader.bdr 
 
-TDC_SOURCES_Vrtalk=$(AS_PROJECT_PATH)/Logical/VrtalkaHMI/Trends/TrendData.tdc 
+TPR_SOURCES_Vrtalk=$(AS_PROJECT_PATH)/Logical/HMI/VrtalkaHMI/TouchPads/NumPad.tpr \
+	$(AS_PROJECT_PATH)/Logical/HMI/VrtalkaHMI/TouchPads/AlphaPadQVGA.tpr \
+	$(AS_PROJECT_PATH)/Logical/HMI/VrtalkaHMI/TouchPads/AlphaPad.tpr \
+	$(AS_PROJECT_PATH)/Logical/HMI/VrtalkaHMI/TouchPads/NavigationPad_ver.tpr \
+	$(AS_PROJECT_PATH)/Logical/HMI/VrtalkaHMI/TouchPads/NavigationPad_hor.tpr \
+	$(AS_PROJECT_PATH)/Logical/HMI/VrtalkaHMI/TouchPads/EditPad.tpr 
 
-PRC_SOURCES_Vrtalk=$(AS_PROJECT_PATH)/Logical/VrtalkaHMI/Processes/Process_1.prc 
+TDC_SOURCES_Vrtalk=$(AS_PROJECT_PATH)/Logical/HMI/VrtalkaHMI/Trends/TrendData.tdc 
 
-VCVK_SOURCES_Vrtalk=$(AS_PROJECT_PATH)/Logical/VrtalkaHMI/VirtualKeys.vcvk 
+PRC_SOURCES_Vrtalk=$(AS_PROJECT_PATH)/Logical/HMI/VrtalkaHMI/Processes/Process_1.prc 
 
-VCR_SOURCES_Vrtalk=$(AS_PROJECT_PATH)/Logical/VrtalkaHMI/Palette.vcr 
+VCVK_SOURCES_Vrtalk=$(AS_PROJECT_PATH)/Logical/HMI/VrtalkaHMI/VirtualKeys.vcvk 
+
+VCR_SOURCES_Vrtalk=$(AS_PROJECT_PATH)/Logical/HMI/VrtalkaHMI/Palette.vcr 
 
 # Runtime Object sources
 VCR_OBJECT_Vrtalk=$(TEMP_PATH_Vrtalk)/vcrt.vco
@@ -235,11 +248,15 @@ $(PANEL_HW_OBJECT_Vrtalk): $(PANEL_HW_VCI_Vrtalk) $(PALFILE_Vrtalk) $(VC_LIBRARY
 # Pages
 PAGE_OBJECTS_Vrtalk = $(addprefix $(TEMP_PATH_Vrtalk)/page., $(notdir $(PAGE_SOURCES_Vrtalk:.page=.vco)))
 
-$(TEMP_PATH_Vrtalk)/page.Default.vco: $(AS_PROJECT_PATH)/Logical/VrtalkaHMI/Pages/Default.page $(VC_LANGUAGES_Vrtalk)
+$(TEMP_PATH_Vrtalk)/page.Default.vco: $(AS_PROJECT_PATH)/Logical/HMI/VrtalkaHMI/Pages/Default.page $(VC_LANGUAGES_Vrtalk)
 	 $(VCC) -f "$<" -o "$@" -l "$(AS_PROJECT_PATH)/Logical/VCShared/Languages.vcr" -cv "$(AS_PROJECT_PATH)/Logical/VCShared/ControlVersion.cvinfo" -pal "$(PALFILE_Vrtalk)" $(VCCFLAGS_Vrtalk) -P "$(AS_PROJECT_PATH)" -ds "$(SRC_PATH_Vrtalk)/StyleSheets/Color.vcs" -p Vrtalk -so $(VC_STATIC_OPTIONS_Vrtalk) -vcr 4265 -sfas
 
 
-$(TEMP_PATH_Vrtalk)/page.Service.vco: $(AS_PROJECT_PATH)/Logical/VrtalkaHMI/Pages/Service.page $(VC_LANGUAGES_Vrtalk)
+$(TEMP_PATH_Vrtalk)/page.Service.vco: $(AS_PROJECT_PATH)/Logical/HMI/VrtalkaHMI/Pages/Service.page $(VC_LANGUAGES_Vrtalk)
+	 $(VCC) -f "$<" -o "$@" -l "$(AS_PROJECT_PATH)/Logical/VCShared/Languages.vcr" -cv "$(AS_PROJECT_PATH)/Logical/VCShared/ControlVersion.cvinfo" -pal "$(PALFILE_Vrtalk)" $(VCCFLAGS_Vrtalk) -P "$(AS_PROJECT_PATH)" -ds "$(SRC_PATH_Vrtalk)/StyleSheets/Color.vcs" -p Vrtalk -so $(VC_STATIC_OPTIONS_Vrtalk) -vcr 4265 -sfas
+
+
+$(TEMP_PATH_Vrtalk)/page.Startup.vco: $(AS_PROJECT_PATH)/Logical/HMI/VrtalkaHMI/Pages/Startup.page $(VC_LANGUAGES_Vrtalk)
 	 $(VCC) -f "$<" -o "$@" -l "$(AS_PROJECT_PATH)/Logical/VCShared/Languages.vcr" -cv "$(AS_PROJECT_PATH)/Logical/VCShared/ControlVersion.cvinfo" -pal "$(PALFILE_Vrtalk)" $(VCCFLAGS_Vrtalk) -P "$(AS_PROJECT_PATH)" -ds "$(SRC_PATH_Vrtalk)/StyleSheets/Color.vcs" -p Vrtalk -so $(VC_STATIC_OPTIONS_Vrtalk) -vcr 4265 -sfas
 
 
@@ -251,11 +268,11 @@ $(TEMP_PATH_Vrtalk)/page.Service.vco: $(AS_PROJECT_PATH)/Logical/VrtalkaHMI/Page
 # Stylesheets
 VCS_OBJECTS_Vrtalk = $(addprefix $(TEMP_PATH_Vrtalk)/vcs., $(notdir $(VCS_SOURCES_Vrtalk:.vcs=.vco)))
 
-$(TEMP_PATH_Vrtalk)/vcs.Gray.vco: $(AS_PROJECT_PATH)/Logical/VrtalkaHMI/StyleSheets/Gray.vcs
+$(TEMP_PATH_Vrtalk)/vcs.Gray.vco: $(AS_PROJECT_PATH)/Logical/HMI/VrtalkaHMI/StyleSheets/Gray.vcs
 	 $(VCC) -f "$<" -o "$@" -l "$(AS_PROJECT_PATH)/Logical/VCShared/Languages.vcr" -cv "$(AS_PROJECT_PATH)/Logical/VCShared/ControlVersion.cvinfo" -pal "$(PALFILE_Vrtalk)" $(VCCFLAGS_Vrtalk) -P "$(AS_PROJECT_PATH)" -ds $(DEFAULT_STYLE_SHEET_Vrtalk) -p Vrtalk -so $(VC_STATIC_OPTIONS_Vrtalk) -vcr 4265 -sfas
 
 
-$(TEMP_PATH_Vrtalk)/vcs.Color.vco: $(AS_PROJECT_PATH)/Logical/VrtalkaHMI/StyleSheets/Color.vcs
+$(TEMP_PATH_Vrtalk)/vcs.Color.vco: $(AS_PROJECT_PATH)/Logical/HMI/VrtalkaHMI/StyleSheets/Color.vcs
 	 $(VCC) -f "$<" -o "$@" -l "$(AS_PROJECT_PATH)/Logical/VCShared/Languages.vcr" -cv "$(AS_PROJECT_PATH)/Logical/VCShared/ControlVersion.cvinfo" -pal "$(PALFILE_Vrtalk)" $(VCCFLAGS_Vrtalk) -P "$(AS_PROJECT_PATH)" -ds $(DEFAULT_STYLE_SHEET_Vrtalk) -p Vrtalk -so $(VC_STATIC_OPTIONS_Vrtalk) -vcr 4265 -sfas
 
 
@@ -267,7 +284,15 @@ $(TEMP_PATH_Vrtalk)/vcs.Color.vco: $(AS_PROJECT_PATH)/Logical/VrtalkaHMI/StyleSh
 # Layers
 LAYER_OBJECTS_Vrtalk = $(addprefix $(TEMP_PATH_Vrtalk)/layer., $(notdir $(LAYER_SOURCES_Vrtalk:.layer=.vco)))
 
-$(TEMP_PATH_Vrtalk)/layer.BackgroundLayer.vco: $(AS_PROJECT_PATH)/Logical/VrtalkaHMI/Layers/BackgroundLayer.layer $(VC_LANGUAGES_Vrtalk)
+$(TEMP_PATH_Vrtalk)/layer.BackgroundLayer.vco: $(AS_PROJECT_PATH)/Logical/HMI/VrtalkaHMI/Layers/BackgroundLayer.layer $(VC_LANGUAGES_Vrtalk)
+	 $(VCC) -f "$<" -o "$@" -l "$(AS_PROJECT_PATH)/Logical/VCShared/Languages.vcr" -cv "$(AS_PROJECT_PATH)/Logical/VCShared/ControlVersion.cvinfo" -pal "$(PALFILE_Vrtalk)" $(VCCFLAGS_Vrtalk) -ds $(DEFAULT_STYLE_SHEET_Vrtalk) -p Vrtalk -so $(VC_STATIC_OPTIONS_Vrtalk) -vcr 4265 -sfas
+
+
+$(TEMP_PATH_Vrtalk)/layer.warningPopup.vco: $(AS_PROJECT_PATH)/Logical/HMI/VrtalkaHMI/Layers/warningPopup.layer $(VC_LANGUAGES_Vrtalk)
+	 $(VCC) -f "$<" -o "$@" -l "$(AS_PROJECT_PATH)/Logical/VCShared/Languages.vcr" -cv "$(AS_PROJECT_PATH)/Logical/VCShared/ControlVersion.cvinfo" -pal "$(PALFILE_Vrtalk)" $(VCCFLAGS_Vrtalk) -ds $(DEFAULT_STYLE_SHEET_Vrtalk) -p Vrtalk -so $(VC_STATIC_OPTIONS_Vrtalk) -vcr 4265 -sfas
+
+
+$(TEMP_PATH_Vrtalk)/layer.potrdiPopup.vco: $(AS_PROJECT_PATH)/Logical/HMI/VrtalkaHMI/Layers/potrdiPopup.layer $(VC_LANGUAGES_Vrtalk)
 	 $(VCC) -f "$<" -o "$@" -l "$(AS_PROJECT_PATH)/Logical/VCShared/Languages.vcr" -cv "$(AS_PROJECT_PATH)/Logical/VCShared/ControlVersion.cvinfo" -pal "$(PALFILE_Vrtalk)" $(VCCFLAGS_Vrtalk) -ds $(DEFAULT_STYLE_SHEET_Vrtalk) -p Vrtalk -so $(VC_STATIC_OPTIONS_Vrtalk) -vcr 4265 -sfas
 
 
@@ -279,7 +304,7 @@ $(TEMP_PATH_Vrtalk)/layer.BackgroundLayer.vco: $(AS_PROJECT_PATH)/Logical/Vrtalk
 # Virtual Keys
 VCVK_OBJECTS_Vrtalk = $(addprefix $(TEMP_PATH_Vrtalk)/vcvk., $(notdir $(VCVK_SOURCES_Vrtalk:.vcvk=.vco)))
 
-$(TEMP_PATH_Vrtalk)/vcvk.VirtualKeys.vco: $(AS_PROJECT_PATH)/Logical/VrtalkaHMI/VirtualKeys.vcvk
+$(TEMP_PATH_Vrtalk)/vcvk.VirtualKeys.vco: $(AS_PROJECT_PATH)/Logical/HMI/VrtalkaHMI/VirtualKeys.vcvk
 	 $(VCC) -f "$<" -o "$@" -l "$(AS_PROJECT_PATH)/Logical/VCShared/Languages.vcr" -cv "$(AS_PROJECT_PATH)/Logical/VCShared/ControlVersion.cvinfo" -pal "$(PALFILE_Vrtalk)" $(VCCFLAGS_Vrtalk)  -p Vrtalk -so $(VC_STATIC_OPTIONS_Vrtalk) -vcr 4265 -sfas
 
 $(VCVK_OBJECTS_Vrtalk): $(VC_LANGUAGES_Vrtalk)
@@ -292,28 +317,28 @@ $(VCVK_OBJECTS_Vrtalk): $(VC_LANGUAGES_Vrtalk)
 # Touch Pads
 TPR_OBJECTS_Vrtalk = $(addprefix $(TEMP_PATH_Vrtalk)/tpr., $(notdir $(TPR_SOURCES_Vrtalk:.tpr=.vco)))
 
-$(TEMP_PATH_Vrtalk)/tpr.NumPad.vco: $(AS_PROJECT_PATH)/Logical/VrtalkaHMI/TouchPads/NumPad.tpr
-	 $(VCC) -f "$<" -o "$@" -l "$(AS_PROJECT_PATH)/Logical/VCShared/Languages.vcr" -cv "$(AS_PROJECT_PATH)/Logical/VCShared/ControlVersion.cvinfo" -pal "$(PALFILE_Vrtalk)" $(VCCFLAGS_Vrtalk) -prj "F:/1_Automation_projects/Vrtalka/Logical/VrtalkaHMI" -p Vrtalk -so $(VC_STATIC_OPTIONS_Vrtalk) -vcr 4265 -sfas
+$(TEMP_PATH_Vrtalk)/tpr.NumPad.vco: $(AS_PROJECT_PATH)/Logical/HMI/VrtalkaHMI/TouchPads/NumPad.tpr
+	 $(VCC) -f "$<" -o "$@" -l "$(AS_PROJECT_PATH)/Logical/VCShared/Languages.vcr" -cv "$(AS_PROJECT_PATH)/Logical/VCShared/ControlVersion.cvinfo" -pal "$(PALFILE_Vrtalk)" $(VCCFLAGS_Vrtalk) -prj "F:/1_Automation_projects/Vrtalka/Logical/HMI/VrtalkaHMI" -p Vrtalk -so $(VC_STATIC_OPTIONS_Vrtalk) -vcr 4265 -sfas
 
 
-$(TEMP_PATH_Vrtalk)/tpr.AlphaPadQVGA.vco: $(AS_PROJECT_PATH)/Logical/VrtalkaHMI/TouchPads/AlphaPadQVGA.tpr
-	 $(VCC) -f "$<" -o "$@" -l "$(AS_PROJECT_PATH)/Logical/VCShared/Languages.vcr" -cv "$(AS_PROJECT_PATH)/Logical/VCShared/ControlVersion.cvinfo" -pal "$(PALFILE_Vrtalk)" $(VCCFLAGS_Vrtalk) -prj "F:/1_Automation_projects/Vrtalka/Logical/VrtalkaHMI" -p Vrtalk -so $(VC_STATIC_OPTIONS_Vrtalk) -vcr 4265 -sfas
+$(TEMP_PATH_Vrtalk)/tpr.AlphaPadQVGA.vco: $(AS_PROJECT_PATH)/Logical/HMI/VrtalkaHMI/TouchPads/AlphaPadQVGA.tpr
+	 $(VCC) -f "$<" -o "$@" -l "$(AS_PROJECT_PATH)/Logical/VCShared/Languages.vcr" -cv "$(AS_PROJECT_PATH)/Logical/VCShared/ControlVersion.cvinfo" -pal "$(PALFILE_Vrtalk)" $(VCCFLAGS_Vrtalk) -prj "F:/1_Automation_projects/Vrtalka/Logical/HMI/VrtalkaHMI" -p Vrtalk -so $(VC_STATIC_OPTIONS_Vrtalk) -vcr 4265 -sfas
 
 
-$(TEMP_PATH_Vrtalk)/tpr.AlphaPad.vco: $(AS_PROJECT_PATH)/Logical/VrtalkaHMI/TouchPads/AlphaPad.tpr
-	 $(VCC) -f "$<" -o "$@" -l "$(AS_PROJECT_PATH)/Logical/VCShared/Languages.vcr" -cv "$(AS_PROJECT_PATH)/Logical/VCShared/ControlVersion.cvinfo" -pal "$(PALFILE_Vrtalk)" $(VCCFLAGS_Vrtalk) -prj "F:/1_Automation_projects/Vrtalka/Logical/VrtalkaHMI" -p Vrtalk -so $(VC_STATIC_OPTIONS_Vrtalk) -vcr 4265 -sfas
+$(TEMP_PATH_Vrtalk)/tpr.AlphaPad.vco: $(AS_PROJECT_PATH)/Logical/HMI/VrtalkaHMI/TouchPads/AlphaPad.tpr
+	 $(VCC) -f "$<" -o "$@" -l "$(AS_PROJECT_PATH)/Logical/VCShared/Languages.vcr" -cv "$(AS_PROJECT_PATH)/Logical/VCShared/ControlVersion.cvinfo" -pal "$(PALFILE_Vrtalk)" $(VCCFLAGS_Vrtalk) -prj "F:/1_Automation_projects/Vrtalka/Logical/HMI/VrtalkaHMI" -p Vrtalk -so $(VC_STATIC_OPTIONS_Vrtalk) -vcr 4265 -sfas
 
 
-$(TEMP_PATH_Vrtalk)/tpr.NavigationPad_ver.vco: $(AS_PROJECT_PATH)/Logical/VrtalkaHMI/TouchPads/NavigationPad_ver.tpr
-	 $(VCC) -f "$<" -o "$@" -l "$(AS_PROJECT_PATH)/Logical/VCShared/Languages.vcr" -cv "$(AS_PROJECT_PATH)/Logical/VCShared/ControlVersion.cvinfo" -pal "$(PALFILE_Vrtalk)" $(VCCFLAGS_Vrtalk) -prj "F:/1_Automation_projects/Vrtalka/Logical/VrtalkaHMI" -p Vrtalk -so $(VC_STATIC_OPTIONS_Vrtalk) -vcr 4265 -sfas
+$(TEMP_PATH_Vrtalk)/tpr.NavigationPad_ver.vco: $(AS_PROJECT_PATH)/Logical/HMI/VrtalkaHMI/TouchPads/NavigationPad_ver.tpr
+	 $(VCC) -f "$<" -o "$@" -l "$(AS_PROJECT_PATH)/Logical/VCShared/Languages.vcr" -cv "$(AS_PROJECT_PATH)/Logical/VCShared/ControlVersion.cvinfo" -pal "$(PALFILE_Vrtalk)" $(VCCFLAGS_Vrtalk) -prj "F:/1_Automation_projects/Vrtalka/Logical/HMI/VrtalkaHMI" -p Vrtalk -so $(VC_STATIC_OPTIONS_Vrtalk) -vcr 4265 -sfas
 
 
-$(TEMP_PATH_Vrtalk)/tpr.NavigationPad_hor.vco: $(AS_PROJECT_PATH)/Logical/VrtalkaHMI/TouchPads/NavigationPad_hor.tpr
-	 $(VCC) -f "$<" -o "$@" -l "$(AS_PROJECT_PATH)/Logical/VCShared/Languages.vcr" -cv "$(AS_PROJECT_PATH)/Logical/VCShared/ControlVersion.cvinfo" -pal "$(PALFILE_Vrtalk)" $(VCCFLAGS_Vrtalk) -prj "F:/1_Automation_projects/Vrtalka/Logical/VrtalkaHMI" -p Vrtalk -so $(VC_STATIC_OPTIONS_Vrtalk) -vcr 4265 -sfas
+$(TEMP_PATH_Vrtalk)/tpr.NavigationPad_hor.vco: $(AS_PROJECT_PATH)/Logical/HMI/VrtalkaHMI/TouchPads/NavigationPad_hor.tpr
+	 $(VCC) -f "$<" -o "$@" -l "$(AS_PROJECT_PATH)/Logical/VCShared/Languages.vcr" -cv "$(AS_PROJECT_PATH)/Logical/VCShared/ControlVersion.cvinfo" -pal "$(PALFILE_Vrtalk)" $(VCCFLAGS_Vrtalk) -prj "F:/1_Automation_projects/Vrtalka/Logical/HMI/VrtalkaHMI" -p Vrtalk -so $(VC_STATIC_OPTIONS_Vrtalk) -vcr 4265 -sfas
 
 
-$(TEMP_PATH_Vrtalk)/tpr.EditPad.vco: $(AS_PROJECT_PATH)/Logical/VrtalkaHMI/TouchPads/EditPad.tpr
-	 $(VCC) -f "$<" -o "$@" -l "$(AS_PROJECT_PATH)/Logical/VCShared/Languages.vcr" -cv "$(AS_PROJECT_PATH)/Logical/VCShared/ControlVersion.cvinfo" -pal "$(PALFILE_Vrtalk)" $(VCCFLAGS_Vrtalk) -prj "F:/1_Automation_projects/Vrtalka/Logical/VrtalkaHMI" -p Vrtalk -so $(VC_STATIC_OPTIONS_Vrtalk) -vcr 4265 -sfas
+$(TEMP_PATH_Vrtalk)/tpr.EditPad.vco: $(AS_PROJECT_PATH)/Logical/HMI/VrtalkaHMI/TouchPads/EditPad.tpr
+	 $(VCC) -f "$<" -o "$@" -l "$(AS_PROJECT_PATH)/Logical/VCShared/Languages.vcr" -cv "$(AS_PROJECT_PATH)/Logical/VCShared/ControlVersion.cvinfo" -pal "$(PALFILE_Vrtalk)" $(VCCFLAGS_Vrtalk) -prj "F:/1_Automation_projects/Vrtalka/Logical/HMI/VrtalkaHMI" -p Vrtalk -so $(VC_STATIC_OPTIONS_Vrtalk) -vcr 4265 -sfas
 
 
 #Touch Pads END
@@ -321,42 +346,54 @@ $(TEMP_PATH_Vrtalk)/tpr.EditPad.vco: $(AS_PROJECT_PATH)/Logical/VrtalkaHMI/Touch
 
 
 
+# Text Groups
+TXTGRP_OBJECTS_Vrtalk = $(addprefix $(TEMP_PATH_Vrtalk)/txtgrp., $(notdir $(TXTGRP_SOURCES_Vrtalk:.txtgrp=.vco)))
+
+$(TEMP_PATH_Vrtalk)/txtgrp.PopupTextGroup.vco: $(AS_PROJECT_PATH)/Logical/HMI/VrtalkaHMI/TextGroups/PopupTextGroup.txtgrp $(VC_LANGUAGES_Vrtalk)
+	 $(VCC) -f "$<" -o "$@" -l "$(AS_PROJECT_PATH)/Logical/VCShared/Languages.vcr" -cv "$(AS_PROJECT_PATH)/Logical/VCShared/ControlVersion.cvinfo" -pal "$(PALFILE_Vrtalk)" $(VCCFLAGS_Vrtalk)  -p Vrtalk -so $(VC_STATIC_OPTIONS_Vrtalk) -vcr 4265 -sfas
+
+
+#Text Groups END
+
+
+
+
 # BitmapGroups
 BMGRP_OBJECTS_Vrtalk = $(addprefix $(TEMP_PATH_Vrtalk)/bmgrp., $(notdir $(BMGRP_SOURCES_Vrtalk:.bmgrp=.vco)))
 
-$(TEMP_PATH_Vrtalk)/bmgrp.AlphaPadQVGA.vco: $(AS_PROJECT_PATH)/Logical/VrtalkaHMI/BitmapGroups/AlphaPadQVGA.bmgrp
+$(TEMP_PATH_Vrtalk)/bmgrp.AlphaPadQVGA.vco: $(AS_PROJECT_PATH)/Logical/HMI/VrtalkaHMI/BitmapGroups/AlphaPadQVGA.bmgrp
 	 $(VCC) -f "$<" -o "$@" -l "$(AS_PROJECT_PATH)/Logical/VCShared/Languages.vcr" -cv "$(AS_PROJECT_PATH)/Logical/VCShared/ControlVersion.cvinfo" -pal "$(PALFILE_Vrtalk)" $(VCCFLAGS_Vrtalk)  -p Vrtalk -so $(VC_STATIC_OPTIONS_Vrtalk) -vcr 4265 -sfas
 
 
-$(TEMP_PATH_Vrtalk)/bmgrp.NumPad.vco: $(AS_PROJECT_PATH)/Logical/VrtalkaHMI/BitmapGroups/NumPad.bmgrp
+$(TEMP_PATH_Vrtalk)/bmgrp.NumPad.vco: $(AS_PROJECT_PATH)/Logical/HMI/VrtalkaHMI/BitmapGroups/NumPad.bmgrp
 	 $(VCC) -f "$<" -o "$@" -l "$(AS_PROJECT_PATH)/Logical/VCShared/Languages.vcr" -cv "$(AS_PROJECT_PATH)/Logical/VCShared/ControlVersion.cvinfo" -pal "$(PALFILE_Vrtalk)" $(VCCFLAGS_Vrtalk)  -p Vrtalk -so $(VC_STATIC_OPTIONS_Vrtalk) -vcr 4265 -sfas
 
 
-$(TEMP_PATH_Vrtalk)/bmgrp.AlphaPad.vco: $(AS_PROJECT_PATH)/Logical/VrtalkaHMI/BitmapGroups/AlphaPad.bmgrp
+$(TEMP_PATH_Vrtalk)/bmgrp.AlphaPad.vco: $(AS_PROJECT_PATH)/Logical/HMI/VrtalkaHMI/BitmapGroups/AlphaPad.bmgrp
 	 $(VCC) -f "$<" -o "$@" -l "$(AS_PROJECT_PATH)/Logical/VCShared/Languages.vcr" -cv "$(AS_PROJECT_PATH)/Logical/VCShared/ControlVersion.cvinfo" -pal "$(PALFILE_Vrtalk)" $(VCCFLAGS_Vrtalk)  -p Vrtalk -so $(VC_STATIC_OPTIONS_Vrtalk) -vcr 4265 -sfas
 
 
-$(TEMP_PATH_Vrtalk)/bmgrp.AlarmEvent.vco: $(AS_PROJECT_PATH)/Logical/VrtalkaHMI/BitmapGroups/AlarmEvent.bmgrp
+$(TEMP_PATH_Vrtalk)/bmgrp.AlarmEvent.vco: $(AS_PROJECT_PATH)/Logical/HMI/VrtalkaHMI/BitmapGroups/AlarmEvent.bmgrp
 	 $(VCC) -f "$<" -o "$@" -l "$(AS_PROJECT_PATH)/Logical/VCShared/Languages.vcr" -cv "$(AS_PROJECT_PATH)/Logical/VCShared/ControlVersion.cvinfo" -pal "$(PALFILE_Vrtalk)" $(VCCFLAGS_Vrtalk)  -p Vrtalk -so $(VC_STATIC_OPTIONS_Vrtalk) -vcr 4265 -sfas
 
 
-$(TEMP_PATH_Vrtalk)/bmgrp.AlarmState.vco: $(AS_PROJECT_PATH)/Logical/VrtalkaHMI/BitmapGroups/AlarmState.bmgrp
+$(TEMP_PATH_Vrtalk)/bmgrp.AlarmState.vco: $(AS_PROJECT_PATH)/Logical/HMI/VrtalkaHMI/BitmapGroups/AlarmState.bmgrp
 	 $(VCC) -f "$<" -o "$@" -l "$(AS_PROJECT_PATH)/Logical/VCShared/Languages.vcr" -cv "$(AS_PROJECT_PATH)/Logical/VCShared/ControlVersion.cvinfo" -pal "$(PALFILE_Vrtalk)" $(VCCFLAGS_Vrtalk)  -p Vrtalk -so $(VC_STATIC_OPTIONS_Vrtalk) -vcr 4265 -sfas
 
 
-$(TEMP_PATH_Vrtalk)/bmgrp.BypassState.vco: $(AS_PROJECT_PATH)/Logical/VrtalkaHMI/BitmapGroups/BypassState.bmgrp
+$(TEMP_PATH_Vrtalk)/bmgrp.BypassState.vco: $(AS_PROJECT_PATH)/Logical/HMI/VrtalkaHMI/BitmapGroups/BypassState.bmgrp
 	 $(VCC) -f "$<" -o "$@" -l "$(AS_PROJECT_PATH)/Logical/VCShared/Languages.vcr" -cv "$(AS_PROJECT_PATH)/Logical/VCShared/ControlVersion.cvinfo" -pal "$(PALFILE_Vrtalk)" $(VCCFLAGS_Vrtalk)  -p Vrtalk -so $(VC_STATIC_OPTIONS_Vrtalk) -vcr 4265 -sfas
 
 
-$(TEMP_PATH_Vrtalk)/bmgrp.AcknowledgeState.vco: $(AS_PROJECT_PATH)/Logical/VrtalkaHMI/BitmapGroups/AcknowledgeState.bmgrp
+$(TEMP_PATH_Vrtalk)/bmgrp.AcknowledgeState.vco: $(AS_PROJECT_PATH)/Logical/HMI/VrtalkaHMI/BitmapGroups/AcknowledgeState.bmgrp
 	 $(VCC) -f "$<" -o "$@" -l "$(AS_PROJECT_PATH)/Logical/VCShared/Languages.vcr" -cv "$(AS_PROJECT_PATH)/Logical/VCShared/ControlVersion.cvinfo" -pal "$(PALFILE_Vrtalk)" $(VCCFLAGS_Vrtalk)  -p Vrtalk -so $(VC_STATIC_OPTIONS_Vrtalk) -vcr 4265 -sfas
 
 
-$(TEMP_PATH_Vrtalk)/bmgrp.NavigationPad.vco: $(AS_PROJECT_PATH)/Logical/VrtalkaHMI/BitmapGroups/NavigationPad.bmgrp
+$(TEMP_PATH_Vrtalk)/bmgrp.NavigationPad.vco: $(AS_PROJECT_PATH)/Logical/HMI/VrtalkaHMI/BitmapGroups/NavigationPad.bmgrp
 	 $(VCC) -f "$<" -o "$@" -l "$(AS_PROJECT_PATH)/Logical/VCShared/Languages.vcr" -cv "$(AS_PROJECT_PATH)/Logical/VCShared/ControlVersion.cvinfo" -pal "$(PALFILE_Vrtalk)" $(VCCFLAGS_Vrtalk)  -p Vrtalk -so $(VC_STATIC_OPTIONS_Vrtalk) -vcr 4265 -sfas
 
 
-$(TEMP_PATH_Vrtalk)/bmgrp.Borders.vco: $(AS_PROJECT_PATH)/Logical/VrtalkaHMI/BitmapGroups/Borders.bmgrp
+$(TEMP_PATH_Vrtalk)/bmgrp.Borders.vco: $(AS_PROJECT_PATH)/Logical/HMI/VrtalkaHMI/BitmapGroups/Borders.bmgrp
 	 $(VCC) -f "$<" -o "$@" -l "$(AS_PROJECT_PATH)/Logical/VCShared/Languages.vcr" -cv "$(AS_PROJECT_PATH)/Logical/VCShared/ControlVersion.cvinfo" -pal "$(PALFILE_Vrtalk)" $(VCCFLAGS_Vrtalk)  -p Vrtalk -so $(VC_STATIC_OPTIONS_Vrtalk) -vcr 4265 -sfas
 
 
@@ -368,311 +405,327 @@ $(TEMP_PATH_Vrtalk)/bmgrp.Borders.vco: $(AS_PROJECT_PATH)/Logical/VrtalkaHMI/Bit
 # Bitmaps
 BMINFO_OBJECTS_Vrtalk = $(addprefix $(TEMP_PATH_Vrtalk)/bminfo., $(notdir $(BMINFO_SOURCES_Vrtalk:.bminfo=.vco)))
 
-$(TEMP_PATH_Vrtalk)/bminfo.AlphaPadQVGA1.vco: $(AS_PROJECT_PATH)/Logical/VrtalkaHMI/Bitmaps/AlphaPadQVGA1.bminfo $(AS_PROJECT_PATH)/Logical/VrtalkaHMI/Bitmaps/AlphaPadQVGA1.bmp
+$(TEMP_PATH_Vrtalk)/bminfo.AlphaPadQVGA1.vco: $(AS_PROJECT_PATH)/Logical/HMI/VrtalkaHMI/Bitmaps/AlphaPadQVGA1.bminfo $(AS_PROJECT_PATH)/Logical/HMI/VrtalkaHMI/Bitmaps/AlphaPadQVGA1.bmp
 	 $(VCC) -f "$<" -o "$@" -l "$(AS_PROJECT_PATH)/Logical/VCShared/Languages.vcr" -cv "$(AS_PROJECT_PATH)/Logical/VCShared/ControlVersion.cvinfo" -pal "$(PALFILE_Vrtalk)" $(VCCFLAGS_Vrtalk)  -p Vrtalk -so $(VC_STATIC_OPTIONS_Vrtalk) -vcr 4265 -sfas
 
 
-$(TEMP_PATH_Vrtalk)/bminfo.AlphaPadQVGA2.vco: $(AS_PROJECT_PATH)/Logical/VrtalkaHMI/Bitmaps/AlphaPadQVGA2.bminfo $(AS_PROJECT_PATH)/Logical/VrtalkaHMI/Bitmaps/AlphaPadQVGA2.bmp
+$(TEMP_PATH_Vrtalk)/bminfo.AlphaPadQVGA2.vco: $(AS_PROJECT_PATH)/Logical/HMI/VrtalkaHMI/Bitmaps/AlphaPadQVGA2.bminfo $(AS_PROJECT_PATH)/Logical/HMI/VrtalkaHMI/Bitmaps/AlphaPadQVGA2.bmp
 	 $(VCC) -f "$<" -o "$@" -l "$(AS_PROJECT_PATH)/Logical/VCShared/Languages.vcr" -cv "$(AS_PROJECT_PATH)/Logical/VCShared/ControlVersion.cvinfo" -pal "$(PALFILE_Vrtalk)" $(VCCFLAGS_Vrtalk)  -p Vrtalk -so $(VC_STATIC_OPTIONS_Vrtalk) -vcr 4265 -sfas
 
 
-$(TEMP_PATH_Vrtalk)/bminfo.AlphaPadQVGA3.vco: $(AS_PROJECT_PATH)/Logical/VrtalkaHMI/Bitmaps/AlphaPadQVGA3.bminfo $(AS_PROJECT_PATH)/Logical/VrtalkaHMI/Bitmaps/AlphaPadQVGA3.bmp
+$(TEMP_PATH_Vrtalk)/bminfo.AlphaPadQVGA3.vco: $(AS_PROJECT_PATH)/Logical/HMI/VrtalkaHMI/Bitmaps/AlphaPadQVGA3.bminfo $(AS_PROJECT_PATH)/Logical/HMI/VrtalkaHMI/Bitmaps/AlphaPadQVGA3.bmp
 	 $(VCC) -f "$<" -o "$@" -l "$(AS_PROJECT_PATH)/Logical/VCShared/Languages.vcr" -cv "$(AS_PROJECT_PATH)/Logical/VCShared/ControlVersion.cvinfo" -pal "$(PALFILE_Vrtalk)" $(VCCFLAGS_Vrtalk)  -p Vrtalk -so $(VC_STATIC_OPTIONS_Vrtalk) -vcr 4265 -sfas
 
 
-$(TEMP_PATH_Vrtalk)/bminfo.AlphaPadVGA_pressed.vco: $(AS_PROJECT_PATH)/Logical/VrtalkaHMI/Bitmaps/AlphaPadVGA_pressed.bminfo $(AS_PROJECT_PATH)/Logical/VrtalkaHMI/Bitmaps/AlphaPadVGA_pressed.bmp
+$(TEMP_PATH_Vrtalk)/bminfo.AlphaPadVGA_pressed.vco: $(AS_PROJECT_PATH)/Logical/HMI/VrtalkaHMI/Bitmaps/AlphaPadVGA_pressed.bminfo $(AS_PROJECT_PATH)/Logical/HMI/VrtalkaHMI/Bitmaps/AlphaPadVGA_pressed.bmp
 	 $(VCC) -f "$<" -o "$@" -l "$(AS_PROJECT_PATH)/Logical/VCShared/Languages.vcr" -cv "$(AS_PROJECT_PATH)/Logical/VCShared/ControlVersion.cvinfo" -pal "$(PALFILE_Vrtalk)" $(VCCFLAGS_Vrtalk)  -p Vrtalk -so $(VC_STATIC_OPTIONS_Vrtalk) -vcr 4265 -sfas
 
 
-$(TEMP_PATH_Vrtalk)/bminfo.AlphaPadQVGA2_pressed.vco: $(AS_PROJECT_PATH)/Logical/VrtalkaHMI/Bitmaps/AlphaPadQVGA2_pressed.bminfo $(AS_PROJECT_PATH)/Logical/VrtalkaHMI/Bitmaps/AlphaPadQVGA2_pressed.bmp
+$(TEMP_PATH_Vrtalk)/bminfo.AlphaPadQVGA2_pressed.vco: $(AS_PROJECT_PATH)/Logical/HMI/VrtalkaHMI/Bitmaps/AlphaPadQVGA2_pressed.bminfo $(AS_PROJECT_PATH)/Logical/HMI/VrtalkaHMI/Bitmaps/AlphaPadQVGA2_pressed.bmp
 	 $(VCC) -f "$<" -o "$@" -l "$(AS_PROJECT_PATH)/Logical/VCShared/Languages.vcr" -cv "$(AS_PROJECT_PATH)/Logical/VCShared/ControlVersion.cvinfo" -pal "$(PALFILE_Vrtalk)" $(VCCFLAGS_Vrtalk)  -p Vrtalk -so $(VC_STATIC_OPTIONS_Vrtalk) -vcr 4265 -sfas
 
 
-$(TEMP_PATH_Vrtalk)/bminfo.AlphaPadQVGA3_pressed.vco: $(AS_PROJECT_PATH)/Logical/VrtalkaHMI/Bitmaps/AlphaPadQVGA3_pressed.bminfo $(AS_PROJECT_PATH)/Logical/VrtalkaHMI/Bitmaps/AlphaPadQVGA3_pressed.bmp
+$(TEMP_PATH_Vrtalk)/bminfo.AlphaPadQVGA3_pressed.vco: $(AS_PROJECT_PATH)/Logical/HMI/VrtalkaHMI/Bitmaps/AlphaPadQVGA3_pressed.bminfo $(AS_PROJECT_PATH)/Logical/HMI/VrtalkaHMI/Bitmaps/AlphaPadQVGA3_pressed.bmp
 	 $(VCC) -f "$<" -o "$@" -l "$(AS_PROJECT_PATH)/Logical/VCShared/Languages.vcr" -cv "$(AS_PROJECT_PATH)/Logical/VCShared/ControlVersion.cvinfo" -pal "$(PALFILE_Vrtalk)" $(VCCFLAGS_Vrtalk)  -p Vrtalk -so $(VC_STATIC_OPTIONS_Vrtalk) -vcr 4265 -sfas
 
 
-$(TEMP_PATH_Vrtalk)/bminfo.AlphaPadQVGA1_pressed.vco: $(AS_PROJECT_PATH)/Logical/VrtalkaHMI/Bitmaps/AlphaPadQVGA1_pressed.bminfo $(AS_PROJECT_PATH)/Logical/VrtalkaHMI/Bitmaps/AlphaPadQVGA1_pressed.bmp
+$(TEMP_PATH_Vrtalk)/bminfo.AlphaPadQVGA1_pressed.vco: $(AS_PROJECT_PATH)/Logical/HMI/VrtalkaHMI/Bitmaps/AlphaPadQVGA1_pressed.bminfo $(AS_PROJECT_PATH)/Logical/HMI/VrtalkaHMI/Bitmaps/AlphaPadQVGA1_pressed.bmp
 	 $(VCC) -f "$<" -o "$@" -l "$(AS_PROJECT_PATH)/Logical/VCShared/Languages.vcr" -cv "$(AS_PROJECT_PATH)/Logical/VCShared/ControlVersion.cvinfo" -pal "$(PALFILE_Vrtalk)" $(VCCFLAGS_Vrtalk)  -p Vrtalk -so $(VC_STATIC_OPTIONS_Vrtalk) -vcr 4265 -sfas
 
 
-$(TEMP_PATH_Vrtalk)/bminfo.AlphaPadVGA.vco: $(AS_PROJECT_PATH)/Logical/VrtalkaHMI/Bitmaps/AlphaPadVGA.bminfo $(AS_PROJECT_PATH)/Logical/VrtalkaHMI/Bitmaps/AlphaPadVGA.bmp
+$(TEMP_PATH_Vrtalk)/bminfo.AlphaPadVGA.vco: $(AS_PROJECT_PATH)/Logical/HMI/VrtalkaHMI/Bitmaps/AlphaPadVGA.bminfo $(AS_PROJECT_PATH)/Logical/HMI/VrtalkaHMI/Bitmaps/AlphaPadVGA.bmp
 	 $(VCC) -f "$<" -o "$@" -l "$(AS_PROJECT_PATH)/Logical/VCShared/Languages.vcr" -cv "$(AS_PROJECT_PATH)/Logical/VCShared/ControlVersion.cvinfo" -pal "$(PALFILE_Vrtalk)" $(VCCFLAGS_Vrtalk)  -p Vrtalk -so $(VC_STATIC_OPTIONS_Vrtalk) -vcr 4265 -sfas
 
 
-$(TEMP_PATH_Vrtalk)/bminfo.NumPad_pressed.vco: $(AS_PROJECT_PATH)/Logical/VrtalkaHMI/Bitmaps/NumPad_pressed.bminfo $(AS_PROJECT_PATH)/Logical/VrtalkaHMI/Bitmaps/NumPad_pressed.bmp
+$(TEMP_PATH_Vrtalk)/bminfo.NumPad_pressed.vco: $(AS_PROJECT_PATH)/Logical/HMI/VrtalkaHMI/Bitmaps/NumPad_pressed.bminfo $(AS_PROJECT_PATH)/Logical/HMI/VrtalkaHMI/Bitmaps/NumPad_pressed.bmp
 	 $(VCC) -f "$<" -o "$@" -l "$(AS_PROJECT_PATH)/Logical/VCShared/Languages.vcr" -cv "$(AS_PROJECT_PATH)/Logical/VCShared/ControlVersion.cvinfo" -pal "$(PALFILE_Vrtalk)" $(VCCFLAGS_Vrtalk)  -p Vrtalk -so $(VC_STATIC_OPTIONS_Vrtalk) -vcr 4265 -sfas
 
 
-$(TEMP_PATH_Vrtalk)/bminfo.NumPad.vco: $(AS_PROJECT_PATH)/Logical/VrtalkaHMI/Bitmaps/NumPad.bminfo $(AS_PROJECT_PATH)/Logical/VrtalkaHMI/Bitmaps/NumPad.bmp
+$(TEMP_PATH_Vrtalk)/bminfo.NumPad.vco: $(AS_PROJECT_PATH)/Logical/HMI/VrtalkaHMI/Bitmaps/NumPad.bminfo $(AS_PROJECT_PATH)/Logical/HMI/VrtalkaHMI/Bitmaps/NumPad.bmp
 	 $(VCC) -f "$<" -o "$@" -l "$(AS_PROJECT_PATH)/Logical/VCShared/Languages.vcr" -cv "$(AS_PROJECT_PATH)/Logical/VCShared/ControlVersion.cvinfo" -pal "$(PALFILE_Vrtalk)" $(VCCFLAGS_Vrtalk)  -p Vrtalk -so $(VC_STATIC_OPTIONS_Vrtalk) -vcr 4265 -sfas
 
 
-$(TEMP_PATH_Vrtalk)/bminfo.AcknowledgeReset.vco: $(AS_PROJECT_PATH)/Logical/VrtalkaHMI/Bitmaps/AcknowledgeReset.bminfo $(AS_PROJECT_PATH)/Logical/VrtalkaHMI/Bitmaps/AcknowledgeReset.bmp
+$(TEMP_PATH_Vrtalk)/bminfo.AcknowledgeReset.vco: $(AS_PROJECT_PATH)/Logical/HMI/VrtalkaHMI/Bitmaps/AcknowledgeReset.bminfo $(AS_PROJECT_PATH)/Logical/HMI/VrtalkaHMI/Bitmaps/AcknowledgeReset.bmp
 	 $(VCC) -f "$<" -o "$@" -l "$(AS_PROJECT_PATH)/Logical/VCShared/Languages.vcr" -cv "$(AS_PROJECT_PATH)/Logical/VCShared/ControlVersion.cvinfo" -pal "$(PALFILE_Vrtalk)" $(VCCFLAGS_Vrtalk)  -p Vrtalk -so $(VC_STATIC_OPTIONS_Vrtalk) -vcr 4265 -sfas
 
 
-$(TEMP_PATH_Vrtalk)/bminfo.AlarmActive.vco: $(AS_PROJECT_PATH)/Logical/VrtalkaHMI/Bitmaps/AlarmActive.bminfo $(AS_PROJECT_PATH)/Logical/VrtalkaHMI/Bitmaps/AlarmActive.bmp
+$(TEMP_PATH_Vrtalk)/bminfo.AlarmActive.vco: $(AS_PROJECT_PATH)/Logical/HMI/VrtalkaHMI/Bitmaps/AlarmActive.bminfo $(AS_PROJECT_PATH)/Logical/HMI/VrtalkaHMI/Bitmaps/AlarmActive.bmp
 	 $(VCC) -f "$<" -o "$@" -l "$(AS_PROJECT_PATH)/Logical/VCShared/Languages.vcr" -cv "$(AS_PROJECT_PATH)/Logical/VCShared/ControlVersion.cvinfo" -pal "$(PALFILE_Vrtalk)" $(VCCFLAGS_Vrtalk)  -p Vrtalk -so $(VC_STATIC_OPTIONS_Vrtalk) -vcr 4265 -sfas
 
 
-$(TEMP_PATH_Vrtalk)/bminfo.AlarmBypassOFF.vco: $(AS_PROJECT_PATH)/Logical/VrtalkaHMI/Bitmaps/AlarmBypassOFF.bminfo $(AS_PROJECT_PATH)/Logical/VrtalkaHMI/Bitmaps/AlarmBypassOFF.bmp
+$(TEMP_PATH_Vrtalk)/bminfo.AlarmBypassOFF.vco: $(AS_PROJECT_PATH)/Logical/HMI/VrtalkaHMI/Bitmaps/AlarmBypassOFF.bminfo $(AS_PROJECT_PATH)/Logical/HMI/VrtalkaHMI/Bitmaps/AlarmBypassOFF.bmp
 	 $(VCC) -f "$<" -o "$@" -l "$(AS_PROJECT_PATH)/Logical/VCShared/Languages.vcr" -cv "$(AS_PROJECT_PATH)/Logical/VCShared/ControlVersion.cvinfo" -pal "$(PALFILE_Vrtalk)" $(VCCFLAGS_Vrtalk)  -p Vrtalk -so $(VC_STATIC_OPTIONS_Vrtalk) -vcr 4265 -sfas
 
 
-$(TEMP_PATH_Vrtalk)/bminfo.AlarmBypassON.vco: $(AS_PROJECT_PATH)/Logical/VrtalkaHMI/Bitmaps/AlarmBypassON.bminfo $(AS_PROJECT_PATH)/Logical/VrtalkaHMI/Bitmaps/AlarmBypassON.bmp
+$(TEMP_PATH_Vrtalk)/bminfo.AlarmBypassON.vco: $(AS_PROJECT_PATH)/Logical/HMI/VrtalkaHMI/Bitmaps/AlarmBypassON.bminfo $(AS_PROJECT_PATH)/Logical/HMI/VrtalkaHMI/Bitmaps/AlarmBypassON.bmp
 	 $(VCC) -f "$<" -o "$@" -l "$(AS_PROJECT_PATH)/Logical/VCShared/Languages.vcr" -cv "$(AS_PROJECT_PATH)/Logical/VCShared/ControlVersion.cvinfo" -pal "$(PALFILE_Vrtalk)" $(VCCFLAGS_Vrtalk)  -p Vrtalk -so $(VC_STATIC_OPTIONS_Vrtalk) -vcr 4265 -sfas
 
 
-$(TEMP_PATH_Vrtalk)/bminfo.AlarmInactive.vco: $(AS_PROJECT_PATH)/Logical/VrtalkaHMI/Bitmaps/AlarmInactive.bminfo $(AS_PROJECT_PATH)/Logical/VrtalkaHMI/Bitmaps/AlarmInactive.bmp
+$(TEMP_PATH_Vrtalk)/bminfo.AlarmInactive.vco: $(AS_PROJECT_PATH)/Logical/HMI/VrtalkaHMI/Bitmaps/AlarmInactive.bminfo $(AS_PROJECT_PATH)/Logical/HMI/VrtalkaHMI/Bitmaps/AlarmInactive.bmp
 	 $(VCC) -f "$<" -o "$@" -l "$(AS_PROJECT_PATH)/Logical/VCShared/Languages.vcr" -cv "$(AS_PROJECT_PATH)/Logical/VCShared/ControlVersion.cvinfo" -pal "$(PALFILE_Vrtalk)" $(VCCFLAGS_Vrtalk)  -p Vrtalk -so $(VC_STATIC_OPTIONS_Vrtalk) -vcr 4265 -sfas
 
 
-$(TEMP_PATH_Vrtalk)/bminfo.AlarmLatched.vco: $(AS_PROJECT_PATH)/Logical/VrtalkaHMI/Bitmaps/AlarmLatched.bminfo $(AS_PROJECT_PATH)/Logical/VrtalkaHMI/Bitmaps/AlarmLatched.bmp
+$(TEMP_PATH_Vrtalk)/bminfo.AlarmLatched.vco: $(AS_PROJECT_PATH)/Logical/HMI/VrtalkaHMI/Bitmaps/AlarmLatched.bminfo $(AS_PROJECT_PATH)/Logical/HMI/VrtalkaHMI/Bitmaps/AlarmLatched.bmp
 	 $(VCC) -f "$<" -o "$@" -l "$(AS_PROJECT_PATH)/Logical/VCShared/Languages.vcr" -cv "$(AS_PROJECT_PATH)/Logical/VCShared/ControlVersion.cvinfo" -pal "$(PALFILE_Vrtalk)" $(VCCFLAGS_Vrtalk)  -p Vrtalk -so $(VC_STATIC_OPTIONS_Vrtalk) -vcr 4265 -sfas
 
 
-$(TEMP_PATH_Vrtalk)/bminfo.AlarmNotQuit.vco: $(AS_PROJECT_PATH)/Logical/VrtalkaHMI/Bitmaps/AlarmNotQuit.bminfo $(AS_PROJECT_PATH)/Logical/VrtalkaHMI/Bitmaps/AlarmNotQuit.bmp
+$(TEMP_PATH_Vrtalk)/bminfo.AlarmNotQuit.vco: $(AS_PROJECT_PATH)/Logical/HMI/VrtalkaHMI/Bitmaps/AlarmNotQuit.bminfo $(AS_PROJECT_PATH)/Logical/HMI/VrtalkaHMI/Bitmaps/AlarmNotQuit.bmp
 	 $(VCC) -f "$<" -o "$@" -l "$(AS_PROJECT_PATH)/Logical/VCShared/Languages.vcr" -cv "$(AS_PROJECT_PATH)/Logical/VCShared/ControlVersion.cvinfo" -pal "$(PALFILE_Vrtalk)" $(VCCFLAGS_Vrtalk)  -p Vrtalk -so $(VC_STATIC_OPTIONS_Vrtalk) -vcr 4265 -sfas
 
 
-$(TEMP_PATH_Vrtalk)/bminfo.AlarmQuit.vco: $(AS_PROJECT_PATH)/Logical/VrtalkaHMI/Bitmaps/AlarmQuit.bminfo $(AS_PROJECT_PATH)/Logical/VrtalkaHMI/Bitmaps/AlarmQuit.bmp
+$(TEMP_PATH_Vrtalk)/bminfo.AlarmQuit.vco: $(AS_PROJECT_PATH)/Logical/HMI/VrtalkaHMI/Bitmaps/AlarmQuit.bminfo $(AS_PROJECT_PATH)/Logical/HMI/VrtalkaHMI/Bitmaps/AlarmQuit.bmp
 	 $(VCC) -f "$<" -o "$@" -l "$(AS_PROJECT_PATH)/Logical/VCShared/Languages.vcr" -cv "$(AS_PROJECT_PATH)/Logical/VCShared/ControlVersion.cvinfo" -pal "$(PALFILE_Vrtalk)" $(VCCFLAGS_Vrtalk)  -p Vrtalk -so $(VC_STATIC_OPTIONS_Vrtalk) -vcr 4265 -sfas
 
 
-$(TEMP_PATH_Vrtalk)/bminfo.Reset.vco: $(AS_PROJECT_PATH)/Logical/VrtalkaHMI/Bitmaps/Reset.bminfo $(AS_PROJECT_PATH)/Logical/VrtalkaHMI/Bitmaps/Reset.bmp
+$(TEMP_PATH_Vrtalk)/bminfo.Reset.vco: $(AS_PROJECT_PATH)/Logical/HMI/VrtalkaHMI/Bitmaps/Reset.bminfo $(AS_PROJECT_PATH)/Logical/HMI/VrtalkaHMI/Bitmaps/Reset.bmp
 	 $(VCC) -f "$<" -o "$@" -l "$(AS_PROJECT_PATH)/Logical/VCShared/Languages.vcr" -cv "$(AS_PROJECT_PATH)/Logical/VCShared/ControlVersion.cvinfo" -pal "$(PALFILE_Vrtalk)" $(VCCFLAGS_Vrtalk)  -p Vrtalk -so $(VC_STATIC_OPTIONS_Vrtalk) -vcr 4265 -sfas
 
 
-$(TEMP_PATH_Vrtalk)/bminfo.ResetAcknowledge.vco: $(AS_PROJECT_PATH)/Logical/VrtalkaHMI/Bitmaps/ResetAcknowledge.bminfo $(AS_PROJECT_PATH)/Logical/VrtalkaHMI/Bitmaps/ResetAcknowledge.bmp
+$(TEMP_PATH_Vrtalk)/bminfo.ResetAcknowledge.vco: $(AS_PROJECT_PATH)/Logical/HMI/VrtalkaHMI/Bitmaps/ResetAcknowledge.bminfo $(AS_PROJECT_PATH)/Logical/HMI/VrtalkaHMI/Bitmaps/ResetAcknowledge.bmp
 	 $(VCC) -f "$<" -o "$@" -l "$(AS_PROJECT_PATH)/Logical/VCShared/Languages.vcr" -cv "$(AS_PROJECT_PATH)/Logical/VCShared/ControlVersion.cvinfo" -pal "$(PALFILE_Vrtalk)" $(VCCFLAGS_Vrtalk)  -p Vrtalk -so $(VC_STATIC_OPTIONS_Vrtalk) -vcr 4265 -sfas
 
 
-$(TEMP_PATH_Vrtalk)/bminfo.Triggered.vco: $(AS_PROJECT_PATH)/Logical/VrtalkaHMI/Bitmaps/Triggered.bminfo $(AS_PROJECT_PATH)/Logical/VrtalkaHMI/Bitmaps/Triggered.bmp
+$(TEMP_PATH_Vrtalk)/bminfo.Triggered.vco: $(AS_PROJECT_PATH)/Logical/HMI/VrtalkaHMI/Bitmaps/Triggered.bminfo $(AS_PROJECT_PATH)/Logical/HMI/VrtalkaHMI/Bitmaps/Triggered.bmp
 	 $(VCC) -f "$<" -o "$@" -l "$(AS_PROJECT_PATH)/Logical/VCShared/Languages.vcr" -cv "$(AS_PROJECT_PATH)/Logical/VCShared/ControlVersion.cvinfo" -pal "$(PALFILE_Vrtalk)" $(VCCFLAGS_Vrtalk)  -p Vrtalk -so $(VC_STATIC_OPTIONS_Vrtalk) -vcr 4265 -sfas
 
 
-$(TEMP_PATH_Vrtalk)/bminfo.ListPadHor.vco: $(AS_PROJECT_PATH)/Logical/VrtalkaHMI/Bitmaps/ListPadHor.bminfo $(AS_PROJECT_PATH)/Logical/VrtalkaHMI/Bitmaps/ListPadHor.bmp
+$(TEMP_PATH_Vrtalk)/bminfo.ListPadHor.vco: $(AS_PROJECT_PATH)/Logical/HMI/VrtalkaHMI/Bitmaps/ListPadHor.bminfo $(AS_PROJECT_PATH)/Logical/HMI/VrtalkaHMI/Bitmaps/ListPadHor.bmp
 	 $(VCC) -f "$<" -o "$@" -l "$(AS_PROJECT_PATH)/Logical/VCShared/Languages.vcr" -cv "$(AS_PROJECT_PATH)/Logical/VCShared/ControlVersion.cvinfo" -pal "$(PALFILE_Vrtalk)" $(VCCFLAGS_Vrtalk)  -p Vrtalk -so $(VC_STATIC_OPTIONS_Vrtalk) -vcr 4265 -sfas
 
 
-$(TEMP_PATH_Vrtalk)/bminfo.ListPadHor_pressed.vco: $(AS_PROJECT_PATH)/Logical/VrtalkaHMI/Bitmaps/ListPadHor_pressed.bminfo $(AS_PROJECT_PATH)/Logical/VrtalkaHMI/Bitmaps/ListPadHor_pressed.bmp
+$(TEMP_PATH_Vrtalk)/bminfo.ListPadHor_pressed.vco: $(AS_PROJECT_PATH)/Logical/HMI/VrtalkaHMI/Bitmaps/ListPadHor_pressed.bminfo $(AS_PROJECT_PATH)/Logical/HMI/VrtalkaHMI/Bitmaps/ListPadHor_pressed.bmp
 	 $(VCC) -f "$<" -o "$@" -l "$(AS_PROJECT_PATH)/Logical/VCShared/Languages.vcr" -cv "$(AS_PROJECT_PATH)/Logical/VCShared/ControlVersion.cvinfo" -pal "$(PALFILE_Vrtalk)" $(VCCFLAGS_Vrtalk)  -p Vrtalk -so $(VC_STATIC_OPTIONS_Vrtalk) -vcr 4265 -sfas
 
 
-$(TEMP_PATH_Vrtalk)/bminfo.ListPadVer.vco: $(AS_PROJECT_PATH)/Logical/VrtalkaHMI/Bitmaps/ListPadVer.bminfo $(AS_PROJECT_PATH)/Logical/VrtalkaHMI/Bitmaps/ListPadVer.bmp
+$(TEMP_PATH_Vrtalk)/bminfo.ListPadVer.vco: $(AS_PROJECT_PATH)/Logical/HMI/VrtalkaHMI/Bitmaps/ListPadVer.bminfo $(AS_PROJECT_PATH)/Logical/HMI/VrtalkaHMI/Bitmaps/ListPadVer.bmp
 	 $(VCC) -f "$<" -o "$@" -l "$(AS_PROJECT_PATH)/Logical/VCShared/Languages.vcr" -cv "$(AS_PROJECT_PATH)/Logical/VCShared/ControlVersion.cvinfo" -pal "$(PALFILE_Vrtalk)" $(VCCFLAGS_Vrtalk)  -p Vrtalk -so $(VC_STATIC_OPTIONS_Vrtalk) -vcr 4265 -sfas
 
 
-$(TEMP_PATH_Vrtalk)/bminfo.ListPadVer_pressed.vco: $(AS_PROJECT_PATH)/Logical/VrtalkaHMI/Bitmaps/ListPadVer_pressed.bminfo $(AS_PROJECT_PATH)/Logical/VrtalkaHMI/Bitmaps/ListPadVer_pressed.bmp
+$(TEMP_PATH_Vrtalk)/bminfo.ListPadVer_pressed.vco: $(AS_PROJECT_PATH)/Logical/HMI/VrtalkaHMI/Bitmaps/ListPadVer_pressed.bminfo $(AS_PROJECT_PATH)/Logical/HMI/VrtalkaHMI/Bitmaps/ListPadVer_pressed.bmp
 	 $(VCC) -f "$<" -o "$@" -l "$(AS_PROJECT_PATH)/Logical/VCShared/Languages.vcr" -cv "$(AS_PROJECT_PATH)/Logical/VCShared/ControlVersion.cvinfo" -pal "$(PALFILE_Vrtalk)" $(VCCFLAGS_Vrtalk)  -p Vrtalk -so $(VC_STATIC_OPTIONS_Vrtalk) -vcr 4265 -sfas
 
 
-$(TEMP_PATH_Vrtalk)/bminfo.backward_active.vco: $(AS_PROJECT_PATH)/Logical/VrtalkaHMI/Bitmaps/backward_active.bminfo $(AS_PROJECT_PATH)/Logical/VrtalkaHMI/Bitmaps/backward_active.bmp
+$(TEMP_PATH_Vrtalk)/bminfo.backward_active.vco: $(AS_PROJECT_PATH)/Logical/HMI/VrtalkaHMI/Bitmaps/backward_active.bminfo $(AS_PROJECT_PATH)/Logical/HMI/VrtalkaHMI/Bitmaps/backward_active.bmp
 	 $(VCC) -f "$<" -o "$@" -l "$(AS_PROJECT_PATH)/Logical/VCShared/Languages.vcr" -cv "$(AS_PROJECT_PATH)/Logical/VCShared/ControlVersion.cvinfo" -pal "$(PALFILE_Vrtalk)" $(VCCFLAGS_Vrtalk)  -p Vrtalk -so $(VC_STATIC_OPTIONS_Vrtalk) -vcr 4265 -sfas
 
 
-$(TEMP_PATH_Vrtalk)/bminfo.backward_pressed.vco: $(AS_PROJECT_PATH)/Logical/VrtalkaHMI/Bitmaps/backward_pressed.bminfo $(AS_PROJECT_PATH)/Logical/VrtalkaHMI/Bitmaps/backward_pressed.bmp
+$(TEMP_PATH_Vrtalk)/bminfo.backward_pressed.vco: $(AS_PROJECT_PATH)/Logical/HMI/VrtalkaHMI/Bitmaps/backward_pressed.bminfo $(AS_PROJECT_PATH)/Logical/HMI/VrtalkaHMI/Bitmaps/backward_pressed.bmp
 	 $(VCC) -f "$<" -o "$@" -l "$(AS_PROJECT_PATH)/Logical/VCShared/Languages.vcr" -cv "$(AS_PROJECT_PATH)/Logical/VCShared/ControlVersion.cvinfo" -pal "$(PALFILE_Vrtalk)" $(VCCFLAGS_Vrtalk)  -p Vrtalk -so $(VC_STATIC_OPTIONS_Vrtalk) -vcr 4265 -sfas
 
 
-$(TEMP_PATH_Vrtalk)/bminfo.global_area_active.vco: $(AS_PROJECT_PATH)/Logical/VrtalkaHMI/Bitmaps/global_area_active.bminfo $(AS_PROJECT_PATH)/Logical/VrtalkaHMI/Bitmaps/global_area_active.bmp
+$(TEMP_PATH_Vrtalk)/bminfo.global_area_active.vco: $(AS_PROJECT_PATH)/Logical/HMI/VrtalkaHMI/Bitmaps/global_area_active.bminfo $(AS_PROJECT_PATH)/Logical/HMI/VrtalkaHMI/Bitmaps/global_area_active.bmp
 	 $(VCC) -f "$<" -o "$@" -l "$(AS_PROJECT_PATH)/Logical/VCShared/Languages.vcr" -cv "$(AS_PROJECT_PATH)/Logical/VCShared/ControlVersion.cvinfo" -pal "$(PALFILE_Vrtalk)" $(VCCFLAGS_Vrtalk)  -p Vrtalk -so $(VC_STATIC_OPTIONS_Vrtalk) -vcr 4265 -sfas
 
 
-$(TEMP_PATH_Vrtalk)/bminfo.global_area_pressed.vco: $(AS_PROJECT_PATH)/Logical/VrtalkaHMI/Bitmaps/global_area_pressed.bminfo $(AS_PROJECT_PATH)/Logical/VrtalkaHMI/Bitmaps/global_area_pressed.bmp
+$(TEMP_PATH_Vrtalk)/bminfo.global_area_pressed.vco: $(AS_PROJECT_PATH)/Logical/HMI/VrtalkaHMI/Bitmaps/global_area_pressed.bminfo $(AS_PROJECT_PATH)/Logical/HMI/VrtalkaHMI/Bitmaps/global_area_pressed.bmp
 	 $(VCC) -f "$<" -o "$@" -l "$(AS_PROJECT_PATH)/Logical/VCShared/Languages.vcr" -cv "$(AS_PROJECT_PATH)/Logical/VCShared/ControlVersion.cvinfo" -pal "$(PALFILE_Vrtalk)" $(VCCFLAGS_Vrtalk)  -p Vrtalk -so $(VC_STATIC_OPTIONS_Vrtalk) -vcr 4265 -sfas
 
 
-$(TEMP_PATH_Vrtalk)/bminfo.forward_active.vco: $(AS_PROJECT_PATH)/Logical/VrtalkaHMI/Bitmaps/forward_active.bminfo $(AS_PROJECT_PATH)/Logical/VrtalkaHMI/Bitmaps/forward_active.bmp
+$(TEMP_PATH_Vrtalk)/bminfo.forward_active.vco: $(AS_PROJECT_PATH)/Logical/HMI/VrtalkaHMI/Bitmaps/forward_active.bminfo $(AS_PROJECT_PATH)/Logical/HMI/VrtalkaHMI/Bitmaps/forward_active.bmp
 	 $(VCC) -f "$<" -o "$@" -l "$(AS_PROJECT_PATH)/Logical/VCShared/Languages.vcr" -cv "$(AS_PROJECT_PATH)/Logical/VCShared/ControlVersion.cvinfo" -pal "$(PALFILE_Vrtalk)" $(VCCFLAGS_Vrtalk)  -p Vrtalk -so $(VC_STATIC_OPTIONS_Vrtalk) -vcr 4265 -sfas
 
 
-$(TEMP_PATH_Vrtalk)/bminfo.forward_pressed.vco: $(AS_PROJECT_PATH)/Logical/VrtalkaHMI/Bitmaps/forward_pressed.bminfo $(AS_PROJECT_PATH)/Logical/VrtalkaHMI/Bitmaps/forward_pressed.bmp
+$(TEMP_PATH_Vrtalk)/bminfo.forward_pressed.vco: $(AS_PROJECT_PATH)/Logical/HMI/VrtalkaHMI/Bitmaps/forward_pressed.bminfo $(AS_PROJECT_PATH)/Logical/HMI/VrtalkaHMI/Bitmaps/forward_pressed.bmp
 	 $(VCC) -f "$<" -o "$@" -l "$(AS_PROJECT_PATH)/Logical/VCShared/Languages.vcr" -cv "$(AS_PROJECT_PATH)/Logical/VCShared/ControlVersion.cvinfo" -pal "$(PALFILE_Vrtalk)" $(VCCFLAGS_Vrtalk)  -p Vrtalk -so $(VC_STATIC_OPTIONS_Vrtalk) -vcr 4265 -sfas
 
 
-$(TEMP_PATH_Vrtalk)/bminfo.control_button_active.vco: $(AS_PROJECT_PATH)/Logical/VrtalkaHMI/Bitmaps/control_button_active.bminfo $(AS_PROJECT_PATH)/Logical/VrtalkaHMI/Bitmaps/control_button_active.bmp
+$(TEMP_PATH_Vrtalk)/bminfo.control_button_active.vco: $(AS_PROJECT_PATH)/Logical/HMI/VrtalkaHMI/Bitmaps/control_button_active.bminfo $(AS_PROJECT_PATH)/Logical/HMI/VrtalkaHMI/Bitmaps/control_button_active.bmp
 	 $(VCC) -f "$<" -o "$@" -l "$(AS_PROJECT_PATH)/Logical/VCShared/Languages.vcr" -cv "$(AS_PROJECT_PATH)/Logical/VCShared/ControlVersion.cvinfo" -pal "$(PALFILE_Vrtalk)" $(VCCFLAGS_Vrtalk)  -p Vrtalk -so $(VC_STATIC_OPTIONS_Vrtalk) -vcr 4265 -sfas
 
 
-$(TEMP_PATH_Vrtalk)/bminfo.control_button_pressed.vco: $(AS_PROJECT_PATH)/Logical/VrtalkaHMI/Bitmaps/control_button_pressed.bminfo $(AS_PROJECT_PATH)/Logical/VrtalkaHMI/Bitmaps/control_button_pressed.bmp
+$(TEMP_PATH_Vrtalk)/bminfo.control_button_pressed.vco: $(AS_PROJECT_PATH)/Logical/HMI/VrtalkaHMI/Bitmaps/control_button_pressed.bminfo $(AS_PROJECT_PATH)/Logical/HMI/VrtalkaHMI/Bitmaps/control_button_pressed.bmp
 	 $(VCC) -f "$<" -o "$@" -l "$(AS_PROJECT_PATH)/Logical/VCShared/Languages.vcr" -cv "$(AS_PROJECT_PATH)/Logical/VCShared/ControlVersion.cvinfo" -pal "$(PALFILE_Vrtalk)" $(VCCFLAGS_Vrtalk)  -p Vrtalk -so $(VC_STATIC_OPTIONS_Vrtalk) -vcr 4265 -sfas
 
 
-$(TEMP_PATH_Vrtalk)/bminfo.right_active.vco: $(AS_PROJECT_PATH)/Logical/VrtalkaHMI/Bitmaps/right_active.bminfo $(AS_PROJECT_PATH)/Logical/VrtalkaHMI/Bitmaps/right_active.bmp
+$(TEMP_PATH_Vrtalk)/bminfo.right_active.vco: $(AS_PROJECT_PATH)/Logical/HMI/VrtalkaHMI/Bitmaps/right_active.bminfo $(AS_PROJECT_PATH)/Logical/HMI/VrtalkaHMI/Bitmaps/right_active.bmp
 	 $(VCC) -f "$<" -o "$@" -l "$(AS_PROJECT_PATH)/Logical/VCShared/Languages.vcr" -cv "$(AS_PROJECT_PATH)/Logical/VCShared/ControlVersion.cvinfo" -pal "$(PALFILE_Vrtalk)" $(VCCFLAGS_Vrtalk)  -p Vrtalk -so $(VC_STATIC_OPTIONS_Vrtalk) -vcr 4265 -sfas
 
 
-$(TEMP_PATH_Vrtalk)/bminfo.right_pressed.vco: $(AS_PROJECT_PATH)/Logical/VrtalkaHMI/Bitmaps/right_pressed.bminfo $(AS_PROJECT_PATH)/Logical/VrtalkaHMI/Bitmaps/right_pressed.bmp
+$(TEMP_PATH_Vrtalk)/bminfo.right_pressed.vco: $(AS_PROJECT_PATH)/Logical/HMI/VrtalkaHMI/Bitmaps/right_pressed.bminfo $(AS_PROJECT_PATH)/Logical/HMI/VrtalkaHMI/Bitmaps/right_pressed.bmp
 	 $(VCC) -f "$<" -o "$@" -l "$(AS_PROJECT_PATH)/Logical/VCShared/Languages.vcr" -cv "$(AS_PROJECT_PATH)/Logical/VCShared/ControlVersion.cvinfo" -pal "$(PALFILE_Vrtalk)" $(VCCFLAGS_Vrtalk)  -p Vrtalk -so $(VC_STATIC_OPTIONS_Vrtalk) -vcr 4265 -sfas
 
 
-$(TEMP_PATH_Vrtalk)/bminfo.left_active.vco: $(AS_PROJECT_PATH)/Logical/VrtalkaHMI/Bitmaps/left_active.bminfo $(AS_PROJECT_PATH)/Logical/VrtalkaHMI/Bitmaps/left_active.bmp
+$(TEMP_PATH_Vrtalk)/bminfo.left_active.vco: $(AS_PROJECT_PATH)/Logical/HMI/VrtalkaHMI/Bitmaps/left_active.bminfo $(AS_PROJECT_PATH)/Logical/HMI/VrtalkaHMI/Bitmaps/left_active.bmp
 	 $(VCC) -f "$<" -o "$@" -l "$(AS_PROJECT_PATH)/Logical/VCShared/Languages.vcr" -cv "$(AS_PROJECT_PATH)/Logical/VCShared/ControlVersion.cvinfo" -pal "$(PALFILE_Vrtalk)" $(VCCFLAGS_Vrtalk)  -p Vrtalk -so $(VC_STATIC_OPTIONS_Vrtalk) -vcr 4265 -sfas
 
 
-$(TEMP_PATH_Vrtalk)/bminfo.left_pressed.vco: $(AS_PROJECT_PATH)/Logical/VrtalkaHMI/Bitmaps/left_pressed.bminfo $(AS_PROJECT_PATH)/Logical/VrtalkaHMI/Bitmaps/left_pressed.bmp
+$(TEMP_PATH_Vrtalk)/bminfo.left_pressed.vco: $(AS_PROJECT_PATH)/Logical/HMI/VrtalkaHMI/Bitmaps/left_pressed.bminfo $(AS_PROJECT_PATH)/Logical/HMI/VrtalkaHMI/Bitmaps/left_pressed.bmp
 	 $(VCC) -f "$<" -o "$@" -l "$(AS_PROJECT_PATH)/Logical/VCShared/Languages.vcr" -cv "$(AS_PROJECT_PATH)/Logical/VCShared/ControlVersion.cvinfo" -pal "$(PALFILE_Vrtalk)" $(VCCFLAGS_Vrtalk)  -p Vrtalk -so $(VC_STATIC_OPTIONS_Vrtalk) -vcr 4265 -sfas
 
 
-$(TEMP_PATH_Vrtalk)/bminfo.up_active.vco: $(AS_PROJECT_PATH)/Logical/VrtalkaHMI/Bitmaps/up_active.bminfo $(AS_PROJECT_PATH)/Logical/VrtalkaHMI/Bitmaps/up_active.bmp
+$(TEMP_PATH_Vrtalk)/bminfo.up_active.vco: $(AS_PROJECT_PATH)/Logical/HMI/VrtalkaHMI/Bitmaps/up_active.bminfo $(AS_PROJECT_PATH)/Logical/HMI/VrtalkaHMI/Bitmaps/up_active.bmp
 	 $(VCC) -f "$<" -o "$@" -l "$(AS_PROJECT_PATH)/Logical/VCShared/Languages.vcr" -cv "$(AS_PROJECT_PATH)/Logical/VCShared/ControlVersion.cvinfo" -pal "$(PALFILE_Vrtalk)" $(VCCFLAGS_Vrtalk)  -p Vrtalk -so $(VC_STATIC_OPTIONS_Vrtalk) -vcr 4265 -sfas
 
 
-$(TEMP_PATH_Vrtalk)/bminfo.up_pressed.vco: $(AS_PROJECT_PATH)/Logical/VrtalkaHMI/Bitmaps/up_pressed.bminfo $(AS_PROJECT_PATH)/Logical/VrtalkaHMI/Bitmaps/up_pressed.bmp
+$(TEMP_PATH_Vrtalk)/bminfo.up_pressed.vco: $(AS_PROJECT_PATH)/Logical/HMI/VrtalkaHMI/Bitmaps/up_pressed.bminfo $(AS_PROJECT_PATH)/Logical/HMI/VrtalkaHMI/Bitmaps/up_pressed.bmp
 	 $(VCC) -f "$<" -o "$@" -l "$(AS_PROJECT_PATH)/Logical/VCShared/Languages.vcr" -cv "$(AS_PROJECT_PATH)/Logical/VCShared/ControlVersion.cvinfo" -pal "$(PALFILE_Vrtalk)" $(VCCFLAGS_Vrtalk)  -p Vrtalk -so $(VC_STATIC_OPTIONS_Vrtalk) -vcr 4265 -sfas
 
 
-$(TEMP_PATH_Vrtalk)/bminfo.down_active.vco: $(AS_PROJECT_PATH)/Logical/VrtalkaHMI/Bitmaps/down_active.bminfo $(AS_PROJECT_PATH)/Logical/VrtalkaHMI/Bitmaps/down_active.bmp
+$(TEMP_PATH_Vrtalk)/bminfo.down_active.vco: $(AS_PROJECT_PATH)/Logical/HMI/VrtalkaHMI/Bitmaps/down_active.bminfo $(AS_PROJECT_PATH)/Logical/HMI/VrtalkaHMI/Bitmaps/down_active.bmp
 	 $(VCC) -f "$<" -o "$@" -l "$(AS_PROJECT_PATH)/Logical/VCShared/Languages.vcr" -cv "$(AS_PROJECT_PATH)/Logical/VCShared/ControlVersion.cvinfo" -pal "$(PALFILE_Vrtalk)" $(VCCFLAGS_Vrtalk)  -p Vrtalk -so $(VC_STATIC_OPTIONS_Vrtalk) -vcr 4265 -sfas
 
 
-$(TEMP_PATH_Vrtalk)/bminfo.down_pressed.vco: $(AS_PROJECT_PATH)/Logical/VrtalkaHMI/Bitmaps/down_pressed.bminfo $(AS_PROJECT_PATH)/Logical/VrtalkaHMI/Bitmaps/down_pressed.bmp
+$(TEMP_PATH_Vrtalk)/bminfo.down_pressed.vco: $(AS_PROJECT_PATH)/Logical/HMI/VrtalkaHMI/Bitmaps/down_pressed.bminfo $(AS_PROJECT_PATH)/Logical/HMI/VrtalkaHMI/Bitmaps/down_pressed.bmp
 	 $(VCC) -f "$<" -o "$@" -l "$(AS_PROJECT_PATH)/Logical/VCShared/Languages.vcr" -cv "$(AS_PROJECT_PATH)/Logical/VCShared/ControlVersion.cvinfo" -pal "$(PALFILE_Vrtalk)" $(VCCFLAGS_Vrtalk)  -p Vrtalk -so $(VC_STATIC_OPTIONS_Vrtalk) -vcr 4265 -sfas
 
 
-$(TEMP_PATH_Vrtalk)/bminfo.multi_up_active.vco: $(AS_PROJECT_PATH)/Logical/VrtalkaHMI/Bitmaps/multi_up_active.bminfo $(AS_PROJECT_PATH)/Logical/VrtalkaHMI/Bitmaps/multi_up_active.bmp
+$(TEMP_PATH_Vrtalk)/bminfo.multi_up_active.vco: $(AS_PROJECT_PATH)/Logical/HMI/VrtalkaHMI/Bitmaps/multi_up_active.bminfo $(AS_PROJECT_PATH)/Logical/HMI/VrtalkaHMI/Bitmaps/multi_up_active.bmp
 	 $(VCC) -f "$<" -o "$@" -l "$(AS_PROJECT_PATH)/Logical/VCShared/Languages.vcr" -cv "$(AS_PROJECT_PATH)/Logical/VCShared/ControlVersion.cvinfo" -pal "$(PALFILE_Vrtalk)" $(VCCFLAGS_Vrtalk)  -p Vrtalk -so $(VC_STATIC_OPTIONS_Vrtalk) -vcr 4265 -sfas
 
 
-$(TEMP_PATH_Vrtalk)/bminfo.multi_up_pressed.vco: $(AS_PROJECT_PATH)/Logical/VrtalkaHMI/Bitmaps/multi_up_pressed.bminfo $(AS_PROJECT_PATH)/Logical/VrtalkaHMI/Bitmaps/multi_up_pressed.bmp
+$(TEMP_PATH_Vrtalk)/bminfo.multi_up_pressed.vco: $(AS_PROJECT_PATH)/Logical/HMI/VrtalkaHMI/Bitmaps/multi_up_pressed.bminfo $(AS_PROJECT_PATH)/Logical/HMI/VrtalkaHMI/Bitmaps/multi_up_pressed.bmp
 	 $(VCC) -f "$<" -o "$@" -l "$(AS_PROJECT_PATH)/Logical/VCShared/Languages.vcr" -cv "$(AS_PROJECT_PATH)/Logical/VCShared/ControlVersion.cvinfo" -pal "$(PALFILE_Vrtalk)" $(VCCFLAGS_Vrtalk)  -p Vrtalk -so $(VC_STATIC_OPTIONS_Vrtalk) -vcr 4265 -sfas
 
 
-$(TEMP_PATH_Vrtalk)/bminfo.multi_down_active.vco: $(AS_PROJECT_PATH)/Logical/VrtalkaHMI/Bitmaps/multi_down_active.bminfo $(AS_PROJECT_PATH)/Logical/VrtalkaHMI/Bitmaps/multi_down_active.bmp
+$(TEMP_PATH_Vrtalk)/bminfo.multi_down_active.vco: $(AS_PROJECT_PATH)/Logical/HMI/VrtalkaHMI/Bitmaps/multi_down_active.bminfo $(AS_PROJECT_PATH)/Logical/HMI/VrtalkaHMI/Bitmaps/multi_down_active.bmp
 	 $(VCC) -f "$<" -o "$@" -l "$(AS_PROJECT_PATH)/Logical/VCShared/Languages.vcr" -cv "$(AS_PROJECT_PATH)/Logical/VCShared/ControlVersion.cvinfo" -pal "$(PALFILE_Vrtalk)" $(VCCFLAGS_Vrtalk)  -p Vrtalk -so $(VC_STATIC_OPTIONS_Vrtalk) -vcr 4265 -sfas
 
 
-$(TEMP_PATH_Vrtalk)/bminfo.multi_down_pressed.vco: $(AS_PROJECT_PATH)/Logical/VrtalkaHMI/Bitmaps/multi_down_pressed.bminfo $(AS_PROJECT_PATH)/Logical/VrtalkaHMI/Bitmaps/multi_down_pressed.bmp
+$(TEMP_PATH_Vrtalk)/bminfo.multi_down_pressed.vco: $(AS_PROJECT_PATH)/Logical/HMI/VrtalkaHMI/Bitmaps/multi_down_pressed.bminfo $(AS_PROJECT_PATH)/Logical/HMI/VrtalkaHMI/Bitmaps/multi_down_pressed.bmp
 	 $(VCC) -f "$<" -o "$@" -l "$(AS_PROJECT_PATH)/Logical/VCShared/Languages.vcr" -cv "$(AS_PROJECT_PATH)/Logical/VCShared/ControlVersion.cvinfo" -pal "$(PALFILE_Vrtalk)" $(VCCFLAGS_Vrtalk)  -p Vrtalk -so $(VC_STATIC_OPTIONS_Vrtalk) -vcr 4265 -sfas
 
 
-$(TEMP_PATH_Vrtalk)/bminfo.ProgressBorder.vco: $(AS_PROJECT_PATH)/Logical/VrtalkaHMI/Bitmaps/ProgressBorder.bminfo $(AS_PROJECT_PATH)/Logical/VrtalkaHMI/Bitmaps/ProgressBorder.bmp
+$(TEMP_PATH_Vrtalk)/bminfo.ProgressBorder.vco: $(AS_PROJECT_PATH)/Logical/HMI/VrtalkaHMI/Bitmaps/ProgressBorder.bminfo $(AS_PROJECT_PATH)/Logical/HMI/VrtalkaHMI/Bitmaps/ProgressBorder.bmp
 	 $(VCC) -f "$<" -o "$@" -l "$(AS_PROJECT_PATH)/Logical/VCShared/Languages.vcr" -cv "$(AS_PROJECT_PATH)/Logical/VCShared/ControlVersion.cvinfo" -pal "$(PALFILE_Vrtalk)" $(VCCFLAGS_Vrtalk)  -p Vrtalk -so $(VC_STATIC_OPTIONS_Vrtalk) -vcr 4265 -sfas
 
 
-$(TEMP_PATH_Vrtalk)/bminfo.down_active_control.vco: $(AS_PROJECT_PATH)/Logical/VrtalkaHMI/Bitmaps/down_active_control.bminfo $(AS_PROJECT_PATH)/Logical/VrtalkaHMI/Bitmaps/down_active_control.bmp
+$(TEMP_PATH_Vrtalk)/bminfo.down_active_control.vco: $(AS_PROJECT_PATH)/Logical/HMI/VrtalkaHMI/Bitmaps/down_active_control.bminfo $(AS_PROJECT_PATH)/Logical/HMI/VrtalkaHMI/Bitmaps/down_active_control.bmp
 	 $(VCC) -f "$<" -o "$@" -l "$(AS_PROJECT_PATH)/Logical/VCShared/Languages.vcr" -cv "$(AS_PROJECT_PATH)/Logical/VCShared/ControlVersion.cvinfo" -pal "$(PALFILE_Vrtalk)" $(VCCFLAGS_Vrtalk)  -p Vrtalk -so $(VC_STATIC_OPTIONS_Vrtalk) -vcr 4265 -sfas
 
 
-$(TEMP_PATH_Vrtalk)/bminfo.down_pressed_control.vco: $(AS_PROJECT_PATH)/Logical/VrtalkaHMI/Bitmaps/down_pressed_control.bminfo $(AS_PROJECT_PATH)/Logical/VrtalkaHMI/Bitmaps/down_pressed_control.bmp
+$(TEMP_PATH_Vrtalk)/bminfo.down_pressed_control.vco: $(AS_PROJECT_PATH)/Logical/HMI/VrtalkaHMI/Bitmaps/down_pressed_control.bminfo $(AS_PROJECT_PATH)/Logical/HMI/VrtalkaHMI/Bitmaps/down_pressed_control.bmp
 	 $(VCC) -f "$<" -o "$@" -l "$(AS_PROJECT_PATH)/Logical/VCShared/Languages.vcr" -cv "$(AS_PROJECT_PATH)/Logical/VCShared/ControlVersion.cvinfo" -pal "$(PALFILE_Vrtalk)" $(VCCFLAGS_Vrtalk)  -p Vrtalk -so $(VC_STATIC_OPTIONS_Vrtalk) -vcr 4265 -sfas
 
 
-$(TEMP_PATH_Vrtalk)/bminfo.up_active_control.vco: $(AS_PROJECT_PATH)/Logical/VrtalkaHMI/Bitmaps/up_active_control.bminfo $(AS_PROJECT_PATH)/Logical/VrtalkaHMI/Bitmaps/up_active_control.bmp
+$(TEMP_PATH_Vrtalk)/bminfo.up_active_control.vco: $(AS_PROJECT_PATH)/Logical/HMI/VrtalkaHMI/Bitmaps/up_active_control.bminfo $(AS_PROJECT_PATH)/Logical/HMI/VrtalkaHMI/Bitmaps/up_active_control.bmp
 	 $(VCC) -f "$<" -o "$@" -l "$(AS_PROJECT_PATH)/Logical/VCShared/Languages.vcr" -cv "$(AS_PROJECT_PATH)/Logical/VCShared/ControlVersion.cvinfo" -pal "$(PALFILE_Vrtalk)" $(VCCFLAGS_Vrtalk)  -p Vrtalk -so $(VC_STATIC_OPTIONS_Vrtalk) -vcr 4265 -sfas
 
 
-$(TEMP_PATH_Vrtalk)/bminfo.global_area_gradient_upside.vco: $(AS_PROJECT_PATH)/Logical/VrtalkaHMI/Bitmaps/global_area_gradient_upside.bminfo $(AS_PROJECT_PATH)/Logical/VrtalkaHMI/Bitmaps/global_area_gradient_upside.bmp
+$(TEMP_PATH_Vrtalk)/bminfo.global_area_gradient_upside.vco: $(AS_PROJECT_PATH)/Logical/HMI/VrtalkaHMI/Bitmaps/global_area_gradient_upside.bminfo $(AS_PROJECT_PATH)/Logical/HMI/VrtalkaHMI/Bitmaps/global_area_gradient_upside.bmp
 	 $(VCC) -f "$<" -o "$@" -l "$(AS_PROJECT_PATH)/Logical/VCShared/Languages.vcr" -cv "$(AS_PROJECT_PATH)/Logical/VCShared/ControlVersion.cvinfo" -pal "$(PALFILE_Vrtalk)" $(VCCFLAGS_Vrtalk)  -p Vrtalk -so $(VC_STATIC_OPTIONS_Vrtalk) -vcr 4265 -sfas
 
 
-$(TEMP_PATH_Vrtalk)/bminfo.global_area_gradient_downside.vco: $(AS_PROJECT_PATH)/Logical/VrtalkaHMI/Bitmaps/global_area_gradient_downside.bminfo $(AS_PROJECT_PATH)/Logical/VrtalkaHMI/Bitmaps/global_area_gradient_downside.bmp
+$(TEMP_PATH_Vrtalk)/bminfo.global_area_gradient_downside.vco: $(AS_PROJECT_PATH)/Logical/HMI/VrtalkaHMI/Bitmaps/global_area_gradient_downside.bminfo $(AS_PROJECT_PATH)/Logical/HMI/VrtalkaHMI/Bitmaps/global_area_gradient_downside.bmp
 	 $(VCC) -f "$<" -o "$@" -l "$(AS_PROJECT_PATH)/Logical/VCShared/Languages.vcr" -cv "$(AS_PROJECT_PATH)/Logical/VCShared/ControlVersion.cvinfo" -pal "$(PALFILE_Vrtalk)" $(VCCFLAGS_Vrtalk)  -p Vrtalk -so $(VC_STATIC_OPTIONS_Vrtalk) -vcr 4265 -sfas
 
 
-$(TEMP_PATH_Vrtalk)/bminfo.frame_header.vco: $(AS_PROJECT_PATH)/Logical/VrtalkaHMI/Bitmaps/frame_header.bminfo $(AS_PROJECT_PATH)/Logical/VrtalkaHMI/Bitmaps/frame_header.bmp
+$(TEMP_PATH_Vrtalk)/bminfo.frame_header.vco: $(AS_PROJECT_PATH)/Logical/HMI/VrtalkaHMI/Bitmaps/frame_header.bminfo $(AS_PROJECT_PATH)/Logical/HMI/VrtalkaHMI/Bitmaps/frame_header.bmp
 	 $(VCC) -f "$<" -o "$@" -l "$(AS_PROJECT_PATH)/Logical/VCShared/Languages.vcr" -cv "$(AS_PROJECT_PATH)/Logical/VCShared/ControlVersion.cvinfo" -pal "$(PALFILE_Vrtalk)" $(VCCFLAGS_Vrtalk)  -p Vrtalk -so $(VC_STATIC_OPTIONS_Vrtalk) -vcr 4265 -sfas
 
 
-$(TEMP_PATH_Vrtalk)/bminfo.up_pressed_control.vco: $(AS_PROJECT_PATH)/Logical/VrtalkaHMI/Bitmaps/up_pressed_control.bminfo $(AS_PROJECT_PATH)/Logical/VrtalkaHMI/Bitmaps/up_pressed_control.bmp
+$(TEMP_PATH_Vrtalk)/bminfo.up_pressed_control.vco: $(AS_PROJECT_PATH)/Logical/HMI/VrtalkaHMI/Bitmaps/up_pressed_control.bminfo $(AS_PROJECT_PATH)/Logical/HMI/VrtalkaHMI/Bitmaps/up_pressed_control.bmp
 	 $(VCC) -f "$<" -o "$@" -l "$(AS_PROJECT_PATH)/Logical/VCShared/Languages.vcr" -cv "$(AS_PROJECT_PATH)/Logical/VCShared/ControlVersion.cvinfo" -pal "$(PALFILE_Vrtalk)" $(VCCFLAGS_Vrtalk)  -p Vrtalk -so $(VC_STATIC_OPTIONS_Vrtalk) -vcr 4265 -sfas
 
 
-$(TEMP_PATH_Vrtalk)/bminfo.EditPadVGA.vco: $(AS_PROJECT_PATH)/Logical/VrtalkaHMI/Bitmaps/EditPadVGA.bminfo $(AS_PROJECT_PATH)/Logical/VrtalkaHMI/Bitmaps/EditPadVGA.bmp
+$(TEMP_PATH_Vrtalk)/bminfo.EditPadVGA.vco: $(AS_PROJECT_PATH)/Logical/HMI/VrtalkaHMI/Bitmaps/EditPadVGA.bminfo $(AS_PROJECT_PATH)/Logical/HMI/VrtalkaHMI/Bitmaps/EditPadVGA.bmp
 	 $(VCC) -f "$<" -o "$@" -l "$(AS_PROJECT_PATH)/Logical/VCShared/Languages.vcr" -cv "$(AS_PROJECT_PATH)/Logical/VCShared/ControlVersion.cvinfo" -pal "$(PALFILE_Vrtalk)" $(VCCFLAGS_Vrtalk)  -p Vrtalk -so $(VC_STATIC_OPTIONS_Vrtalk) -vcr 4265 -sfas
 
 
-$(TEMP_PATH_Vrtalk)/bminfo.EditPadVGA_pressed.vco: $(AS_PROJECT_PATH)/Logical/VrtalkaHMI/Bitmaps/EditPadVGA_pressed.bminfo $(AS_PROJECT_PATH)/Logical/VrtalkaHMI/Bitmaps/EditPadVGA_pressed.bmp
+$(TEMP_PATH_Vrtalk)/bminfo.EditPadVGA_pressed.vco: $(AS_PROJECT_PATH)/Logical/HMI/VrtalkaHMI/Bitmaps/EditPadVGA_pressed.bminfo $(AS_PROJECT_PATH)/Logical/HMI/VrtalkaHMI/Bitmaps/EditPadVGA_pressed.bmp
 	 $(VCC) -f "$<" -o "$@" -l "$(AS_PROJECT_PATH)/Logical/VCShared/Languages.vcr" -cv "$(AS_PROJECT_PATH)/Logical/VCShared/ControlVersion.cvinfo" -pal "$(PALFILE_Vrtalk)" $(VCCFLAGS_Vrtalk)  -p Vrtalk -so $(VC_STATIC_OPTIONS_Vrtalk) -vcr 4265 -sfas
 
 
-$(TEMP_PATH_Vrtalk)/bminfo.zuneNumPad_released.vco: $(AS_PROJECT_PATH)/Logical/VrtalkaHMI/Bitmaps/zuneNumPad_released.bminfo $(AS_PROJECT_PATH)/Logical/VrtalkaHMI/Bitmaps/zuneNumPad_released.bmp
+$(TEMP_PATH_Vrtalk)/bminfo.zuneNumPad_released.vco: $(AS_PROJECT_PATH)/Logical/HMI/VrtalkaHMI/Bitmaps/zuneNumPad_released.bminfo $(AS_PROJECT_PATH)/Logical/HMI/VrtalkaHMI/Bitmaps/zuneNumPad_released.bmp
 	 $(VCC) -f "$<" -o "$@" -l "$(AS_PROJECT_PATH)/Logical/VCShared/Languages.vcr" -cv "$(AS_PROJECT_PATH)/Logical/VCShared/ControlVersion.cvinfo" -pal "$(PALFILE_Vrtalk)" $(VCCFLAGS_Vrtalk)  -p Vrtalk -so $(VC_STATIC_OPTIONS_Vrtalk) -vcr 4265 -sfas
 
 
-$(TEMP_PATH_Vrtalk)/bminfo.zuneListPadVer_released.vco: $(AS_PROJECT_PATH)/Logical/VrtalkaHMI/Bitmaps/zuneListPadVer_released.bminfo $(AS_PROJECT_PATH)/Logical/VrtalkaHMI/Bitmaps/zuneListPadVer_released.bmp
+$(TEMP_PATH_Vrtalk)/bminfo.zuneListPadVer_released.vco: $(AS_PROJECT_PATH)/Logical/HMI/VrtalkaHMI/Bitmaps/zuneListPadVer_released.bminfo $(AS_PROJECT_PATH)/Logical/HMI/VrtalkaHMI/Bitmaps/zuneListPadVer_released.bmp
 	 $(VCC) -f "$<" -o "$@" -l "$(AS_PROJECT_PATH)/Logical/VCShared/Languages.vcr" -cv "$(AS_PROJECT_PATH)/Logical/VCShared/ControlVersion.cvinfo" -pal "$(PALFILE_Vrtalk)" $(VCCFLAGS_Vrtalk)  -p Vrtalk -so $(VC_STATIC_OPTIONS_Vrtalk) -vcr 4265 -sfas
 
 
-$(TEMP_PATH_Vrtalk)/bminfo.zuneAlphaPad_pressed.vco: $(AS_PROJECT_PATH)/Logical/VrtalkaHMI/Bitmaps/zuneAlphaPad_pressed.bminfo $(AS_PROJECT_PATH)/Logical/VrtalkaHMI/Bitmaps/zuneAlphaPad_pressed.bmp
+$(TEMP_PATH_Vrtalk)/bminfo.zuneAlphaPad_pressed.vco: $(AS_PROJECT_PATH)/Logical/HMI/VrtalkaHMI/Bitmaps/zuneAlphaPad_pressed.bminfo $(AS_PROJECT_PATH)/Logical/HMI/VrtalkaHMI/Bitmaps/zuneAlphaPad_pressed.bmp
 	 $(VCC) -f "$<" -o "$@" -l "$(AS_PROJECT_PATH)/Logical/VCShared/Languages.vcr" -cv "$(AS_PROJECT_PATH)/Logical/VCShared/ControlVersion.cvinfo" -pal "$(PALFILE_Vrtalk)" $(VCCFLAGS_Vrtalk)  -p Vrtalk -so $(VC_STATIC_OPTIONS_Vrtalk) -vcr 4265 -sfas
 
 
-$(TEMP_PATH_Vrtalk)/bminfo.zuneAlphaPad_released.vco: $(AS_PROJECT_PATH)/Logical/VrtalkaHMI/Bitmaps/zuneAlphaPad_released.bminfo $(AS_PROJECT_PATH)/Logical/VrtalkaHMI/Bitmaps/zuneAlphaPad_released.bmp
+$(TEMP_PATH_Vrtalk)/bminfo.zuneAlphaPad_released.vco: $(AS_PROJECT_PATH)/Logical/HMI/VrtalkaHMI/Bitmaps/zuneAlphaPad_released.bminfo $(AS_PROJECT_PATH)/Logical/HMI/VrtalkaHMI/Bitmaps/zuneAlphaPad_released.bmp
 	 $(VCC) -f "$<" -o "$@" -l "$(AS_PROJECT_PATH)/Logical/VCShared/Languages.vcr" -cv "$(AS_PROJECT_PATH)/Logical/VCShared/ControlVersion.cvinfo" -pal "$(PALFILE_Vrtalk)" $(VCCFLAGS_Vrtalk)  -p Vrtalk -so $(VC_STATIC_OPTIONS_Vrtalk) -vcr 4265 -sfas
 
 
-$(TEMP_PATH_Vrtalk)/bminfo.zuneAlphaPadQVGA1_pressed.vco: $(AS_PROJECT_PATH)/Logical/VrtalkaHMI/Bitmaps/zuneAlphaPadQVGA1_pressed.bminfo $(AS_PROJECT_PATH)/Logical/VrtalkaHMI/Bitmaps/zuneAlphaPadQVGA1_pressed.bmp
+$(TEMP_PATH_Vrtalk)/bminfo.zuneAlphaPadQVGA1_pressed.vco: $(AS_PROJECT_PATH)/Logical/HMI/VrtalkaHMI/Bitmaps/zuneAlphaPadQVGA1_pressed.bminfo $(AS_PROJECT_PATH)/Logical/HMI/VrtalkaHMI/Bitmaps/zuneAlphaPadQVGA1_pressed.bmp
 	 $(VCC) -f "$<" -o "$@" -l "$(AS_PROJECT_PATH)/Logical/VCShared/Languages.vcr" -cv "$(AS_PROJECT_PATH)/Logical/VCShared/ControlVersion.cvinfo" -pal "$(PALFILE_Vrtalk)" $(VCCFLAGS_Vrtalk)  -p Vrtalk -so $(VC_STATIC_OPTIONS_Vrtalk) -vcr 4265 -sfas
 
 
-$(TEMP_PATH_Vrtalk)/bminfo.zuneAlphaPadQVGA1_released.vco: $(AS_PROJECT_PATH)/Logical/VrtalkaHMI/Bitmaps/zuneAlphaPadQVGA1_released.bminfo $(AS_PROJECT_PATH)/Logical/VrtalkaHMI/Bitmaps/zuneAlphaPadQVGA1_released.bmp
+$(TEMP_PATH_Vrtalk)/bminfo.zuneAlphaPadQVGA1_released.vco: $(AS_PROJECT_PATH)/Logical/HMI/VrtalkaHMI/Bitmaps/zuneAlphaPadQVGA1_released.bminfo $(AS_PROJECT_PATH)/Logical/HMI/VrtalkaHMI/Bitmaps/zuneAlphaPadQVGA1_released.bmp
 	 $(VCC) -f "$<" -o "$@" -l "$(AS_PROJECT_PATH)/Logical/VCShared/Languages.vcr" -cv "$(AS_PROJECT_PATH)/Logical/VCShared/ControlVersion.cvinfo" -pal "$(PALFILE_Vrtalk)" $(VCCFLAGS_Vrtalk)  -p Vrtalk -so $(VC_STATIC_OPTIONS_Vrtalk) -vcr 4265 -sfas
 
 
-$(TEMP_PATH_Vrtalk)/bminfo.zuneAlphaPadQVGA2_pressed.vco: $(AS_PROJECT_PATH)/Logical/VrtalkaHMI/Bitmaps/zuneAlphaPadQVGA2_pressed.bminfo $(AS_PROJECT_PATH)/Logical/VrtalkaHMI/Bitmaps/zuneAlphaPadQVGA2_pressed.bmp
+$(TEMP_PATH_Vrtalk)/bminfo.zuneAlphaPadQVGA2_pressed.vco: $(AS_PROJECT_PATH)/Logical/HMI/VrtalkaHMI/Bitmaps/zuneAlphaPadQVGA2_pressed.bminfo $(AS_PROJECT_PATH)/Logical/HMI/VrtalkaHMI/Bitmaps/zuneAlphaPadQVGA2_pressed.bmp
 	 $(VCC) -f "$<" -o "$@" -l "$(AS_PROJECT_PATH)/Logical/VCShared/Languages.vcr" -cv "$(AS_PROJECT_PATH)/Logical/VCShared/ControlVersion.cvinfo" -pal "$(PALFILE_Vrtalk)" $(VCCFLAGS_Vrtalk)  -p Vrtalk -so $(VC_STATIC_OPTIONS_Vrtalk) -vcr 4265 -sfas
 
 
-$(TEMP_PATH_Vrtalk)/bminfo.zuneAlphaPadQVGA3_pressed.vco: $(AS_PROJECT_PATH)/Logical/VrtalkaHMI/Bitmaps/zuneAlphaPadQVGA3_pressed.bminfo $(AS_PROJECT_PATH)/Logical/VrtalkaHMI/Bitmaps/zuneAlphaPadQVGA3_pressed.bmp
+$(TEMP_PATH_Vrtalk)/bminfo.zuneAlphaPadQVGA3_pressed.vco: $(AS_PROJECT_PATH)/Logical/HMI/VrtalkaHMI/Bitmaps/zuneAlphaPadQVGA3_pressed.bminfo $(AS_PROJECT_PATH)/Logical/HMI/VrtalkaHMI/Bitmaps/zuneAlphaPadQVGA3_pressed.bmp
 	 $(VCC) -f "$<" -o "$@" -l "$(AS_PROJECT_PATH)/Logical/VCShared/Languages.vcr" -cv "$(AS_PROJECT_PATH)/Logical/VCShared/ControlVersion.cvinfo" -pal "$(PALFILE_Vrtalk)" $(VCCFLAGS_Vrtalk)  -p Vrtalk -so $(VC_STATIC_OPTIONS_Vrtalk) -vcr 4265 -sfas
 
 
-$(TEMP_PATH_Vrtalk)/bminfo.zuneEditpadQVGA2_released.vco: $(AS_PROJECT_PATH)/Logical/VrtalkaHMI/Bitmaps/zuneEditpadQVGA2_released.bminfo $(AS_PROJECT_PATH)/Logical/VrtalkaHMI/Bitmaps/zuneEditpadQVGA2_released.bmp
+$(TEMP_PATH_Vrtalk)/bminfo.zuneEditpadQVGA2_released.vco: $(AS_PROJECT_PATH)/Logical/HMI/VrtalkaHMI/Bitmaps/zuneEditpadQVGA2_released.bminfo $(AS_PROJECT_PATH)/Logical/HMI/VrtalkaHMI/Bitmaps/zuneEditpadQVGA2_released.bmp
 	 $(VCC) -f "$<" -o "$@" -l "$(AS_PROJECT_PATH)/Logical/VCShared/Languages.vcr" -cv "$(AS_PROJECT_PATH)/Logical/VCShared/ControlVersion.cvinfo" -pal "$(PALFILE_Vrtalk)" $(VCCFLAGS_Vrtalk)  -p Vrtalk -so $(VC_STATIC_OPTIONS_Vrtalk) -vcr 4265 -sfas
 
 
-$(TEMP_PATH_Vrtalk)/bminfo.zuneEditPadQVGA3_released.vco: $(AS_PROJECT_PATH)/Logical/VrtalkaHMI/Bitmaps/zuneEditPadQVGA3_released.bminfo $(AS_PROJECT_PATH)/Logical/VrtalkaHMI/Bitmaps/zuneEditPadQVGA3_released.bmp
+$(TEMP_PATH_Vrtalk)/bminfo.zuneEditPadQVGA3_released.vco: $(AS_PROJECT_PATH)/Logical/HMI/VrtalkaHMI/Bitmaps/zuneEditPadQVGA3_released.bminfo $(AS_PROJECT_PATH)/Logical/HMI/VrtalkaHMI/Bitmaps/zuneEditPadQVGA3_released.bmp
 	 $(VCC) -f "$<" -o "$@" -l "$(AS_PROJECT_PATH)/Logical/VCShared/Languages.vcr" -cv "$(AS_PROJECT_PATH)/Logical/VCShared/ControlVersion.cvinfo" -pal "$(PALFILE_Vrtalk)" $(VCCFLAGS_Vrtalk)  -p Vrtalk -so $(VC_STATIC_OPTIONS_Vrtalk) -vcr 4265 -sfas
 
 
-$(TEMP_PATH_Vrtalk)/bminfo.zuneEditPadVga_pressed.vco: $(AS_PROJECT_PATH)/Logical/VrtalkaHMI/Bitmaps/zuneEditPadVga_pressed.bminfo $(AS_PROJECT_PATH)/Logical/VrtalkaHMI/Bitmaps/zuneEditPadVga_pressed.bmp
+$(TEMP_PATH_Vrtalk)/bminfo.zuneEditPadVga_pressed.vco: $(AS_PROJECT_PATH)/Logical/HMI/VrtalkaHMI/Bitmaps/zuneEditPadVga_pressed.bminfo $(AS_PROJECT_PATH)/Logical/HMI/VrtalkaHMI/Bitmaps/zuneEditPadVga_pressed.bmp
 	 $(VCC) -f "$<" -o "$@" -l "$(AS_PROJECT_PATH)/Logical/VCShared/Languages.vcr" -cv "$(AS_PROJECT_PATH)/Logical/VCShared/ControlVersion.cvinfo" -pal "$(PALFILE_Vrtalk)" $(VCCFLAGS_Vrtalk)  -p Vrtalk -so $(VC_STATIC_OPTIONS_Vrtalk) -vcr 4265 -sfas
 
 
-$(TEMP_PATH_Vrtalk)/bminfo.zuneEditPadVga_released.vco: $(AS_PROJECT_PATH)/Logical/VrtalkaHMI/Bitmaps/zuneEditPadVga_released.bminfo $(AS_PROJECT_PATH)/Logical/VrtalkaHMI/Bitmaps/zuneEditPadVga_released.bmp
+$(TEMP_PATH_Vrtalk)/bminfo.zuneEditPadVga_released.vco: $(AS_PROJECT_PATH)/Logical/HMI/VrtalkaHMI/Bitmaps/zuneEditPadVga_released.bminfo $(AS_PROJECT_PATH)/Logical/HMI/VrtalkaHMI/Bitmaps/zuneEditPadVga_released.bmp
 	 $(VCC) -f "$<" -o "$@" -l "$(AS_PROJECT_PATH)/Logical/VCShared/Languages.vcr" -cv "$(AS_PROJECT_PATH)/Logical/VCShared/ControlVersion.cvinfo" -pal "$(PALFILE_Vrtalk)" $(VCCFLAGS_Vrtalk)  -p Vrtalk -so $(VC_STATIC_OPTIONS_Vrtalk) -vcr 4265 -sfas
 
 
-$(TEMP_PATH_Vrtalk)/bminfo.zuneListPadHor_pressed.vco: $(AS_PROJECT_PATH)/Logical/VrtalkaHMI/Bitmaps/zuneListPadHor_pressed.bminfo $(AS_PROJECT_PATH)/Logical/VrtalkaHMI/Bitmaps/zuneListPadHor_pressed.bmp
+$(TEMP_PATH_Vrtalk)/bminfo.zuneListPadHor_pressed.vco: $(AS_PROJECT_PATH)/Logical/HMI/VrtalkaHMI/Bitmaps/zuneListPadHor_pressed.bminfo $(AS_PROJECT_PATH)/Logical/HMI/VrtalkaHMI/Bitmaps/zuneListPadHor_pressed.bmp
 	 $(VCC) -f "$<" -o "$@" -l "$(AS_PROJECT_PATH)/Logical/VCShared/Languages.vcr" -cv "$(AS_PROJECT_PATH)/Logical/VCShared/ControlVersion.cvinfo" -pal "$(PALFILE_Vrtalk)" $(VCCFLAGS_Vrtalk)  -p Vrtalk -so $(VC_STATIC_OPTIONS_Vrtalk) -vcr 4265 -sfas
 
 
-$(TEMP_PATH_Vrtalk)/bminfo.zuneListPadHor_released.vco: $(AS_PROJECT_PATH)/Logical/VrtalkaHMI/Bitmaps/zuneListPadHor_released.bminfo $(AS_PROJECT_PATH)/Logical/VrtalkaHMI/Bitmaps/zuneListPadHor_released.bmp
+$(TEMP_PATH_Vrtalk)/bminfo.zuneListPadHor_released.vco: $(AS_PROJECT_PATH)/Logical/HMI/VrtalkaHMI/Bitmaps/zuneListPadHor_released.bminfo $(AS_PROJECT_PATH)/Logical/HMI/VrtalkaHMI/Bitmaps/zuneListPadHor_released.bmp
 	 $(VCC) -f "$<" -o "$@" -l "$(AS_PROJECT_PATH)/Logical/VCShared/Languages.vcr" -cv "$(AS_PROJECT_PATH)/Logical/VCShared/ControlVersion.cvinfo" -pal "$(PALFILE_Vrtalk)" $(VCCFLAGS_Vrtalk)  -p Vrtalk -so $(VC_STATIC_OPTIONS_Vrtalk) -vcr 4265 -sfas
 
 
-$(TEMP_PATH_Vrtalk)/bminfo.zuneListPadVer_pressed.vco: $(AS_PROJECT_PATH)/Logical/VrtalkaHMI/Bitmaps/zuneListPadVer_pressed.bminfo $(AS_PROJECT_PATH)/Logical/VrtalkaHMI/Bitmaps/zuneListPadVer_pressed.bmp
+$(TEMP_PATH_Vrtalk)/bminfo.zuneListPadVer_pressed.vco: $(AS_PROJECT_PATH)/Logical/HMI/VrtalkaHMI/Bitmaps/zuneListPadVer_pressed.bminfo $(AS_PROJECT_PATH)/Logical/HMI/VrtalkaHMI/Bitmaps/zuneListPadVer_pressed.bmp
 	 $(VCC) -f "$<" -o "$@" -l "$(AS_PROJECT_PATH)/Logical/VCShared/Languages.vcr" -cv "$(AS_PROJECT_PATH)/Logical/VCShared/ControlVersion.cvinfo" -pal "$(PALFILE_Vrtalk)" $(VCCFLAGS_Vrtalk)  -p Vrtalk -so $(VC_STATIC_OPTIONS_Vrtalk) -vcr 4265 -sfas
 
 
-$(TEMP_PATH_Vrtalk)/bminfo.zuneNumPad_pressed.vco: $(AS_PROJECT_PATH)/Logical/VrtalkaHMI/Bitmaps/zuneNumPad_pressed.bminfo $(AS_PROJECT_PATH)/Logical/VrtalkaHMI/Bitmaps/zuneNumPad_pressed.bmp
+$(TEMP_PATH_Vrtalk)/bminfo.zuneNumPad_pressed.vco: $(AS_PROJECT_PATH)/Logical/HMI/VrtalkaHMI/Bitmaps/zuneNumPad_pressed.bminfo $(AS_PROJECT_PATH)/Logical/HMI/VrtalkaHMI/Bitmaps/zuneNumPad_pressed.bmp
 	 $(VCC) -f "$<" -o "$@" -l "$(AS_PROJECT_PATH)/Logical/VCShared/Languages.vcr" -cv "$(AS_PROJECT_PATH)/Logical/VCShared/ControlVersion.cvinfo" -pal "$(PALFILE_Vrtalk)" $(VCCFLAGS_Vrtalk)  -p Vrtalk -so $(VC_STATIC_OPTIONS_Vrtalk) -vcr 4265 -sfas
 
 
-$(TEMP_PATH_Vrtalk)/bminfo.Vozicek.vco: $(AS_PROJECT_PATH)/Logical/VrtalkaHMI/Bitmaps/Vozicek.bminfo $(AS_PROJECT_PATH)/Logical/VrtalkaHMI/Bitmaps/Vozicek.png
+$(TEMP_PATH_Vrtalk)/bminfo.Vozicek.vco: $(AS_PROJECT_PATH)/Logical/HMI/VrtalkaHMI/Bitmaps/Vozicek.bminfo $(AS_PROJECT_PATH)/Logical/HMI/VrtalkaHMI/Bitmaps/Vozicek.png
 	 $(VCC) -f "$<" -o "$@" -l "$(AS_PROJECT_PATH)/Logical/VCShared/Languages.vcr" -cv "$(AS_PROJECT_PATH)/Logical/VCShared/ControlVersion.cvinfo" -pal "$(PALFILE_Vrtalk)" $(VCCFLAGS_Vrtalk)  -p Vrtalk -so $(VC_STATIC_OPTIONS_Vrtalk) -vcr 4265 -sfas
 
 
-$(TEMP_PATH_Vrtalk)/bminfo.Rail_vozicka.vco: $(AS_PROJECT_PATH)/Logical/VrtalkaHMI/Bitmaps/Rail_vozicka.bminfo $(AS_PROJECT_PATH)/Logical/VrtalkaHMI/Bitmaps/Rail_vozicka.png
+$(TEMP_PATH_Vrtalk)/bminfo.Rail_vozicka.vco: $(AS_PROJECT_PATH)/Logical/HMI/VrtalkaHMI/Bitmaps/Rail_vozicka.bminfo $(AS_PROJECT_PATH)/Logical/HMI/VrtalkaHMI/Bitmaps/Rail_vozicka.png
 	 $(VCC) -f "$<" -o "$@" -l "$(AS_PROJECT_PATH)/Logical/VCShared/Languages.vcr" -cv "$(AS_PROJECT_PATH)/Logical/VCShared/ControlVersion.cvinfo" -pal "$(PALFILE_Vrtalk)" $(VCCFLAGS_Vrtalk)  -p Vrtalk -so $(VC_STATIC_OPTIONS_Vrtalk) -vcr 4265 -sfas
 
 
-$(TEMP_PATH_Vrtalk)/bminfo.Agregat.vco: $(AS_PROJECT_PATH)/Logical/VrtalkaHMI/Bitmaps/Agregat.bminfo $(AS_PROJECT_PATH)/Logical/VrtalkaHMI/Bitmaps/Agregat.png
+$(TEMP_PATH_Vrtalk)/bminfo.Agregat.vco: $(AS_PROJECT_PATH)/Logical/HMI/VrtalkaHMI/Bitmaps/Agregat.bminfo $(AS_PROJECT_PATH)/Logical/HMI/VrtalkaHMI/Bitmaps/Agregat.png
 	 $(VCC) -f "$<" -o "$@" -l "$(AS_PROJECT_PATH)/Logical/VCShared/Languages.vcr" -cv "$(AS_PROJECT_PATH)/Logical/VCShared/ControlVersion.cvinfo" -pal "$(PALFILE_Vrtalk)" $(VCCFLAGS_Vrtalk)  -p Vrtalk -so $(VC_STATIC_OPTIONS_Vrtalk) -vcr 4265 -sfas
 
 
-$(TEMP_PATH_Vrtalk)/bminfo.Header_PS.vco: $(AS_PROJECT_PATH)/Logical/VrtalkaHMI/Bitmaps/Header_PS.bminfo $(AS_PROJECT_PATH)/Logical/VrtalkaHMI/Bitmaps/Header_PS.png
+$(TEMP_PATH_Vrtalk)/bminfo.Header_PS.vco: $(AS_PROJECT_PATH)/Logical/HMI/VrtalkaHMI/Bitmaps/Header_PS.bminfo $(AS_PROJECT_PATH)/Logical/HMI/VrtalkaHMI/Bitmaps/Header_PS.png
 	 $(VCC) -f "$<" -o "$@" -l "$(AS_PROJECT_PATH)/Logical/VCShared/Languages.vcr" -cv "$(AS_PROJECT_PATH)/Logical/VCShared/ControlVersion.cvinfo" -pal "$(PALFILE_Vrtalk)" $(VCCFLAGS_Vrtalk)  -p Vrtalk -so $(VC_STATIC_OPTIONS_Vrtalk) -vcr 4265 -sfas
 
 
-$(TEMP_PATH_Vrtalk)/bminfo.Home_screen.vco: $(AS_PROJECT_PATH)/Logical/VrtalkaHMI/Bitmaps/Home_screen.bminfo $(AS_PROJECT_PATH)/Logical/VrtalkaHMI/Bitmaps/Home_screen.png
+$(TEMP_PATH_Vrtalk)/bminfo.Home_screen.vco: $(AS_PROJECT_PATH)/Logical/HMI/VrtalkaHMI/Bitmaps/Home_screen.bminfo $(AS_PROJECT_PATH)/Logical/HMI/VrtalkaHMI/Bitmaps/Home_screen.png
 	 $(VCC) -f "$<" -o "$@" -l "$(AS_PROJECT_PATH)/Logical/VCShared/Languages.vcr" -cv "$(AS_PROJECT_PATH)/Logical/VCShared/ControlVersion.cvinfo" -pal "$(PALFILE_Vrtalk)" $(VCCFLAGS_Vrtalk)  -p Vrtalk -so $(VC_STATIC_OPTIONS_Vrtalk) -vcr 4265 -sfas
 
 
-$(TEMP_PATH_Vrtalk)/bminfo.settings_page.vco: $(AS_PROJECT_PATH)/Logical/VrtalkaHMI/Bitmaps/settings_page.bminfo $(AS_PROJECT_PATH)/Logical/VrtalkaHMI/Bitmaps/settings_page.png
+$(TEMP_PATH_Vrtalk)/bminfo.settings_page.vco: $(AS_PROJECT_PATH)/Logical/HMI/VrtalkaHMI/Bitmaps/settings_page.bminfo $(AS_PROJECT_PATH)/Logical/HMI/VrtalkaHMI/Bitmaps/settings_page.png
+	 $(VCC) -f "$<" -o "$@" -l "$(AS_PROJECT_PATH)/Logical/VCShared/Languages.vcr" -cv "$(AS_PROJECT_PATH)/Logical/VCShared/ControlVersion.cvinfo" -pal "$(PALFILE_Vrtalk)" $(VCCFLAGS_Vrtalk)  -p Vrtalk -so $(VC_STATIC_OPTIONS_Vrtalk) -vcr 4265 -sfas
+
+
+$(TEMP_PATH_Vrtalk)/bminfo.warning_sign.vco: $(AS_PROJECT_PATH)/Logical/HMI/VrtalkaHMI/Bitmaps/warning_sign.bminfo $(AS_PROJECT_PATH)/Logical/HMI/VrtalkaHMI/Bitmaps/warning_sign.png
+	 $(VCC) -f "$<" -o "$@" -l "$(AS_PROJECT_PATH)/Logical/VCShared/Languages.vcr" -cv "$(AS_PROJECT_PATH)/Logical/VCShared/ControlVersion.cvinfo" -pal "$(PALFILE_Vrtalk)" $(VCCFLAGS_Vrtalk)  -p Vrtalk -so $(VC_STATIC_OPTIONS_Vrtalk) -vcr 4265 -sfas
+
+
+$(TEMP_PATH_Vrtalk)/bminfo.Da.vco: $(AS_PROJECT_PATH)/Logical/HMI/VrtalkaHMI/Bitmaps/Da.bminfo $(AS_PROJECT_PATH)/Logical/HMI/VrtalkaHMI/Bitmaps/Da.png
+	 $(VCC) -f "$<" -o "$@" -l "$(AS_PROJECT_PATH)/Logical/VCShared/Languages.vcr" -cv "$(AS_PROJECT_PATH)/Logical/VCShared/ControlVersion.cvinfo" -pal "$(PALFILE_Vrtalk)" $(VCCFLAGS_Vrtalk)  -p Vrtalk -so $(VC_STATIC_OPTIONS_Vrtalk) -vcr 4265 -sfas
+
+
+$(TEMP_PATH_Vrtalk)/bminfo.Ne.vco: $(AS_PROJECT_PATH)/Logical/HMI/VrtalkaHMI/Bitmaps/Ne.bminfo $(AS_PROJECT_PATH)/Logical/HMI/VrtalkaHMI/Bitmaps/Ne.png
+	 $(VCC) -f "$<" -o "$@" -l "$(AS_PROJECT_PATH)/Logical/VCShared/Languages.vcr" -cv "$(AS_PROJECT_PATH)/Logical/VCShared/ControlVersion.cvinfo" -pal "$(PALFILE_Vrtalk)" $(VCCFLAGS_Vrtalk)  -p Vrtalk -so $(VC_STATIC_OPTIONS_Vrtalk) -vcr 4265 -sfas
+
+
+$(TEMP_PATH_Vrtalk)/bminfo.Start.vco: $(AS_PROJECT_PATH)/Logical/HMI/VrtalkaHMI/Bitmaps/Start.bminfo $(AS_PROJECT_PATH)/Logical/HMI/VrtalkaHMI/Bitmaps/Start.png
 	 $(VCC) -f "$<" -o "$@" -l "$(AS_PROJECT_PATH)/Logical/VCShared/Languages.vcr" -cv "$(AS_PROJECT_PATH)/Logical/VCShared/ControlVersion.cvinfo" -pal "$(PALFILE_Vrtalk)" $(VCCFLAGS_Vrtalk)  -p Vrtalk -so $(VC_STATIC_OPTIONS_Vrtalk) -vcr 4265 -sfas
 
 
@@ -684,7 +737,7 @@ $(TEMP_PATH_Vrtalk)/bminfo.settings_page.vco: $(AS_PROJECT_PATH)/Logical/Vrtalka
 # Trend Data Configuration
 TDC_OBJECTS_Vrtalk = $(addprefix $(TEMP_PATH_Vrtalk)/tdc., $(notdir $(TDC_SOURCES_Vrtalk:.tdc=.vco)))
 
-$(TEMP_PATH_Vrtalk)/tdc.TrendData.vco: $(AS_PROJECT_PATH)/Logical/VrtalkaHMI/Trends/TrendData.tdc
+$(TEMP_PATH_Vrtalk)/tdc.TrendData.vco: $(AS_PROJECT_PATH)/Logical/HMI/VrtalkaHMI/Trends/TrendData.tdc
 	 $(VCC) -f "$<" -o "$@" -l "$(AS_PROJECT_PATH)/Logical/VCShared/Languages.vcr" -cv "$(AS_PROJECT_PATH)/Logical/VCShared/ControlVersion.cvinfo" -pal "$(PALFILE_Vrtalk)" $(VCCFLAGS_Vrtalk)  -p Vrtalk -so $(VC_STATIC_OPTIONS_Vrtalk) -vcr 4265 -sfas
 
 
@@ -696,7 +749,7 @@ $(TEMP_PATH_Vrtalk)/tdc.TrendData.vco: $(AS_PROJECT_PATH)/Logical/VrtalkaHMI/Tre
 # Process
 PRC_OBJECTS_Vrtalk = $(addprefix $(TEMP_PATH_Vrtalk)/prc., $(notdir $(PRC_SOURCES_Vrtalk:.prc=.vco)))
 
-$(TEMP_PATH_Vrtalk)/prc.Process_1.vco: $(AS_PROJECT_PATH)/Logical/VrtalkaHMI/Processes/Process_1.prc
+$(TEMP_PATH_Vrtalk)/prc.Process_1.vco: $(AS_PROJECT_PATH)/Logical/HMI/VrtalkaHMI/Processes/Process_1.prc
 	 $(VCC) -f "$<" -o "$@" -l "$(AS_PROJECT_PATH)/Logical/VCShared/Languages.vcr" -cv "$(AS_PROJECT_PATH)/Logical/VCShared/ControlVersion.cvinfo" -pal "$(PALFILE_Vrtalk)" $(VCCFLAGS_Vrtalk)  -p Vrtalk -so $(VC_STATIC_OPTIONS_Vrtalk) -vcr 4265 -sfas
 
 
@@ -706,7 +759,7 @@ $(TEMP_PATH_Vrtalk)/prc.Process_1.vco: $(AS_PROJECT_PATH)/Logical/VrtalkaHMI/Pro
 #
 # Borders
 #
-BDR_SOURCES_Vrtalk=$(AS_PROJECT_PATH)/Logical/VrtalkaHMI/Borders/Raised.bdr $(AS_PROJECT_PATH)/Logical/VrtalkaHMI/Borders/Sunken.bdr $(AS_PROJECT_PATH)/Logical/VrtalkaHMI/Borders/Etched.bdr $(AS_PROJECT_PATH)/Logical/VrtalkaHMI/Borders/Bump.bdr $(AS_PROJECT_PATH)/Logical/VrtalkaHMI/Borders/SunkenOuter.bdr $(AS_PROJECT_PATH)/Logical/VrtalkaHMI/Borders/RaisedInner.bdr $(AS_PROJECT_PATH)/Logical/VrtalkaHMI/Borders/Flat_black.bdr $(AS_PROJECT_PATH)/Logical/VrtalkaHMI/Borders/Flat_grey.bdr $(AS_PROJECT_PATH)/Logical/VrtalkaHMI/Borders/BackwardActive.bdr $(AS_PROJECT_PATH)/Logical/VrtalkaHMI/Borders/BackwardPressed.bdr $(AS_PROJECT_PATH)/Logical/VrtalkaHMI/Borders/ControlActive.bdr $(AS_PROJECT_PATH)/Logical/VrtalkaHMI/Borders/ControlPressed.bdr $(AS_PROJECT_PATH)/Logical/VrtalkaHMI/Borders/DownActiveControl.bdr $(AS_PROJECT_PATH)/Logical/VrtalkaHMI/Borders/DownPressedControl.bdr $(AS_PROJECT_PATH)/Logical/VrtalkaHMI/Borders/ForwardActive.bdr $(AS_PROJECT_PATH)/Logical/VrtalkaHMI/Borders/ForwardPressed.bdr $(AS_PROJECT_PATH)/Logical/VrtalkaHMI/Borders/GlobalAreaActive.bdr $(AS_PROJECT_PATH)/Logical/VrtalkaHMI/Borders/GlobalAreaPressed.bdr $(AS_PROJECT_PATH)/Logical/VrtalkaHMI/Borders/MultiScrollDownActive.bdr $(AS_PROJECT_PATH)/Logical/VrtalkaHMI/Borders/MultiScrollDownPressed.bdr $(AS_PROJECT_PATH)/Logical/VrtalkaHMI/Borders/MultiScrollUpActive.bdr $(AS_PROJECT_PATH)/Logical/VrtalkaHMI/Borders/MultiScrollUpPressed.bdr $(AS_PROJECT_PATH)/Logical/VrtalkaHMI/Borders/ProgressBarBorder.bdr $(AS_PROJECT_PATH)/Logical/VrtalkaHMI/Borders/ScrollDownActive.bdr $(AS_PROJECT_PATH)/Logical/VrtalkaHMI/Borders/ScrollDownPressed.bdr $(AS_PROJECT_PATH)/Logical/VrtalkaHMI/Borders/ScrollUpActive.bdr $(AS_PROJECT_PATH)/Logical/VrtalkaHMI/Borders/ScrollUpPressed.bdr $(AS_PROJECT_PATH)/Logical/VrtalkaHMI/Borders/ScrollLeftActive.bdr $(AS_PROJECT_PATH)/Logical/VrtalkaHMI/Borders/ScrollLeftPressed.bdr $(AS_PROJECT_PATH)/Logical/VrtalkaHMI/Borders/ScrollRightActive.bdr $(AS_PROJECT_PATH)/Logical/VrtalkaHMI/Borders/ScrollRightPressed.bdr $(AS_PROJECT_PATH)/Logical/VrtalkaHMI/Borders/UpActiveControl.bdr $(AS_PROJECT_PATH)/Logical/VrtalkaHMI/Borders/UpPressedControl.bdr $(AS_PROJECT_PATH)/Logical/VrtalkaHMI/Borders/FrameHeader.bdr 
+BDR_SOURCES_Vrtalk=$(AS_PROJECT_PATH)/Logical/HMI/VrtalkaHMI/Borders/Raised.bdr $(AS_PROJECT_PATH)/Logical/HMI/VrtalkaHMI/Borders/Sunken.bdr $(AS_PROJECT_PATH)/Logical/HMI/VrtalkaHMI/Borders/Etched.bdr $(AS_PROJECT_PATH)/Logical/HMI/VrtalkaHMI/Borders/Bump.bdr $(AS_PROJECT_PATH)/Logical/HMI/VrtalkaHMI/Borders/SunkenOuter.bdr $(AS_PROJECT_PATH)/Logical/HMI/VrtalkaHMI/Borders/RaisedInner.bdr $(AS_PROJECT_PATH)/Logical/HMI/VrtalkaHMI/Borders/Flat_black.bdr $(AS_PROJECT_PATH)/Logical/HMI/VrtalkaHMI/Borders/Flat_grey.bdr $(AS_PROJECT_PATH)/Logical/HMI/VrtalkaHMI/Borders/BackwardActive.bdr $(AS_PROJECT_PATH)/Logical/HMI/VrtalkaHMI/Borders/BackwardPressed.bdr $(AS_PROJECT_PATH)/Logical/HMI/VrtalkaHMI/Borders/ControlActive.bdr $(AS_PROJECT_PATH)/Logical/HMI/VrtalkaHMI/Borders/ControlPressed.bdr $(AS_PROJECT_PATH)/Logical/HMI/VrtalkaHMI/Borders/DownActiveControl.bdr $(AS_PROJECT_PATH)/Logical/HMI/VrtalkaHMI/Borders/DownPressedControl.bdr $(AS_PROJECT_PATH)/Logical/HMI/VrtalkaHMI/Borders/ForwardActive.bdr $(AS_PROJECT_PATH)/Logical/HMI/VrtalkaHMI/Borders/ForwardPressed.bdr $(AS_PROJECT_PATH)/Logical/HMI/VrtalkaHMI/Borders/GlobalAreaActive.bdr $(AS_PROJECT_PATH)/Logical/HMI/VrtalkaHMI/Borders/GlobalAreaPressed.bdr $(AS_PROJECT_PATH)/Logical/HMI/VrtalkaHMI/Borders/MultiScrollDownActive.bdr $(AS_PROJECT_PATH)/Logical/HMI/VrtalkaHMI/Borders/MultiScrollDownPressed.bdr $(AS_PROJECT_PATH)/Logical/HMI/VrtalkaHMI/Borders/MultiScrollUpActive.bdr $(AS_PROJECT_PATH)/Logical/HMI/VrtalkaHMI/Borders/MultiScrollUpPressed.bdr $(AS_PROJECT_PATH)/Logical/HMI/VrtalkaHMI/Borders/ProgressBarBorder.bdr $(AS_PROJECT_PATH)/Logical/HMI/VrtalkaHMI/Borders/ScrollDownActive.bdr $(AS_PROJECT_PATH)/Logical/HMI/VrtalkaHMI/Borders/ScrollDownPressed.bdr $(AS_PROJECT_PATH)/Logical/HMI/VrtalkaHMI/Borders/ScrollUpActive.bdr $(AS_PROJECT_PATH)/Logical/HMI/VrtalkaHMI/Borders/ScrollUpPressed.bdr $(AS_PROJECT_PATH)/Logical/HMI/VrtalkaHMI/Borders/ScrollLeftActive.bdr $(AS_PROJECT_PATH)/Logical/HMI/VrtalkaHMI/Borders/ScrollLeftPressed.bdr $(AS_PROJECT_PATH)/Logical/HMI/VrtalkaHMI/Borders/ScrollRightActive.bdr $(AS_PROJECT_PATH)/Logical/HMI/VrtalkaHMI/Borders/ScrollRightPressed.bdr $(AS_PROJECT_PATH)/Logical/HMI/VrtalkaHMI/Borders/UpActiveControl.bdr $(AS_PROJECT_PATH)/Logical/HMI/VrtalkaHMI/Borders/UpPressedControl.bdr $(AS_PROJECT_PATH)/Logical/HMI/VrtalkaHMI/Borders/FrameHeader.bdr 
 BDR_OBJECTS_Vrtalk=$(TEMP_PATH_Vrtalk)/bdr.Bordermanager.vco
 $(TEMP_PATH_Vrtalk)/bdr.Bordermanager.vco: $(BDR_SOURCES_Vrtalk)
 	$(VCC) -f "$<" -o "$@" -pkg "$(SRC_PATH_Vrtalk)" $(BDRFLAGS_Vrtalk) $(VCCFLAGS_Vrtalk) -p Vrtalk$(SRC_PATH_Vrtalk)
@@ -771,16 +824,16 @@ $(TEMP_PATH_Vrtalk)/Vrtalk01.ccf: $(LIB_SHARED) $(SHARED_CCF) $(LIB_BMP_RES_Vrta
 	@$(VCFLGEN) "$@.lfl" "$(LIB_BMP_RES_Vrtalk)" -temp "$(TEMP_PATH_Vrtalk)" -prj "$(PRJ_PATH_Vrtalk)" -sfas
 	@$(VCFLGEN) "$@.lfl" "$(LIB_LOCAL_RES_Vrtalk)" -temp "$(TEMP_PATH_Vrtalk)" -prj "$(PRJ_PATH_Vrtalk)" -sfas
 	@$(VCFLGEN) "$@.lfl" "$(DIS_OBJECTS_Vrtalk:.vco=.vco|)" -temp "$(TEMP_PATH_Vrtalk)" -prj "$(PRJ_PATH_Vrtalk)" -sfas
-	@$(VCFLGEN) "$@.lfl" -mask .page -vcp "$(AS_PROJECT_PATH)/Logical/VrtalkaHMI/Package.vcp" -temp "$(TEMP_PATH_Vrtalk)" -prj "$(PRJ_PATH_Vrtalk)" -sfas
+	@$(VCFLGEN) "$@.lfl" -mask .page -vcp "$(AS_PROJECT_PATH)/Logical/HMI/VrtalkaHMI/Package.vcp" -temp "$(TEMP_PATH_Vrtalk)" -prj "$(PRJ_PATH_Vrtalk)" -sfas
 	@$(VCFLGEN) "$@.lfl" "$(VCS_OBJECTS_Vrtalk:.vco=.vco|)" -temp "$(TEMP_PATH_Vrtalk)" -prj "$(PRJ_PATH_Vrtalk)" -sfas
-	@$(VCFLGEN) "$@.lfl" -mask .vcvk -vcp "$(AS_PROJECT_PATH)/Logical/VrtalkaHMI/Package.vcp" -temp "$(TEMP_PATH_Vrtalk)" -prj "$(PRJ_PATH_Vrtalk)" -sfas
+	@$(VCFLGEN) "$@.lfl" -mask .vcvk -vcp "$(AS_PROJECT_PATH)/Logical/HMI/VrtalkaHMI/Package.vcp" -temp "$(TEMP_PATH_Vrtalk)" -prj "$(PRJ_PATH_Vrtalk)" -sfas
 	@$(VCFLGEN) "$@.lfl" "$(VCRT_OBJECTS_Vrtalk:.vco=.vco|)" -temp "$(TEMP_PATH_Vrtalk)" -prj "$(PRJ_PATH_Vrtalk)" -sfas
 	@$(VCFLGEN) "$@.lfl" "$(TPR_OBJECTS_Vrtalk:.vco=.vco|)" -temp "$(TEMP_PATH_Vrtalk)" -prj "$(PRJ_PATH_Vrtalk)" -sfas
-	@$(VCFLGEN) "$@.lfl" -mask .txtgrp -vcp "$(AS_PROJECT_PATH)/Logical/VrtalkaHMI/Package.vcp" -temp "$(TEMP_PATH_Vrtalk)" -prj "$(PRJ_PATH_Vrtalk)" -sfas
-	@$(VCFLGEN) "$@.lfl" -mask .layer -vcp "$(AS_PROJECT_PATH)/Logical/VrtalkaHMI/Package.vcp" -temp "$(TEMP_PATH_Vrtalk)" -prj "$(PRJ_PATH_Vrtalk)" -sfas
+	@$(VCFLGEN) "$@.lfl" -mask .txtgrp -vcp "$(AS_PROJECT_PATH)/Logical/HMI/VrtalkaHMI/Package.vcp" -temp "$(TEMP_PATH_Vrtalk)" -prj "$(PRJ_PATH_Vrtalk)" -sfas
+	@$(VCFLGEN) "$@.lfl" -mask .layer -vcp "$(AS_PROJECT_PATH)/Logical/HMI/VrtalkaHMI/Package.vcp" -temp "$(TEMP_PATH_Vrtalk)" -prj "$(PRJ_PATH_Vrtalk)" -sfas
 	@$(VCFLGEN) "$@.lfl" "$(VCR_OBJECT_Vrtalk:.vco=.vco|)" -temp "$(TEMP_PATH_Vrtalk)" -prj "$(PRJ_PATH_Vrtalk)" -sfas
-	@$(VCFLGEN) "$@.lfl" -mask .tdc -vcp "$(AS_PROJECT_PATH)/Logical/VrtalkaHMI/Package.vcp" -temp "$(TEMP_PATH_Vrtalk)" -prj "$(PRJ_PATH_Vrtalk)" -sfas
-	@$(VCFLGEN) "$@.lfl" -mask .trd -vcp "$(AS_PROJECT_PATH)/Logical/VrtalkaHMI/Package.vcp" -temp "$(TEMP_PATH_Vrtalk)" -prj "$(PRJ_PATH_Vrtalk)" -sfas
+	@$(VCFLGEN) "$@.lfl" -mask .tdc -vcp "$(AS_PROJECT_PATH)/Logical/HMI/VrtalkaHMI/Package.vcp" -temp "$(TEMP_PATH_Vrtalk)" -prj "$(PRJ_PATH_Vrtalk)" -sfas
+	@$(VCFLGEN) "$@.lfl" -mask .trd -vcp "$(AS_PROJECT_PATH)/Logical/HMI/VrtalkaHMI/Package.vcp" -temp "$(TEMP_PATH_Vrtalk)" -prj "$(PRJ_PATH_Vrtalk)" -sfas
 	@$(VCFLGEN) "$@.lfl" "$(TEMP_PATH_Vrtalk)/prc.Process_1.vco" -temp "$(TEMP_PATH_Vrtalk)" -prj "$(PRJ_PATH_Vrtalk)" -sfas
 	@$(VCFLGEN) "$@.lfl" "$(SCR_OBJECTS_Vrtalk:.vco=.vco|)" -temp "$(TEMP_PATH_Vrtalk)" -prj "$(PRJ_PATH_Vrtalk)" -sfas
 	$(LINK) "$@.lfl" -o "$@" -p Vrtalk -lib "$(LIB_LOCAL_OBJ_Vrtalk)" -P "$(AS_PROJECT_PATH)" -m "local objects" -profile "False" -warningLevel2 -vcr 4265 -sfas
@@ -805,16 +858,8 @@ DEL_TARGET03_LFL_Vrtalk=$(TEMP_PATH_Vrtalk)\Vrtalk03.ccf.lfl
 $(TEMP_PATH_Vrtalk)/Vrtalk03.ccf: $(LIB_SHARED) $(SHARED_CCF) $(BMGRP_OBJECTS_Vrtalk) $(BMINFO_OBJECTS_Vrtalk) $(PALFILE_Vrtalk)
 	-@CMD /Q /C if exist "$(DEL_TARGET03_LFL_Vrtalk)" DEL /F /Q "$(DEL_TARGET03_LFL_Vrtalk)" 2>nul
 	@$(VCFLGEN) "$@.lfl" "$(LIB_SHARED)" -temp "$(TEMP_PATH_Vrtalk)" -prj "$(PRJ_PATH_Vrtalk)" -sfas
-	@$(VCFLGEN) "$@.lfl" -mask .bmgrp -vcp "$(AS_PROJECT_PATH)/Logical/VrtalkaHMI/Package.vcp" -temp "$(TEMP_PATH_Vrtalk)" -prj "$(PRJ_PATH_Vrtalk)" -sfas
-	@$(VCFLGEN) "$@.lfl" -mask .bminfo -vcp "$(AS_PROJECT_PATH)/Logical/VrtalkaHMI/Package.vcp" -temp "$(TEMP_PATH_Vrtalk)" -prj "$(PRJ_PATH_Vrtalk)" -sfas
+	@$(VCFLGEN) "$@.lfl" -mask .bmgrp -vcp "$(AS_PROJECT_PATH)/Logical/HMI/VrtalkaHMI/Package.vcp" -temp "$(TEMP_PATH_Vrtalk)" -prj "$(PRJ_PATH_Vrtalk)" -sfas
+	@$(VCFLGEN) "$@.lfl" -mask .bminfo -vcp "$(AS_PROJECT_PATH)/Logical/HMI/VrtalkaHMI/Package.vcp" -temp "$(TEMP_PATH_Vrtalk)" -prj "$(PRJ_PATH_Vrtalk)" -sfas
 	$(LINK) "$@.lfl" -o "$@" -p Vrtalk -lib "$(LIB_BMP_RES_Vrtalk)" -P "$(AS_PROJECT_PATH)" -m "bitmap resources" -profile "False" -warningLevel2 -vcr 4265 -sfas
 # 03 Module END
 
-# Post Build Steps
-
-.PHONY : vcPostBuild_Vrtalk
-
-vcPostBuild_Vrtalk :
-	$(VCC) -pb -vcm "$(TEMP_PATH_Vrtalk)/MODULEFILES.vcm" -fw "$(VCFIRMWAREPATH)" $(VCCFLAGS_Vrtalk) -p Vrtalk -vcr 4265 -sfas
-
-# Post Build Steps END

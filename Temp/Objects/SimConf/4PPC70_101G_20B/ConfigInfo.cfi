@@ -8,7 +8,22 @@
   <TaskClass
     Name="Cyclic#3" />
   <TaskClass
-    Name="Cyclic#4" />
+    Name="Cyclic#4">
+    <Task
+      Name="programHMI"
+      Disable="true"
+      Source="HMI.programHMI"
+      Language="IEC">
+      <InternalFile
+        Path="F:\1_Automation_projects\Vrtalka\Temp\Objects\SimConf\4PPC70_101G_20B\programHMI\Main.st.var" />
+      <File
+        Path="F:\1_Automation_projects\Vrtalka\Logical\HMI\programHMI\Types.typ" />
+      <File
+        Path="F:\1_Automation_projects\Vrtalka\Logical\HMI\programHMI\Variables.var" />
+      <InternalFile
+        Path="F:\1_Automation_projects\Vrtalka\Temp\Objects\SimConf\4PPC70_101G_20B\programHMI\HMI_actions.st.var" />
+    </Task>
+  </TaskClass>
   <TaskClass
     Name="Cyclic#5" />
   <TaskClass
@@ -16,22 +31,20 @@
   <TaskClass
     Name="Cyclic#7">
     <Task
-      Name="Program"
+      Name="Vrtalka"
       Disable="false"
-      Source="Program"
+      Source="Vrtalka"
       Language="IEC">
-      <File
-        Path="F:\1_Automation_projects\Vrtalka\Logical\Program\Variables.var" />
-      <File
-        Path="F:\1_Automation_projects\Vrtalka\Logical\Program\Types.typ" />
       <InternalFile
-        Path="F:\1_Automation_projects\Vrtalka\Temp\Objects\SimConf\4PPC70_101G_20B\Program\Vrtalka_actions.var" />
+        Path="F:\1_Automation_projects\Vrtalka\Temp\Objects\SimConf\4PPC70_101G_20B\Vrtalka\Vrtalka_actions.var" />
       <InternalFile
-        Path="F:\1_Automation_projects\Vrtalka\Temp\Objects\SimConf\4PPC70_101G_20B\Program\ST_src.var" />
+        Path="F:\1_Automation_projects\Vrtalka\Temp\Objects\SimConf\4PPC70_101G_20B\Vrtalka\ST_src.var" />
       <InternalFile
-        Path="F:\1_Automation_projects\Vrtalka\Temp\Objects\SimConf\4PPC70_101G_20B\Program\VrtalkaFunctions.st.var" />
+        Path="F:\1_Automation_projects\Vrtalka\Temp\Objects\SimConf\4PPC70_101G_20B\Vrtalka\VrtalkaFunctions.st.var" />
       <File
-        Path="F:\1_Automation_projects\Vrtalka\Logical\Program\VrtalkaFunctions.fun" />
+        Path="F:\1_Automation_projects\Vrtalka\Logical\Vrtalka\VrtalkaFunctions.fun" />
+      <File
+        Path="F:\1_Automation_projects\Vrtalka\Logical\Vrtalka\HMIVars.var" />
     </Task>
   </TaskClass>
   <TaskClass

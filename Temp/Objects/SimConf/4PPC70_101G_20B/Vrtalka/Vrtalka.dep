@@ -1,0 +1,3 @@
+$(AS_PROJECT_PATH)/Logical/Vrtalka/VrtalkaFunctions.fun
+$(AS_PROJECT_PATH)/Logical/VrtalkaVars.var
+$(AS_PROJECT_PATH)/Logical/Types.typ

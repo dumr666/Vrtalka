@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?AutomationStudio Version="4.2.10.53 SP"?>
+<Layer xmlns="http://br-automation.co.at/AS/VC/Project" Name="warningPopup">
+  <Property Name="BackColor" Value="9"/>
+  <Property Name="Description" Value=""/>
+  <Property Name="Height" Value="600"/>
+  <Property Name="Left" Value="0"/>
+  <Property Name="StatusDatapoint" Value="Source[global].Variable[DataSource.popupWarning]"/>
+  <Property Name="Top" Value="0"/>
+  <Property Name="Width" Value="1024"/>
+  <TextGroup>
+    <TextLayer LanguageId="en">
+      <Text ID="95357" Value="Potrebna je nastavitev pozicij agregatov,\nVozicek bo zapeljal agregate v izhodiscno lego.\nPoskrbite da na vodilih ni ovir!"/>
+    </TextLayer>
+    <TextLayer LanguageId="de">
+      <Text ID="95357" Value="Text_1"/>
+    </TextLayer>
+    <IndexMap>
+      <Index ID="95357" Value="0"/>
+    </IndexMap>
+  </TextGroup>
+  <Controls>
+    <Control ClassId="0x00001001" Name="Shape_1">
+      <Property Name="BackColor" Value="17"/>
+      <Property Name="ControlID" Value="0"/>
+      <Property Name="Description" Value=""/>
+      <Property Name="Height" Value="390"/>
+      <Property Name="Left" Value="260"/>
+      <Property Name="StatusDatapoint" Value="Source[global].Variable[DataSource.popupWarning]"/>
+      <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[Shape]"/>
+      <Property Name="Top" Value="110"/>
+      <Property Name="Width" Value="500"/>
+    </Control>
+    <Control ClassId="0x00001004" Name="Text_1">
+      <Property Name="ControlID" Value="0"/>
+      <Property Name="Description" Value=""/>
+      <Property Name="Height" Value="90"/>
+      <Property Name="Left" Value="290"/>
+      <Property Name="Multiline" Value="Automatic"/>
+      <Property Name="SimulationIndex" Value="0"/>
+      <Property Name="SimulationValue" Value=""/>
+      <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[Header3_text]"/>
+      <Property Name="TextGroup" Value="Source[embedded].TextGroup"/>
+      <Property Name="TextIndexOffset" Value="0"/>
+      <Property Name="TextSource" Value="SingleText"/>
+      <Property Name="Top" Value="270"/>
+      <Property Name="Width" Value="440"/>
+    </Control>
+    <Control ClassId="0x00001005" Name="Bitmap_1">
+      <Property Name="Bitmap" Value="None"/>
+      <Property Name="BitmapSource" Value="SingleBitmap"/>
+      <Property Name="ControlID" Value="0"/>
+      <Property Name="Description" Value=""/>
+      <Property Name="FillStyle" Value="Transparent"/>
+      <Property Name="Height" Value="144"/>
+      <Property Name="IndexDatapoint" Value="None"/>
+      <Property Name="Left" Value="440"/>
+      <Property Name="SimulationValue" Value="0"/>
+      <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[Bitmap]"/>
+      <Property Name="Top" Value="130"/>
+      <Property Name="Width" Value="150"/>
+    </Control>
+    <Control ClassId="0x00001005" Name="Bitmap_2">
+      <Property Name="Bitmap" Value="Source[local].Bitmap[warning_sign]"/>
+      <Property Name="BitmapSource" Value="SingleBitmap"/>
+      <Property Name="ControlID" Value="0"/>
+      <Property Name="Description" Value=""/>
+      <Property Name="FillStyle" Value="Transparent"/>
+      <Property Name="Height" Value="140"/>
+      <Property Name="IndexDatapoint" Value="None"/>
+      <Property Name="Left" Value="430"/>
+      <Property Name="SimulationValue" Value="0"/>
+      <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[Bitmap]"/>
+      <Property Name="Top" Value="130"/>
+      <Property Name="Width" Value="160"/>
+    </Control>
+    <Control ClassId="0x00001002" Name="Button_1">
+      <Property Name="BackColor" Value="220"/>
+      <Property Name="Bitmap" Value="Source[local].Bitmap[Start]"/>
+      <Property Name="BitmapIndexDatapoint" Value="None"/>
+      <Property Name="BitmapSource" Value="SingleBitmap"/>
+      <Property Name="ControlID" Value="0"/>
+      <Property Name="Description" Value=""/>
+      <Property Name="EmbVirtualKey" Value="Source[local].VirtualKey[%embVirtualKey_12]"/>
+      <Property Name="ForeColor" Value="0"/>
+      <Property Name="Height" Value="80"/>
+      <Property Name="KeyMatrixOffset" Value="None"/>
+      <Property Name="Left" Value="400"/>
+      <Property Name="PressedBitmapSource" Value="Source[embedded].Property[BitmapSource]"/>
+      <Property Name="PressedForeColor" Value="0"/>
+      <Property Name="PressedTextSource" Value="Source[embedded].Property[TextSource]"/>
+      <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[CustomButton]"/>
+      <Property Name="TextIndexDatapoint" Value="None"/>
+      <Property Name="TextSimulationValue" Value="0"/>
+      <Property Name="TextSource" Value="None"/>
+      <Property Name="Top" Value="380"/>
+      <Property Name="VirtualKey" Value="Source[local].VirtualKey[%embVirtualKey_12]"/>
+      <Property Name="Width" Value="210"/>
+    </Control>
+  </Controls>
+  <KeyMapping>
+    <VirtualKey Name="%embVirtualKey_12">
+      <Property Name="Description" Value=""/>
+      <Property Name="VirtualKey_LED" Value="False"/>
+      <KeyActions>
+        <KeyAction ClassId="0x00000161">
+          <Property Name="CompletionDatapoint" Value="None"/>
+          <Property Name="CompletionValue" Value="0"/>
+          <Property Name="Description" Value=""/>
+          <Property Name="Locking" Value="Never"/>
+          <Property Name="Name" Value="Action_0"/>
+          <Property Name="SetValue" Value="1"/>
+          <Property Name="ValueDatapoint" Value="Source[global].Variable[DataSource.diGoHome]"/>
+        </KeyAction>
+      </KeyActions>
+    </VirtualKey>
+  </KeyMapping>
+</Layer>

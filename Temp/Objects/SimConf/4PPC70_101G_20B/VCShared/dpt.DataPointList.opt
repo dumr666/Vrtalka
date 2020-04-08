@@ -3,7 +3,8 @@
     <SourceFile Value="F:/1_Automation_projects/Vrtalka/Physical/SimConf/4PPC70_101G_20B/Cpu.sw" />
     <Query Value="/ns:SwConfiguration/ns:TaskClass/*$$Name,Source" />
     <Xml>
-      <Task Name="Program" Source="Program.prg" />
+      <Task Name="programHMI" Source="HMI.programHMI.prg" />
+      <Task Name="Vrtalka" Source="Vrtalka.prg" />
     </Xml>
   </BuildOption>
 </BuildOptions>
